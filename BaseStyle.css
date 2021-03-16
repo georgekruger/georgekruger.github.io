@@ -1,11 +1,16 @@
 @charset "utf-8";
 /* CSS Document */
-header {
+body{
+	top: 0px;
+	left: 0px;
+	margin: 0px;
+}
+
+Navbar {
     position: fixed;
-    left: 0px;
     color: black;
     width: 100%;
-    top: 0px;
-    height: 95px;
-    background-color: #151429;
+    height: 50px;
+    background:rgba(1,255,1,0.5);
+	
 }
