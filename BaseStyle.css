@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url("cocomat_light/stylesheet.css");
 /* CSS Document */
 body{
 	top: 0px;
@@ -8,9 +9,41 @@ body{
 
 Navbar {
     position: fixed;
-    color: black;
     width: 100%;
     height: 50px;
-    background:rgba(1,255,1,0.5);
+    background: rgba(0,0,0,0.5);
 	
+}
+
+navbar-item {
+    display: inline-block;
+    padding-top: 0;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 50px;
+    margin-top: auto;
+    margin-right: 5px;
+    margin-bottom: auto;
+    font-size: 16px;
+    margin-left: 5px;
+    font-family: Microsoft YaHei UI;
+    font-weight: lighter;
+    color: white;
+}
+
+navbar-item.name-start{
+	line-height: 45px;
+	font-size: 35px;
+	margin-left: 100px;
+}
+navbar-item.Navbar-link{
+background: rgba(0,0,0,0);
+    transition: 0.5s;
+}
+navbar-item.Navbar-link:hover{
+	background-color: red;
+	transition: 0.5s;
 }
