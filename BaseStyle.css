@@ -62,3 +62,11 @@ navbar-item.Navbar-link:hover{
 	background-color: red;
 	transition: 0.5s;
 }
+
+
+.navbar-item-icon {
+    margin-right: 10px;
+    top: 1px;
+    display: inline-block;
+    position: relative;
+}
