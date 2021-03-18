@@ -28,7 +28,8 @@ background: rgb(38,17,43);
 background: -moz-linear-gradient(0deg, rgba(38,17,43,1) 0%, rgba(38,17,43,0.2049194677871149) 10%, rgba(38,17,43,0) 40%);
 background: -webkit-linear-gradient(0deg, rgba(38,17,43,1) 0%, rgba(38,17,43,0.2049194677871149) 10%, rgba(38,17,43,0) 40%);
 background: linear-gradient(0deg, rgba(38,17,43,1) 0%, rgba(38,17,43,0.2049194677871149) 10%, rgba(38,17,43,0) 40%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#26112b",endColorstr="#26112b",GradientType=1);}
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#26112b",endColorstr="#26112b",GradientType=1);
+}
 
 .about-me{
     max-width: 100%;
