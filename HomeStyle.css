@@ -32,17 +32,23 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#26112b",endCo
 }
 
 .about-me{
-    max-width: 100%;
-    height: 410px;
+    /* [disabled]height: 410px; */
     position: relative;
     background-color: #26112B;
     font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
     font-style: normal;
     font-weight: 400;
+    margin: auto;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    min-height: 273px;
 }
+
+
 .about-me-con{
     align-self: center;
-    width: 1500px;
     margin-top: auto;
     margin-right: auto;
     margin-left: auto;
@@ -52,10 +58,16 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#26112b",endCo
     color: white;
     padding-left: 20px;
     padding-right: 20px;
+    /* [disabled]min-width: 1060px; */
+    display: block;
+    max-width: 1000px;
 }
+
+
+
+
 .about-me-picture{
     border-radius: 1000px;
-    float: left;
     display: inline-block;
 	
 	
@@ -63,14 +75,15 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#26112b",endCo
 	
 }
 .about-me-title{
-    font-size: 80px;
-    text-align: center;
+    font-size: 60px;
+    text-align: left;
     position: relative;
     vertical-align: top;
-    width: 400px;
-    left: 20px;
+    width: 485px;
     height: 100px;
     display: inline-block;
+    min-width: 30px;
+    max-width: 37px;
     top: -20px;
 	
 	
@@ -79,19 +92,58 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#26112b",endCo
 }
 .about-me-text{
     position: relative;
-    font-size: 24px;
-    display: inherit;
-    height: 230px;
+    font-size: 15px;
+    display: block;
+    height: 200px;
     text-overflow: ellipsis;
-    width: 1150px;
-    left: 40px;
-    top: -10px;
     text-align: left;
-    float: left;
+    /* [disabled]float: none; */
+    /* [disabled]min-width: 62px; */
+    padding-top: 0px;
+    /* [disabled]padding-right: 40px; */
+    padding-left: 0px;
+    padding-bottom: 0px;
+    /* [disabled]max-width: 2919px; */
+    margin-top: -30px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    top: 0px;
 }
 
+.about-me-con-text{
 
+}
 
+@media (max-width: 760px) {
+	.about-me-con{
+		max-width: 600px;
+		align-content: center;
+	}
+	.about-me-picture{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    float: none;
+	}
+	.about-me-title{
+		width: 100%;
+		text-align: center;
+	
+	}
+}
+
+@media only screen and (min-width: 760px) {
+	
+	.about-me-picture{
+		float: left;
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+	}
+	
+}
 
 /*Project Showcase*/
 
@@ -128,7 +180,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#26112b",endCo
 }
 
 .sub-banner-divider{
-    height: 18px;
+    height: 4px;
     width: 100%;
     top: 10px;
     border-radius: 50%;
@@ -136,6 +188,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#26112b",endCo
     background: -moz-linear-gradient(0deg, rgba(255,255,255,0) 10%, rgba(255,255,255,0.19931722689075626) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.2049194677871149) 70%, rgba(255,255,255,0) 90%);
     background: -webkit-linear-gradient(0deg, rgba(255,255,255,0) 10%, rgba(255,255,255,0.19931722689075626) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.2049194677871149) 70%, rgba(255,255,255,0) 90%);
     background: linear-gradient(0deg, rgba(255,255,255,0) 10%, rgba(255,255,255,0.19931722689075626) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.2049194677871149) 70%, rgba(255,255,255,0) 90%);
+
+
+
 
 
 
