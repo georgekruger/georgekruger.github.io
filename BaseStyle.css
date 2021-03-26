@@ -88,7 +88,9 @@ navbar-item.Navbar-link:hover{
 	navbar-item.Navbar-link{
 		display: none;
 	}
-	.navbar-item-menu-icon {display: block;
+	.navbar-item-menu-icon {
+    display: block;
+    z-index: 100;
 	}
 	
 }
@@ -99,10 +101,10 @@ navbar-item.Navbar-link:hover{
     /* [disabled]max-width: 619px; */
     background-color: hsla(263,100%,43%,1.00);
     position: fixed;
-    /* [disabled]right: 242px; */
     z-index: 10;
-    display: block;
-    width: 317px;
+    display: none;
+    width: 300px;
+    right: 159px;
 }
 
 navbar-item-sidepanel{

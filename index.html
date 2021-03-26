@@ -12,15 +12,17 @@
 	
 <body>
 	<div class="navbar">
-	<navbar-item class="name-start" style="margin-left: 100px">George Kruger</navbar-item>
-    <a href="google.com"><navbar-item class="Navbar-link"><img src="home-icon.png" class="navbar-item-icon" height="14px"/>Home</navbar-item></a>
+		
+	  <navbar-item class="name-start" style="margin-left: 100px">George Kruger</navbar-item>
+
+<a href="google.com"><navbar-item class="Navbar-link"><img src="home-icon.png" class="navbar-item-icon" height="14px"/>Home</navbar-item></a>
     <a href="google.com"><navbar-item class="Navbar-link"><img src="home-icon.png" class="navbar-item-icon" height="14px"/>Work Projects</navbar-item></a>
     <a href="google.com"><navbar-item class="Navbar-link"><img src="home-icon.png" class="navbar-item-icon" height="14px"/>Personal Projects</navbar-item></a>
     <a href="google.com"><navbar-item class="Navbar-link"><img src="home-icon.png" class="navbar-item-icon" height="14px"/>CV<img src="external-icon.png" height="10px" class="navbar-item-icon-external"/></navbar-item></a>
-    <a href="google.com"><navbar-item class="Navbar-link"><img src="home-icon.png" class="navbar-item-icon" height="14px"/>Contact</navbar-item></a>
+    <a onclick="TogglePanel()"><navbar-item class="Navbar-link"><img src="home-icon.png" class="navbar-item-icon" height="14px"/>Contact</navbar-item></a>
 		
 
-	<a class="navbar-item-menu-icon" onclick="togglePanel()"><img width="35px" src="menu-icon.png"></a>
+	<a href="javascript:void(0)" class="navbar-item-menu-icon" onclick="TogglePanel()"><img width="35px" src="menu-icon.png"></a>
 	</div>
 	
 	<!--Side Panel-->
@@ -33,25 +35,25 @@
     <a href="google.com"><navbar-item-sidepanel class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px"/>CV<img src="external-icon.png" height="10px" class="navbar-item-icon-external"/></navbar-item-sidepanel></a>
     <a href="google.com"><navbar-item-sidepanel class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px"/>Contact</navbar-item-sidepanel></a>
 	
+		
+			<a href="javascript:void(0)" class="navbar-item-menu-icon" onclick="togglePanel()"><img width="35px" src="menu-icon.png"></a>
+
 	</div>
 	
 	
 	<script>	
 	var x = new Boolean(false);
+		
 		function togglePanel() {
-			if(x){
-				x = false;
-			}
-			else{
-				x = true;
-			}
+			x = !x;
 		}
-
 		if(x){
-  document.getElementById("SidePanel").style.right = "500px";
-}
-else{
-	  document.getElementById("SidePanel").style.right = "0px";
+			document.getElementById("SidePanel").style.right = "0px";
+		}
+		else{
+			document.getElementById("SidePanel").style.right = "-300px";
+
+		}
 }
 </script>
 	

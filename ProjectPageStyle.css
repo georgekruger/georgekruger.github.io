@@ -1,0 +1,47 @@
+@charset "utf-8";
+body{
+    background-color: hsla(288,43%,12%,1.00);
+}
+
+.banner-con {
+	height: 600px;
+	overflow: hidden;
+	position: relative;
+	z-index: -1;
+}
+.banner-con-object {
+	position: absolute;
+	object-fit: cover;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+}
+.banner-con-object-fade{
+	position: absolute;
+	display: block;
+	width: 100%;
+	left: 0px;
+	height: 100px;
+	top: 500px;
+	background: rgb(38, 17, 43);
+	background: -moz-linear-gradient(0deg, rgba(38, 17, 43, 1) 0%, rgba(38, 17, 43, 0.2049194677871149) 10%, rgba(38, 17, 43, 0) 40%);
+	background: -webkit-linear-gradient(0deg, rgba(38, 17, 43, 1) 0%, rgba(38, 17, 43, 0.2049194677871149) 10%, rgba(38, 17, 43, 0) 40%);
+	background: linear-gradient(0deg, rgba(38, 17, 43, 1) 0%, rgba(38, 17, 43, 0.2049194677871149) 10%, rgba(38, 17, 43, 0) 40%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#26112b", endColorstr="#26112b", GradientType=1);
+}
+
+
+.Panel {
+    background-color: #282828;
+    position: relative;
+    display: block;
+    width: 80%;
+    margin: auto;
+    height: 534px;
+    border-radius: 130px;
+    top: -130px;
+}
+
+
+.3 {
+}

@@ -26,18 +26,18 @@
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#26112b", endColorstr="#26112b", GradientType=1);
 }
 .about-me {
-	height: inherit;
-	position: relative;
-	background-color: #26112B;
-	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	margin: auto;
-	padding-top: 0px;
-	padding-right: 0px;
-	padding-left: 0px;
-	padding-bottom: 20px;
-	min-height: 200px;
+    height: inherit;
+    position: relative;
+    background-color: hsla(288,43%,12%,1.00);
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin: auto;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    min-height: 200px;
 }
 .about-me-con {
 	align-self: center;
