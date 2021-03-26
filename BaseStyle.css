@@ -4,7 +4,7 @@ body{
     top: 0px;
     left: 0px;
     margin: 0px;
-    background-color: gray;
+    background-color: #282828;
     min-width: 450px;
 }
 
@@ -28,7 +28,6 @@ body{
 
 navbar-item {
     display: inline-block;
-    padding-top: 0;
     height: 100%;
     padding-left: 15px;
     padding-right: 15px;
@@ -53,7 +52,6 @@ navbar-item {
 navbar-item.name-start{
     line-height: 45px;
     font-size: 35px;
-    margin-left: auto;
 }
 navbar-item.Navbar-link{
 background: rgba(0,0,0,0);
@@ -94,8 +92,11 @@ navbar-item.Navbar-link:hover{
 	}
 	
 }
-@media (max-width: 450px;){
-	
+
+
+.navbar-sidepanel{
+    height: 100%;
+    max-width: 800px;
+    background-color: white;
+    position: absolute;
 }
-
-
