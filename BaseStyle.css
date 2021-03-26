@@ -96,7 +96,39 @@ navbar-item.Navbar-link:hover{
 
 .navbar-sidepanel{
     height: 100%;
-    max-width: 800px;
-    background-color: white;
-    position: absolute;
+    /* [disabled]max-width: 619px; */
+    background-color: hsla(263,100%,43%,1.00);
+    position: fixed;
+    /* [disabled]right: 242px; */
+    z-index: 10;
+    display: block;
+    width: 317px;
 }
+
+navbar-item-sidepanel{
+    display: inline-block;
+    height: 60px;
+    padding-left: 0px;
+    padding-right: 0px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 60;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-family: Microsoft YaHei UI;
+    font-weight: lighter;
+    color: white;
+    overflow: hidden;
+    width: 100%;
+    transition: 0.5s;
+}
+
+navbar-item-sidepanel.Navbar-link-sidepanel{
+background: rgba(0,0,0,0);
+	color: white;
+    transition: 0.5s;
+}
+navbar-item-sidepanel.Navbar-link-sidepanel:hover{
+	background: rgba(100,20,160,0.6);
+	transition: 0.5s;

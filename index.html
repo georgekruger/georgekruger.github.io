@@ -19,14 +19,41 @@
     <a href="google.com"><navbar-item class="Navbar-link"><img src="home-icon.png" class="navbar-item-icon" height="14px"/>CV<img src="external-icon.png" height="10px" class="navbar-item-icon-external"/></navbar-item></a>
     <a href="google.com"><navbar-item class="Navbar-link"><img src="home-icon.png" class="navbar-item-icon" height="14px"/>Contact</navbar-item></a>
 		
-		
-	<a class="navbar-item-menu-icon"><img width="35px" src="menu-icon.png"></a>
+
+	<a class="navbar-item-menu-icon" onclick="togglePanel()"><img width="35px" src="menu-icon.png"></a>
 	</div>
 	
 	<!--Side Panel-->
 	
-	<div class="navbar-sidepanel">asdsa</div>
+	<div id="SidePanel" class="navbar-sidepanel">
+		
+	<a href="google.com"><navbar-item-sidepanel style="margin-top: 60px;" class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px"/>Home</navbar-item-sidepanel></a>
+    <a href="google.com"><navbar-item-sidepanel class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px"/>Work Projects</navbar-item-sidepanel></a>
+    <a href="google.com"><navbar-item-sidepanel class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px"/>Personal Projects</navbar-item-sidepanel></a>
+    <a href="google.com"><navbar-item-sidepanel class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px"/>CV<img src="external-icon.png" height="10px" class="navbar-item-icon-external"/></navbar-item-sidepanel></a>
+    <a href="google.com"><navbar-item-sidepanel class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px"/>Contact</navbar-item-sidepanel></a>
 	
+	</div>
+	
+	
+	<script>	
+	var x = new Boolean(false);
+		function togglePanel() {
+			if(x){
+				x = false;
+			}
+			else{
+				x = true;
+			}
+		}
+
+		if(x){
+  document.getElementById("SidePanel").style.right = "500px";
+}
+else{
+	  document.getElementById("SidePanel").style.right = "0px";
+}
+</script>
 	
 	<!--Video Showcase-->
 	
