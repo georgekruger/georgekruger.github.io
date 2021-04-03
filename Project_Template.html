@@ -74,39 +74,66 @@
 	<tr><td class="data-left">Project Role(s)</td><td class="data-right">Programer</td></tr>
 	<tr><td class="data-left">Duriation</td><td class="data-right">asdasdasd</td></tr> 
 </table>
-	  <a>Devlop</a>
-	  
+	  <a href="Projects/Template-Page/Devlog.pdf" class="devlop-button"><img style="height: 30px;display: inline-block" src="menu-icon.png"><div style="display: inline-block;vertical-align:top;height: 100%;margin-left: 10px;">Project Devlog</div><img style="height: 14px;vertical-align: top;margin-left: 4px" src="external-icon.png"></a>
+	  </div>
+	
+	
 	  <script>
-	  		function dropdownmenu1() {
-      if (document.getElementById("1").classList.contains("show")) {
-document.getElementById("1").classList.remove("show")
-	  }
-				else{
-document.getElementById("1").classList.add("show")
-
-				}
-
-			}
-		  let show = document.querySelector('.show');
-let height = show.scrollHeight;
-show.style.setProperty('--max-height', height + 'px');
+		  function dropdownmenu(idnum)
+		  {
+			  if (document.getElementById(idnum).classList.contains("show")) {
+				  document.getElementById(idnum).classList.remove("show");
+				  document.getElementById(idnum).style.maxHeight = "0";	
+			  } 
+			  else{
+				  document.getElementById(idnum).classList.add("show");
+				  let height = document.getElementById(idnum).scrollHeight;
+				  document.getElementById(idnum).style.setProperty('max-height', height + 'px');
+			  }
+		  }
 	  </script>
 	  
-	  
+	  <img src="placeholder.png">
 	  <div class="dropdown">
-	  <div href="javascript:void(0)" onClick="dropdownmenu1()" class="dropdown-header">
-	    asdadsasdas
+	  <div href="javascript:void(0)" onClick="dropdownmenu('dropdown-1')" class="dropdown-header">
+	    	<div style="height: 100%;width: 60px; display: inline-block"><img style="height: 30px; margin-left:14px; margin-top: 7px;" src="external-icon.png"></div>  <div class="dropdown-header-text">asdasd</div>
+
       </div>
-	  <div class="dropdown-content" id="1"><br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br></div>
+	  <div class="dropdown-content" style="max-height: 0px;" id="dropdown-1"><br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br></div>
 	  </div>
-	  
+	  <br>
+	
+	  <div class="dropdown">
+	  <div href="javascript:void(0)" onClick="dropdownmenu('dropdown-2')" class="dropdown-header">
+	    	<div style="height: 100%;width: 60px; display: inline-block"><img style="height: 30px; margin-left:14px; margin-top: 7px;" src="external-icon.png"></div>  <div class="dropdown-header-text">asdasd</div>
+
+      </div>
+	  <div class="dropdown-content" style="max-height: 0px;" id="dropdown-2"><br>sdadasffasdfadasdasdasdasdsadasdddddddddddddddddddddddddddddddddddddddddddddddsasdas<br><br><br><br><br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br></div>
+	  </div>
+	
+	  <br>
+	  <div class="dropdown">
+	  <div href="javascript:void(0)" onClick="dropdownmenu('dropdown-3')" class="dropdown-header">
+	    	<div style="height: 100%;width: 60px; display: inline-block"><img style="height: 30px; margin-left:14px; margin-top: 7px;" src="external-icon.png"></div>  <div class="dropdown-header-text">asdasd</div>
+
+      </div>
+		  
+	  <div class="dropdown-content" style="max-height: 0px;" id="dropdown-3"><br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br></div>
+	  </div>
+	
+	  <br>
+	  <div class="dropdown">
+	  <div href="javascript:void(0)" onClick="dropdownmenu('dropdown-4')" class="dropdown-header">
+	    	<div style="height: 100%;width: 60px; display: inline-block"><img style="height: 30px; margin-left:14px; margin-top: 7px;" src="external-icon.png"></div>  <div class="dropdown-header-text">asdasd</div>
+
+      </div>
+	  <div class="dropdown-content" style="max-height: 0px;" id="dropdown-4"><br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br></div>
+	  </div>
+	  <br>
+
 	  
   </div>
 	
-	
-	
-	
-</div>
 
 </body>
 </html>
