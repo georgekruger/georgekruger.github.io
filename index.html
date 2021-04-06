@@ -1,128 +1,190 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="utf-8">
-<link rel="stylesheet" href="BaseStyle.css">
-	
-<link rel="stylesheet" href="HomeStyle.css">
 
-<title>George Kruger</title>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="BaseStyle.css">
+
+    <link rel="stylesheet" href="HomeStyle.css">
+
+    <title>George Kruger</title>
 
 </head>
-	
+
 <body>
-	<div class="navbar">
-		
-	  <navbar-item class="name-start" style="margin-left: 100px">George Kruger</navbar-item>
+    <div class="navbar">
 
-<a href="google.com"><navbar-item class="Navbar-link"><img src="home-icon.png" class="navbar-item-icon" height="14px"/>Home</navbar-item></a>
-    <a href="google.com"><navbar-item class="Navbar-link"><img src="home-icon.png" class="navbar-item-icon" height="14px"/>Work Projects</navbar-item></a>
-    <a href="google.com"><navbar-item class="Navbar-link"><img src="home-icon.png" class="navbar-item-icon" height="14px"/>Personal Projects</navbar-item></a>
-    <a href="google.com"><navbar-item class="Navbar-link"><img src="home-icon.png" class="navbar-item-icon" height="14px"/>CV<img src="external-icon.png" height="10px" class="navbar-item-icon-external"/></navbar-item></a>
-    <a onclick="TogglePanel()"><navbar-item class="Navbar-link"><img src="home-icon.png" class="navbar-item-icon" height="14px"/>Contact</navbar-item></a>
-		
+        <navbar-item class="name-start" style="margin-left: 100px">George Kruger</navbar-item>
 
-	<a href="javascript:void(0)" class="navbar-item-menu-icon" onclick="TogglePanel()"><img width="35px" src="menu-icon.png"></a>
-	</div>
-	
-	<!--Side Panel-->
-	
-	<div id="SidePanel" class="navbar-sidepanel">
-		
-	<a href="google.com"><navbar-item-sidepanel style="margin-top: 60px;" class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px"/>Home</navbar-item-sidepanel></a>
-    <a href="google.com"><navbar-item-sidepanel class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px"/>Work Projects</navbar-item-sidepanel></a>
-    <a href="google.com"><navbar-item-sidepanel class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px"/>Personal Projects</navbar-item-sidepanel></a>
-    <a href="google.com"><navbar-item-sidepanel class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px"/>CV<img src="external-icon.png" height="10px" class="navbar-item-icon-external"/></navbar-item-sidepanel></a>
-    <a href="google.com"><navbar-item-sidepanel class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px"/>Contact</navbar-item-sidepanel></a>
-	
-		
-			<a href="javascript:void(0)" class="navbar-item-menu-icon" onclick="togglePanel()"><img width="35px" src="menu-icon.png"></a>
-
-	</div>
-	
-	
-	<script>	
-	var x = new Boolean(false);
-		
-		function togglePanel() {
-			x = !x;
-		}
-		if(x){
-			document.getElementById("SidePanel").style.right = "0px";
-		}
-		else{
-			document.getElementById("SidePanel").style.right = "-300px";
-
-		}
-}
-</script>
-	
-	<!--Video Showcase-->
-	
-	
-	<div class="video-con"><img class="video-con-object" src="0ba3d60362c7e6d256cfc1f37156bad9.jpg"><div class="video-con-object-fade"></div></div>
+        <a href="google.com">
+            <navbar-item class="Navbar-link"><img src="Base_Icons/home-icon.png" class="navbar-item-icon" height="14px" />Home</navbar-item>
+        </a>
+        <a href="#workproject">
+            <navbar-item class="Navbar-link"><img src="Base_Icons/home-icon.png" class="navbar-item-icon" height="14px" />Work Projects</navbar-item>
+        </a>
+        <a href="google.com">
+            <navbar-item class="Navbar-link"><img src="Base_Icons/home-icon.png" class="navbar-item-icon" height="14px" />Personal Projects</navbar-item>
+        </a>
+        <a href="google.com">
+            <navbar-item class="Navbar-link"><img src="Base_Icons/home-icon.png" class="navbar-item-icon" height="14px" />CV<img src="external-icon.png" height="10px" class="navbar-item-icon-external" /></navbar-item>
+        </a>
+        <a onclick="TogglePanel()">
+            <navbar-item class="Navbar-link"><img src="Base_Icons/home-icon.png" class="navbar-item-icon" height="14px" />Contact</navbar-item>
+        </a>
 
 
-	
-	<!--About Me-->
+        <a href="javascript:void(0)" class="navbar-item-menu-icon" onclick="TogglePanel()"><img width="35px" src="menu-icon.png"></a>
+    </div>
 
-	
-	<div class="about-me"><div class="about-me-con">
-		
-			  	<img class="about-me-picture" src="placeholder.png">
+    <!--Side Panel-->
 
-		
-	<div class="about-me-con-text"><span class="about-me-title" style="max-width: none">About Me</span><span class="about-me-text">
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Alduprinter took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldu</p>
-	</span></div>
-		
-	</div></div>
-	
-	<!--Work Projects-->
-		
-	<div class="banner">Work Projects</div>
-	<div class="panel">
-		<div class="sub-banner">1st Year<div class="sub-banner-divider"></div></div>
-		<div class="project-con">
-			
-			<div class="project-con-cell">
-				<a href="Project_Template.html"><div class="project-con-box"><img class="project-con-box-image" src="placeholder.png"><div style="font-size:" class="project-con-box-title">Jayan</div></div></a>
-			<div class="project-con-tags">
-			<project-tag class="engine-tag">Unity <div class="project-tag-devider"></div> C#</project-tag>  
-			<project-tag class="engine-tag">University</project-tag>  
-			<project-tag class="engine-tag">Gamejam</project-tag>  
-			<project-tag class="engine-tag">Team</project-tag>  
-				</div>
-			<div class="project-con-desc">Jayan likes a good shoe. Jayan likes a good shoe. Jayan likes a good shoe.</div>
-			</div>
-			
-			<div class="project-con-cell">
-				<div class="project-con-box"><img class="project-con-box-image" src="placeholder.png"><div style="font-size:" class="project-con-box-title">Project Title</div></div>
-			<div class="project-con-tags"></div>
-			
-			
-			</div>
-			
-						<div class="project-con-cell">
-				<div class="project-con-box"><img class="project-con-box-image" src="placeholder.png"><div style="font-size:" class="project-con-box-title">Project Title</div></div>
-			<div class="project-con-tags"></div>
-			
-			
-			</div>
-		</div>
-	</div>
-		
-			<!--Personal Projects-->
-		
-	<div class="banner">Personal Projects</div>
-	<div class="panel">
-		<div class="project-con">
-			<div class="project-con-main"><div class="project-con-box"><img class="project-con-box-image" src="placeholder.png"><div class="project-con-box-title">as32262dadsa</div></div></div>
-			
-						<div class="project-con-main"><div class="project-con-box"><img class="project-con-box-image" src="placeholder.png"><div class="project-con-box-title">as32262dadsa</div></div></div>
-			
-						<div class="project-con-main"><div class="project-con-box"><img class="project-con-box-image" src="placeholder.png"><div class="project-con-box-title">as32262dadsa</div></div></div>
-		</div>
-</div>
+    <div id="SidePanel" class="navbar-sidepanel">
+
+        <a href="google.com">
+            <navbar-item-sidepanel style="margin-top: 60px;" class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px" />Home</navbar-item-sidepanel>
+        </a>
+        <a href="google.com">
+            <navbar-item-sidepanel class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px" />Work Projects</navbar-item-sidepanel>
+        </a>
+        <a href="google.com">
+            <navbar-item-sidepanel class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px" />Personal Projects</navbar-item-sidepanel>
+        </a>
+        <a href="google.com">
+            <navbar-item-sidepanel class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px" />CV<img src="external-icon.png" height="10px" class="navbar-item-icon-external" /></navbar-item-sidepanel>
+        </a>
+        <a href="google.com">
+            <navbar-item-sidepanel class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px" />Contact</navbar-item-sidepanel>
+        </a>
+
+
+        <a href="javascript:void(0)" class="navbar-item-menu-icon" onclick="togglePanel()"><img width="35px" src="menu-icon.png"></a>
+
+    </div>
+
+
+    <script>
+        var x = new Boolean(false);
+
+        function togglePanel() {
+            x = !x;
+        }
+        if (x) {
+            document.getElementById("SidePanel").style.right = "0px";
+        } else {
+            document.getElementById("SidePanel").style.right = "-300px";
+
+        }
+
+    </script>
+
+    <!--Video Showcase-->
+
+
+    <div class="video-con"><img class="video-con-object" src="Base_Icons/Placeholder_Banner.jpg">
+        <div class="video-con-object-fade"></div>
+    </div>
+
+
+
+    <!--About Me-->
+
+
+    <div class="about-me">
+        <div class="about-me-con">
+
+            <img class="about-me-picture" src="Base_Icons/Placeholder_Icon.png">
+
+
+            <div class="about-me-con-text"><span class="about-me-title" style="max-width: none">About Me</span><span class="about-me-text">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Alduprinter took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldu</p>
+                </span></div>
+
+        </div>
+    </div>
+
+    <!--Work Projects-->
+
+    <div class="banner" id="workprojects">Work Projects</div>
+    <div class="panel">
+        <div class="sub-banner">1st Year<div class="sub-banner-divider"></div>
+        </div>
+        <div class="project-con">
+
+            <div class="project-con-cell">
+                <a href="Projects/Template-Page/Project_Template.html">
+                    <div class="project-con-box"><img class="project-con-box-image" src="Base_Icons/Placeholder_Icon.png">
+                        <div class="project-con-box-title">Jayan</div>
+                    </div>
+                </a>
+                <div class="project-con-tags">
+                    <project-tag class="engine-tag">Unity <div class="project-tag-devider"></div> C#</project-tag>
+                    <project-tag class="engine-tag">University</project-tag>
+                    <project-tag class="engine-tag">Gamejam</project-tag>
+                    <project-tag class="engine-tag">Team</project-tag>
+                </div>
+                <div class="project-con-desc">Jayan likes a good shoe. Jayan likes a good shoe. Jayan likes a good shoe.</div>
+            </div>
+
+            <div class="project-con-cell">
+                <a href="Projects/Template-Page/">
+                    <div class="project-con-box"><img class="project-con-box-image" src="Base_Icons/Placeholder_Icon.png">
+                        <div class="project-con-box-title">Jayan</div>
+                    </div>
+                </a>
+                <div class="project-con-tags">
+                    <project-tag class="engine-tag">Unity <div class="project-tag-devider"></div> C#</project-tag>
+                    <project-tag class="engine-tag">University</project-tag>
+                    <project-tag class="engine-tag">Gamejam</project-tag>
+                    <project-tag class="engine-tag">Team</project-tag>
+                </div>
+                <div class="project-con-desc">Jayan likes a good shoe. Jayan likes a good shoe. Jayan likes a good shoe.</div>
+            </div>
+
+            <div class="project-con-cell">
+                <a href="Projects/Template-Page/">
+                    <div class="project-con-box"><img class="project-con-box-image" src="Base_Icons/Placeholder_Icon.png">
+                        <div class="project-con-box-title">Jayan</div>
+                    </div>
+                </a>
+                <div class="project-con-tags">
+                    <project-tag class="engine-tag">Unity <div class="project-tag-devider"></div> C#</project-tag>
+                    <project-tag class="engine-tag">University</project-tag>
+                    <project-tag class="engine-tag">Gamejam</project-tag>
+                    <project-tag class="engine-tag">Team</project-tag>
+                </div>
+                <div class="project-con-desc">Jayan likes a good shoe. Jayan likes a good shoe. Jayan likes a good shoe.</div>
+            </div>
+            
+            <div class="project-con-cell">
+                <a href="Projects/Template-Page/">
+                    <div class="project-con-box"><img class="project-con-box-image" src="Base_Icons/Placeholder_Icon.png">
+                        <div class="project-con-box-title">Jayan</div>
+                    </div>
+                </a>
+                <div class="project-con-tags">
+                    <project-tag class="engine-tag">Unity <div class="project-tag-devider"></div> C#</project-tag>
+                    <project-tag class="engine-tag">University</project-tag>
+                    <project-tag class="engine-tag">Gamejam</project-tag>
+                    <project-tag class="engine-tag">Team</project-tag>
+                </div>
+                <div class="project-con-desc">Jayan likes a good shoe. Jayan likes a good shoe. Jayan likes a good shoe.</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Personal Projects-->
+
+    <div class="banner">Personal Projects</div>
+    <div class="panel">
+        <div class="project-con">
+
+
+
+
+
+        </div>
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/BaseStyle.css">
+
+    <link rel="stylesheet" href="ProjectPageStyle.css">
+
+    <title>George Kruger</title>
+
+</head>
+
+<body>
+    <div class="navbar">
+
+        <navbar-item class="name-start" style="margin-left: 100px">George Kruger</navbar-item>
+
+        <a href="/index.html#Home">
+            <navbar-item class="Navbar-link"><img src="/Base_Icons/Home_Icon.png" class="navbar-item-icon" height="14px" />Home</navbar-item>
+        </a>
+        <a href="/index.html#WorkProjects">
+            <navbar-item class="Navbar-link"><img src="/Base_Icons/Home_Icon.png" class="navbar-item-icon" height="14px" />Work Projects</navbar-item>
+        </a>
+        <a href="/index.html#PersonalProjects">
+            <navbar-item class="Navbar-link"><img src="/Base_Icons/Home_Icon.png" class="navbar-item-icon" height="14px" />Personal Projects</navbar-item>
+        </a>
+        <a href="google.com">
+            <navbar-item class="Navbar-link"><img src="/Base_Icons/Page_Icon.png" class="navbar-item-icon" height="14px" />CV<img src="/Base_Icons/External_Icon.png" height="10px" class="navbar-item-icon-external" /></navbar-item>
+        </a>
+        <a onclick="/index.html#Contact">
+            <navbar-item class="Navbar-link"><img src="/Base_Icons/Home_Icon.png" class="navbar-item-icon" height="14px" />Contact</navbar-item>
+        </a>
+
+
+        <a href="javascript:void(0)" class="navbar-item-menu-icon" onclick="TogglePanel()"><img width="35px" src="menu-icon.png"></a>
+    </div>
+
+    <!--Side Panel-->
+
+    <div id="SidePanel" class="navbar-sidepanel">
+
+        <a href="google.com">
+            <navbar-item-sidepanel style="margin-top: 60px;" class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px" />Home</navbar-item-sidepanel>
+        </a>
+        <a href="google.com">
+            <navbar-item-sidepanel class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px" />Work Projects</navbar-item-sidepanel>
+        </a>
+        <a href="google.com">
+            <navbar-item-sidepanel class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px" />Personal Projects</navbar-item-sidepanel>
+        </a>
+        <a href="google.com">
+            <navbar-item-sidepanel class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px" />CV<img src="external-icon.png" height="10px" class="navbar-item-icon-external" /></navbar-item-sidepanel>
+        </a>
+        <a href="google.com">
+            <navbar-item-sidepanel class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px" />Contact</navbar-item-sidepanel>
+        </a>
+
+
+        <a href="javascript:void(0)" class="navbar-item-menu-icon" onclick="togglePanel()"><img width="35px" src="menu-icon.png"></a>
+
+    </div>
+
+
+    <script>
+        var x = new Boolean(false);
+
+        function togglePanel() {
+            x = !x;
+        }
+        if (x) {
+            document.getElementById("SidePanel").style.right = "0px";
+        } else {
+            document.getElementById("SidePanel").style.right = "-300px";
+        }
+
+    </script>
+
+    <!--Video Showcase-->
+
+
+    <div class="banner-con">
+        <img class="banner-con-object rellax" data-rellax-speed="-6" src="/Raw_Content/Mantari_Banner.png">
+        <div class="banner-con-object-fade"></div>
+    </div>
+
+
+
+    <script src="/rellax.min.js"></script>
+    <script>
+        // Accepts any class name
+        var rellax = new Rellax();
+
+    </script>
+    <!--Content Page-->
+
+    <div class="panel-project">
+        <style>
+            @font-face {
+                font-family: TitleFont;
+                src: url(/Projects/Template-Page/transamerica.ttf)
+            }
+
+        </style>
+        <div style="font-family: TitleFont" class="project-title">MANTARI</div>
+        <div class="project-detail">
+            <div class="project-detail-title">Project Details</div>
+
+            <table style="margin: auto">
+                <tr>
+                    <td class="data-left">Project Type</td>
+                    <td class="data-right">Uni/grouped work</td>
+                </tr>
+                <tr>
+                    <td class="data-left">Project Role(s)</td>
+                    <td class="data-right">Programer</td>
+                </tr>
+                <tr>
+                    <td class="data-left">Duriation</td>
+                    <td class="data-right">asdasdasd</td>
+                </tr>
+            </table>
+
+            <a href="Projects/Template-Page/Devlog.pdf" class="link-button itch-button"><img style="height: 30px;display: inline-block" src="/Base_Icons/Itch_Icon.png">
+                <div style="display: inline-block;vertical-align:top;height: 100%;margin-left: 2px;"><img style="width: 80px; display: inline-block; margin-top: 4px" src="/Base_Icons/Itch_Text.png" /></div>
+            </a>
+            <a href="Projects/Template-Page/Devlog.pdf" class="link-button devlog-button"><img style="height: 30px;display: inline-block" src="/Base_Icons/Page_Icon.png">
+                <div style="display: inline-block;vertical-align:top;height: 100%;">Project Devlog</div>
+            </a>
+        </div>
+
+
+        <script>
+            function dropdownmenu(contentid, headerid) {
+                if (document.getElementById(contentid).classList.contains("dropdown-content-show")) {
+                    document.getElementById(contentid).classList.remove("dropdown-content-show");
+                    document.getElementById(contentid).style.maxHeight = "0";
+                    /*header*/
+                    document.getElementById(headerid).classList.remove("dropdown-header-show");
+
+                } else {
+                    document.getElementById(contentid).classList.add("dropdown-content-show");
+                    let height = document.getElementById(contentid).scrollHeight;
+                    document.getElementById(contentid).style.setProperty('max-height', height + 'px');
+                    /*header*/
+                    document.getElementById(headerid).classList.add("dropdown-header-show");
+
+                    switch (contentid) {
+                        case "dd-con-2": {
+
+                            let height = document.getElementById(contentid).scrollHeight;
+                            var jayan = document.getElementById('dd-con-1').scrollHeight;
+
+                            document.getElementById('dd-con-1').style.setProperty('max-height', height + jayan + 'px');
+
+                        }
+                    }
+                }
+            }
+
+        </script>
+
+        <img src="/Base_Icons/Placeholder_Icon.png">
+
+        <div class="keyfeature-text">Key Contributions</div>
+
+        <div class="dropdown">
+            <div href="javascript:void(0)" onClick="dropdownmenu('dd-con-1','dd-head-1')" id="dd-head-1" class="dropdown-header">
+                <div class="dropdown-img-con"><img class="dropdown-img" src="/Base_Icons/Menu_Icon.png"></div>
+                <div class="dropdown-header-text">eeeeeeeeeeeeeeeeeeee</div>
+                <div class="dropdown-arrow"><img class="dropdown-img" src="/Base_Icons/Arrow.png"></div>
+            </div>
+            <div class="dropdown-content" style="max-height: 0px;" id="dd-con-1">
+                <br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>
+
+                <div class="dropdown">
+                    <div href="javascript:void(0)" onClick="dropdownmenu('dd-con-2','dd-head-2')" id="dd-head-2" class="dropdown-header">
+                        <div class="dropdown-img-con"><img class="dropdown-img" src="/Base_Icons/Menu_Icon.png"></div>
+                        <div class="dropdown-header-text">eeeeeeeeeeeeeeeeeeee</div>
+                        <div class="dropdown-arrow"><img class="dropdown-img" src="/Base_Icons/Arrow.png"></div>
+                    </div>
+                    <div class="dropdown-content" style="max-height: 0px;" id="dd-con-2">
+                        <br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>
+
+                    </div>
+                    <br>
+                </div>
+
+
+            </div>
+        </div>
+        <br>
+
+
+
+    </div>
+
+
+</body>
+
+</html>

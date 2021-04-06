@@ -68,8 +68,10 @@ navbar-item.Navbar-link:hover{
 	transition: 0.5s;
 }
 .navbar-item-icon {
+    width: 25px;
+    height: 25px;
     margin-right: 10px;
-    top: 1px;
+    top: 5px;
     display: inline-block;
     position: relative;
 }
