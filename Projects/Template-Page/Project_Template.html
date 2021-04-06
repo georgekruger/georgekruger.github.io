@@ -19,22 +19,25 @@
 <body>
     <div class="navbar">
 
+        <script>
+            document.getElementById('NoDrag').setAttribute('draggable', false);
+        </script>
         <navbar-item class="name-start" style="margin-left: 100px">George Kruger</navbar-item>
 
         <a href="/index.html#Home">
-            <navbar-item class="Navbar-link"><img src="/Base_Icons/Home_Icon.png" class="navbar-item-icon" height="14px" />Home</navbar-item>
+            <navbar-item class="Navbar-link"><img src="/Base_Icons/Home_Icon.png" class="navbar-item-icon" id="NoDrag" />Home</navbar-item>
         </a>
         <a href="/index.html#WorkProjects">
-            <navbar-item class="Navbar-link"><img src="/Base_Icons/Home_Icon.png" class="navbar-item-icon" height="14px" />Work Projects</navbar-item>
+            <navbar-item class="Navbar-link"><img src="/Base_Icons/WorkProjects_Icon.png" class="navbar-item-icon" id="NoDrag"/>Work Projects</navbar-item>
         </a>
         <a href="/index.html#PersonalProjects">
-            <navbar-item class="Navbar-link"><img src="/Base_Icons/Home_Icon.png" class="navbar-item-icon" height="14px" />Personal Projects</navbar-item>
+            <navbar-item class="Navbar-link"><img src="/Base_Icons/PersonalProjects_Icon.png"  class="navbar-item-icon" />Personal Projects</navbar-item>
         </a>
         <a href="google.com">
-            <navbar-item class="Navbar-link"><img src="/Base_Icons/Page_Icon.png" class="navbar-item-icon" height="14px" />CV<img src="/Base_Icons/External_Icon.png" height="10px" class="navbar-item-icon-external" /></navbar-item>
+            <navbar-item class="Navbar-link"><img src="/Base_Icons/Page_Icon.png" class="navbar-item-icon" />CV<img src="/Base_Icons/External_Icon.png" height="10px" class="navbar-item-icon-external" /></navbar-item>
         </a>
         <a onclick="/index.html#Contact">
-            <navbar-item class="Navbar-link"><img src="/Base_Icons/Home_Icon.png" class="navbar-item-icon" height="14px" />Contact</navbar-item>
+            <navbar-item class="Navbar-link"><img src="/Base_Icons/Contact_Icon.png" class="navbar-item-icon" height="14px" />Contact</navbar-item>
         </a>
 
 
