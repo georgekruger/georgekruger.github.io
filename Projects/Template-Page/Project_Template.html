@@ -17,66 +17,74 @@
 </head>
 
 <body>
+
     <div class="navbar">
 
-        <navbar-item class="name-start" style="margin-left: 100px">George Kruger</navbar-item>
+        <navbar-item class="name-start">George Kruger</navbar-item>
 
         <a href="/index.html#Home">
             <navbar-item class="Navbar-link"><img src="/Base_Icons/Home_Icon.png" class="navbar-item-icon" />Home</navbar-item>
         </a>
         <a href="/index.html#WorkProjects">
-            <navbar-item class="Navbar-link"><img src="/Base_Icons/WorkProjects_Icon.png" class="navbar-item-icon" id="NoDrag"/>Work Projects</navbar-item>
+            <navbar-item class="Navbar-link"><img src="/Base_Icons/WorkProjects_Icon.png" class="navbar-item-icon" id="NoDrag" />Work Projects</navbar-item>
         </a>
         <a href="/index.html#PersonalProjects">
-            <navbar-item class="Navbar-link"><img src="/Base_Icons/PersonalProjects_Icon.png"  class="navbar-item-icon" />Personal Projects</navbar-item>
+            <navbar-item class="Navbar-link"><img src="/Base_Icons/PersonalProjects_Icon.png" class="navbar-item-icon" />Personal Projects</navbar-item>
         </a>
         <a href="google.com">
-            <navbar-item class="Navbar-link"><img src="/Base_Icons/Page_Icon.png" class="navbar-item-icon" />CV<img src="/Base_Icons/External_Icon.png" height="10px" class="navbar-item-icon-external" /></navbar-item>
+            <navbar-item class="Navbar-link"><img src="/Base_Icons/CV_Icon.png" class="navbar-item-icon" />CV</navbar-item>
         </a>
         <a onclick="/index.html#Contact">
             <navbar-item class="Navbar-link"><img src="/Base_Icons/Contact_Icon.png" class="navbar-item-icon" height="14px" />Contact</navbar-item>
         </a>
 
+        <a class="navbar-sidepanel-shadow" id="Navbar-Panel-Shadow" href="javascript:void(0)" onclick="ClosePanel()"></a>
 
-        <a href="javascript:void(0)" class="navbar-item-menu-icon" onclick="TogglePanel()"><img width="35px" src="menu-icon.png"></a>
     </div>
 
     <!--Side Panel-->
+    <a href="javascript:void(0)" class="navbar-item-menu-icon" onclick="TogglePanel()"><img width="80%" src="/Base_Icons/Menu_Icon.png"></a>
 
     <div id="SidePanel" class="navbar-sidepanel">
 
-        <a href="google.com">
-            <navbar-item-sidepanel style="margin-top: 60px;" class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px" />Home</navbar-item-sidepanel>
+
+        <a style="margin-top: 60px;" href="google.com">
+            <div  class="Navbar-link-sidepanel"><img src="/Base_Icons/Home_Icon.png" class="navbar-item-icon" height="14px" />Home</div>
         </a>
         <a href="google.com">
-            <navbar-item-sidepanel class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px" />Work Projects</navbar-item-sidepanel>
+            <div class="Navbar-link-sidepanel"><img src="/Base_Icons/WorkProjects_Icon.png" class="navbar-item-icon" height="14px" />Work Projects</div>
         </a>
         <a href="google.com">
-            <navbar-item-sidepanel class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px" />Personal Projects</navbar-item-sidepanel>
+            <div class="Navbar-link-sidepanel"><img src="/Base_Icons/PersonalProjects_Icon.png" class="navbar-item-icon" height="14px" />Personal Projects</div>
         </a>
         <a href="google.com">
-            <navbar-item-sidepanel class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px" />CV<img src="external-icon.png" height="10px" class="navbar-item-icon-external" /></navbar-item-sidepanel>
+            <div class="Navbar-link-sidepanel"><img src="/Base_Icons/CV_Icon.png" class="navbar-item-icon" height="14px" />CV</div>
         </a>
         <a href="google.com">
-            <navbar-item-sidepanel class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px" />Contact</navbar-item-sidepanel>
+            <div class="Navbar-link-sidepanel"><img src="/Base_Icons/Contact_Icon.png" class="navbar-item-icon" height="14px" />Contact</div>
         </a>
 
-
-        <a href="javascript:void(0)" class="navbar-item-menu-icon" onclick="togglePanel()"><img width="35px" src="menu-icon.png"></a>
 
     </div>
 
 
     <script>
-        var x = new Boolean(false);
+        function TogglePanel() {
+            if (document.getElementById("SidePanel").classList.contains("navbar-sidepanel-open")) {
+                document.getElementById("SidePanel").classList.remove("navbar-sidepanel-open");
+                                document.getElementById("Navbar-Panel-Shadow").style.display= "none";
 
-        function togglePanel() {
-            x = !x;
+                document.html.style.overflow = 'hidden';
+            } else {
+                ClosePanel();
+            }
         }
-        if (x) {
-            document.getElementById("SidePanel").style.right = "0px";
-        } else {
-            document.getElementById("SidePanel").style.right = "-300px";
+
+
+        function ClosePanel() {
+            document.getElementById("SidePanel").classList.add("navbar-sidepanel-open");
+            document.html.style.overflow = 'visable';
+
         }
 
     </script>
@@ -144,7 +152,7 @@
 
                 <!-- Big -->
                 <div class="carousel-inner">
-                    
+
                     <div class="item active">
                         <img src="/Base_Icons/Placeholder_Banner.jpg" style="height: 100%;width: 100%">
                     </div>
@@ -181,7 +189,7 @@
                 <div class="dropdown-arrow"><img class="dropdown-img" src="/Base_Icons/Arrow.png"></div>
             </div>
             <div class="dropdown-content" style="max-height: 0px;" id="dd-con-1">
-                <br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>
+                <br><br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>
 
                 <div class="dropdown">
                     <div href="javascript:void(0)" onClick="dropdownmenu('dd-con-2','dd-head-2')" id="dd-head-2" class="dropdown-header">
