@@ -45,16 +45,16 @@
     <!--Side Panel-->
     <a href="javascript:void(0)" class="navbar-item-menu-icon" onclick="TogglePanel()"><img width="80%" src="/Base_Icons/Menu_Icon.png"></a>
 
-    <div id="SidePanel" class="navbar-sidepanel">
+    <div id="SidePanel" class="navbar-sidepanel navbar-sidepanel-closed">
 
 
-        <a style="margin-top: 60px;" href="google.com">
+        <a style="margin-top: 60px;" href="/index.html#Home">
             <div class="Navbar-link-sidepanel"><img src="/Base_Icons/Home_Icon.png" class="navbar-item-icon" height="14px" />Home</div>
         </a>
-        <a href="google.com">
+        <a href="/index.html#WorkProjects">
             <div class="Navbar-link-sidepanel"><img src="/Base_Icons/WorkProjects_Icon.png" class="navbar-item-icon" height="14px" />Work Projects</div>
         </a>
-        <a href="google.com">
+        <a href="/index.html#PersonalProjects">
             <div class="Navbar-link-sidepanel"><img src="/Base_Icons/PersonalProjects_Icon.png" class="navbar-item-icon" height="14px" />Personal Projects</div>
         </a>
         <a href="/Content/CV.pdf">
@@ -70,8 +70,8 @@
 
     <script>
         function TogglePanel() {
-            if (document.getElementById("SidePanel").classList.contains("navbar-sidepanel-open")) {
-                document.getElementById("SidePanel").classList.remove("navbar-sidepanel-open");
+            if (document.getElementById("SidePanel").classList.contains("navbar-sidepanel-closed")) {
+                document.getElementById("SidePanel").classList.remove("navbar-sidepanel-closed");
                 document.getElementById("Navbar-Panel-Shadow").style.display = "block";
                 document.getElementById("Navbar-Panel-Shadow").style.background = "hsla(0, 0%, 0%, 0.5)";
 
@@ -83,8 +83,7 @@
 
 
         function ClosePanel() {
-            document.getElementById("SidePanel").classList.add("navbar-sidepanel-open");
-            document.getElementById("Navbar-Panel-Shadow").style.display = "";
+            document.getElementById("SidePanel").classList.add("navbar-sidepanel-closed");
             document.getElementById("Navbar-Panel-Shadow").style.background = "hsla(0, 0%, 0%, 0)";
             document.getElementById("Navbar-Panel-Shadow").style.display = "none";
 

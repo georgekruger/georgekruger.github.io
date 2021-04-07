@@ -73,9 +73,9 @@ navbar-item.Navbar-link {
     -ms-user-select: none;
 }
 
-navbar-item.Navbar-link:hover{
-	background: rgba(100,20,160,0.6);
-	transition: 0.5s;
+navbar-item.Navbar-link:hover {
+    background: rgba(100, 20, 160, 0.6);
+    transition: 0.5s;
 }
 
 .navbar-item-icon {
@@ -125,7 +125,7 @@ navbar-item.Navbar-link:hover{
     z-index: 10;
     display: none;
     width: 300px;
-    right: -300px;
+    right: 0px;
     transition: 0.5s ease-in-out;
     z-index: 10;
 }
@@ -155,7 +155,7 @@ navbar-item.Navbar-link:hover{
     transition: 0.3s;
 }
 
-.navbar-sidepanel-open {
+.navbar-sidepanel-closed {
     right: -300px
 }
 
