@@ -164,7 +164,7 @@ navbar-item.Navbar-link:hover{
 .navbar-sidepanel-shadow {
     height: 100%;
     width: 100%;
-    display: block;
+    display: none;
     position: fixed;
     background: hsla(0, 0%, 0%, 0.5);
     z-index: 10;
