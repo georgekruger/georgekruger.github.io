@@ -49,7 +49,7 @@
 
 
         <a style="margin-top: 60px;" href="google.com">
-            <div  class="Navbar-link-sidepanel"><img src="/Base_Icons/Home_Icon.png" class="navbar-item-icon" height="14px" />Home</div>
+            <div class="Navbar-link-sidepanel"><img src="/Base_Icons/Home_Icon.png" class="navbar-item-icon" height="14px" />Home</div>
         </a>
         <a href="google.com">
             <div class="Navbar-link-sidepanel"><img src="/Base_Icons/WorkProjects_Icon.png" class="navbar-item-icon" height="14px" />Work Projects</div>
@@ -72,9 +72,10 @@
         function TogglePanel() {
             if (document.getElementById("SidePanel").classList.contains("navbar-sidepanel-open")) {
                 document.getElementById("SidePanel").classList.remove("navbar-sidepanel-open");
-                                document.getElementById("Navbar-Panel-Shadow").style.display= "none";
+                document.getElementById("Navbar-Panel-Shadow").style.display = "block";
+                document.getElementById("Navbar-Panel-Shadow").style.background = "hsla(0, 0%, 0%, 0.5)";
 
-                document.html.style.overflow = 'hidden';
+                $("body").css("overflow", "hidden");
             } else {
                 ClosePanel();
             }
@@ -83,7 +84,11 @@
 
         function ClosePanel() {
             document.getElementById("SidePanel").classList.add("navbar-sidepanel-open");
-            document.html.style.overflow = 'visable';
+            document.getElementById("Navbar-Panel-Shadow").style.display = "";
+            document.getElementById("Navbar-Panel-Shadow").style.background = "hsla(0, 0%, 0%, 0)";
+            document.getElementById("Navbar-Panel-Shadow").style.display = "none";
+
+            $("body").css("overflow", "auto");
 
         }
 

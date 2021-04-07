@@ -7,6 +7,7 @@ body {
     background-color: #282828;
     min-width: 450px;
     font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    overflow: visible;
 }
 
 a {
@@ -70,6 +71,11 @@ navbar-item.Navbar-link {
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+}
+
+navbar-item.Navbar-link:hover{
+	background: rgba(100,20,160,0.6);
+	transition: 0.5s;
 }
 
 .navbar-item-icon {
@@ -147,7 +153,7 @@ navbar-item.Navbar-link {
 }
 
 .navbar-sidepanel > a:hover {
-    background: rgba(100, 20, 160, 0.6);
+    background: rgba(79, 18, 124, 0.6);
     transition: 0.3s;
 }
 
@@ -162,7 +168,7 @@ navbar-item.Navbar-link {
     position: fixed;
     background: hsla(0, 0%, 0%, 0.5);
     z-index: 10;
-
+    transition: 0.2s;
 }
 
 @media (max-width: 1150px) {
@@ -200,10 +206,6 @@ navbar-item-sidepanel {
     transition: 0.5s:
 }
 
-navbar-item-sidepanel.Navbar-link-sidepanel:hover {
-    transition: 0.5s;
-    background: red;
 
-}
 
 .project {}
