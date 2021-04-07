@@ -12,66 +12,77 @@
 </head>
 
 <body>
+
     <div class="navbar">
 
-        <navbar-item class="name-start" style="margin-left: 100px">George Kruger</navbar-item>
+        <navbar-item class="name-start">George Kruger</navbar-item>
 
-        <a href="google.com">
-            <navbar-item class="Navbar-link"><img src="Base_Icons/home-icon.png" class="navbar-item-icon" height="14px" />Home</navbar-item>
+        <a href="/index.html#Home">
+            <navbar-item class="Navbar-link"><img src="/Base_Icons/Home_Icon.png" class="navbar-item-icon" />Home</navbar-item>
         </a>
-        <a href="#workproject">
-            <navbar-item class="Navbar-link"><img src="Base_Icons/home-icon.png" class="navbar-item-icon" height="14px" />Work Projects</navbar-item>
+        <a href="/index.html#WorkProjects">
+            <navbar-item class="Navbar-link"><img src="/Base_Icons/WorkProjects_Icon.png" class="navbar-item-icon" id="NoDrag" />Work Projects</navbar-item>
         </a>
-        <a href="google.com">
-            <navbar-item class="Navbar-link"><img src="Base_Icons/home-icon.png" class="navbar-item-icon" height="14px" />Personal Projects</navbar-item>
+        <a href="/index.html#PersonalProjects">
+            <navbar-item class="Navbar-link"><img src="/Base_Icons/PersonalProjects_Icon.png" class="navbar-item-icon" />Personal Projects</navbar-item>
         </a>
-        <a href="google.com">
-            <navbar-item class="Navbar-link"><img src="Base_Icons/home-icon.png" class="navbar-item-icon" height="14px" />CV<img src="external-icon.png" height="10px" class="navbar-item-icon-external" /></navbar-item>
+        <a href="/Content/CV.pdf">
+            <navbar-item class="Navbar-link"><img src="/Base_Icons/CV_Icon.png" class="navbar-item-icon" />CV</navbar-item>
         </a>
-        <a onclick="TogglePanel()">
-            <navbar-item class="Navbar-link"><img src="Base_Icons/home-icon.png" class="navbar-item-icon" height="14px" />Contact</navbar-item>
+        <a href="/index.html#Contact">
+            <navbar-item class="Navbar-link"><img src="/Base_Icons/Contact_Icon.png" class="navbar-item-icon" height="14px" />Contact</navbar-item>
         </a>
 
+        <a class="navbar-sidepanel-shadow" id="Navbar-Panel-Shadow" href="javascript:void(0)" onclick="ClosePanel()"></a>
 
-        <a href="javascript:void(0)" class="navbar-item-menu-icon" onclick="TogglePanel()"><img width="35px" src="menu-icon.png"></a>
     </div>
 
     <!--Side Panel-->
+    <a href="javascript:void(0)" class="navbar-item-menu-icon" onclick="TogglePanel()"><img width="80%" src="/Base_Icons/Menu_Icon.png"></a>
 
-    <div id="SidePanel" class="navbar-sidepanel">
-
-        <a href="google.com">
-            <navbar-item-sidepanel style="margin-top: 60px;" class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px" />Home</navbar-item-sidepanel>
-        </a>
-        <a href="google.com">
-            <navbar-item-sidepanel class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px" />Work Projects</navbar-item-sidepanel>
-        </a>
-        <a href="google.com">
-            <navbar-item-sidepanel class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px" />Personal Projects</navbar-item-sidepanel>
-        </a>
-        <a href="google.com">
-            <navbar-item-sidepanel class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px" />CV<img src="external-icon.png" height="10px" class="navbar-item-icon-external" /></navbar-item-sidepanel>
-        </a>
-        <a href="google.com">
-            <navbar-item-sidepanel class="Navbar-link-sidepanel"><img src="home-icon.png" class="navbar-item-icon" height="14px" />Contact</navbar-item-sidepanel>
-        </a>
+    <div id="SidePanel" class="navbar-sidepanel navbar-sidepanel-closed">
 
 
-        <a href="javascript:void(0)" class="navbar-item-menu-icon" onclick="togglePanel()"><img width="35px" src="menu-icon.png"></a>
+        <a style="margin-top: 60px;" href="/index.html#Home">
+            <div class="Navbar-link-sidepanel"><img src="/Base_Icons/Home_Icon.png" class="navbar-item-icon" height="14px" />Home</div>
+        </a>
+        <a href="/index.html#WorkProjects">
+            <div class="Navbar-link-sidepanel"><img src="/Base_Icons/WorkProjects_Icon.png" class="navbar-item-icon" height="14px" />Work Projects</div>
+        </a>
+        <a href="/index.html#PersonalProjects">
+            <div class="Navbar-link-sidepanel"><img src="/Base_Icons/PersonalProjects_Icon.png" class="navbar-item-icon" height="14px" />Personal Projects</div>
+        </a>
+        <a href="/Content/CV.pdf">
+            <div class="Navbar-link-sidepanel"><img src="/Base_Icons/CV_Icon.png" class="navbar-item-icon" height="14px" />CV</div>
+        </a>
+        <a href="/index.html#Contact">
+            <div class="Navbar-link-sidepanel"><img src="/Base_Icons/Contact_Icon.png" class="navbar-item-icon" height="14px" />Contact</div>
+        </a>
+
 
     </div>
 
 
     <script>
-        var x = new Boolean(false);
+        function TogglePanel() {
+            if (document.getElementById("SidePanel").classList.contains("navbar-sidepanel-closed")) {
+                document.getElementById("SidePanel").classList.remove("navbar-sidepanel-closed");
+                document.getElementById("Navbar-Panel-Shadow").style.display = "block";
+                document.getElementById("Navbar-Panel-Shadow").style.background = "hsla(0, 0%, 0%, 0.5)";
 
-        function togglePanel() {
-            x = !x;
+                $("body").css("overflow", "hidden");
+            } else {
+                ClosePanel();
+            }
         }
-        if (x) {
-            document.getElementById("SidePanel").style.right = "0px";
-        } else {
-            document.getElementById("SidePanel").style.right = "-300px";
+
+
+        function ClosePanel() {
+            document.getElementById("SidePanel").classList.add("navbar-sidepanel-closed");
+            document.getElementById("Navbar-Panel-Shadow").style.background = "hsla(0, 0%, 0%, 0)";
+            document.getElementById("Navbar-Panel-Shadow").style.display = "none";
+
+            $("body").css("overflow", "auto");
 
         }
 
