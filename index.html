@@ -20,7 +20,7 @@
         <a href="/index.html#Home">
             <navbar-item class="Navbar-link"><img src="/Base_Icons/Home_Icon.png" class="navbar-item-icon" />Home</navbar-item>
         </a>
-        <a href="/index.html#WorkProjects">
+        <a href="#WorkProjects">
             <navbar-item class="Navbar-link"><img src="/Base_Icons/WorkProjects_Icon.png" class="navbar-item-icon" id="NoDrag" />Work Projects</navbar-item>
         </a>
         <a href="/index.html#PersonalProjects">
@@ -91,11 +91,14 @@
     <!--Video Showcase-->
 
 
-    <div class="video-con"><img class="video-con-object" src="Base_Icons/Placeholder_Banner.jpg">
+    <div class="video-con"><img class="video-con-object rellax" data-rellax-speed="-6" src="Base_Icons/Placeholder_Banner.jpg">
         <div class="video-con-object-fade"></div>
     </div>
 
-
+    <script src="/Plugins/rellax.min.js"></script>
+    <script>
+        var rellax = new Rellax();
+    </script>
 
     <!--About Me-->
 
@@ -115,10 +118,10 @@
 
     <!--Work Projects-->
 
-    <div class="banner" id="workprojects">Work Projects</div>
+    <div class="banner" id="WorkProjects">Work Projects</div>
     <div class="panel">
-        <div class="sub-banner">1st Year<div class="sub-banner-divider"></div>
-        </div>
+        <!--        <div class="sub-banner">1st Year<div class="sub-banner-divider"></div>
+        </div>-->
         <div class="project-con">
 
             <div class="project-con-cell">
@@ -128,10 +131,10 @@
                     </div>
                 </a>
                 <div class="project-con-tags">
-                    <project-tag class="engine-tag">Unity <div class="project-tag-devider"></div> C#</project-tag>
-                    <project-tag class="engine-tag">University</project-tag>
-                    <project-tag class="engine-tag">Gamejam</project-tag>
-                    <project-tag class="engine-tag">Team</project-tag>
+                    <project-tag class="engine-tag dividerline-tag">Unity</project-tag><div class="extra-tag csharp-tag">C#</div>
+                    <project-tag class="university-tag dividerline-tag">University</project-tag><div class="extra-tag year1-tag">1<sup>st</sup> Year</div>
+                    <project-tag class="gamejam-tag">Gamejam</project-tag>
+                    <project-tag class="team-tag">Team Project</project-tag>
                 </div>
                 <div class="project-con-desc">Jayan likes a good shoe. Jayan likes a good shoe. Jayan likes a good shoe.</div>
             </div>
@@ -165,7 +168,7 @@
                 </div>
                 <div class="project-con-desc">Jayan likes a good shoe. Jayan likes a good shoe. Jayan likes a good shoe.</div>
             </div>
-            
+
             <div class="project-con-cell">
                 <a href="Projects/Template-Page/">
                     <div class="project-con-box"><img class="project-con-box-image" src="Base_Icons/Placeholder_Icon.png">
