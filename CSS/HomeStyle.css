@@ -294,7 +294,7 @@ project-tag {
 
     z-index: 12;
     
-    box-shadow: 0px 0px 8px -1px #000000;
+    box-shadow: 0px 0px 4px -1px #000000;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
@@ -336,7 +336,7 @@ project-tag {
     z-index: -12;
     position: relative;
     
-        box-shadow: 0px 0px 8px -1px #000000;
+    box-shadow: 0px 0px 4px -1px #000000;
 
         -webkit-user-select: none;
     -khtml-user-select: none;

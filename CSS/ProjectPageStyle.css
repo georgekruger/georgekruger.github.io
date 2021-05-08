@@ -453,9 +453,11 @@ div > img {
     position: relative;
     left: 50%;
     z-index: 1;
-    width: 60%;
+    width: 90%;
     padding-left: 0;
-    margin-left: -30%;
+    left: 0px;
+    padding-top: 10px;
+    margin: auto;
     text-align: center;
     list-style: none;
 }
