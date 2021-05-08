@@ -389,7 +389,6 @@ div > img {
     -o-transition: .6s ease-in-out left;
     transition: .6s ease-in-out left;
     box-sizing: content-box;
-    box-shadow: 0 0px 20px 2px #000000;
     object-fit: fill;
     margin-bottom: -5px;
 }
@@ -408,6 +407,7 @@ div > img {
         -webkit-perspective: 1000px;
         perspective: 1000px
     }
+
 
     .carousel-inner > .item.active.right,
     .carousel-inner > .item.next {
@@ -462,14 +462,14 @@ div > img {
     list-style: none;
 }
 
-.carousel-indicators > li {
+.carousel-indicators > .carousel-imgdot {
     display: inline-block;
     width: 160px;
     height: 90px;
     margin: 1px;
     text-indent: -999px;
     cursor: pointer;
-    background-color: #000\9;
+    background-color: #0009;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #fff;
     background: #ffffff;
@@ -513,4 +513,62 @@ div > img {
 
 .carousel-indicators > .active > img {
     opacity: 0.9;
+}
+/*devlog*/
+.carousel-devlog-dot{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+
+    border: 4px solid #fff;
+    transition: 0.1s;
+    margin-top: 8px;
+    border-radius: 100px;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.carousel-indicators-devlog > .active {
+    margin-top: 0px;
+    transition: 0.1s;
+    margin-bottom: -8px;
+    background: #ffffff;
+        border: 10px, solid, #ffffff;
+
+}
+.carousel-indicators-devlog {
+margin-bottom: 10px;
+}
+.carousel-inner-devlog{
+border-radius: 60px;
+    background: #a0a0a0;
+}
+
+/*Devlog Content*/
+.devlog-page{
+    margin: 35px;
+    margin-top: 6px;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    background: 
+}
+.devlog-date{
+    font-size: 45px;
+    text-align: left;
+    padding-left: 80px;
+    padding-bottom: 10px;
+    background: #382c2c;
+    width: 100%;
+    color: white;
+    
+}
+.devlog-title{
+    font-size: 60px;
+    text-align: left;
 }
