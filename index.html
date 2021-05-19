@@ -91,16 +91,40 @@
     <!--Video Showcase-->
 
 
-    <div class="video-con"><div class="video-con-object rellax" data-rellax-speed="-6" src="test.webm">
-        <video autoplay playsinline autoplay muted loop width="100%">
+    <div class="video-con"><div class="video-con-object rellax" data-rellax-speed="-6" onended="run()" id="Video_Showcase">
+        <video autoplay="" muted="" poster loop  width="100%">
 
-    <source src="test.webm"
-            type="video/webm">
+                <source src="/Index_Content/Video1.webm" type="video/webm">
+
         </video>
+        
+<script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+<script>
+    
+   $(document).ready(function(){
+        var vid = document.getElementById("Video_Showcase");
+        vid.onplay = function() {
+            var source=vid.currentSrc;
+            folder = source.match(/(.+)(\/)/);
+            ext = source.match(/(\.\w+)$/);
+        };
+
+        vid.onended = function() {
+          $("#Video_Showcase").attr({
+            "src":folder[0]+"video2"+ext[0],
+            "loop":""
+          });
+        };
+    });
+</script>
+
+        
         </div>
         <div class="video-con-object-fade"></div>
     </div>
 
+    
+    
     <script src="/Plugins/rellax.min.js"></script>
     <script>
         var rellax = new Rellax();
@@ -133,7 +157,7 @@
             <div class="project-con-cell">
                 <a href="Projects/Template-Page/Project_Template.html">
                     <div class="project-con-box"><img class="project-con-box-image" src="test.webm">
-                        <div class="project-con-box-title">New game</div>
+                        <div class="project-con-box-title" style="font-size: 28px">Spirit of the Florest</div>
                     </div>
                 </a>
                 <div class="project-con-tags">

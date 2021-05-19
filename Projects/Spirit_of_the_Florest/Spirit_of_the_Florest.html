@@ -1,0 +1,499 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/CSS/BaseStyle.css">
+    <link rel="stylesheet" href="/CSS/ProjectPageStyle.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <title>George Kruger</title>
+
+</head>
+
+<body>
+
+    <div class="navbar">
+
+        <navbar-item class="name-start">George Kruger</navbar-item>
+
+        <a href="/index.html#Home">
+            <navbar-item class="Navbar-link"><img src="/Base_Icons/Home_Icon.png" class="navbar-item-icon" />Home</navbar-item>
+        </a>
+        <a href="/index.html#WorkProjects">
+            <navbar-item class="Navbar-link"><img src="/Base_Icons/WorkProjects_Icon.png" class="navbar-item-icon" id="NoDrag" />Work Projects</navbar-item>
+        </a>
+        <a href="/index.html#PersonalProjects">
+            <navbar-item class="Navbar-link"><img src="/Base_Icons/PersonalProjects_Icon.png" class="navbar-item-icon" />Personal Projects</navbar-item>
+        </a>
+        <a href="/Content/CV.pdf">
+            <navbar-item class="Navbar-link"><img src="/Base_Icons/CV_Icon.png" class="navbar-item-icon" />CV</navbar-item>
+        </a>
+        <a href="/index.html#Contact">
+            <navbar-item class="Navbar-link"><img src="/Base_Icons/Contact_Icon.png" class="navbar-item-icon" height="14px" />Contact</navbar-item>
+        </a>
+
+        <a class="navbar-sidepanel-shadow" id="Navbar-Panel-Shadow" href="javascript:void(0)" onclick="ClosePanel()"></a>
+
+    </div>
+
+    <!--Side Panel-->
+    <a href="javascript:void(0)" class="navbar-item-menu-icon" onclick="TogglePanel()"><img width="80%" src="/Base_Icons/Menu_Icon.png"></a>
+
+    <div id="SidePanel" class="navbar-sidepanel navbar-sidepanel-closed">
+
+
+        <a style="margin-top: 60px;" href="/index.html#Home">
+            <div class="Navbar-link-sidepanel"><img src="/Base_Icons/Home_Icon.png" class="navbar-item-icon" height="14px" />Home</div>
+        </a>
+        <a href="/index.html#WorkProjects">
+            <div class="Navbar-link-sidepanel"><img src="/Base_Icons/WorkProjects_Icon.png" class="navbar-item-icon" height="14px" />Work Projects</div>
+        </a>
+        <a href="/index.html#PersonalProjects">
+            <div class="Navbar-link-sidepanel"><img src="/Base_Icons/PersonalProjects_Icon.png" class="navbar-item-icon" height="14px" />Personal Projects</div>
+        </a>
+        <a href="/Content/CV.pdf">
+            <div class="Navbar-link-sidepanel"><img src="/Base_Icons/CV_Icon.png" class="navbar-item-icon" height="14px" />CV</div>
+        </a>
+        <a href="/index.html#Contact">
+            <div class="Navbar-link-sidepanel"><img src="/Base_Icons/Contact_Icon.png" class="navbar-item-icon" height="14px" />Contact</div>
+        </a>
+
+
+    </div>
+
+
+    <script>
+        function TogglePanel() {
+            if (document.getElementById("SidePanel").classList.contains("navbar-sidepanel-closed")) {
+                document.getElementById("SidePanel").classList.remove("navbar-sidepanel-closed");
+                document.getElementById("Navbar-Panel-Shadow").style.display = "block";
+                document.getElementById("Navbar-Panel-Shadow").style.background = "hsla(0, 0%, 0%, 0.5)";
+
+                $("body").css("overflow", "hidden");
+            } else {
+                ClosePanel();
+            }
+        }
+
+
+        function ClosePanel() {
+            document.getElementById("SidePanel").classList.add("navbar-sidepanel-closed");
+            document.getElementById("Navbar-Panel-Shadow").style.background = "hsla(0, 0%, 0%, 0)";
+            document.getElementById("Navbar-Panel-Shadow").style.display = "none";
+
+            $("body").css("overflow", "auto");
+
+        }
+
+    </script>
+
+    <!--Video Showcase-->
+
+
+    <div class="banner-con">
+        <img class="banner-con-object rellax" data-rellax-speed="-6" src="Banner.png">
+        <div class="banner-con-object-fade"></div>
+    </div>
+
+
+
+    <script src="/Plugins/rellax.min.js"></script>
+    <script>
+        var rellax = new Rellax();
+
+    </script>
+
+    <!--Content Page-->
+
+    <div class="panel-project">
+        <style>
+            @font-face {
+                font-family: TitleFont;
+                src: url(/Projects/Spirit_of_the_Florest/OptimusPrinceps.ttf)
+            }
+
+        </style>
+        <div style="font-family: TitleFont;font-size: 110px;" class="project-title">Spirit of the Florest</div>
+        <div class="project-detail">
+            <div class="project-detail-title">Project Details</div>
+
+            <table style="margin: auto">
+                <tr>
+                    <td class="data-left">Project Type</td>
+                    <td class="data-right">Uni/Grouped work</td>
+                </tr>
+                <tr>
+                    <td class="data-left">Project Role(s)</td>
+                    <td class="data-right">Lead Programer</td>
+                </tr>
+                <tr>
+                    <td class="data-left">Duriation</td>
+                    <td class="data-right">6 Mouths</td>
+                </tr>
+            </table>
+
+            <!--            <a href="Projects/Template-Page/Devlog.pdf" class="link-button itch-button"><img src="/Base_Icons/Itch_Icon.png">
+                <div><img src="/Base_Icons/Itch_Text.png" /></div>
+            </a>
+            <a href="Projects/Template-Page/Devlog.pdf" class="link-button devlog-button"><img src="/Base_Icons/Page_Icon.png">
+                <div>Project Devlog</div>
+            </a>-->
+        </div>
+
+
+        <p class="project-desc-text">Project Crawler is a 3rd person rogue-like dungeon crawler game, where your health is also your currency and ability resource. creating a risk vs reward gameplay. Equip yourself with new abilities and upgrade them at the cost of your health. Project Crawler was created for the university of Portsmouth game jam with a team of 6 members, with the game’s topic being ‘a dungeon crawler with a single resource’.</p>
+
+
+        <div class="carousel-container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+
+                <!-- Big -->
+                <div class="carousel-inner">
+
+                    <div class="item active">
+                        <img src="Screenshots/Screenshot1.png" style="height: 100%;width: 100%">
+                    </div>
+
+                    <div class="item">
+                        <img src="Screenshots/Screenshot2.png" style="height: 100%;width: 100%">
+                    </div>
+
+                    <div class="item">
+                        <img src="Screenshots/Screenshot3.png" style="height: 100%;width: 100%">
+                    </div>
+
+                    <div class="item">
+                        <img src="Screenshots/Screenshot4.png" style="height: 100%;width: 100%">
+                    </div>
+
+                    <div class="item">
+                        <img src="Screenshots/Screenshot5.png" style="height: 100%;width: 100%">
+                    </div>
+
+                    <div class="item">
+                        <img src="Screenshots/Screenshot6.png" style="height: 100%;width: 100%">
+                    </div>
+                </div>
+                <!-- Small -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="carousel-imgdot active"> <img src="Screenshots/Screenshot1.png">
+                    </li>
+                    <li data-target="#myCarousel" data-slide-to="1" class="carousel-imgdot"> <img src="Screenshots/Screenshot2.png">
+                    </li>
+                    <li data-target="#myCarousel" data-slide-to="2" class="carousel-imgdot"><img src="Screenshots/Screenshot3.png">
+                    </li>
+                    <li data-target="#myCarousel" data-slide-to="3" class="carousel-imgdot"><img src="Screenshots/Screenshot4.png">
+                    </li>
+                    <li data-target="#myCarousel" data-slide-to="4" class="carousel-imgdot"><img src="Screenshots/Screenshot5.png">
+                    </li>
+                    <li data-target="#myCarousel" data-slide-to="5" class="carousel-imgdot"><img src="Screenshots/Screenshot6.png">
+                    </li>
+                </ol>
+
+            </div>
+        </div>
+
+
+
+        <div class="keyfeature-text">Key Contributions</div>
+
+        <div class="dropdown">
+            <div href="javascript:void(0)" onClick="dropdownmenu('DropDown-Character-Con1','DropDown-Character-Head1')" id="DropDown-Character-Head1" class="dropdown-header">
+                <div class="dropdown-img-con"><img class="dropdown-img" src="/Base_Icons/PersonalProjects_Icon.png"></div>
+                <div class="dropdown-header-text">Character Controller</div>
+                <div class="dropdown-arrow"><img class="dropdown-img" src="/Base_Icons/Arrow.png"></div>
+            </div>
+            <div class="dropdown-content" style="max-height: 0px;" id="DropDown-Character-Con1">
+                <br><br>
+                <p class="dropdown-text">I developed the character controller system to allow for freedom of movement and give as much control to the player allowing for quick and precise movement to avoid incoming attacks</p>
+                <div class="dropdown">
+                    <div href="javascript:void(0)" onClick="dropdownmenu('DropDown-Character-Con2','DropDown-Character-Head2')" id="DropDown-Character-Head2" class="dropdown-header">
+                        <div class="dropdown-img-con"><img class="dropdown-img" src="/Base_Icons/Sword_Icon.png"></div>
+                        <div class="dropdown-header-text">Combat System</div>
+                        <div class="dropdown-arrow"><img class="dropdown-img" src="/Base_Icons/Arrow.png"></div>
+                    </div>
+                    <div class="dropdown-content" style="max-height: 0px;" id="DropDown-Character-Con2"><br>
+                        <p class="dropdown-text">I developed the player to have two states for both melee (or walking) and ranged, as each need their own player rotation system and animation controller. I created these systems to be fast and fluid to avoid interrupting the flow of the game.</p>
+
+                    </div>
+                    <br>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="dropdown">
+            <div href="javascript:void(0)" onClick="dropdownmenu('DropDown-Ability-Con1','DropDown-Ability-Head1')" id="DropDown-Ability-Head1" class="dropdown-header">
+                <div class="dropdown-img-con"><img class="dropdown-img" src="/Base_Icons/AbilitySystem_Icon.png"></div>
+                <div class="dropdown-header-text">Ability System</div>
+                <div class="dropdown-arrow"><img class="dropdown-img" src="/Base_Icons/Arrow.png"></div>
+            </div>
+            <div class="dropdown-content" style="max-height: 0px;" id="DropDown-Ability-Con1">
+                <br><br>
+                <p class="dropdown-text">I create a large set of systems for unlocking, equipping, using abilities and handling upgrades. All these systems work together to make the flow of acquiring and using abilities as streamlined as possible, to not slow down the pace of gameplay.</p>
+
+                <div class="dropdown">
+                    <div href="javascript:void(0)" onClick="dropdownmenu('DropDown-Ability-Con2','DropDown-Ability-Head2')" id="DropDown-Ability-Head2" class="dropdown-header">
+                        <div class="dropdown-img-con"><img class="dropdown-img" src="/Base_Icons/Code_Icon.png"></div>
+                        <div class="dropdown-header-text">modual</div>
+                        <div class="dropdown-arrow"><img class="dropdown-img" src="/Base_Icons/Arrow.png"></div>
+                    </div>
+                    <div class="dropdown-content" style="max-height: 0px;" id="DropDown-Ability-Con2">
+                        <br><br>
+                        <p class="dropdown-text">I designed a modular ability system that contains the majority of an ability’s logic (Cooldowns, Cost, Casting, Charge handler, Checks, ect) and can be inherited by an ability script, allowing for simple implementation of abilities and project wide alterations to the logic system.</p>
+                    </div>
+                    <br>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="dropdown">
+            <div href="javascript:void(0)" onClick="dropdownmenu('DropDown-UI-Con1','DropDown-UI-Head1')" id="DropDown-UI-Head1" class="dropdown-header">
+                <div class="dropdown-img-con"><img class="dropdown-img" src="/Base_Icons/UI_Icon.png"></div>
+                <div class="dropdown-header-text">User Interface</div>
+                <div class="dropdown-arrow"><img class="dropdown-img" src="/Base_Icons/Arrow.png"></div>
+            </div>
+            <div class="dropdown-content" style="max-height: 0px;" id="DropDown-UI-Con1">
+                <br><br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>
+                <div class="dropdown">
+                    <div href="javascript:void(0)" onClick="dropdownmenu('DropDown-UI-Con2','DropDown-UI-Head2')" id="DropDown-UI-Head2" class="dropdown-header">
+                        <div class="dropdown-img-con"><img class="dropdown-img" src="/Base_Icons/Code_Icon.png"></div>
+                        <div class="dropdown-header-text">modual</div>
+                        <div class="dropdown-arrow"><img class="dropdown-img" src="/Base_Icons/Arrow.png"></div>
+                    </div>
+                    <div class="dropdown-content" style="max-height: 0px;" id="DropDown-UI-Con2">
+                        <br><br>
+                        <p class="dropdown-text">I designed a modular ability system that contains the majority of an ability’s logic (Cooldowns, Cost, Casting, Charge handler, Checks, ect) and can be inherited by an ability script, allowing for simple implementation of abilities and project wide alterations to the logic system.</p>
+                    </div>
+                    <br>
+                </div>
+
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <div class="keyfeature-text">Project Devlog</div>
+        <br>
+
+        <div class="carousel-container">
+            <div id="DevlogCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+
+                <!-- Small -->
+                <ol class="carousel-indicators carousel-indicators-devlog">
+                    <li data-target="#DevlogCarousel" data-slide-to="0" class="carousel-devlog-dot active">
+                    </li>
+                    <li data-target="#DevlogCarousel" data-slide-to="1" class="carousel-devlog-dot">
+                    </li>
+                    <li data-target="#DevlogCarousel" data-slide-to="2" class="carousel-devlog-dot">
+                    </li>
+                    <li data-target="#DevlogCarousel" data-slide-to="3" class="carousel-devlog-dot">
+                    </li>
+                    <li data-target="#DevlogCarousel" data-slide-to="4" class="carousel-devlog-dot">
+                    </li>
+                    <li data-target="#DevlogCarousel" data-slide-to="5" class="carousel-devlog-dot">
+                    </li>
+                    <li data-target="#DevlogCarousel" data-slide-to="6" class="carousel-devlog-dot">
+                    </li>
+                    <li data-target="#DevlogCarousel" data-slide-to="7" class="carousel-devlog-dot">
+                    </li>
+                    <li data-target="#DevlogCarousel" data-slide-to="8" class="carousel-devlog-dot">
+                    </li>
+                </ol>
+                <!-- Big -->
+                <div class="carousel-inner carousel-inner-devlog" style="height: 2000px">
+
+                    <div class="item active">
+                        <div class="devlog-date">Introduction</div>
+                        <div class="devlog-page">
+                            <p> For the beginning of the new project, we were tasked with crating a game from a of list options:</p>
+                            <p>
+                                • Starship bridge simulator<br>
+                                • University tycoon<br>
+                                • Dungeon crawler with one resource<br>
+                                • A game suitable for someone visually impaired<br>
+                                • 2d platformer within a 3d world<br>
+                                • Lockdown – the game<br>
+                                • A game using an unusual control device<br></p>
+                            <p> Once the team had formed, we researched the options and discussed potential gameplay loops, ideas and mechanicals for each option. This discueion narrowed down list and the team seemed to be mainly interested in the dungeon crawler idea, including myself. This discussed formed the main gameplay loop of having the player with non-regenerating health and no health cap, but by killing enemies they would drop health that can be picked up. The health could be spent on potential abilities, items and upgrades as each level would increase the difficulty as well as adding a sense of risk and reward to the players choices.
+                                There were still some key decisions that the team had not decided on yet such as the player perspective, either being top down, isometrics or third person.
+                                The team easily decided to use unity for this project as we used it for the previous project and the team was already famailiter using the software.
+                                I was assigned as a lead programmer for the project with 1 other programmer. I was eager to start on the project but with designs and ideas still undecided, I begin to envision general mechanicals and develop a very primitive version of them.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="devlog-date">1<sup>st</sup> Feb 2021 - 1<sup>st</sup> Feb 2021</div>
+                        <div class="devlog-page">
+                            <div class="devlog-title">basic systems and proof of concepts</div><br>
+
+                            <div>
+                                <div class="devlog-subtitle">Primitive Skill Tree</div> <video autoplay autoplay muted loop width="500px" style="float: right">
+                                    <source src="/Index_Content/Video2.webm" type="video/webm">
+                                </video><br>
+                                I began developing a skill tree system using unity’s UI system, this system would be the most likely way of obtaining new abilities in the game. I constructed a skill tree node script so that in order to unlock a node, there will need to be enough connected parent nodes unlocked, later development on the system will requiring the player to have enough health to unlock them, once the health system is setup. I also made the UI element go red, yellow or green depending on their status as well as adding a UI text element displaying how many parent nodes are required to be unlocked.
+                            </div>
+                            <div>
+                                <div class="devlog-subtitle" style="float: right">Primitive Skill Tree</div> <video autoplay autoplay muted loop width="500px" style="float: left">
+                                    <source src="/Index_Content/Video2.webm" type="video/webm">
+                                </video><br>
+                                I began developing a skill tree system using unity’s UI system, this system would be the most likely way of obtaining new abilities in the game. I constructed a skill tree node script so that in order to unlock a node, there will need to be enough connected parent nodes unlocked, later development on the system will requiring the player to have enough health to unlock them, once the health system is setup. I also made the UI element go red, yellow or green depending on their status as well as adding a UI text element displaying how many parent nodes are required to be unlocked.
+                            </div>
+                            <div>
+                                <div class="devlog-subtitle">Primitive Skill Tree</div> <video autoplay autoplay muted loop width="500px" style="float: right">
+                                    <source src="/Index_Content/Video2.webm" type="video/webm">
+                                </video><br>
+                                I began developing a skill tree system using unity’s UI system, this system would be the most likely way of obtaining new abilities in the game. I constructed a skill tree node script so that in order to unlock a node, there will need to be enough connected parent nodes unlocked, later development on the system will requiring the player to have enough health to unlock them, once the health system is setup. I also made the UI element go red, yellow or green depending on their status as well as adding a UI text element displaying how many parent nodes are required to be unlocked.
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="devlog-date">11<sub>th</sub> Dec 2020 – 18<sub>th</sub> Jan 2021 </div>
+                        <div class="devlog-page">
+                            <div class="devlog-title">asdasdasd asdas das asd asdas dasd asdas dasda sasdadasd</div>
+                            asdasdasdasdasdsada
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="devlog-date">1<sup>st</sup> Feb 2021</div>
+                        <div class="devlog-page">
+                            <div class="devlog-title">asdasdasd asdas das asd asdas dasd asdas dasda sasdadasd</div>
+                            asdasdasdasdasdsada
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="devlog-date">1<sup>st</sup> Feb 2021</div>
+                        <div class="devlog-page">
+                            <div class="devlog-title">asdasdasd asdas das asd asdas dasd asdas dasda sasdadasd</div>
+                            asdasdasdasdasdsada
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="devlog-date">1<sup>st</sup> Feb 2021</div>
+                        <div class="devlog-page">
+                            <div class="devlog-title">asdasdasd asdas das asd asdas dasd asdas dasda sasdadasd</div>
+                            asdasdasdasdasdsada
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="devlog-date">1<sup>st</sup> Feb 2021</div>
+                        <div class="devlog-page">
+                            <div class="devlog-title">asdasdasd asdas das asd asdas dasd asdas dasda sasdadasd</div>
+                            asdasdasdasdasdsada
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="devlog-date">1<sup>st</sup> Feb 2021</div>
+                        <div class="devlog-page">
+                            <div class="devlog-title">asdasdasd asdas das asd asdas dasd asdas dasda sasdadasd</div>
+                            asdasdasdasdasdsada
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="devlog-date">1<sup>st</sup> Feb 2021</div>
+                        <div class="devlog-page">
+                            <div class="devlog-title">asdasdasd asdas das asd asdas dasd asdas dasda sasdadasd</div>
+                            asdasdasdasdasdsada
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="devlog-date">1<sup>st</sup> Feb 2021</div>
+                        <div class="devlog-page">
+                            <div class="devlog-title">asdasdasd asdas das asd asdas dasd asdas dasda sasdadasd</div>
+                            asdasdasdasdasdsada
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="devlog-date">1<sup>st</sup> Feb 2021</div>
+                        <div class="devlog-page">
+                            <div class="devlog-title">asdasdasd asdas das asd asdas dasd asdas dasda sasdadasd</div>
+                            asdasdasdasdasdsada
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+
+            <script>
+                function dropdownmenu(contentid, headerid) {
+                    if (document.getElementById(contentid).classList.contains("dropdown-content-show")) {
+                        document.getElementById(contentid).classList.remove("dropdown-content-show");
+                        document.getElementById(contentid).style.maxHeight = "0";
+                        /*header*/
+                        document.getElementById(headerid).classList.remove("dropdown-header-show");
+
+                    } else {
+                        document.getElementById(contentid).classList.add("dropdown-content-show");
+                        let height = document.getElementById(contentid).scrollHeight;
+                        document.getElementById(contentid).style.setProperty('max-height', height + 'px');
+                        /*header*/
+                        document.getElementById(headerid).classList.add("dropdown-header-show");
+
+                        switch (contentid) {
+                            case "DropDown-Character-Con2": {
+
+                                let HeadHeight = document.getElementById(contentid).scrollHeight;
+                                var ConHeight = document.getElementById('DropDown-Character-Con1').scrollHeight;
+
+                                document.getElementById('DropDown-Character-Con1').style.setProperty('max-height', HeadHeight + ConHeight + 'px');
+                                break;
+                            }
+                            case "DropDown-Ability-Con2": {
+
+                                let HeadHeight = document.getElementById(contentid).scrollHeight;
+                                var ConHeight = document.getElementById('DropDown-Ability-Con1').scrollHeight;
+
+                                document.getElementById('DropDown-Ability-Con1').style.setProperty('max-height', HeadHeight + ConHeight + 'px');
+                                break;
+
+                            }
+                            case "DropDown-UI-Con2": {
+
+                                let HeadHeight = document.getElementById(contentid).scrollHeight;
+                                var ConHeight = document.getElementById('DropDown-UI-Con1').scrollHeight;
+
+                                document.getElementById('DropDown-UI-Con1').style.setProperty('max-height', HeadHeight + ConHeight + 'px');
+                                break;
+
+                            }
+                        }
+                    }
+                }
+
+            </script>
+
+
+        </div>
+
+
+</body>
+
+</html>
