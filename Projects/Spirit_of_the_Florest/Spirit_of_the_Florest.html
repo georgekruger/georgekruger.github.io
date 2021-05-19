@@ -96,8 +96,12 @@
     <!--Video Showcase-->
 
 
-    <div class="banner-con">
-        <img class="banner-con-object rellax" data-rellax-speed="-6" src="Banner.png">
+    <div class="banner-con rellax" data-rellax-speed="-6">
+        <video autoplay muted poster loop width="100%">
+
+            <source src="Banner_Video.webm" type="video/webm">
+
+        </video>
         <div class="banner-con-object-fade"></div>
     </div>
 
@@ -119,7 +123,7 @@
             }
 
         </style>
-        <div style="font-family: TitleFont;font-size: 110px;" class="project-title">Spirit of the Florest</div>
+        <div style="font-family: TitleFont;font-size: 100px;" class="project-title">Spirit of the Florest</div>
         <div class="project-detail">
             <div class="project-detail-title">Project Details</div>
 
@@ -325,37 +329,41 @@
                                 • 2d platformer within a 3d world<br>
                                 • Lockdown – the game<br>
                                 • A game using an unusual control device<br></p>
-                            <p> Once the team had formed, we researched the options and discussed potential gameplay loops, ideas and mechanicals for each option. This discueion narrowed down list and the team seemed to be mainly interested in the dungeon crawler idea, including myself. This discussed formed the main gameplay loop of having the player with non-regenerating health and no health cap, but by killing enemies they would drop health that can be picked up. The health could be spent on potential abilities, items and upgrades as each level would increase the difficulty as well as adding a sense of risk and reward to the players choices.
-                                There were still some key decisions that the team had not decided on yet such as the player perspective, either being top down, isometrics or third person.
-                                The team easily decided to use unity for this project as we used it for the previous project and the team was already famailiter using the software.
-                                I was assigned as a lead programmer for the project with 1 other programmer. I was eager to start on the project but with designs and ideas still undecided, I begin to envision general mechanicals and develop a very primitive version of them.</p>
-
+                            <p> Once the team had formed, we researched the options and discussed potential gameplay loops, ideas and mechanicals for each option. This decision narrowed down list and the team seemed to be mainly interested in the dungeon crawler idea, including myself. This discussed formed the main gameplay loop of having the player with non-regenerating health and no health cap, but by killing enemies they would drop health that can be picked up. The health could be spent on potential abilities, items and upgrades as each level would increase the difficulty as well as adding a sense of risk and reward to the players choices. </p>
+                            <p>There were still some key decisions that the team had not decided on yet such as the player perspective, either being top down, isometrics or third person.</p>
+                            <p>The team easily decided to use unity for this project as we used it for the previous project and the team was already familiar using the software.</p>
+                            <p>I was assigned as a lead programmer for the project with 1 other programmer. I was eager to start on the project but with designs and ideas still undecided, I begin to envision general mechanicals and develop a very primitive version of them. </p>
                         </div>
                     </div>
 
                     <div class="item">
-                        <div class="devlog-date">1<sup>st</sup> Feb 2021 - 1<sup>st</sup> Feb 2021</div>
+                        <div class="devlog-date">11<sup>th</sup> Dec 2020 - 18<sup>th</sup> Jan 2021</div>
                         <div class="devlog-page">
-                            <div class="devlog-title">basic systems and proof of concepts</div><br>
+                            <div class="devlog-title">Basic systems and proof of concepts</div>
 
-                            <div>
-                                <div class="devlog-subtitle">Primitive Skill Tree</div> <video autoplay autoplay muted loop width="500px" style="float: right">
-                                    <source src="/Index_Content/Video2.webm" type="video/webm">
-                                </video><br>
+                            <div class="devlog-subtitle">Primitive Skill Tree</div><br> <video autoplay autoplay muted loop width="500px" style="float: right">
+                                <source src="/Index_Content/Video2.webm" type="video/webm">
+                            </video>
+                            <p>
+
                                 I began developing a skill tree system using unity’s UI system, this system would be the most likely way of obtaining new abilities in the game. I constructed a skill tree node script so that in order to unlock a node, there will need to be enough connected parent nodes unlocked, later development on the system will requiring the player to have enough health to unlock them, once the health system is setup. I also made the UI element go red, yellow or green depending on their status as well as adding a UI text element displaying how many parent nodes are required to be unlocked.
-                            </div>
-                            <div>
-                                <div class="devlog-subtitle" style="float: right">Primitive Skill Tree</div> <video autoplay autoplay muted loop width="500px" style="float: left">
-                                    <source src="/Index_Content/Video2.webm" type="video/webm">
-                                </video><br>
-                                I began developing a skill tree system using unity’s UI system, this system would be the most likely way of obtaining new abilities in the game. I constructed a skill tree node script so that in order to unlock a node, there will need to be enough connected parent nodes unlocked, later development on the system will requiring the player to have enough health to unlock them, once the health system is setup. I also made the UI element go red, yellow or green depending on their status as well as adding a UI text element displaying how many parent nodes are required to be unlocked.
-                            </div>
-                            <div>
-                                <div class="devlog-subtitle">Primitive Skill Tree</div> <video autoplay autoplay muted loop width="500px" style="float: right">
-                                    <source src="/Index_Content/Video2.webm" type="video/webm">
-                                </video><br>
-                                I began developing a skill tree system using unity’s UI system, this system would be the most likely way of obtaining new abilities in the game. I constructed a skill tree node script so that in order to unlock a node, there will need to be enough connected parent nodes unlocked, later development on the system will requiring the player to have enough health to unlock them, once the health system is setup. I also made the UI element go red, yellow or green depending on their status as well as adding a UI text element displaying how many parent nodes are required to be unlocked.
-                            </div>
+                            </p>
+                            <div class="devlog-subtitle">Primitive Inventory System</div><br> <video autoplay autoplay muted loop width="500px" style="float: left">
+                                <source src="/Index_Content/Video2.webm" type="video/webm">
+                            </video>
+                            <p>
+
+                                This inventory system if very basic and can only hold objects, move them or swap them with another object, with the development of this system only taking less than an hour. Though the current system is extremely basic, it is to ensure that if the system is never used, that not too much time would have been wasted on its development, as well as the system could need to be overhaled depending on what the project calls for, preventing potential rewriting of the code.
+                                The system uses item as gameobjects within slot gameobjects. When clicking and holding, it stores the objects reference within the curser and when releasing, runs a bunch of checks to determine what to do, such as detecting if the curser is over a slot or not, then if it is, check if the slot is empty, if not, swapping slots with each item.
+                            </p>
+                            <div class="devlog-subtitle">Basic Isometric Concept</div><br> <video autoplay autoplay muted loop width="500px" style="float: right">
+                                <source src="/Index_Content/Video2.webm" type="video/webm">
+                            </video>
+                            <p>
+
+                                This isometric concept was developed mostly out of curiosity and not directly for the project, though once I added a sword to the character and some interactable objects, it allowed for a better understanding of how an isometric version of the project would look and feel, as currently the player perspective has not yet been decided, and may potentially be used if the project uses an isometric view.
+                            </p>
+
 
                         </div>
                     </div>
@@ -363,71 +371,175 @@
                     <div class="item">
                         <div class="devlog-date">11<sub>th</sub> Dec 2020 – 18<sub>th</sub> Jan 2021 </div>
                         <div class="devlog-page">
-                            <div class="devlog-title">asdasdasd asdas das asd asdas dasd asdas dasda sasdadasd</div>
-                            asdasdasdasdasdsada
+                            <div class="devlog-title">Time off, Ideas and Design</div>
+                            <p>This large portion of inactive development on the project was due to the Christmas break as well as the team as a whole deciding the type of gameplay and aesthetics the project should take on. During this time, I personally worked on other projects in the meantime, but unfortunately as eager as I was to work on this project, I was unable to for this duration of time as the project have not cemented any gameplay ideas or fully developed mechanics, and working on other potential mechanics would be a risky use of time as it is possible for ideas not be used in the project at all.</p>
+                            <p>The artsiest also wanted to start designing the characters and the world. off the bat the team knew that we wanted a polygonal art style, as it is both an appealing art style as well as being a non-time-consuming style to develop. ideas then flew around a sprit character either humanoid or a creature, originally starts with a wolf or bear character that may potently wield weapons with its mouth, but there was large hesitancy as it would have been difficult to make a creature wield a weapon in a believable manor. Then ideas turned to making the character a spirt humanoid with an arm for weapons, poetically changing the arm for different weapons. Inspiration for this idea mainly comes from the main character of the prototype games, as they have a very slimier design for a weaponised arm.</p>
+                            <p>By the end of the two-mouth long design discussion with the team, the gameplay will be a 3rd person dungeon crawler with potentially character upgrades and/or an inventory and equipment system, depending on how well the project progresses and to avoid making the scope of the game too large to complete. The art style of the game will be a dark and polygonal theme, with lights illumination the levels, directing the player on where to go.</p>
+                            <div class="devlog-subtitle">Ideas</div><br>
+                            <img src="Screenshots/12312312312312312312312312313.png" width="300px" style="display: inline-block" />
+                            <img src="Screenshots/12312312312312312312312312313.png" width="300px" style="display: inline-block" />
+                            <img src="Screenshots/12312312312312312312312312313.png" width="300px" style="display: inline-block" />
+                            <img src="Screenshots/12312312312312312312312312313.png" width="300px" style="display: inline-block" />
                             <div></div>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="devlog-date">1<sup>st</sup> Feb 2021</div>
+                        <div class="devlog-date">19<sup>th</sup> Mar 2021 - 25<sup>th</sup> Mar 2021</div>
                         <div class="devlog-page">
-                            <div class="devlog-title">asdasdasd asdas das asd asdas dasd asdas dasda sasdadasd</div>
-                            asdasdasdasdasdsada
+                            <div class="devlog-title">Stat Upgrades & Other Projects</div>
+                            <p>This week and last week I spent a large amount of time working on other projects and thus did not spent as much time as normal on the project.
+                                I did intend to work on an important feature this week, being the implementation of the player stats and the ability to upgrade them, adding on the to the risk vs reward element of the game.
+                            </p>
+
+
+                            <div class="devlog-subtitle">Player Stat Upgrades</div><br>
+
+                            <p>This week I spent most of my development time creating the stats upgrade panels, allowing the player to spend health on improving their stats.
+                                There stats and costs are generated using a multiplier, as this is to avoid sinking lots of time balancing values. Each stat has their own increase multiplier and cost multiplier, allowing for a general, but fast balancing approach
+                            </p>
+
                         </div>
                     </div>
                     <div class="item">
-                        <div class="devlog-date">1<sup>st</sup> Feb 2021</div>
+                        <div class="devlog-date">9<sup>th</sup> Apr 2021 - 15<sup>th</sup> Apr 2021</div>
                         <div class="devlog-page">
-                            <div class="devlog-title">asdasdasd asdas das asd asdas dasd asdas dasda sasdadasd</div>
-                            asdasdasdasdasdsada
+                            <div class="devlog-title">Ranged animation and attack implementation, Damage numbers, Xbox one test</div>
+
+                            <p>This week was a pretty busy week for the development of the project as the ranged player animations and model was completed by a team member and was ready for implementation.
+                                I was holding off the functional implementation in till I had received the model and animations as I could of potentially have to go back and change or rewrite code to accommodate them which could result in losing time.
+                                I also managed to squeeze in some smaller implemented that I felt where needed for the project.
+                            </p>
+
+                            <div class="devlog-subtitle">Player Ranged Animation</div><br>
+                            <p>
+                                I had issues when it came to implementing the ranged player animations as I was not very familiar with unity’s avatar mask and multiple state machines. I spent the majority of my time researching it mostly using unity’s official documentation. With enough research and trial and error, I had gained a much better understanding of how unity’s avatar mask system and multiple state machines worked, and so I began fulling implementing the ranged animations.
+                            </p>
+                            <p>The result of the implementation turned out grate as it works perfectly as intended, with the players legs walking in the direction in which the player was traveling, whilst aiming the crossbow at the same time.
+                            </p>
+
+                            <div class="devlog-subtitle">Damage Number</div><br> <video autoplay autoplay muted loop width="500px" style="float: right">
+                                <source src="/Index_Content/Video2.webm" type="video/webm">
+                            </video>
+                            <p>
+                                I felt that damage numbers would be an important inclusion to a game of this type as it is another layer of player feedback, displaying weather an attack has connected.
+                            </p>
+                            <p>I wanted to make the number appear from an NPC when attacked, displaying the amount of damage dealt, along with making the text red and with an icon if the attack is a crit. This design being inspired from Team Fortress 2.
+                            </p>
+                            <p>Implementation was simple, I had setup a prefab and that would be instantiated, passing the damage values and crit to it.
+                            </p>
+
+                            <div class="devlog-subtitle">Xbox one test</div><br> <video autoplay autoplay muted loop width="500px" style="float: right">
+                                <source src="/Index_Content/Video2.webm" type="video/webm">
+                            </video>
+                            <p>This was purely curiosity and had no time or influence towards making the game run on an Xbox one, but seeing that unity could build the project into a UWP, I was interred to then get it a try on the console. Since the project had the new input system installed, it made it very easy to bind gamepad controls to each action, avoiding spending too much time on something unnecessary to the project. Once built and packaged. I moved it to the Xbox one in its dev mode menu, loading into first level, which is currently incomplete. Immediately I could see that the framerate was not very great, but functionally it worked, with a few problems mainly the game in its current state required a cursor.
+
+
+                            </p>
+                            <p>Building to an Xbox one straight for a unity build was a neat feature I was unaware about and will likely play about with it a potentially make other projects in the future compatible with the system, whilst learning and improving optimisation and development for console systems.
+
+
+                            </p>
+
                         </div>
                     </div>
 
                     <div class="item">
-                        <div class="devlog-date">1<sup>st</sup> Feb 2021</div>
+                        <div class="devlog-date">16<sup>th</sup> Apr 2021 - 22<sup>th</sup> Apr 2021</div>
                         <div class="devlog-page">
-                            <div class="devlog-title">asdasdasd asdas das asd asdas dasd asdas dasda sasdadasd</div>
-                            asdasdasdasdasdsada
+                            <div class="devlog-title" style="font-size: 50px">Sword Slam & Double jump Abilities, Ability upgrades & Pause menu</div>
+                            <div class="devlog-subtitle">Sword slam ability</div><br> <video autoplay autoplay muted loop width="500px" style="float: right">
+                                <source src="/Index_Content/Video2.webm" type="video/webm">
+                            </video>
+                            <p>
+                                The sword slam ability is likely going to be the most complex ability in the game, and thus, took a decent time to develop. This ability uses the charges system that’s a part of the modular ability script, so developing the charges aspect of this ability is mostly already done. </p>
+                            <p>The design of the ability is that the player gains charges on successful melee attacks, when the player has three or more charges, they can cast the ability, preforming a slam on the ground, dealing large amounts of damage and knockback. The downsides of using this ability are that the final attack on the melee attack combo is no longer possible for the player to preform, meaning they can no longer utilise its large knockback effect on its own.
+                            </p>
+                            <p>This design creates a small trade off and may not always be useful in every situation, such as bosses.
+                            </p>
+                            <p>Development of this ability did not cost too much time to make. As the it reuses the animation, hit box and attack functions already crated for the project. </p>
+                            <div class="devlog-subtitle">Double jump ability</div><br> <video autoplay autoplay muted loop width="500px" style="float: right">
+                                <source src="/Index_Content/Video2.webm" type="video/webm">
+                            </video>
+                            <p>
+
+                                the double jump ability is likely the quickest and simplest implementation of a feature in the project, as it simply checks if the player is grounded, if not they it will call the jump function in the player controller, while also triggering a bool the prevents the player for jumping multiple time in the air, as this would be un balanced and could be used to find exploits.
+                            </p>
+
+                            <div class="devlog-subtitle">Ability upgrades</div><br> <video autoplay autoplay muted loop width="500px" style="float: right">
+                                <source src="/Index_Content/Video2.webm" type="video/webm">
+                            </video>
+                            <p>
+                                the ability upgrade system uses the same node structure script from the skill tree, with a few alterations to function better as upgrades instead. </p>
+                            <p>This system still uses the parent unlock and cost requirement for the player to unlock it, but instead, when the player dose unlock the upgrade, it sets level value in a global script that stores the abilities current level. This refreshes the abilities to apply the newly unlocked upgrade, as well as whenever the player equips an ability, it checks the global values to check the current levels and applies them.
+                            </p>
+                            <p>There are three different types; cost, cooldown and charges. The cost and cooldown simply lower the cost and max cooldown of the ability, but the charges upgrade (currently only available for the double jump) adds cast changes which allows the player to cast the ability again if they have any remaining charges, else they will regenerate at the ability cooldown rate.
+                            </p>
+                            <div class="devlog-subtitle">Pause menu</div><br> <video autoplay autoplay muted loop width="500px" style="float: right">
+                                <source src="/Index_Content/Video2.webm" type="video/webm">
+                            </video>
+                            <p>
+                                A pause menu is a fairly important element for a game to have, allowing players to take a quick break as well as giving players options to alter any default aspect of the game.
+                            </p>
+                            <p>Mouse sensitivity for a 3rd person game is important because it is for easy for players to feel unconfinable if a mouse sensitivity is too high or too low.
+                            </p>
+                            <p>I used unity’s player pref to store the players settings data as it is a simple mentored to store non-important data.
+                            </p>
                         </div>
                     </div>
 
+
                     <div class="item">
-                        <div class="devlog-date">1<sup>st</sup> Feb 2021</div>
+                        <div class="devlog-date">23<sup>rd</sup> Feb 2021 - 29<sup>th</sup> Apr 2021</div>
                         <div class="devlog-page">
-                            <div class="devlog-title">asdasdasd asdas das asd asdas dasd asdas dasda sasdadasd</div>
-                            asdasdasdasdasdsada
+                            <div class="devlog-title">Burst and Dash ability, Weapon icon switch animation</div>
+                            <p>This week I aimed to include two abilities I been planning to add, the burst fire and dash ability. I wanted to keep the abilities I add simple to cut down on development time as the project was starting to reach its deadlines, and I wanted to ensure that all the ideas and mechanics that I feel are important in including are finished before the project’s deadline.
+                                Apart from abilities I also added functionally to the current weapon select, though not a dire inclusion, it gives another layer player feedback to their current actions.
+                            </p>
+                            <div class="devlog-subtitle">Burst Ability</div><br> <video autoplay autoplay muted loop width="500px" style="float: right">
+                                <source src="/Index_Content/Video2.webm" type="video/webm">
+                            </video>
+                            <p>
+
+                                The burst ability was a simple inclusion was it mainly consisted of using the main ranged fire function, but instead repeating it 3 times, the one issue I had when developing this ability was that the player could un aim while the burst fire is still going, allowing the player to melee as well as the bolt appearing Infront of the player. The solution I had for this was to create an aim lock, that whenever the ability is still firing, the player will be unable to stop aiming. The player will stop aiming as soon the ability has stopped casting to avoid making the player feel clunky or unresponsive
+                            </p>
+                            <div class="devlog-subtitle">Dash Ability</div><br> <video autoplay autoplay muted loop width="500px" style="float: right">
+                                <source src="/Index_Content/Video2.webm" type="video/webm">
+                            </video>
+                            <p>
+
+                                Once again, the dash ability was another easy ability implementation, as it simply used the unity character controller and have it move forward for a certain amount of time, also reusing one of the melee attack animations that fit well for this action. It also uses the melee attack hitbox to damage enemies the player collides with.
+                                With the reuse of pre-existing asserts, it made the development of this ability fairly straight forward and quick to create.
+
+                            </p>
+                            <p>With the reuse of pre-existing asserts, it made the development of this ability fairly straight forward and quick to create.
+                            </p>
+
+                            <div class="devlog-subtitle">Weapon icon switch animation</div><br> <video autoplay autoplay muted loop width="500px" style="float: right">
+                                <source src="/Index_Content/Video2.webm" type="video/webm">
+                            </video>
+                            <p>
+                                This inclusion was pretty simple to incorporate, only taking about 20 mins to complete. Simply using a lerp to have the UI elements move whenever the player is aiming or not. Not an idea solution but never the less for this situation it works as intended.
+                            </p>
                         </div>
                     </div>
 
-                    <div class="item">
-                        <div class="devlog-date">1<sup>st</sup> Feb 2021</div>
-                        <div class="devlog-page">
-                            <div class="devlog-title">asdasdasd asdas das asd asdas dasd asdas dasda sasdadasd</div>
-                            asdasdasdasdasdsada
-                        </div>
-                    </div>
 
                     <div class="item">
-                        <div class="devlog-date">1<sup>st</sup> Feb 2021</div>
+                        <div class="devlog-date">30<sup>th</sup> Apr 2021 - 6<sup>th</sup> May 2021</div>
                         <div class="devlog-page">
-                            <div class="devlog-title">asdasdasd asdas das asd asdas dasd asdas dasda sasdadasd</div>
-                            asdasdasdasdasdsada
+                            <div class="devlog-title">Polishing and Bug Fixing</div>
+                            <p>The project is soon coming to a close with only 1 week left, my main focus this week has been bug fixing and general polishing as I feel it might become tight on time making sure most of the bug and issues are resolved before the project deadline.</p>
+                            <p>Most of the polishing are for smaller, mostly visual problems at the moment. Though I am still trying to find as many gameplay bugs as possible to ensure that the project is ready to be built and submitted.</p>
                         </div>
                     </div>
-
                     <div class="item">
-                        <div class="devlog-date">1<sup>st</sup> Feb 2021</div>
+                        <div class="devlog-date">7<sup>th</sup> May 2021 - 13<sup>th</sup> May 2021</div>
                         <div class="devlog-page">
-                            <div class="devlog-title">asdasdasd asdas das asd asdas dasd asdas dasda sasdadasd</div>
-                            asdasdasdasdasdsada
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="devlog-date">1<sup>st</sup> Feb 2021</div>
-                        <div class="devlog-page">
-                            <div class="devlog-title">asdasdasd asdas das asd asdas dasd asdas dasda sasdadasd</div>
-                            asdasdasdasdasdsada
+                            <div class="devlog-title">Final Week</div>
+                            <p>The final week will be very busy for the project as the game currently suffers from a handful of bugs along with a lack of polish for some aspects. nothing major or ground breaking, but can degrade the over all experience of the game. </p>
+                            <p>Finally reaching the end of the project I feel that the scope for the game was too wide, and thus, had a lack of varied content such as more enemies or boss battles. This can make the game world feel empty and barren with little to nothing to do in them.</p>
+                            <p>I also feel that one or two more abilities would have gone a long way in diversifying the players move set, but due to the lack of time coming up to the end of project had it less of a priority to continue adding more features then to instead focus on cleaning up and polishing the rest of the game </p>
+                            <p>Overall, I feel that I have contributed well to the project, creating a handful of system that would improve the workflow of the project, allowing for new content to be crated efficiently and effective.</p>
                         </div>
                     </div>
 
@@ -436,62 +548,63 @@
 
                 </div>
             </div>
+        </div>
 
-            <br>
-            <br>
-            <br>
+        <br>
+        <br>
+        <br>
 
 
-            <script>
-                function dropdownmenu(contentid, headerid) {
-                    if (document.getElementById(contentid).classList.contains("dropdown-content-show")) {
-                        document.getElementById(contentid).classList.remove("dropdown-content-show");
-                        document.getElementById(contentid).style.maxHeight = "0";
-                        /*header*/
-                        document.getElementById(headerid).classList.remove("dropdown-header-show");
+        <script>
+            function dropdownmenu(contentid, headerid) {
+                if (document.getElementById(contentid).classList.contains("dropdown-content-show")) {
+                    document.getElementById(contentid).classList.remove("dropdown-content-show");
+                    document.getElementById(contentid).style.maxHeight = "0";
+                    /*header*/
+                    document.getElementById(headerid).classList.remove("dropdown-header-show");
 
-                    } else {
-                        document.getElementById(contentid).classList.add("dropdown-content-show");
-                        let height = document.getElementById(contentid).scrollHeight;
-                        document.getElementById(contentid).style.setProperty('max-height', height + 'px');
-                        /*header*/
-                        document.getElementById(headerid).classList.add("dropdown-header-show");
+                } else {
+                    document.getElementById(contentid).classList.add("dropdown-content-show");
+                    let height = document.getElementById(contentid).scrollHeight;
+                    document.getElementById(contentid).style.setProperty('max-height', height + 'px');
+                    /*header*/
+                    document.getElementById(headerid).classList.add("dropdown-header-show");
 
-                        switch (contentid) {
-                            case "DropDown-Character-Con2": {
+                    switch (contentid) {
+                        case "DropDown-Character-Con2": {
 
-                                let HeadHeight = document.getElementById(contentid).scrollHeight;
-                                var ConHeight = document.getElementById('DropDown-Character-Con1').scrollHeight;
+                            let HeadHeight = document.getElementById(contentid).scrollHeight;
+                            var ConHeight = document.getElementById('DropDown-Character-Con1').scrollHeight;
 
-                                document.getElementById('DropDown-Character-Con1').style.setProperty('max-height', HeadHeight + ConHeight + 'px');
-                                break;
-                            }
-                            case "DropDown-Ability-Con2": {
+                            document.getElementById('DropDown-Character-Con1').style.setProperty('max-height', HeadHeight + ConHeight + 'px');
+                            break;
+                        }
+                        case "DropDown-Ability-Con2": {
 
-                                let HeadHeight = document.getElementById(contentid).scrollHeight;
-                                var ConHeight = document.getElementById('DropDown-Ability-Con1').scrollHeight;
+                            let HeadHeight = document.getElementById(contentid).scrollHeight;
+                            var ConHeight = document.getElementById('DropDown-Ability-Con1').scrollHeight;
 
-                                document.getElementById('DropDown-Ability-Con1').style.setProperty('max-height', HeadHeight + ConHeight + 'px');
-                                break;
+                            document.getElementById('DropDown-Ability-Con1').style.setProperty('max-height', HeadHeight + ConHeight + 'px');
+                            break;
 
-                            }
-                            case "DropDown-UI-Con2": {
+                        }
+                        case "DropDown-UI-Con2": {
 
-                                let HeadHeight = document.getElementById(contentid).scrollHeight;
-                                var ConHeight = document.getElementById('DropDown-UI-Con1').scrollHeight;
+                            let HeadHeight = document.getElementById(contentid).scrollHeight;
+                            var ConHeight = document.getElementById('DropDown-UI-Con1').scrollHeight;
 
-                                document.getElementById('DropDown-UI-Con1').style.setProperty('max-height', HeadHeight + ConHeight + 'px');
-                                break;
+                            document.getElementById('DropDown-UI-Con1').style.setProperty('max-height', HeadHeight + ConHeight + 'px');
+                            break;
 
-                            }
                         }
                     }
                 }
+            }
 
-            </script>
+        </script>
 
 
-        </div>
+    </div>
 
 
 </body>
