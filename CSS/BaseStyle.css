@@ -79,10 +79,10 @@ navbar-item.Navbar-link:hover {
 }
 
 .navbar-item-icon {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     margin-right: 10px;
-    top: 5px;
+    top: 3px;
     display: inline-block;
     position: relative;
     -webkit-touch-callout: none;

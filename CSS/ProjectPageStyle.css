@@ -395,7 +395,7 @@ div > img {
     box-sizing: content-box;
     object-fit: fill;
     margin-bottom: -5px;
-        overflow: visible;
+        overflow: hidden;
 
 }
 
@@ -460,7 +460,6 @@ div > img {
     left: 50%;
     z-index: 1;
     width: 90%;
-    padding-left: 0;
     left: 0px;
     padding-top: 10px;
     margin: auto;
@@ -555,7 +554,8 @@ margin-bottom: 10px;
 .carousel-inner-devlog{
 border-radius: 60px;
     background: #a0a0a0;
-     overflow-y:auto;
+     overflow-y:hidden;
+    margin-bottom: 160px;
 }
 
 /*Devlog Content*/
@@ -566,6 +566,7 @@ border-radius: 60px;
     font-size: 20px;
     user-select:text;
     color: black;
+    overflow-y: hidden;
 }
 .devlog-date{
     font-size: 45px;
@@ -619,3 +620,37 @@ margin-left: 40px;
 }
 
 
+
+.devlog-panel {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 8;
+    top: 0px;
+    left: 0px;
+    overflow-y: auto;
+    padding-top: 60px;
+}
+
+.devlog-panel-active {
+    display: block;
+}
+.devlog-panel-active:hover body{
+overflow-y: hidden
+}
+
+.carousel-devlog-close {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    float: right;
+    
+}
+
+.disable-overflow{
+    overflow-y: hidden;
+}
