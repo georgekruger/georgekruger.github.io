@@ -342,24 +342,29 @@
                             <div class="devlog-date">11<sup>th</sup> Dec 2020 - 18<sup>th</sup> Dec 2020</div>
                             <div class="devlog-page">
                                 <div class="devlog-title">Basic systems and proof of concepts</div>
-
+<div>
                                 <div class="devlog-subtitle">Primitive Skill Tree</div><br> <video autoplay autoplay muted loop width="500px" style="float: right">
-                                    <source src="/Index_Content/Video2.webm" type="video/webm">
+                                    <source src="Devlog_Content/Videos/Skilltree.webm" type="video/webm">
                                 </video>
                                 <p>
 
                                     I began developing a skill tree system using unity’s UI system, this system would be the most likely way of obtaining new abilities in the game. I constructed a skill tree node script so that in order to unlock a node, there will need to be enough connected parent nodes unlocked, later development on the system will requiring the player to have enough health to unlock them, once the health system is setup. I also made the UI element go red, yellow or green depending on their status as well as adding a UI text element displaying how many parent nodes are required to be unlocked.
                                 </p>
+                                </div>
+                                <div>
+
                                 <div class="devlog-subtitle">Primitive Inventory System</div><br> <video autoplay autoplay muted loop width="500px" style="float: left">
-                                    <source src="/Index_Content/Video2.webm" type="video/webm">
+                                    <source src="Devlog_Content/Videos/Invtest.mp4" type="video/webm">
                                 </video>
                                 <p>
 
                                     This inventory system if very basic and can only hold objects, move them or swap them with another object, with the development of this system only taking less than an hour. Though the current system is extremely basic, it is to ensure that if the system is never used, that not too much time would have been wasted on its development, as well as the system could need to be overhaled depending on what the project calls for, preventing potential rewriting of the code.
                                     The system uses item as gameobjects within slot gameobjects. When clicking and holding, it stores the objects reference within the curser and when releasing, runs a bunch of checks to determine what to do, such as detecting if the curser is over a slot or not, then if it is, check if the slot is empty, if not, swapping slots with each item.
                                 </p>
+                                                                    </div>
+
                                 <div class="devlog-subtitle">Basic Isometric Concept</div><br> <video autoplay autoplay muted loop width="500px" style="float: right">
-                                    <source src="/Index_Content/Video2.webm" type="video/webm">
+                                    <source src="Devlog_Content/Videos/test.webm" type="video/webm">
                                 </video>
                                 <p>
 
@@ -388,18 +393,30 @@
                         <div class="item">
                             <div class="devlog-date">19<sup>th</sup> Mar 2021 - 25<sup>th</sup> Mar 2021</div>
                             <div class="devlog-page">
-                                <div class="devlog-title">Stat Upgrades & Other Projects</div>
+                                <div class="devlog-title">Player Controller, Stat Upgrades & Other Projects</div>
                                 <p>This week and last week I spent a large amount of time working on other projects and thus did not spent as much time as normal on the project.
                                     I did intend to work on an important feature this week, being the implementation of the player stats and the ability to upgrade them, adding on the to the risk vs reward element of the game.
                                 </p>
 
+<div>
+                                <div class="devlog-subtitle">Player Controller</div><br>
+ <video autoplay autoplay muted loop width="500px" style="float: right">
+                                    <source src="Devlog_Content/Videos/Controllertest.mp4" type="video/webm">
+                                </video>
+                                <p>Once the team had designed the gameplay loop for the game, deciding on the players perspective, I then began work on the player controller. I started by making a basic movement system that allows the player to move freely, along with using unity’s cinemachine third person camera.
+As I was not very familiar with creating a third person controller like this, I used a Brackeys video as a foundation, building the features off it.
 
+                                </p>
+                                </div>
+<div>
                                 <div class="devlog-subtitle">Player Stat Upgrades</div><br>
-
-                                <p>This week I spent most of my development time creating the stats upgrade panels, allowing the player to spend health on improving their stats.
+ <video autoplay autoplay muted loop width="500px" style="float: right">
+                                    <source src="Devlog_Content/Videos/StatTest.mp4" type="video/mp4">
+                                </video>
+                                <p>I then spent the rest of the week's development time creating the stats upgrade panels, allowing the player to spend health on improving their stats.
                                     There stats and costs are generated using a multiplier, as this is to avoid sinking lots of time balancing values. Each stat has their own increase multiplier and cost multiplier, allowing for a general, but fast balancing approach
                                 </p>
-
+                                </div>
                             </div>
                         </div>
                         <div class="item">

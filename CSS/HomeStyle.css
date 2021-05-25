@@ -133,7 +133,7 @@
 /*Project Showcase*/
 
 .banner {
-    height: 100px;
+    height: auto;
     width: 100%;
     color: white;
     text-align: center;
@@ -390,4 +390,22 @@ project-tag {
 
 .team-tag {
     background: blue;
+}
+
+.Contact-Me {
+    height: auto;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+    vertical-align: central;
+    align-self: center;
+    background-color: #1F007E;
+    position: relative;
+    display: block;
+    padding-bottom: 14px;
 }
