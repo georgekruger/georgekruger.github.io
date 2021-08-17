@@ -189,7 +189,6 @@ div > img {
 .itch-button {
     line-height: 28px;
     font-size: 28px;
-    font-family: ItchFont;
     font-weight: 100;
     background: #fa3c5c;
 }
@@ -217,13 +216,11 @@ div > img {
 }
 
 .project-desc-text {
-    width: 80%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #ffffff;
-    font-size: 20px
+display: inline-block;
+    width: 300px;
+    height: 300px; 
+    text-overflow:clip;
+    float:left;
 }
 
 

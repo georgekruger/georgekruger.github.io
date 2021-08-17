@@ -85,46 +85,45 @@
             $("body").css("overflow", "auto");
 
         }
-
     </script>
 
     <!--Video Showcase-->
 
 
-    <div class="video-con"><div class="video-con-object rellax" data-rellax-speed="-6" onended="run()" id="Video_Showcase">
-        <video autoplay="" muted="" poster loop  width="100%">
+    <div class="video-con">
+        <div class="video-con-object rellax" data-rellax-speed="-6" onended="run()" id="Video_Showcase">
+            <video autoplay="" muted="" poster loop width="100%">
 
                 <source src="/Index_Content/Video1.webm" type="video/webm">
 
-        </video>
-        
-<script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
-<script>
-    
-   $(document).ready(function(){
-        var vid = document.getElementById("Video_Showcase");
-        vid.onplay = function() {
-            var source=vid.currentSrc;
-            folder = source.match(/(.+)(\/)/);
-            ext = source.match(/(\.\w+)$/);
-        };
+            </video>
 
-        vid.onended = function() {
-          $("#Video_Showcase").attr({
-            "src":folder[0]+"video2"+ext[0],
-            "loop":""
-          });
-        };
-    });
-</script>
+            <script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+            <script>
+                $(document).ready(function() {
+                    var vid = document.getElementById("Video_Showcase");
+                    vid.onplay = function() {
+                        var source = vid.currentSrc;
+                        folder = source.match(/(.+)(\/)/);
+                        ext = source.match(/(\.\w+)$/);
+                    };
 
-        
+                    vid.onended = function() {
+                        $("#Video_Showcase").attr({
+                            "src": folder[0] + "video2" + ext[0],
+                            "loop": ""
+                        });
+                    };
+                });
+            </script>
+
+
         </div>
         <div class="video-con-object-fade"></div>
     </div>
 
-    
-    
+
+
     <script src="/Plugins/rellax.min.js"></script>
     <script>
         var rellax = new Rellax();
@@ -136,118 +135,273 @@
     <div class="about-me">
         <div class="about-me-con">
 
-<!--
+            <!--
             <img class="about-me-picture" width="300px" src="Base_Icons/Placeholder_Icon.png">
 -->
 
 
-            <div class="about-me-con-text"><span class="about-me-title" style="max-width: none">About Me</span><span class="about-me-text">
+            <div class="about-me-con-text"><span class="about-me-title">About Me</span><span class="about-me-text">
                     <p>Hello, I’m George, an aspiring gameplay programmer and designer from the United Kingdom. I have been self-teaching coding since the age of 10, as well as software’s such as Blender, Photoshop, Vegas Pro and website coding, crating this website. I’m a currently studying at the University of Portsmouth studying computer games technology. I have completed my first year of university and continuing on my second year</p>
- <p>
-I am always working on gameplay concepts and projects to help broaden my knowledge and to continue to learn new things and overcoming any challenges, as I am fascinated in creating new and interesting gameplay concepts and mechanics. Any of my professional and personal projects can be viewed below.
-</p>
+                    <p>
+                        I am always working on gameplay concepts and projects to help broaden my knowledge and to continue to learn new things and overcoming any challenges, as I am fascinated in creating new and interesting gameplay concepts and mechanics. Any of my professional and personal projects can be viewed below.
+                    </p>
                 </span></div>
 
         </div>
     </div>
 
-    <!--Work Projects-->
+    <!---------------------------------------Work Projects--------------------------------------->
+
 
     <div class="banner" id="WorkProjects">Work Projects</div>
     <div class="panel">
-        <!--        <div class="sub-banner">1st Year<div class="sub-banner-divider"></div>
-        </div>-->
-        <div class="project-con">
+        <div class="project-con-panel">
 
-            <div class="project-con-cell">
-                <a href="Projects/Spirit_of_the_Florest/Spirit_of_the_Florest.html">
-                    <div class="project-con-box"><img class="project-con-box-image" src="/Projects/Spirit_of_the_Florest/Icon.png">
-                        <div class="project-con-box-title" style="font-size: 28px">Spirit of the Florest</div>
+            <!--SotF-->
+            <a href="">
+                <div class="project-con-cell" onmouseover="PlayVideo(true,'work-sotf-video');ShowDesc('work-sotf-desc')" onmouseleave="PlayVideo(false,'work-sotf-video')">
+                    <div class="project-con-box">
+                        <!--Projact BackGround-->
+                        <img class="project-con-box-image" src="/Projects/Spirit_of_the_Florest/SotF_Banner.png">
+                        <!--Projact Video-->
+                        <video muted loop controls preload="none" class="project-con-box-video" id="work-sotf-video">
+                            <source src="/Projects/Mantari/Mantari_Video.mp4" type="video/mp4">
+                        </video>
+                        <!--Projact Logo-->
+                        <img class="project-con-box-title" src="/Projects/Spirit_of_the_Florest/SotF_Logo.png">
                     </div>
-                </a>
-                <div class="project-con-tags">
-                    <project-tag class="engine-tag dividerline-tag">Unity</project-tag><div class="extra-tag csharp-tag">C#</div>
-                    <project-tag class="university-tag dividerline-tag">University</project-tag><div class="extra-tag year1-tag">1<sup>st</sup> Year</div>
-                    <project-tag class="team-tag">Team Project</project-tag>
                 </div>
-                <div class="project-con-desc">A 3rd person dungeon crawler, where your health is also your ability resource and currency</div>
-            </div>
-
-            <div class="project-con-cell">
-                <a href="Projects/Mantari/Mantari.html">
-                    <div class="project-con-box"><img class="project-con-box-image" src="/Projects/Mantari/Tile.png">
-                        <div class="project-con-box-title">Mantari</div>
+            </a>
+            <!--Mantari-->
+            <a href="">
+                <div class="project-con-cell" onmouseover="PlayVideo(true,'work-mantari-video');ShowDesc('work-mantari-desc')" onmouseleave="PlayVideo(false,'work-mantari-video')">
+                    <div class="project-con-box">
+                        <!--Projact BackGround-->
+                        <img class="project-con-box-image" src="/Projects/Mantari/Mantari_Banner.png">
+                        <!--Projact Video-->
+                        <video muted loop controls preload="none" class="project-con-box-video" id="work-mantari-video">
+                            <source src="/Projects/Mantari/Mantari_Video.mp4" type="video/mp4">
+                        </video>
+                        <!--Projact Logo-->
+                        <img class="project-con-box-title" src="/Projects/Mantari/Mantari_Logo.png">
                     </div>
-                </a>
-                <div class="project-con-tags">
-                    <project-tag class="engine-tag dividerline-tag">Unity</project-tag><div class="extra-tag csharp-tag">C#</div>
-                    <project-tag class="university-tag dividerline-tag">University</project-tag><div class="extra-tag year1-tag">1<sup>st</sup> Year</div>
-                    <project-tag class="team-tag">Team Project</project-tag>
                 </div>
-                <div class="project-con-desc">A Starfox inspirted gamejam</div>
-            </div>
-
-            <div class="project-con-cell">
-                <a href="Projects/Template-Page/Project_Template.html">
-                    <div class="project-con-box"><img class="project-con-box-image" src="Base_Icons/Placeholder_Icon.png">
-                        <div class="project-con-box-title">Frog</div>
+            </a>
+            <!--frog-->
+            <a href="">
+                <div class="project-con-cell" onmouseover="PlayVideo(true,'work-frog-video');ShowDesc('work-frog-desc')" onmouseleave="PlayVideo(false,'work-frog-video')">
+                    <div class="project-con-box">
+                        <!--Projact BackGround-->
+                        <img class="project-con-box-image" src="/Projects/Mantari/Tile.png">
+                        <!--Projact Video-->
+                        <video muted loop controls preload="none" class="project-con-box-video" id="work-frog-video">
+                            <source src="https://www.w3schools.com/tags/mov_bbb.mp4" type="video/mp4">
+                        </video>
+                        <!--Projact Logo-->
+                        <img class="project-con-box-title" src="/Raw_Content/Jett%20Logo.png">
                     </div>
-                </a>
-                <div class="project-con-tags">
-                    <project-tag class="engine-tag dividerline-tag">Unity</project-tag><div class="extra-tag csharp-tag">C#</div>
-                    <project-tag class="university-tag dividerline-tag">University</project-tag><div class="extra-tag year1-tag">1<sup>st</sup> Year</div>
-                    <project-tag class="team-tag">Team Project</project-tag>
                 </div>
-                <div class="project-con-desc">2D platformer inspired by games such as Jump King and Getting Over It</div>
-            </div>
-
-            <div class="project-con-cell">
-                <a href="Projects/Template-Page/Project_Template.html">
-                    <div class="project-con-box"><img class="project-con-box-image" src="Base_Icons/Placeholder_Icon.png">
-                        <div class="project-con-box-title">Helicopter Cave</div>
-                    </div>
-                </a>
-                <div class="project-con-tags">
-                    <project-tag class="engine-tag dividerline-tag">Unity</project-tag><div class="extra-tag csharp-tag">C#</div>
-                    <project-tag class="university-tag dividerline-tag">University</project-tag><div class="extra-tag year1-tag">1<sup>st</sup> Year</div>
-                    <project-tag class="team-tag">Solo</project-tag>
-                </div>
-                <div class="project-con-desc">A simple arcade style game that only uses one input</div>
-            </div>
-
+            </a>
 
 
         </div>
+        <div class="project-desc-panel">
+            <!--Forest-->
+            <div class="project-desc-cell active" id="work-sotf-desc">
+
+                <!--Logo and Tags-->
+                <div class="project-desc-box-logotags">
+                    <img src="Raw_Content/Jett%20Logo.png" width="500px">
+                    <div class="project-con-tags">
+                        <project-tag class="engine-tag dividerline-tag">Unity</project-tag>
+                        <div class="extra-tag csharp-tag">C#</div>
+                        <project-tag class="university-tag dividerline-tag">University</project-tag>
+                        <div class="extra-tag year1-tag">1<sup>st</sup> Year</div>
+                        <project-tag class="team-tag">Team Project</project-tag>
+                        <project-tag class="team-tag">Team Project</project-tag>
+                        <project-tag class="team-tag">Team Project</project-tag>
+                    </div>
+                </div>
+                <!--Desc Text-->
+
+                    <div class="project-desc-desctext">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to makesad asd asdasd asdasdas dasd asd asdasdas a centuries, but also the leapasd asd asd asd asd asd ad ad a dsd asd asd asd as dasd as dasdasdas das das das das dasd asd as dsa das das dasd asd as dasdasdasdas dasd asd asd asd asdasd as dasd asdasd asd asd asd asd asd asdasdawdqd qwdwqd qwdwdwdwdwdw dwd w dwd wd wd wd das das dasd asd as</div>
+
+
+
+
+
+                <div style="display: inline-block; width: 300px; height: 200px; text-overflow:inherit;float:right; font-size: 20px">Main Features
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                </div>
+
+                <div class="project-desc-box-links">
+
+
+                    <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button">
+                        <img src="/Base_Icons/Itch_Icon.png" width="30px">
+                        <img src="/Base_Icons/Itch_Text.png" height="28px" style="margin-bottom: 1.6px">
+                    </a>
+
+                    <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button">
+                        <img src="/Base_Icons/Itch_Icon.png" width="30px">
+                        <img src="/Base_Icons/Itch_Text.png" height="28px" style="margin-bottom: 1.6px">
+                    </a>
+
+                    <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button">
+                        <img src="/Base_Icons/Itch_Icon.png" width="30px">
+                        <img src="/Base_Icons/Itch_Text.png" height="28px" style="margin-bottom: 1.6px">
+                    </a>
+
+                </div>
+
+            </div>
+            <!--Mantari-->
+            <div id="work-mantari-desc" class="project-desc-cell">
+
+
+                <div style="float:left;width: 500px;bottom: 0px; ">
+
+
+
+
+                </div>
+                <div class="project-desc-links">
+                    <ul class="project-desc-box-links">
+                        <a href="">
+                            <li>Project Page</li>
+                        </a>
+                        <a href="">
+                            <li>Project Devlog</li>
+                        </a>
+                        <a href="">
+                            <li>Itch.Io</li>
+                        </a>
+                        <a href="">
+                            <li>jayan</li>
+                        </a>
+
+                    </ul>
+
+
+                </div>
+
+
+            </div>
+            <!--Frog-->
+            <div id="work-frog-desc" class="project-desc-cell">
+
+
+                <div style="float:left;width: 500px;bottom: 0px; ">
+
+
+
+
+                </div>
+                <div class="project-desc-links">
+                    <ul class="project-desc-box-links">
+                        <a href="">
+                            <li>Project Page</li>
+                        </a>
+                        <a href="">
+                            <li>Project Devlog</li>
+                        </a>
+                        <a href="">
+                            <li>Itch.Io</li>
+                        </a>
+                        <a href="">
+                            <li>jayan</li>
+                        </a>
+
+                    </ul>
+
+
+                </div>
+
+
+            </div>
+            <!--ID Tag here-->
+
+
+        </div>
+
     </div>
 
-    <!--Personal Projects-->
+    <!---------------------------------------Personal Projects--------------------------------------->
+
+
 
     <div class="banner" id="PersonalProjects">Personal Projects</div>
     <div class="panel">
-        <div class="project-con">
+        <div class="project-con-panel">
 
-
-            <div class="project-con-cell">
-                <a >
-                    <div class="project-con-box"><img class="project-con-box-image" src="Base_Icons/Placeholder_Icon.png">
-                        <div class="project-con-box-title">Placeholder Project</div>
+            <!--Jett-->
+            <a href="">
+                <div class="project-con-cell" onmouseover="PlayVideo(true,'jett_video');ShowDesc('personal-jett')" onmouseleave="PlayVideo(false,'jett_video')">
+                    <div class="project-con-box">
+                        <!--Projact BackGround-->
+                        <img class="project-con-box-image" src="/Projects/Mantari/Tile.png">
+                        <!--Projact Video-->
+                        <video muted loop controls class="project-con-box-video" id="jett_video">
+                            <source src="https://www.w3schools.com/tags/mov_bbb.mp4" type="video/mp4">
+                        </video>
+                        <!--Projact Logo-->
+                        <img class="project-con-box-title" src="/Raw_Content/Jett%20Logo.png">
                     </div>
-                </a>
-                <div class="project-con-tags">
-                    <project-tag class="engine-tag dividerline-tag">UE4</project-tag><div class="extra-tag csharp-tag">Blueprints</div>
-                    <project-tag class="team-tag">Team Project</project-tag>
                 </div>
-                <div class="project-con-desc">PlaceHolder</div>
-            </div>
+            </a>
 
+        </div>
+        <div class="project-desc-panel">
 
 
 
         </div>
-    </div>
-    
-    <div class="Contact-Me" id="Contact">Contact Me<br><p style="font-size: 20px">Feel free to get in contact: <a href="mailto:georgekruger@hotmail.co.uk" style="text-decoration: underline;text-decoration-style: dotted">georgekruger@hotmail.co.uk</a></p>    <a href="Index_Content/Cover%20Letter.pdf" style="font-size: 40px; text-decoration: underline; color: aqua; text-decoration-style: dotted">Cover Letter</a>
-</div>
-</body>
 
-</html>
+    </div>
+
+    <div class="Contact-Me" id="Contact">Contact Me<br>
+        <p style="font-size: 20px">Feel free to get in contact: <a href="mailto:georgekruger@hotmail.co.uk" style="text-decoration: underline;text-decoration-style: dotted">georgekruger@hotmail.co.uk</a></p>
+    </div>
+
+    <!--Scripts-->
+
+    <script>
+        function PlayVideo(IfPlay, ProjectID) {
+
+
+            var Video = document.getElementById(ProjectID);
+
+
+            if (IfPlay) {
+                Video.play();
+
+            } else {
+                Video.pause();
+            }
+        }
+
+
+
+
+
+        function ShowDesc(ShowDescID) {
+            const HideDesc = document.getElementsByClassName("active");
+            HideDesc[0].classList.remove("active");
+
+            var ShowDesc = document.getElementById(ShowDescID);
+            ShowDesc.classList.add("active");
+        }
+    </script>
+
+
+
+
+</body></html>

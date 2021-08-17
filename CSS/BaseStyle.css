@@ -1,13 +1,19 @@
 @charset "utf-8";
 
+
 body {
     top: 0px;
     left: 0px;
     margin: 0px;
     background-color: #282828;
     min-width: 450px;
-    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-family: Montserrat;
     overflow: visible;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("/Fonts/Montserrat-ExtraLight.ttf");
 }
 
 a {
@@ -46,7 +52,6 @@ navbar-item {
     margin-bottom: auto;
     font-size: 16px;
     margin-left: 5px;
-    font-family: Microsoft YaHei UI;
     font-weight: lighter;
     color: white;
     overflow: hidden;
