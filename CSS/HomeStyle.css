@@ -198,7 +198,14 @@ body{
     height: 700px;
     transform: rotate(10deg);
     transition: 0.5s;
-    overflow: hidden
+    overflow: hidden;
+    cursor:pointer;
+            
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-o-user-select: none;
+user-select: none;
 }
 
 .project-con-box {}
@@ -222,6 +229,18 @@ body{
 
     left: -700px;
     right: -1000px;
+    
+    -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-o-user-select: none;
+user-select: none;
+    
+      -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
 
 }
 
@@ -489,6 +508,11 @@ project-tag {
     color: white;
     display: inline-block;
     pointer-events: none;
+    
+      -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;  
+  user-select: none;     
 
 }
 
@@ -631,6 +655,11 @@ project-tag {
     bottom: 0px;
     position: relative;
     height: 210px;
+        
+      -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;  
+  user-select: none;  
 }
 
 .link-button:hover {
