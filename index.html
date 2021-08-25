@@ -158,8 +158,7 @@
         <div class="project-con-panel">
 
             <!--SotF-->
-            <a onclick="OpenProject('https://google.com')">
-                <div class="project-con-cell" onmouseover="PlayVideo(true,'work-sotf-video');ShowDesc('work-sotf-desc')" onmouseleave="PlayVideo(false,'work-sotf-video')">
+                <div class="project-con-cell" onclick="OpenProject('https://google.com');" onmouseover="PlayVideo(true,'work-sotf-video');ShowDesc('work-sotf-desc')" onmouseleave="PlayVideo(false,'work-sotf-video')">
                     <div class="project-con-box">
                         <!--Projact BackGround-->
                         <img class="project-con-box-image" src="/Projects/Spirit_of_the_Florest/SotF_Banner.png" draggable="false">
@@ -171,7 +170,6 @@
                         <img class="project-con-box-title" src="/Projects/Spirit_of_the_Florest/SotF_Logo.png" draggable="false">
                     </div>
                 </div>
-            </a>
 
             <!--Mantari-->
             <a href="">
@@ -432,7 +430,6 @@
         function OpenProject(URL) {
 
             if (MobileChecker()) {
-
 
             } else {
                 window.open(URL,"_self");
