@@ -164,7 +164,7 @@
                         <!--Projact BackGround-->
                         <img class="project-con-box-image" src="/Projects/Spirit_of_the_Florest/SotF_Banner.png">
                         <!--Projact Video-->
-                        <video muted loop controls preload="none" class="project-con-box-video" id="work-sotf-video">
+                        <video muted loop controls class="project-con-box-video" id="work-sotf-video">
                             <source src="/Projects/Mantari/Mantari_Video.mp4" type="video/mp4">
                         </video>
                         <!--Projact Logo-->
@@ -172,6 +172,7 @@
                     </div>
                 </div>
             </a>
+
             <!--Mantari-->
             <a href="">
                 <div class="project-con-cell" onmouseover="PlayVideo(true,'work-mantari-video');ShowDesc('work-mantari-desc')" onmouseleave="PlayVideo(false,'work-mantari-video')">
@@ -179,7 +180,7 @@
                         <!--Projact BackGround-->
                         <img class="project-con-box-image" src="/Projects/Mantari/Mantari_Banner.png">
                         <!--Projact Video-->
-                        <video muted loop controls preload="none" class="project-con-box-video" id="work-mantari-video">
+                        <video muted loop controls class="project-con-box-video" id="work-mantari-video">
                             <source src="/Projects/Mantari/Mantari_Video.mp4" type="video/mp4">
                         </video>
                         <!--Projact Logo-->
@@ -187,6 +188,7 @@
                     </div>
                 </div>
             </a>
+
             <!--frog-->
             <a href="">
                 <div class="project-con-cell" onmouseover="PlayVideo(true,'work-frog-video');ShowDesc('work-frog-desc')" onmouseleave="PlayVideo(false,'work-frog-video')">
@@ -205,13 +207,15 @@
 
 
         </div>
+        <!--------Project Desc-------->
+
         <div class="project-desc-panel">
             <!--Forest-->
-            <div class="project-desc-cell active" id="work-sotf-desc">
+            <div class="project-desc-cell project-desc-active" id="work-sotf-desc">
 
                 <!--Logo and Tags-->
                 <div class="project-desc-box-logotags">
-                    <img src="Raw_Content/Jett%20Logo.png" width="500px">
+                    <img src="Raw_Content/Jett%20Logo.png" width="500px" style="z-index: 10;">
                     <div class="project-con-tags">
                         <project-tag class="engine-tag dividerline-tag">Unity</project-tag>
                         <div class="extra-tag csharp-tag">C#</div>
@@ -224,35 +228,20 @@
                 </div>
                 <!--Desc Text-->
 
-                    <div class="project-desc-desctext">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to makesad asd asdasd asdasdas dasd asd asdasdas a centuries, but also the leapasd asd asd asd asd asd ad ad a dsd asd asd asd as dasd as dasdasdas das das das das dasd asd as dsa das das dasd asd as dasdasdasdas dasd asd asd asd asdasd as dasd asdasd asd asd asd asd asd asdasdawdqd qwdwqd qwdwdwdwdwdw dwd w dwd wd wd wd das das dasd asd as</div>
+                <div class="project-desc-desctext">Lorem Ipsum is simply dumasdas dasd asdas d asd as dasd asda sdas d asd asdasdasjdh gvasdgashjidgasgdhuasgdhujasg dahsgd asgud asdg agsd uyoasg dyuas gdasy gdasyd yuas gdyuasgduy asydgsdguyas gdduyamy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to makesad asd asdasd asdasdas dasd asd asdasdas a centuries, but also the leapasd asd asd asd asd asd ad ad a dsd asd asd asd as dasd as dasdasdas das das das das dasd asd as dsa das das dasd asd as dasdasdasdas dasd asd asd asd asdasd as dasd asdasd asd asd asd asd asd asdasdawdqd qwdwqd qwdwdwdwdwdw dwd w dwd wd wd wd das das dasd asd as</div>
 
-
-
-
-
-                <div style="display: inline-block; width: 300px; height: 200px; text-overflow:inherit;float:right; font-size: 20px">Main Features
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                </div>
 
                 <div class="project-desc-box-links">
 
 
-                    <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button">
-                        <img src="/Base_Icons/Itch_Icon.png" width="30px">
-                        <img src="/Base_Icons/Itch_Text.png" height="28px" style="margin-bottom: 1.6px">
+                    <a href="https://georgekruger.itch.io/mantari" class="link-button projectpage-button">
+                        <img src="/Base_Icons/Joystick_Icon.png" width="33px">
+                        <div class="projectpage-button-text">Project Page</div>
                     </a>
 
                     <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button">
                         <img src="/Base_Icons/Itch_Icon.png" width="30px">
-                        <img src="/Base_Icons/Itch_Text.png" height="28px" style="margin-bottom: 1.6px">
+                        <img src="/Base_Icons/Itch_Text.png" height="28px">
                     </a>
 
                     <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button">
@@ -262,72 +251,138 @@
 
                 </div>
 
+                <div class="project-desc-box-feature">
+                    <div class="project-desc-box-featureheader">Main Features</div>
+
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                </div>
+
+
             </div>
+
             <!--Mantari-->
-            <div id="work-mantari-desc" class="project-desc-cell">
+            <div class="project-desc-cell" id="work-mantari-desc">
+
+                <!--Logo and Tags-->
+                <div class="project-desc-box-logotags">
+                    <img src="Raw_Content/Jett%20Logo.png" width="500px" style="z-index: 10;">
+                    <div class="project-con-tags">
+                        <project-tag class="engine-tag dividerline-tag">Unity</project-tag>
+                        <div class="extra-tag csharp-tag">C#</div>
+                        <project-tag class="university-tag dividerline-tag">University</project-tag>
+                        <div class="extra-tag year1-tag">1<sup>st</sup> Year</div>
+                        <project-tag class="team-tag">Team Project</project-tag>
+                        <project-tag class="team-tag">Team Project</project-tag>
+                        <project-tag class="team-tag">Team Project</project-tag>
+                    </div>
+                </div>
+                <!--Desc Text-->
+
+                <div class="project-desc-desctext">Lorem Ipsum is simply dumasdas dasd asdas d asd as dasd asda sdas d asd asdasdasjdh gvasdgashjidgasgdhuasgdhujasg dahsgd asgud asdg agsd uyoasg dyuas gdasy gdasyd yuas gdyuasgduy asydgsdguyas gdduyamy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to makesad asd asdasd asdasdas dasd asd asdasdas a centuries, but also the leapasd asd asd asd asd asd ad ad a dsd asd asd asd as dasd as dasdasdas das das das das dasd asd as dsa das das dasd asd as dasdasdasdas dasd asd asd asd asdasd as dasd asdasd asd asd asd asd asd asdasdawdqd qwdwqd qwdwdwdwdwdw dwd w dwd wd wd wd das das dasd asd as</div>
 
 
-                <div style="float:left;width: 500px;bottom: 0px; ">
+                <div class="project-desc-box-links">
 
 
+                    <a href="https://georgekruger.itch.io/mantari" class="link-button projectpage-button">
+                        <img src="/Base_Icons/Joystick_Icon.png" width="33px">
+                        <div class="projectpage-button-text">Project Page</div>
+                    </a>
 
+                    <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button">
+                        <img src="/Base_Icons/Itch_Icon.png" width="30px">
+                        <img src="/Base_Icons/Itch_Text.png" height="28px">
+                    </a>
+
+                    <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button">
+                        <img src="/Base_Icons/Itch_Icon.png" width="30px">
+                        <img src="/Base_Icons/Itch_Text.png" height="28px" style="margin-bottom: 1.6px">
+                    </a>
 
                 </div>
-                <div class="project-desc-links">
-                    <ul class="project-desc-box-links">
-                        <a href="">
-                            <li>Project Page</li>
-                        </a>
-                        <a href="">
-                            <li>Project Devlog</li>
-                        </a>
-                        <a href="">
-                            <li>Itch.Io</li>
-                        </a>
-                        <a href="">
-                            <li>jayan</li>
-                        </a>
 
-                    </ul>
+                <div class="project-desc-box-feature">
+                    <div class="project-desc-box-featureheader">Main Features</div>
 
-
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
                 </div>
 
 
             </div>
+            
             <!--Frog-->
-            <div id="work-frog-desc" class="project-desc-cell">
+            <div class="project-desc-cell" id="work-frog-desc">
+
+                <!--Logo and Tags-->
+                <div class="project-desc-box-logotags">
+                    <img src="Raw_Content/Jett%20Logo.png" width="500px" style="z-index: 10;">
+                    <div class="project-con-tags">
+                        <project-tag class="engine-tag dividerline-tag">Unity</project-tag>
+                        <div class="extra-tag csharp-tag">C#</div>
+                        <project-tag class="university-tag dividerline-tag">University</project-tag>
+                        <div class="extra-tag year1-tag">1<sup>st</sup> Year</div>
+                        <project-tag class="team-tag">Team Project</project-tag>
+                        <project-tag class="team-tag">Team Project</project-tag>
+                        <project-tag class="team-tag">Team Project</project-tag>
+                    </div>
+                </div>
+                <!--Desc Text-->
+
+                <div class="project-desc-desctext">Lorem Ipsum is simply dumasdas dasd asdas d asd as dasd asda sdas d asd asdasdasjdh gvasdgashjidgasgdhuasgdhujasg dahsgd asgud asdg agsd uyoasg dyuas gdasy gdasyd yuas gdyuasgduy asydgsdguyas gdduyamy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to makesad asd asdasd asdasdas dasd asd asdasdas a centuries, but also the leapasd asd asd asd asd asd ad ad a dsd asd asd asd as dasd as dasdasdas das das das das dasd asd as dsa das das dasd asd as dasdasdasdas dasd asd asd asd asdasd as dasd asdasd asd asd asd asd asd asdasdawdqd qwdwqd qwdwdwdwdwdw dwd w dwd wd wd wd das das dasd asd as</div>
 
 
-                <div style="float:left;width: 500px;bottom: 0px; ">
+                <div class="project-desc-box-links">
 
 
+                    <a href="https://georgekruger.itch.io/mantari" class="link-button projectpage-button">
+                        <img src="/Base_Icons/Joystick_Icon.png" width="33px">
+                        <div class="projectpage-button-text">Project Page</div>
+                    </a>
 
+                    <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button">
+                        <img src="/Base_Icons/Itch_Icon.png" width="30px">
+                        <img src="/Base_Icons/Itch_Text.png" height="28px">
+                    </a>
+
+                    <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button">
+                        <img src="/Base_Icons/Itch_Icon.png" width="30px">
+                        <img src="/Base_Icons/Itch_Text.png" height="28px" style="margin-bottom: 1.6px">
+                    </a>
 
                 </div>
-                <div class="project-desc-links">
-                    <ul class="project-desc-box-links">
-                        <a href="">
-                            <li>Project Page</li>
-                        </a>
-                        <a href="">
-                            <li>Project Devlog</li>
-                        </a>
-                        <a href="">
-                            <li>Itch.Io</li>
-                        </a>
-                        <a href="">
-                            <li>jayan</li>
-                        </a>
 
-                    </ul>
+                <div class="project-desc-box-feature">
+                    <div class="project-desc-box-featureheader">Main Features</div>
 
-
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
+                    <li>Point Point Point Point</li>
                 </div>
 
 
             </div>
-            <!--ID Tag here-->
 
 
         </div>
@@ -393,11 +448,11 @@
 
 
         function ShowDesc(ShowDescID) {
-            const HideDesc = document.getElementsByClassName("active");
-            HideDesc[0].classList.remove("active");
+            const HideDesc = document.getElementsByClassName("project-desc-active");
+            HideDesc[0].classList.remove("project-desc-active");
 
             var ShowDesc = document.getElementById(ShowDescID);
-            ShowDesc.classList.add("active");
+            ShowDesc.classList.add("project-desc-active");
         }
     </script>
 

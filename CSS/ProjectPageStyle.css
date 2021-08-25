@@ -142,8 +142,7 @@ body {
     -ms-user-select: none;
 }
 
-.link-button > img,
-div,
+.link-button > img, div,
 div > img {
 
     -webkit-touch-callout: none;
