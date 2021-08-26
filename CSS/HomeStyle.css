@@ -244,6 +244,8 @@ user-select: none;
   -o-user-drag: none;
   user-drag: none;
 
+        -webkit-touch-callout:none;
+pointer-events: none;
 }
 
 .project-con-box-title {
@@ -254,6 +256,12 @@ user-select: none;
     margin: auto;
     position: absolute;
     display: block;
+    
+    -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-o-user-select: none;
+user-select: none;
 
 }
 
@@ -479,7 +487,7 @@ project-tag {
     left: -710px;
     right: -1000px;
     margin: auto;
-    pointer-events: none;
+    pointer-events: auto;
 }qqqqq
 
 .project-cell-rot {
