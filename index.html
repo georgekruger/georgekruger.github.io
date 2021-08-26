@@ -85,6 +85,7 @@
             $("body").css("overflow", "auto");
 
         }
+
     </script>
 
     <!--Video Showcase-->
@@ -115,6 +116,7 @@
                         });
                     };
                 });
+
             </script>
 
 
@@ -127,6 +129,7 @@
     <script src="/Plugins/rellax.min.js"></script>
     <script>
         var rellax = new Rellax();
+
     </script>
 
     <!--About Me-->
@@ -158,18 +161,18 @@
         <div class="project-con-panel">
 
             <!--SotF-->
-                <div class="project-con-cell" onclick="OpenProject('https://google.com');PlayVideo(true,'work-sotf-video');ShowDesc('work-sotf-desc')" onmouseover="PlayVideo(true,'work-sotf-video');ShowDesc('work-sotf-desc')" onmouseleave="PlayVideo(false,'work-sotf-video')">
-                    <div class="project-con-box">
-                        <!--Projact BackGround-->
-                        <img class="project-con-box-image" src="/Projects/Spirit_of_the_Florest/SotF_Banner.png" draggable="false">
-                        <!--Projact Video-->
-                        <video muted loop controls class="project-con-box-video" id="work-sotf-video" >
-                            <source src="/Projects/Mantari/Mantari_Video.mp4" type="video/mp4">
-                        </video>
-                        <!--Projact Logo-->
-                        <img class="project-con-box-title" src="/Projects/Spirit_of_the_Florest/SotF_Logo.png" draggable="false">
-                    </div>
+            <div class="project-con-cell" onclick="OpenProject('https://google.com','work-sotf-video','work-sotf-desc')" onmouseover="PlayVideo(true,'work-sotf-video');ShowDesc('work-sotf-desc')" onmouseleave="PlayVideo(false,'work-sotf-video')">
+                <div class="project-con-box">
+                    <!--Projact BackGround-->
+                    <img class="project-con-box-image" src="/Projects/Spirit_of_the_Florest/SotF_Banner.png" draggable="false">
+                    <!--Projact Video-->
+                    <video muted loop controls class="project-con-box-video" id="work-sotf-video">
+                        <source src="/Projects/Mantari/Mantari_Video.mp4" type="video/mp4">
+                    </video>
+                    <!--Projact Logo-->
+                    <img class="project-con-box-title" src="/Projects/Spirit_of_the_Florest/SotF_Logo.png" draggable="false">
                 </div>
+            </div>
 
             <!--Mantari-->
             <a href="">
@@ -208,11 +211,11 @@
         <!--------Project Desc-------->
 
         <div class="project-desc-panel">
-            
-                        <!--Start-->
+
+            <!--Start-->
             <div class="project-desc-cell project-desc-active" id="">
 
-                
+
                 <img src="Base_Icons/Arrow.png">
                 #aiklhsdgbaljkshgbdhiasgdhijlasgdilhjasgdhiljasgd
 
@@ -438,12 +441,15 @@
     <!--Scripts-->
 
     <script>
-        function OpenProject(URL) {
+        function OpenProject(URL, ProjectID, ShowDescID) {
 
             if (MobileChecker()) {
+                PlayVideo(true, ProjectID);
+                ShowDesc(ShowDescID);
+
 
             } else {
-                window.open(URL,"_self");
+                window.open(URL, "_self");
             }
 
         }
@@ -489,9 +495,12 @@
             })(navigator.userAgent || navigator.vendor || window.opera);
             return check;
         }
+
     </script>
 
 
 
 
-</body></html>
+</body>
+
+</html>
