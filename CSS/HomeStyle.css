@@ -486,7 +486,7 @@ qqqqq .project-cell-rot {
     position: absolute;
     text-align: center;
     padding-top: 20px;
-    transition: 0.4s;
+    transition: 6s;
     transform: translateY(-80px);
     opacity: 0;
     margin: auto;
@@ -497,6 +497,7 @@ qqqqq .project-cell-rot {
     color: white;
     display: inline-block;
     pointer-events: none;
+    z-index: 1;
 
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -530,6 +531,7 @@ qqqqq .project-cell-rot {
 
     opacity: 1;
     pointer-events: auto;
+    z-index: 2;
 
 }
 
@@ -687,3 +689,20 @@ qqqqq .project-cell-rot {
 }
 
 .link-button > img {}
+
+
+
+*::-webkit-media-controls-panel {
+    display: none !important;
+    -webkit-appearance: none;
+}
+
+*::--webkit-media-controls-play-button {
+    display: none !important;
+    -webkit-appearance: none;
+}
+
+*::-webkit-media-controls-start-playback-button {
+    display: none !important;
+    -webkit-appearance: none;
+}
