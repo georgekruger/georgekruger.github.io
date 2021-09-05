@@ -9,6 +9,7 @@ body {
     min-width: 450px;
     font-family: Montserrat;
     overflow: visible;
+    color: white;
 }
 
 @font-face {
