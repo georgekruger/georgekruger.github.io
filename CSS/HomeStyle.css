@@ -137,10 +137,7 @@ body {
     color: white;
     text-align: center;
     font-size: 41px;
-    margin-top: auto;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: auto;
+    margin: auto;
     vertical-align: central;
     align-self: center;
     line-height: 100px;
@@ -186,6 +183,11 @@ body {
     overflow: hidden;
     white-space: nowrap;
 
+    background: rgb(28, 28, 28);
+    background: -moz-linear-gradient(0deg, rgba(28, 28, 28, 1) 0%, rgba(33, 33, 33, 1) 40%, rgba(33, 33, 33, 1) 60%, rgba(28, 28, 28, 1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(28, 28, 28, 1) 0%, rgba(33, 33, 33, 1) 40%, rgba(33, 33, 33, 1) 60%, rgba(28, 28, 28, 1) 100%);
+    background: linear-gradient(0deg, rgba(28, 28, 28, 1) 0%, rgba(33, 33, 33, 1) 40%, rgba(33, 33, 33, 1) 60%, rgba(28, 28, 28, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1c1c1c", endColorstr="#1c1c1c", GradientType=1);
 }
 
 .project-con-cell {
@@ -705,4 +707,118 @@ qqqqq .project-cell-rot {
 *::-webkit-media-controls-start-playback-button {
     display: none !important;
     -webkit-appearance: none;
+}
+
+/*-------------------CV-------------------*/
+
+/*Bubbles*/
+
+.cv-bubble {
+    height: auto;
+    width: auto;
+    display: inline-block;
+    position: relative;
+    padding: 4px 44px 4px 8px;
+    border-radius: 6px;
+    background: #9b2626;
+    font-size: 22px;
+    z-index: 2;
+    margin: 10px;
+    cursor: default;
+    
+
+}
+
+.cv-bubble-icon {
+    position: absolute;
+    width: 44px;
+    margin-left: -46px;
+    margin-top: -8px;
+}
+
+.cv-bubble-con {
+    height: auto;
+    width: auto;
+    border: 1px solid #9b2626;
+    border-radius: 12px;
+
+    display: inline-block;
+
+    background: none;
+    margin: 10px;
+    text-align: center;
+
+}
+
+
+.cv-bubble-title {
+    height: auto;
+    width: 100;
+    position: absolute;
+    background-color: #282828;
+    z-index: 1;
+    margin-left: -12px;
+    margin-top: -20px;
+    padding-right: 10px;
+    padding-bottom: 4px;
+    font-size: 20px
+}
+
+.cv-bubble-pyramid {
+    position: absolute;
+    width: 32px;
+    margin-left: 6px;
+}
+
+.cv-bubble-hover {
+    position: absolute;
+    bottom: 0px;
+    left: -100px;
+    right: -100px;
+    width: 200px;
+    background-color: inherit;
+    opacity: 0;
+    transition: 0.4s;
+    transform: translateY(-60px);
+    padding: 10px;
+    pointer-events: none;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    font-size: 16px;
+
+
+
+}
+
+.cv-bubble-hover > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cv-bubble-hover > ul > li > img {
+    width: 16px;
+
+}
+
+.cv-bubble:hover > .cv-bubble-hover {
+    transform: translateY(-40px);
+
+    opacity: 1;
+}
+
+
+.cv-bubbl-panel {
+    width: 1400px;
+    margin: auto;
+    
+        -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    
+    drag
+
 }
