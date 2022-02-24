@@ -7,7 +7,14 @@
 
     <link rel="stylesheet" href="/CSS/HomeStyle.css">
 
+    <script src="JavaScript/NavbarScript.js"> </script>
+
+    <meta name="theme-color" content="#26112c">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+
+
     <title>George Kruger</title>
+
 
 </head>
 
@@ -15,30 +22,23 @@
 
     <div class="navbar">
 
-        <navbar-item class="name-start">George Kruger</navbar-item>
+        <navbar-item class="navbar-name">George Kruger</navbar-item>
 
-        <a href="/index.html#Home">
-            <navbar-item class="Navbar-link"><img src="/Base_Icons/Home_Icon.png" class="navbar-item-icon" />Home</navbar-item>
-        </a>
-        <a href="/index.html#WorkProjects">
-            <navbar-item class="Navbar-link"><img src="/Base_Icons/WorkProjects_Icon.png" class="navbar-item-icon" id="NoDrag" />Work Projects</navbar-item>
-        </a>
-        <a href="/index.html#PersonalProjects">
-            <navbar-item class="Navbar-link"><img src="/Base_Icons/PersonalProjects_Icon.png" class="navbar-item-icon" />Personal Projects</navbar-item>
-        </a>
-        <a href="/Content/CV.pdf">
-            <navbar-item class="Navbar-link"><img src="/Base_Icons/CV_Icon.png" class="navbar-item-icon" />CV</navbar-item>
-        </a>
-        <a href="/index.html#Contact">
-            <navbar-item class="Navbar-link"><img src="/Base_Icons/Contact_Icon.png" class="navbar-item-icon" height="14px" />Contact</navbar-item>
-        </a>
+        <a class="navbar-link" href="/index.html#Home"><img src="/Base_Icons/Home_Icon.png" class="navbar-item-icon" />Home</a>
+        <a class="navbar-link" href="/index.html#WorkProjects"><img src="/Base_Icons/WorkProjects_Icon.png" class="navbar-item-icon" />Work Projects</a>
+        <a class="navbar-link" href="/index.html#PersonalProjects"><img src="/Base_Icons/PersonalProjects_Icon.png" class="navbar-item-icon" />Personal Projects</a>
+        <a class="navbar-link" href="/Content/CV.pdf"><img src="/Base_Icons/CV_Icon.png" class="navbar-item-icon" />CV</a>
+        <a class="navbar-link" href="/index.html#Contact"><img src="/Base_Icons/Contact_Icon.png" class="navbar-item-icon" height="14px" />Contact</a>
 
         <a class="navbar-sidepanel-shadow" id="Navbar-Panel-Shadow" href="javascript:void(0)" onclick="ClosePanel()"></a>
 
     </div>
 
     <!--Side Panel-->
+
+    <!--
     <a href="javascript:void(0)" class="navbar-item-menu-icon" onclick="TogglePanel()"><img width="80%" src="/Base_Icons/Menu_Icon.png"></a>
+-->
 
     <div id="SidePanel" class="navbar-sidepanel navbar-sidepanel-closed">
 
@@ -61,31 +61,6 @@
 
 
     </div>
-
-
-    <script>
-        function TogglePanel() {
-            if (document.getElementById("SidePanel").classList.contains("navbar-sidepanel-closed")) {
-                document.getElementById("SidePanel").classList.remove("navbar-sidepanel-closed");
-                document.getElementById("Navbar-Panel-Shadow").style.display = "block";
-                document.getElementById("Navbar-Panel-Shadow").style.background = "hsla(0, 0%, 0%, 0.5)";
-
-                $("body").css("overflow", "hidden");
-            } else {
-                ClosePanel();
-            }
-        }
-
-
-        function ClosePanel() {
-            document.getElementById("SidePanel").classList.add("navbar-sidepanel-closed");
-            document.getElementById("Navbar-Panel-Shadow").style.background = "hsla(0, 0%, 0%, 0)";
-            document.getElementById("Navbar-Panel-Shadow").style.display = "none";
-
-            $("body").css("overflow", "auto");
-
-        }
-    </script>
 
     <!--Video Showcase-->
 
@@ -119,7 +94,9 @@
 
 
         </div>
+<!--
         <div class="video-con-object-fade"></div>
+-->
     </div>
 
     <script src="/Plugins/rellax.min.js"></script>
@@ -140,83 +117,112 @@
 
             <div class="about-me-con-text"><span class="about-me-title">About Me</span>
                 <span class="about-me-text">
-                    <p>Hello, I’m George, an aspiring gameplay programmer and designer from the United Kingdom. I have been self-teaching coding since the age of 10, as well as software’s such as Blender, Photoshop, Vegas Pro and website coding, crating this website. I’m a currently studying at the University of Portsmouth studying computer games technology. I have completed my first year of university and continuing on my second year</p>
                     <p>
-                        I am always working on gameplay concepts and projects to help broaden my knowledge and to continue to learn new things and overcoming any challenges, as I am fascinated in creating new and interesting gameplay concepts and mechanics. Any of my professional and personal projects can be viewed below.
+                        Hello, I’m George, an aspiring gameplay programmer and designer from the United Kingdom.
+                        I have been self-teaching coding since the age of 10, as well as software’s such as Blender,
+                        Photoshop, Vegas Pro and website coding, as well as crating this website.
+                        I’m a currently studying at the University of Portsmouth studying computer games technology.
+                        I have completed my first year of university and continuing on my second year
+                    </p>
+                    <p>
+                        I am always working on gameplay concepts and projects to help broaden my knowledge and to continue
+                        to learn new things and overcoming any challenges, as I am fascinated in creating new and interesting
+                        gameplay concepts and mechanics. Any of my professional and personal projects can be viewed below.
                     </p>
                 </span>
             </div>
-
+            <div style="background: #fad201; color: black; border-radius: 20px;text-align: center;padding-bottom: 2px">
+                <h1 style="margin-bottom: -30px;">Don't mind the dust</h1><br>
+                <img src="Base_Icons/Hammer_Icon.png" style="float: left; width: 90px; margin-left: 20px;margin-top: -16px">
+                <h3>
+                    The site is still a WIP and may contain grammatical errors or miss-placed elements,
+                    the majority of content and information should be available.
+                </h3>
+            </div>
         </div>
     </div>
 
     <!---------------------------------------Work Projects--------------------------------------->
-
-
-    <div class="banner" id="WorkProjects">Work Projects</div>
+    <div class="Banner" id="WorkProjects">Work Projects</div>
     <div class="panel">
-        <div class="project-con-panel">
+        <div class="asdasdasd">
+        <div class="project-con-panel" id="ProjectSlide" style="">
 
-            <!--SotF-->
-            <div class="project-con-cell" onclick="OpenProject('https://google.com','work-sotf-video','work-sotf-desc')" onmouseover="PlayVideo(true,'work-sotf-video');ShowDesc('work-sotf-desc')" onmouseleave="PlayVideo(false,'work-sotf-video')">
+            
+            
+                        <!--SotF-->
+            <div class="project-con-cell" onclick="ExpandProject(0)" onmouseover="PlayVideo(true,'work-sotf-video');ShowDescWork('work-sotf-desc')" onmouseleave="PlayVideo(false,'work-sotf-video')">
                 <div class="project-con-box">
                     <!--Projact BackGround-->
-                    <img class="project-con-box-image" src="/Projects/Spirit_of_the_Florest/SotF_Banner.png" draggable="false">
+                    <img class="project-con-box-image" src="/Projects/Spirit_of_the_Florest/SotF_Banner.png">
                     <!--Projact Video-->
-                    <video muted loop controls class="project-con-box-video" id="work-sotf-video">
+                    <video muted loop controls class="project-con-box-video" id="work-sotf-video" style="display: none">
                         <source src="/Projects/Mantari/Mantari_Video.mp4" type="video/mp4">
                     </video>
                     <!--Projact Logo-->
-                    <img class="project-con-box-title" src="/Projects/Spirit_of_the_Florest/SotF_Logo.png" draggable="false">
+                    <img class="project-con-box-title" src="/Projects/Spirit_of_the_Florest/SotF_Logo.png">
+                </div>
+            </div>     
+            
+            
+            <!--SotF-->
+            <div class="project-con-cell" onclick="ExpandProject(1)" onmouseover="PlayVideo(true,'work-sotf-video');ShowDescWork('work-sotf-desc')" onmouseleave="PlayVideo(false,'work-sotf-video')">
+                <div class="project-con-box">
+                    <!--Projact BackGround-->
+                    <img class="project-con-box-image" src="/Projects/Spirit_of_the_Florest/SotF_Banner.png">
+                    <!--Projact Video-->
+                    <video muted loop controls class="project-con-box-video" id="work-sotf-video" style="display: none">
+                        <source src="/Projects/Mantari/Mantari_Video.mp4" type="video/mp4">
+                    </video>
+                    <!--Projact Logo-->
+                    <img class="project-con-box-title" src="/Projects/Spirit_of_the_Florest/SotF_Logo.png">
+                </div>
+            </div>
+            
+            <!--SotF-->
+            <div class="project-con-cell" onclick="ExpandProject(2)" onmouseover="PlayVideo(true,'work-sotf-video');ShowDescWork('work-sotf-desc')" onmouseleave="PlayVideo(false,'work-sotf-video')">
+                <div class="project-con-box">
+                    <!--Projact BackGround-->
+                    <img class="project-con-box-image" src="/Projects/Spirit_of_the_Florest/SotF_Banner.png">
+                    <!--Projact Video-->
+                    <video muted loop controls class="project-con-box-video" id="work-sotf-video" style="display: none">
+                        <source src="/Projects/Mantari/Mantari_Video.mp4" type="video/mp4">
+                    </video>
+                    <!--Projact Logo-->
+                    <img class="project-con-box-title" src="/Projects/Spirit_of_the_Florest/SotF_Logo.png">
                 </div>
             </div>
 
             <!--Mantari-->
-            <a href="">
-                <div class="project-con-cell" onmouseover="PlayVideo(true,'work-mantari-video');ShowDesc('work-mantari-desc')" onmouseleave="PlayVideo(false,'work-mantari-video')">
-                    <div class="project-con-box">
-                        <!--Projact BackGround-->
-                        <img class="project-con-box-image" src="/Projects/Mantari/Mantari_Banner.png">
-                        <!--Projact Video-->
-                        <video muted loop controls class="project-con-box-video" id="work-mantari-video">
-                            <source src="/Projects/Mantari/Mantari_Video.mp4" type="video/mp4">
-                        </video>
-                        <!--Projact Logo-->
-                        <img class="project-con-box-title" src="/Projects/Mantari/Mantari_Logo.png">
-                    </div>
+           <div> <div class="project-con-cell" onclick="ExpandProject(3)" onmouseover="PlayVideo(true,'work-mantari-video');ShowDescWork('work-mantari-desc')" onmouseleave="PlayVideo(false,'work-mantari-video')">
+                <div class="project-con-box">
+                    <!--Projact BackGround-->
+                    <img class="project-con-box-image" src="/Projects/Mantari/Mantari_Banner.png">
+                    <!--Projact Video-->
+                    <video muted loop controls class="project-con-box-video" id="work-mantari-video">
+                        <source src="/Projects/Mantari/Mantari_Video.mp4" type="video/mp4">
+                    </video>
+                    <!--Projact Logo-->
+                    <img class="project-con-box-title" src="/Projects/Mantari/Mantari_Logo.png">
                 </div>
-            </a>
-
-            <!--frog-->
-            <a href="">
-                <div class="project-con-cell" onmouseover="PlayVideo(true,'work-frog-video');ShowDesc('work-frog-desc')" onmouseleave="PlayVideo(false,'work-frog-video')">
-                    <div class="project-con-box">
-                        <!--Projact BackGround-->
-                        <img class="project-con-box-image" src="/Projects/Mantari/Tile.png">
-                        <!--Projact Video-->
-                        <video muted loop controls preload="none" class="project-con-box-video" id="work-frog-video">
-                            <source src="https://www.w3schools.com/tags/mov_bbb.mp4" type="video/mp4">
-                        </video>
-                        <!--Projact Logo-->
-                        <img class="project-con-box-title" src="/Raw_Content/Jett%20Logo.png">
-                    </div>
-                </div>
-            </a>
-
+                
+                
+                <div class="eggstest">asdasdasdasdasdaasd</div>
+            </div>
+            
+               
+               <div class="eghrtuhu">asdasdasdasdasdasdasdasdasd</div>
+            </div>
 
         </div>
-        <!--------Project Desc-------->
 
+        <!--------Project Desc-------->
         <div class="project-desc-panel">
 
             <!--Start-->
-            <div class="project-desc-cell project-desc-active" id="">
-
-
+            <div class="project-desc-cell project-desc-cell-start project-desc-active-work" id="">
                 <img src="Base_Icons/Arrow.png">
-                #aiklhsdgbaljkshgbdhiasgdhijlasgdilhjasgdhiljasgd
-
-
+                <h1> Hover over a project for more information!</h1>
             </div>
 
             <!--Forest-->
@@ -224,26 +230,31 @@
 
                 <!--Logo and Tags-->
                 <div class="project-desc-box-logotags">
-                    <img src="Raw_Content/Jett%20Logo.png" width="500px">
+                    <img src="/Projects/Spirit_of_the_Florest/SotF_Logo.png">
                     <div class="project-con-tags">
                         <project-tag class="engine-tag dividerline-tag">Unity</project-tag>
                         <div class="extra-tag csharp-tag">C#</div>
                         <project-tag class="university-tag dividerline-tag">University</project-tag>
                         <div class="extra-tag year1-tag">1<sup>st</sup> Year</div>
                         <project-tag class="team-tag">Team Project</project-tag>
-                        <project-tag class="team-tag">Team Project</project-tag>
-                        <project-tag class="team-tag">Team Project</project-tag>
                     </div>
                 </div>
+
                 <!--Desc Text-->
+                <div class="project-desc-desctext">
+                    <p>
+                        Project Crawler is a 3rd person rogue-like dungeon crawler game,
+                        where your health is also your currency and ability resource.
+                        creating a risk vs reward gameplay. Equip yourself with new abilities and upgrade them
+                        at the cost of your health. Project Crawler was created for the university
+                        of Portsmouth game jam with a team of 6 members, with
+                        the game’s topic being ‘a dungeon crawler with a single resource’.
+                    </p>
+                </div>
 
-                <div class="project-desc-desctext">Lorem Ipsum is simply dumasdas dasd asdas d asd as dasd asda sdas d asd asdasdasjdh gvasdgashjidgasgdhuasgdhujasg dahsgd asgud asdg agsd uyoasg dyuas gdasy gdasyd yuas gdyuasgduy asydgsdguyas gdduyamy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to makesad asd asdasd asdasdas dasd asd asdasdas a centuries, but also the leapasd asd asd asd asd asd ad ad a dsd asd asd asd as dasd as dasdasdas das das das das dasd asd as dsa das das dasd asd as dasdasdasdas dasd asd asd asd asdasd as dasd asdasd asd asd asd asd asd asdasdawdqd qwdwqd qwdwdwdwdwdw dwd w dwd wd wd wd das das dasd asd as</div>
-
-
+                <!--Link-->
                 <div class="project-desc-box-links">
-
-
-                    <a href="https://georgekruger.itch.io/mantari" class="link-button projectpage-button">
+                    <!--<a href="https://georgekruger.itch.io/mantari" class="link-button projectpage-button">
                         <img src="/Base_Icons/Joystick_Icon.png" width="33px">
                         <div class="projectpage-button-text">Project Page</div>
                     </a>
@@ -251,29 +262,21 @@
                     <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button">
                         <img src="/Base_Icons/Itch_Icon.png" width="30px">
                         <img src="/Base_Icons/Itch_Text.png" height="28px">
-                    </a>
-
-                    <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button">
-                        <img src="/Base_Icons/Itch_Icon.png" width="30px">
-                        <img src="/Base_Icons/Itch_Text.png" height="28px" style="margin-bottom: 1.6px">
-                    </a>
-
+                    </a>-->
+                    <div style="float: left;font-size: 26px;">Project page unavaliavble</div>
                 </div>
 
+                <!--Features/Contributions-->
                 <div class="project-desc-box-feature">
-                    <div class="project-desc-box-featureheader">Main Features</div>
-
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
+                    <div class="project-desc-box-featureheader">Main contributions</div>
+                    <ul class="project-desc-box-feature-list">
+                        <li>Player Charater Controller</li>
+                        <li>Melee & ranged combat systems</li>
+                        <li>Ability System</li>
+                        <li>Skill Tree System</li>
+                        <li>User Interface functionality</li>
+                    </ul>
                 </div>
-
 
             </div>
 
@@ -282,24 +285,30 @@
 
                 <!--Logo and Tags-->
                 <div class="project-desc-box-logotags">
-                    <img src="Raw_Content/Jett%20Logo.png" width="500px" style="z-index: 10;">
+                    <img src="/Projects/Mantari/Mantari_Logo.png" style="margin-top: 16px">
                     <div class="project-con-tags">
                         <project-tag class="engine-tag dividerline-tag">Unity</project-tag>
                         <div class="extra-tag csharp-tag">C#</div>
                         <project-tag class="university-tag dividerline-tag">University</project-tag>
                         <div class="extra-tag year1-tag">1<sup>st</sup> Year</div>
                         <project-tag class="team-tag">Team Project</project-tag>
-                        <project-tag class="team-tag">Team Project</project-tag>
-                        <project-tag class="team-tag">Team Project</project-tag>
                     </div>
                 </div>
+
                 <!--Desc Text-->
+                <div class="project-desc-desctext">
+                    <p>
+                        Project Crawler is a 3rd person rogue-like dungeon crawler game,
+                        where your health is also your currency and ability resource.
+                        creating a risk vs reward gameplay. Equip yourself with new abilities and upgrade them
+                        at the cost of your health. Project Crawler was created for the university
+                        of Portsmouth game jam with a team of 6 members, with
+                        the game’s topic being ‘a dungeon crawler with a single resource’.
+                    </p>
+                </div>
 
-                <div class="project-desc-desctext">Lorem Ipsum is simply dumasdas dasd asdas d asd as dasd asda sdas d asd asdasdasjdh gvasdgashjidgasgdhuasgdhujasg dahsgd asgud asdg agsd uyoasg dyuas gdasy gdasyd yuas gdyuasgduy asydgsdguyas gdduyamy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to makesad asd asdasd asdasdas dasd asd asdasdas a centuries, but also the leapasd asd asd asd asd asd ad ad a dsd asd asd asd as dasd as dasdasdas das das das das dasd asd as dsa das das dasd asd as dasdasdasdas dasd asd asd asd asdasd as dasd asdasd asd asd asd asd asd asdasdawdqd qwdwqd qwdwdwdwdwdw dwd w dwd wd wd wd das das dasd asd as</div>
-
-
+                <!--Link-->
                 <div class="project-desc-box-links">
-
 
                     <a href="https://georgekruger.itch.io/mantari" class="link-button projectpage-button">
                         <img src="/Base_Icons/Joystick_Icon.png" width="33px">
@@ -311,191 +320,282 @@
                         <img src="/Base_Icons/Itch_Text.png" height="28px">
                     </a>
 
-                    <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button">
-                        <img src="/Base_Icons/Itch_Icon.png" width="30px">
-                        <img src="/Base_Icons/Itch_Text.png" height="28px" style="margin-bottom: 1.6px">
-                    </a>
-
                 </div>
 
+                <!--Features/Contributions-->
                 <div class="project-desc-box-feature">
-                    <div class="project-desc-box-featureheader">Main Features</div>
-
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
+                    <div class="project-desc-box-featureheader">Main contributions</div>
+                    <ul class="project-desc-box-feature-list">
+                        <li>Player Charater Controller</li>
+                        <li>Melee & ranged combat systems</li>
+                        <li>Ability System</li>
+                        <li>Skill Tree System</li>
+                        <li>UI functionality</li>
+                    </ul>
                 </div>
-
 
             </div>
 
-            <!--Frog-->
-            <div class="project-desc-cell" id="work-frog-desc">
-
-                <!--Logo and Tags-->
-                <div class="project-desc-box-logotags">
-                    <img src="Raw_Content/Jett%20Logo.png" width="500px" style="z-index: 10;">
-                    <div class="project-con-tags">
-                        <project-tag class="engine-tag dividerline-tag">Unity</project-tag>
-                        <div class="extra-tag csharp-tag">C#</div>
-                        <project-tag class="university-tag dividerline-tag">University</project-tag>
-                        <div class="extra-tag year1-tag">1<sup>st</sup> Year</div>
-                        <project-tag class="team-tag">Team Project</project-tag>
-                        <project-tag class="team-tag">Team Project</project-tag>
-                        <project-tag class="team-tag">Team Project</project-tag>
-                    </div>
-                </div>
-                <!--Desc Text-->
-
-                <div class="project-desc-desctext">Lorem Ipsum is simply dumasdas dasd asdas d asd as dasd asda sdas d asd asdasdasjdh gvasdgashjidgasgdhuasgdhujasg dahsgd asgud asdg agsd uyoasg dyuas gdasy gdasyd yuas gdyuasgduy asydgsdguyas gdduyamy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to makesad asd asdasd asdasdas dasd asd asdasdas a centuries, but also the leapasd asd asd asd asd asd ad ad a dsd asd asd asd as dasd as dasdasdas das das das das dasd asd as dsa das das dasd asd as dasdasdasdas dasd asd asd asd asdasd as dasd asdasd asd asd asd asd asd asdasdawdqd qwdwqd qwdwdwdwdwdw dwd w dwd wd wd wd das das dasd asd as</div>
-
-
-                <div class="project-desc-box-links">
-
-
-                    <a href="https://georgekruger.itch.io/mantari" class="link-button projectpage-button">
-                        <img src="/Base_Icons/Joystick_Icon.png" width="33px">
-                        <div class="projectpage-button-text">Project Page</div>
-                    </a>
-
-                    <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button">
-                        <img src="/Base_Icons/Itch_Icon.png" width="30px">
-                        <img src="/Base_Icons/Itch_Text.png" height="28px">
-                    </a>
-
-                    <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button">
-                        <img src="/Base_Icons/Itch_Icon.png" width="30px">
-                        <img src="/Base_Icons/Itch_Text.png" height="28px" style="margin-bottom: 1.6px">
-                    </a>
-
-                </div>
-
-                <div class="project-desc-box-feature">
-                    <div class="project-desc-box-featureheader">Main Features</div>
-
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                    <li>Point Point Point Point</li>
-                </div>
-
-
-            </div>
-
-
-        </div>
-
+        </div></div>
     </div>
 
     <!---------------------------------------Personal Projects--------------------------------------->
-
-
-
-    <div class="banner" id="PersonalProjects">Personal Projects</div>
+    <div class="Banner" id="PersonalProjects">Personal Projects</div>
     <div class="panel">
         <div class="project-con-panel">
 
             <!--Jett-->
-            <a>
-                <div class="project-con-cell" onmouseover="PlayVideo(true,'jett_video');ShowDesc('personal-jett')" onmouseleave="PlayVideo(false,'jett_video')">
-                    <div class="project-con-box">
-                        <!--Projact BackGround-->
-                        <img class="project-con-box-image" src="/Projects/Mantari/Tile.png">
-                        <!--Projact Video-->
-                        <video muted loop controls class="project-con-box-video" id="jett_video">
-                            <source src="https://www.w3schools.com/tags/mov_bbb.mp4" type="video/mp4">
-                        </video>
-                        <!--Projact Logo-->
-                        <img class="project-con-box-title" src="/Raw_Content/Jett%20Logo.png">
-                    </div>
+            <div class="project-con-cell" onclick="OpenProject('https://www.google.com/','personal-jett-video','personal-jett-desc')" onmouseover="PlayVideo(true,'personal-jett-video');ShowDescPersonal('personal-jett-desc')" onmouseleave="PlayVideo(false,'personal-jet-video')">
+                <div class="project-con-box">
+                    <!--Projact BackGround-->
+                    <img class="project-con-box-image" src="/Base_Icons/Placeholder_Icon.png">
+                    <!--Projact Video-->
+                    <video muted loop controls class="project-con-box-video" id="personal-jett-video" style="display: none">
+                        <source src="/Projects/Mantari/Mantari_Video.mp4" type="video/mp4">
+                    </video>
+                    <!--Projact Logo-->
+                    <img class="project-con-box-title" src="/Raw_Content/Jett%20Logo.png">
                 </div>
-            </a>
+            </div>
 
         </div>
+
         <div class="project-desc-panel">
 
+            <!--Start-->
+            <div class="project-desc-cell project-desc-cell-start project-desc-active-personal" id="">
+                <img src="Base_Icons/Arrow.png">
+                <h1> Hover over a project for more information!</h1>
+            </div>
 
+            <!--Jett-->
+            <div class="project-desc-cell" id="personal-jett-desc">
 
-        </div>
+                <!--Logo and Tags-->
+                <div class="project-desc-box-logotags">
+                    <img src="/Raw_Content/Jett%20Logo.png" width="100%">
+                    <div class="project-con-tags">
+                        <project-tag class="engine-tag dividerline-tag">Unity</project-tag>
+                        <div class="extra-tag csharp-tag">C#</div>
+                        <project-tag class="team-tag">Team Project</project-tag>
+                    </div>
+                </div>
 
-    </div>
-    
-    
-    
-    <!--CV -->
-            <div class="banner">CV</div>
+                <!--Desc Text-->
+                <div class="project-desc-desctext">
+                    <p>
+                        Project Crawler is a 3rd person rogue-like dungeon crawler game,
+                        where your health is also your currency and ability resource.
+                        creating a risk vs reward gameplay. Equip yourself with new abilities and upgrade them
+                        at the cost of your health. Project Crawler was created for the university
+                        of Portsmouth game jam with a team of 6 members, with
+                        the game’s topic being ‘a dungeon crawler with a single resource’.
+                    </p>
+                </div>
 
-    <div class="panel">
-        <div class="cv-bubbl-panel">
-        <div class="cv-bubble-con">
-            <div class="cv-bubble-title">Software</div>
+                <!--Link-->
+                <div class="project-desc-box-links">
+                    <!--<a href="https://georgekruger.itch.io/mantari" class="link-button projectpage-button">
+                        <img src="/Base_Icons/Joystick_Icon.png" width="33px">
+                        <div class="projectpage-button-text">Project Page</div>
+                    </a>
 
-            <div class="cv-bubble">ad<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_3.png">
-                <div class="cv-bubble-hover">
-                    <ul>
-                        <li><img src="Base_Icons/SkillPyramid_2.png">9.5 years of experience</li>
-                        <li>9.5 years of experience</li>
+                    <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button">
+                        <img src="/Base_Icons/Itch_Icon.png" width="30px">
+                        <img src="/Base_Icons/Itch_Text.png" height="28px">
+                    </a>-->
+                    <div style="float: left;font-size: 26px;">-- Project page unavaliavble --</div>
+                </div>
+
+                <!--Features/Contributions-->
+                <div class="project-desc-box-feature">
+                    <div class="project-desc-box-featureheader">Main contributions</div>
+                    <ul class="project-desc-box-feature-list">
+                        <li>Player Charater Controller</li>
+                        <li>Melee & ranged combat systems</li>
+                        <li>Ability System</li>
+                        <li>Skill Tree System</li>
+                        <li>User Interface functionality</li>
                     </ul>
                 </div>
+
             </div>
-            <div class="cv-bubble">Photoshop<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_2.png">
-                <div class="cv-bubble-hover">9.5 years of experience</div>
-            </div>
-            <div class="cv-bubble">Photoshop<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_4.png">
-                <div class="cv-bubble-hover">9.5 years of experience</div>
-            </div>
-            <div class="cv-bubble">Photoshop<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_4.png">
-                <div class="cv-bubble-hover">9.5 years of experience</div>
-            </div>
-            <div class="cv-bubble">Photoshop<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_1.png">
-                <div class="cv-bubble-hover">9.5 years of experience</div>
-            </div>
-            <div class="cv-bubble">Photoshop<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_3.png">
-                <div class="cv-bubble-hover">9.5 years of experience</div>
-            </div>
-            <div class="cv-bubble">Phoadp<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_3.png"></div><br>
-            <div class="cv-bubble">dhop<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_3.png"></div>
-            <div class="cv-bubble">Photosdasdasdhop<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_3.png"></div>
-
-
-
-        </div>
-        <div class="cv-bubble-con">
-            <div class="cv-bubble-title">Software</div>
-
-            <div class="cv-bubble">Photoshop<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_3.png"></div>
-
-            <div class="cv-bubble">asdasdasda</div>
-
-
-        </div>
-        <div class="cv-bubble-con">
-            <div class="cv-bubble-title">Software</div>
-
-            <div class="cv-bubble">Photoshop<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_3.png"></div>
-            <div class="cv-bubble">asdasdasda</div>
-            <div class="cv-bubble">asdasdasda</div>
-            <div class="cv-bubble">asdasdasda</div>
-
 
         </div>
 
-</div>
     </div>
 
-    <div class="Contact-Me" id="Contact">Contact Me<br>
-        <p style="font-size: 20px">Feel free to get in contact: <a href="mailto:georgekruger@hotmail.co.uk" style="text-decoration: underline;text-decoration-style: dotted">georgekruger@hotmail.co.uk</a></p>
+
+
+    <!--CV -->
+    <div class="Banner">
+        <div class="Banner-titletext">CV</div>
+        <div class="Banner-smalltext">Hover for more information</div>
+    </div>
+
+    <div class="panel">
+
+
+
+        <div class="cv-bubble-panel">
+
+            <div class="cv-skilltable">
+                <div class="cv-skilltable-tier">
+                    <img src="Base_Icons/SkillPyramid_4.png">Professional
+                </div>
+                <div class="cv-skilltable-tier">
+                    <img src="Base_Icons/SkillPyramid_3.png">Advanced
+                </div>
+                <div class="cv-skilltable-tier">
+                    <img src="Base_Icons/SkillPyramid_2.png">Experinced
+                </div>
+                <div class="cv-skilltable-tier">
+                    <img src="Base_Icons/SkillPyramid_1.png">Beginner
+                </div>
+                <div class="cv-skilltable-tier">
+                    <img src="Base_Icons/SkillPyramid_1.png">Started Learning
+                </div>
+            </div>
+
+            <div class="cv-bubble-con">
+                <div class="cv-bubble-title"><img src="Base_Icons/Code_Icon.png">Code Languages</div>
+                <div class="cv-bubble">C++<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_1.png">
+                    <div class="cv-bubble-hover">
+                        <div><img src="Base_Icons/Clock_Icon.png">1 year of experience</div>
+                    </div>
+                </div>
+                <div class="cv-bubble">C#<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_2.png">
+                    <div class="cv-bubble-hover">
+                        <div><img src="Base_Icons/Clock_Icon.png">4 years of experience</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cv-bubble-con cv-bubble-style-web" style="border: 1px solid #8d139d">
+                <div class="cv-bubble-title"><img src="Base_Icons/Web_Icon.png">Web</div>
+                <div class="cv-bubble">HTML<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_3.png">
+                    <div class="cv-bubble-hover">
+                        <div><img src="Base_Icons/Clock_Icon.png">8 years of experience</div>
+                    </div>
+                </div>
+                <div class="cv-bubble">CSS<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_2.png">
+                    <div class="cv-bubble-hover">
+                        <div><img src="Base_Icons/Clock_Icon.png">8 years of experience</div>
+                    </div>
+                </div>
+                <div class="cv-bubble">Java Script<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_1.png">
+                    <div class="cv-bubble-hover">
+                        <div><img src="Base_Icons/Clock_Icon.png">2 years of experience</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cv-bubble-con cv-bubble-style-gameengines" style="border: 1px solid #00887d">
+                <div class="cv-bubble-title"><img src="Base_Icons/Cog_Icon.png">Game Engines</div>
+                <div class="cv-bubble">Unity<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_2.png">
+                    <div class="cv-bubble-hover">
+                        <div><img src="Base_Icons/Clock_Icon.png">4 years of experience</div>
+                    </div>
+                </div>
+                <div class="cv-bubble">Unreal 4<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_1.png">
+                    <div class="cv-bubble-hover">
+                        <div><img src="Base_Icons/Clock_Icon.png">2 years of experience</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cv-bubble-con cv-bubble-style-office" style="border: 1px solid #da3b01">
+                <div class="cv-bubble-title"><img src="Base_Icons/Office_Logo.png">Office</div>
+                <div class="cv-bubble">Word<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_4.png">
+                    <div class="cv-bubble-hover">
+                        <div><img src="Base_Icons/Clock_Icon.png">10 year of experience</div>
+                    </div>
+                </div>
+                <div class="cv-bubble">PowerPoint<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_4.png">
+                    <div class="cv-bubble-hover">
+                        <div><img src="Base_Icons/Clock_Icon.png">10 years of experience</div>
+                    </div>
+                </div>
+                <div class="cv-bubble">Excel<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_2.png">
+                    <div class="cv-bubble-hover">
+                        <div><img src="Base_Icons/Clock_Icon.png">6 years of experience</div>
+                    </div>
+                </div>
+                <div class="cv-bubble">Outlook<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_1.png">
+                    <div class="cv-bubble-hover">
+                        <div><img src="Base_Icons/Clock_Icon.png">6 years of experience</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cv-bubble-con cv-bubble-style-3d" style="border: 1px solid #007620">
+                <div class="cv-bubble-title"><img src="Base_Icons/Office_Logo.png">3D Models</div>
+                <div class="cv-bubble">Blender<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_2.png">
+                    <div class="cv-bubble-hover">
+                        <div><img src="Base_Icons/Clock_Icon.png">9 years of experience</div>
+                    </div>
+                </div>
+                <div class="cv-bubble">Z-Brush<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_1.png">
+                    <div class="cv-bubble-hover">
+                        <div><img src="Base_Icons/Clock_Icon.png">1 year of experience</div>
+                    </div>
+                </div>
+            </div>
+
+                      <div class="cv-bubble-con cv-bubble-style-3d" style="border: 1px solid #007620">
+                <div class="cv-bubble-title"><img src="Base_Icons/Office_Logo.png">Software</div>
+                <div class="cv-bubble">Photoshop<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_2.png">
+                    <div class="cv-bubble-hover">
+                        <div><img src="Base_Icons/Clock_Icon.png">9 years of experience</div>
+                    </div>
+                </div>
+                <div class="cv-bubble">Vegas Pro<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_1.png">
+                    <div class="cv-bubble-hover">
+                        <div><img src="Base_Icons/Clock_Icon.png">7 years of experience</div>
+                    </div>
+                </div>
+            </div>
+  
+            
+
+        </div>
+        
+        
+        <div class="cv-infopanel-base">
+        <div class="cv-infopanel">
+            <div class="cv-infopanel-title">asdasdasd</div>
+            
+            asdasdasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasdasdadasd
+            asdasdasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasdasdadasd
+            asdasdasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasda            asdas asdasdasdasdasdasdasd asd asd asd asd asd asd asd asd as dasd            asdasdasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasdasdadasd
+dasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasdasdadasd
+sdadasd
+            asdasdasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasdasdadasd
+            asdasdasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasdasdadasd
+            asdasdasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasdasdadasd
+            
+            
+            </div>      
+
+        
+        
+        
+        </div>
+        
+        
+    </div>
+<div class="Banner">Contact Me</div>
+    <div class="Contact-Me" id="Contact">
+
+        <div class="Contact-Me-Con">
+            Feel free to get in contract:
+
+        </div>
+        <div class="Contact-Me-Con">
+            <a class="Contact-Me-link" href="mailto:georgekruger@hotmail.co.uk">georgekruger@hotmail.co.uk<img class="Contact-Me-link-Icon" src="Base_Icons/Contact_Icon.png"></a><br>
+            <a class="Contact-Me-link" href="https://wa.me/123141154">123@123.co.uk<img class="Contact-Me-link-Icon" src="Base_Icons/Cog_Icon.png"></a>
+        </div>
+
     </div>
 
     <!--Scripts-->
@@ -505,47 +605,53 @@
 
             if (MobileChecker()) {
                 PlayVideo(true, ProjectID);
-                ShowDesc(ShowDescID);
+
+                if (ShowDescID === str.includes("work")) {
+                    ShowDescWork(ShowDescID);
+                } else {
+                    ShowDescPersonal(ShowDescID);
+                }
 
 
             } else {
-                window.open(URL, "_self");
-            }
 
-        }
+                if (URL !== null) {
+                    window.open(URL, "_self");
 
-
-
-
-
-        function PlayVideo(IfPlay, ProjectID) {
-
-            if (MobileChecker() === false) {
-
-
-                var Video = document.getElementById(ProjectID);
-
-                if (IfPlay) {
-                    Video.play();
-
-                } else {
-                    Video.pause();
                 }
             }
         }
 
+        function PlayVideo(IfPlay, ProjectID) {
 
 
 
+            var Video = document.getElementById(ProjectID);
 
-        function ShowDesc(ShowDescID) {
-            const HideDesc = document.getElementsByClassName("project-desc-active");
-            HideDesc[0].classList.remove("project-desc-active");
+            if (IfPlay) {
+                Video.play();
 
-            var ShowDesc = document.getElementById(ShowDescID);
-            ShowDesc.classList.add("project-desc-active");
+            } else {
+                Video.pause();
+            }
+
         }
 
+        function ShowDescWork(ShowDescID) {
+            const HideDescWork = document.getElementsByClassName("project-desc-active-work");
+            HideDescWork[0].classList.remove("project-desc-active-work");
+
+            var ShowDescWork = document.getElementById(ShowDescID);
+            ShowDescWork.classList.add("project-desc-active-work");
+        }
+
+        function ShowDescPersonal(ShowDescID) {
+            const HideDescPersonal = document.getElementsByClassName("project-desc-active-personal");
+            HideDescPersonal[0].classList.remove("project-desc-active-personal");
+
+            var ShowDescPersonal = document.getElementById(ShowDescID);
+            ShowDescPersonal.classList.add("project-desc-active-personal");
+        }
 
 
         function MobileChecker() {
@@ -555,6 +661,18 @@
             })(navigator.userAgent || navigator.vendor || window.opera);
             return check;
         }
+        
+        
+        function ExpandProject(Index){
+            var SlideClass = document.getElementById("ProjectSlide");
+            var rrr = Index * 280 + 'px';
+            var asdasd = "calc(-" + rrr + " - 50%)";
+/*
+            var asdasd = "calc(-" + (index * 280) + " - 50%)";
+*/
+            SlideClass.style.left = asdasd;
+        }
+        
     </script>
 
 

@@ -4,9 +4,9 @@
 body {
     top: 0px;
     left: 0px;
+    min-width: 1280px;
     margin: 0px;
-    background-color: #282828;
-    min-width: 450px;
+    background-color: #1f2026;
     font-family: Montserrat;
     overflow: visible;
     color: white;
@@ -39,49 +39,41 @@ a {
 
 }
 
-
-navbar-item {
-    display: inline-block;
-    height: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    vertical-align: middle;
-    text-align: center;
-    line-height: 50px;
-    margin-top: auto;
-    margin-right: 5px;
-    margin-bottom: auto;
-    font-size: 16px;
-    margin-left: 5px;
-    font-weight: lighter;
-    color: white;
-    overflow: hidden;
-
-
-
-
-}
-
-navbar-item.name-start {
+.navbar-name {
     line-height: 45px;
     font-size: 35px;
-    margin-left: 100px
+    margin-left: 100px;
+    margin-right: 20px;
 }
 
-navbar-item.Navbar-link {
+.navbar-link {
     background: rgba(0, 0, 0, 0);
     color: white;
     transition: 0.5s;
+    display: inline-block;
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    vertical-align: top;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: lighter;
+    overflow: hidden;
+    margin: 0px -8px 0px -8px;
+
+    clip-path: polygon(20px 0%, 100% 0%, calc(100% - 20px) 100%, 0% 100%);
+
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+
 }
 
-navbar-item.Navbar-link:hover {
+.navbar-link:hover {
     background: rgba(100, 20, 160, 0.6);
-    transition: 0.5s;
 }
 
 .navbar-item-icon {
@@ -91,6 +83,8 @@ navbar-item.Navbar-link:hover {
     top: 3px;
     display: inline-block;
     position: relative;
+
+
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
