@@ -90,11 +90,12 @@
                         });
                     };
                 });
+
             </script>
 
 
         </div>
-<!--
+        <!--
         <div class="video-con-object-fade"></div>
 -->
     </div>
@@ -102,6 +103,7 @@
     <script src="/Plugins/rellax.min.js"></script>
     <script>
         var rellax = new Rellax();
+
     </script>
 
     <!--About Me-->
@@ -145,75 +147,80 @@
     <!---------------------------------------Work Projects--------------------------------------->
     <div class="Banner" id="WorkProjects">Work Projects</div>
     <div class="panel">
+
+
         <div class="asdasdasd">
-        <div class="project-con-panel" id="ProjectSlide" style="">
+            <div class="project-con-panel" id="ProjectSlide" style="">
 
-            
-            
-                        <!--SotF-->
-            <div class="project-con-cell" onclick="ExpandProject(0)" onmouseover="PlayVideo(true,'work-sotf-video');ShowDescWork('work-sotf-desc')" onmouseleave="PlayVideo(false,'work-sotf-video')">
-                <div class="project-con-box">
-                    <!--Projact BackGround-->
-                    <img class="project-con-box-image" src="/Projects/Spirit_of_the_Florest/SotF_Banner.png">
-                    <!--Projact Video-->
-                    <video muted loop controls class="project-con-box-video" id="work-sotf-video" style="display: none">
-                        <source src="/Projects/Mantari/Mantari_Video.mp4" type="video/mp4">
-                    </video>
-                    <!--Projact Logo-->
-                    <img class="project-con-box-title" src="/Projects/Spirit_of_the_Florest/SotF_Logo.png">
+                <!--Mantari-->
+                <div class="project-con-cell" onclick="ExpandProject(0,this)" onmouseover="PlayVideo(true,'work-mantari-video')" onmouseleave="PlayVideo(false,'work-mantari-video')">
+                    <div class="project-con-box">
+                        <!--Projact BackGround-->
+                        <img class="project-con-box-image" src="/Projects/Mantari/Mantari_Banner.png">
+                        <!--Projact Video-->
+                        <video muted loop controls class="project-con-box-video" id="work-mantari-video">
+                            <source src="/Projects/Mantari/Mantari_Video.mp4" type="video/mp4">
+                        </video>
+                        <!--Projact Logo-->
+                        <img class="project-con-box-title" src="/Projects/Mantari/Mantari_Logo.png">
+                    </div>
                 </div>
-            </div>     
-            
-            
-            <!--SotF-->
-            <div class="project-con-cell" onclick="ExpandProject(1)" onmouseover="PlayVideo(true,'work-sotf-video');ShowDescWork('work-sotf-desc')" onmouseleave="PlayVideo(false,'work-sotf-video')">
-                <div class="project-con-box">
-                    <!--Projact BackGround-->
-                    <img class="project-con-box-image" src="/Projects/Spirit_of_the_Florest/SotF_Banner.png">
-                    <!--Projact Video-->
-                    <video muted loop controls class="project-con-box-video" id="work-sotf-video" style="display: none">
-                        <source src="/Projects/Mantari/Mantari_Video.mp4" type="video/mp4">
-                    </video>
-                    <!--Projact Logo-->
-                    <img class="project-con-box-title" src="/Projects/Spirit_of_the_Florest/SotF_Logo.png">
-                </div>
-            </div>
-            
-            <!--SotF-->
-            <div class="project-con-cell" onclick="ExpandProject(2)" onmouseover="PlayVideo(true,'work-sotf-video');ShowDescWork('work-sotf-desc')" onmouseleave="PlayVideo(false,'work-sotf-video')">
-                <div class="project-con-box">
-                    <!--Projact BackGround-->
-                    <img class="project-con-box-image" src="/Projects/Spirit_of_the_Florest/SotF_Banner.png">
-                    <!--Projact Video-->
-                    <video muted loop controls class="project-con-box-video" id="work-sotf-video" style="display: none">
-                        <source src="/Projects/Mantari/Mantari_Video.mp4" type="video/mp4">
-                    </video>
-                    <!--Projact Logo-->
-                    <img class="project-con-box-title" src="/Projects/Spirit_of_the_Florest/SotF_Logo.png">
-                </div>
-            </div>
 
-            <!--Mantari-->
-           <div> <div class="project-con-cell" onclick="ExpandProject(3)" onmouseover="PlayVideo(true,'work-mantari-video');ShowDescWork('work-mantari-desc')" onmouseleave="PlayVideo(false,'work-mantari-video')">
-                <div class="project-con-box">
-                    <!--Projact BackGround-->
-                    <img class="project-con-box-image" src="/Projects/Mantari/Mantari_Banner.png">
-                    <!--Projact Video-->
-                    <video muted loop controls class="project-con-box-video" id="work-mantari-video">
-                        <source src="/Projects/Mantari/Mantari_Video.mp4" type="video/mp4">
-                    </video>
-                    <!--Projact Logo-->
-                    <img class="project-con-box-title" src="/Projects/Mantari/Mantari_Logo.png">
-                </div>
-                
-                
-                <div class="eggstest">asdasdasdasdasdaasd</div>
-            </div>
-            
-               
-               <div class="eghrtuhu">asdasdasdasdasdasdasdasdasd</div>
-            </div>
+                <div class="project-con-descbox project-con-descbox-active">
+                    <div class="project-desc-title"><img class="project-con-descbox-title" src="/Projects/Mantari/Mantari_Logo.png">
+                        <project-tag class="engine-tag">asdasda</project-tag>
+                        <project-tag class="engine-tag">asdasda</project-tag>
+                        <project-tag class="engine-tag">asdasda</project-tag>
+                    </div>
 
+                    <!--Desc Text-->
+                    <div class="project-con-descbox-textbox">
+                        <p>
+                            Project Crawler is a 3rd person rogue-like dungeon crawler game,
+                            where your health is also your currency and ability resource.
+                            creating a risk vs reward gameplay. Equip yourself with new abilities and upgrade them
+                            at the cost of your health. Project Crawler was created for the university
+                            of Portsmouth game jam with a team of 6 members, with
+                            the game’s topic being ‘a dungeon crawler with a single resource’.
+                        </p>
+                    </div>
+                    
+                    
+                    
+
+
+                <!--Link-->
+                <div class="project-desc-descbox-links">
+
+                    <a href="https://georgekruger.itch.io/mantari" class="link-button projectpage-button">
+                        <img src="/Base_Icons/Joystick_Icon.png" width="33px">
+                        <div class="projectpage-button-text">Project Page</div>
+                    </a>
+
+                    <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button">
+                        <img src="/Base_Icons/Itch_Icon.png" width="30px">
+                        <img src="/Base_Icons/Itch_Text.png" height="28px">
+                    </a>
+
+                </div>
+
+                <!--Features/Contributions-->
+                <div class="project-desc-box-feature">
+                    <div class="project-desc-box-featureheader">Main contributions</div>
+                    <ul class="project-desc-box-feature-list">
+                        <li>Player Charater Controller</li>
+                        <li>Melee & ranged combat systems</li>
+                        <li>Ability System</li>
+                        <li>Skill Tree System</li>
+                        <li>UI functionality</li>
+                    </ul>
+                </div>
+
+                    
+                    
+                    
+                </div>
+            </div>
         </div>
 
         <!--------Project Desc-------->
@@ -336,7 +343,7 @@
 
             </div>
 
-        </div></div>
+        </div>
     </div>
 
     <!---------------------------------------Personal Projects--------------------------------------->
@@ -542,7 +549,7 @@
                 </div>
             </div>
 
-                      <div class="cv-bubble-con cv-bubble-style-3d" style="border: 1px solid #007620">
+            <div class="cv-bubble-con cv-bubble-style-3d" style="border: 1px solid #007620">
                 <div class="cv-bubble-title"><img src="Base_Icons/Office_Logo.png">Software</div>
                 <div class="cv-bubble">Photoshop<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_2.png">
                     <div class="cv-bubble-hover">
@@ -555,36 +562,36 @@
                     </div>
                 </div>
             </div>
-  
-            
+
+
 
         </div>
-        
-        
+
+
         <div class="cv-infopanel-base">
-        <div class="cv-infopanel">
-            <div class="cv-infopanel-title">asdasdasd</div>
-            
-            asdasdasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasdasdadasd
-            asdasdasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasdasdadasd
-            asdasdasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasda            asdas asdasdasdasdasdasdasd asd asd asd asd asd asd asd asd as dasd            asdasdasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasdasdadasd
-dasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasdasdadasd
-sdadasd
-            asdasdasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasdasdadasd
-            asdasdasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasdasdadasd
-            asdasdasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasdasdadasd
-            
-            
-            </div>      
+            <div class="cv-infopanel">
+                <div class="cv-infopanel-title">asdasdasd</div>
 
-        
-        
-        
+                asdasdasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasdasdadasd
+                asdasdasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasdasdadasd
+                asdasdasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasda asdas asdasdasdasdasdasdasd asd asd asd asd asd asd asd asd as dasd asdasdasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasdasdadasd
+                dasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasdasdadasd
+                sdadasd
+                asdasdasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasdasdadasd
+                asdasdasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasdasdadasd
+                asdasdasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasdasdadasd
+
+
+            </div>
+
+
+
+
         </div>
-        
-        
+
+
     </div>
-<div class="Banner">Contact Me</div>
+    <div class="Banner">Contact Me</div>
     <div class="Contact-Me" id="Contact">
 
         <div class="Contact-Me-Con">
@@ -602,40 +609,30 @@ sdadasd
 
     <script>
         function OpenProject(URL, ProjectID, ShowDescID) {
-
             if (MobileChecker()) {
                 PlayVideo(true, ProjectID);
-
                 if (ShowDescID === str.includes("work")) {
                     ShowDescWork(ShowDescID);
                 } else {
                     ShowDescPersonal(ShowDescID);
                 }
-
-
             } else {
-
                 if (URL !== null) {
                     window.open(URL, "_self");
-
                 }
             }
         }
 
+
         function PlayVideo(IfPlay, ProjectID) {
-
-
-
             var Video = document.getElementById(ProjectID);
-
             if (IfPlay) {
                 Video.play();
-
             } else {
                 Video.pause();
             }
-
         }
+
 
         function ShowDescWork(ShowDescID) {
             const HideDescWork = document.getElementsByClassName("project-desc-active-work");
@@ -644,6 +641,7 @@ sdadasd
             var ShowDescWork = document.getElementById(ShowDescID);
             ShowDescWork.classList.add("project-desc-active-work");
         }
+
 
         function ShowDescPersonal(ShowDescID) {
             const HideDescPersonal = document.getElementsByClassName("project-desc-active-personal");
@@ -661,21 +659,44 @@ sdadasd
             })(navigator.userAgent || navigator.vendor || window.opera);
             return check;
         }
-        
-        
-        function ExpandProject(Index){
-            var SlideClass = document.getElementById("ProjectSlide");
-            var rrr = Index * 280 + 'px';
-            var asdasd = "calc(-" + rrr + " - 50%)";
-/*
-            var asdasd = "calc(-" + (index * 280) + " - 50%)";
-*/
-            SlideClass.style.left = asdasd;
+
+
+        function ExpandProject(Index, Element2) {
+
+
+            if (Element2.nextElementSibling.classList == 'project-con-descbox-active') {
+                alert("arr");
+                Element2.nextElementSibling.classList.remove("project-con-descbox-active");
+                ScrollProjects(0);
+
+
+            } else {
+                Element2.nextElementSibling.classList.add("project-con-descbox-active");
+
+                ScrollProjects(Index);
+
+
+
+            }
+
+            function ScrollProjects(Index) {
+
+                var SlideClass = document.getElementById("ProjectSlide");
+                var rrr = Index * 380 + 'px';
+                var asdasd = "calc(-" + rrr + " - 50%)";
+                /*
+                            var asdasd = "calc(-" + (index * 280) + " - 50%)";
+                */
+                SlideClass.style.left = asdasd;
+            }
+
+
         }
-        
+
     </script>
 
 
 
+</body>
 
-</body></html>
+</html>
