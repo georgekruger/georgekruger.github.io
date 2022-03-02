@@ -190,7 +190,7 @@ body {
 .project-con-panel {
     width: 200%;
     height: 700px;
-    left: calc(-50%);
+    left: calc(290px + -50%);
     margin: auto;
     justify-content: center;
     display: flex;
@@ -202,7 +202,7 @@ body {
     overflow: hidden;
     white-space: nowrap;
     transition: 1s;
-
+float: left;
 
     background: rgb(28, 28, 28);
     background: -moz-linear-gradient(0deg, rgba(28, 28, 28, 1) 0%, rgba(33, 33, 33, 1) 40%, rgba(33, 33, 33, 1) 60%, rgba(28, 28, 28, 1) 100%);
@@ -687,12 +687,14 @@ qqqqq .project-cell-rot {
 }
 
 .project-desc-box-feature {
-    display: inline-block;
+    display: block;
     width: 300px;
     height: 100px;
+    position: relative;
     text-overflow: inherit;
     float: right;
-    font-size: 20px
+    font-size: 20px;
+    left: -110px;
 }
 
 .project-desc-box-featureheader {
@@ -1154,9 +1156,10 @@ qqqqq .project-cell-rot {
 
 .project-con-descbox-active {
     width: 1000px;
+    transition: 1s;
 }
 
-.project-desc-title {
+.project-descbox-title {
     top: 40px;
     left: 120px;
     position: relative;
@@ -1183,7 +1186,7 @@ qqqqq .project-cell-rot {
     height: 130px;
     width: 450px;
     margin: auto;
-    height: 450px;;
+    height: 450px;
     pointer-events: painted;
     user-select: text;
     
@@ -1192,4 +1195,8 @@ qqqqq .project-cell-rot {
     left: 100px;
     white-space: normal;
 
+}
+
+.project-con-box-active {
+    width: 600px;
 }

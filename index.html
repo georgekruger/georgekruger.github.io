@@ -10,7 +10,7 @@
     <script src="JavaScript/NavbarScript.js"> </script>
 
     <meta name="theme-color" content="#26112c">
-    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
     <title>George Kruger</title>
@@ -153,7 +153,7 @@
             <div class="project-con-panel" id="ProjectSlide" style="">
 
                 <!--Mantari-->
-                <div class="project-con-cell" onclick="ExpandProject(0,this)" onmouseover="PlayVideo(true,'work-mantari-video')" onmouseleave="PlayVideo(false,'work-mantari-video')">
+                <div class="project-con-cell" onclick="ExpandProject(3,this)" onmouseover="PlayVideo(true,'work-mantari-video')" onmouseleave="PlayVideo(false,'work-mantari-video')">
                     <div class="project-con-box">
                         <!--Projact BackGround-->
                         <img class="project-con-box-image" src="/Projects/Mantari/Mantari_Banner.png">
@@ -166,8 +166,9 @@
                     </div>
                 </div>
 
-                <div class="project-con-descbox project-con-descbox-active">
-                    <div class="project-desc-title"><img class="project-con-descbox-title" src="/Projects/Mantari/Mantari_Logo.png">
+                <!--InfoPanel-->
+                <div class="project-con-descbox ">
+                    <div class="project-descbox-title"><img class="project-con-descbox-title" src="/Projects/Mantari/Mantari_Logo.png">
                         <project-tag class="engine-tag">asdasda</project-tag>
                         <project-tag class="engine-tag">asdasda</project-tag>
                         <project-tag class="engine-tag">asdasda</project-tag>
@@ -184,251 +185,210 @@
                             the game’s topic being ‘a dungeon crawler with a single resource’.
                         </p>
                     </div>
-                    
-                    
-                    
 
+                    <!--Link-->
+                    <div class="project-desc-descbox-links">
+                        <a href="https://georgekruger.itch.io/mantari" class="link-button projectpage-button">
+                            <img src="/Base_Icons/Joystick_Icon.png" width="33px">
+                            <div class="projectpage-button-text">Project Page</div>
+                        </a>
+                        <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button">
+                            <img src="/Base_Icons/Itch_Icon.png" width="30px">
+                            <img src="/Base_Icons/Itch_Text.png" height="28px">
+                        </a>
+                    </div>
 
-                <!--Link-->
-                <div class="project-desc-descbox-links">
-
-                    <a href="https://georgekruger.itch.io/mantari" class="link-button projectpage-button">
-                        <img src="/Base_Icons/Joystick_Icon.png" width="33px">
-                        <div class="projectpage-button-text">Project Page</div>
-                    </a>
-
-                    <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button">
-                        <img src="/Base_Icons/Itch_Icon.png" width="30px">
-                        <img src="/Base_Icons/Itch_Text.png" height="28px">
-                    </a>
-
+                    <!--Features/Contributions-->
+                    <div class="project-desc-box-feature">
+                        <div class="project-desc-box-featureheader">Main contributions</div>
+                        <ul class="project-desc-box-feature-list">
+                            <li>Player Charater Controller</li>
+                            <li>Melee & ranged combat systems</li>
+                            <li>Ability System</li>
+                            <li>Skill Tree System</li>
+                            <li>UI functionality</li>
+                        </ul>
+                    </div>
                 </div>
-
-                <!--Features/Contributions-->
-                <div class="project-desc-box-feature">
-                    <div class="project-desc-box-featureheader">Main contributions</div>
-                    <ul class="project-desc-box-feature-list">
-                        <li>Player Charater Controller</li>
-                        <li>Melee & ranged combat systems</li>
-                        <li>Ability System</li>
-                        <li>Skill Tree System</li>
-                        <li>UI functionality</li>
-                    </ul>
-                </div>
-
-                    
-                    
-                    
-                </div>
-            </div>
-        </div>
-
-        <!--------Project Desc-------->
-        <div class="project-desc-panel">
-
-            <!--Start-->
-            <div class="project-desc-cell project-desc-cell-start project-desc-active-work" id="">
-                <img src="Base_Icons/Arrow.png">
-                <h1> Hover over a project for more information!</h1>
-            </div>
-
-            <!--Forest-->
-            <div class="project-desc-cell" id="work-sotf-desc">
-
-                <!--Logo and Tags-->
-                <div class="project-desc-box-logotags">
-                    <img src="/Projects/Spirit_of_the_Florest/SotF_Logo.png">
-                    <div class="project-con-tags">
-                        <project-tag class="engine-tag dividerline-tag">Unity</project-tag>
-                        <div class="extra-tag csharp-tag">C#</div>
-                        <project-tag class="university-tag dividerline-tag">University</project-tag>
-                        <div class="extra-tag year1-tag">1<sup>st</sup> Year</div>
-                        <project-tag class="team-tag">Team Project</project-tag>
+                <!--Mantari-->
+                <div class="project-con-cell" onclick="ExpandProject(1,this)" onmouseover="PlayVideo(true,'work-mantari-video')" onmouseleave="PlayVideo(false,'work-mantari-video')">
+                    <div class="project-con-box">
+                        <!--Projact BackGround-->
+                        <img class="project-con-box-image" src="/Projects/Mantari/Mantari_Banner.png">
+                        <!--Projact Video-->
+                        <video muted loop controls class="project-con-box-video" id="work-mantari-video">
+                            <source src="/Projects/Mantari/Mantari_Video.mp4" type="video/mp4">
+                        </video>
+                        <!--Projact Logo-->
+                        <img class="project-con-box-title" src="/Projects/Mantari/Mantari_Logo.png">
                     </div>
                 </div>
 
-                <!--Desc Text-->
-                <div class="project-desc-desctext">
-                    <p>
-                        Project Crawler is a 3rd person rogue-like dungeon crawler game,
-                        where your health is also your currency and ability resource.
-                        creating a risk vs reward gameplay. Equip yourself with new abilities and upgrade them
-                        at the cost of your health. Project Crawler was created for the university
-                        of Portsmouth game jam with a team of 6 members, with
-                        the game’s topic being ‘a dungeon crawler with a single resource’.
-                    </p>
-                </div>
+                <!--InfoPanel-->
+                <div class="project-con-descbox ">
+                    <div class="project-descbox-title"><img class="project-con-descbox-title" src="/Projects/Mantari/Mantari_Logo.png">
+                        <project-tag class="engine-tag">asdasda</project-tag>
+                        <project-tag class="engine-tag">asdasda</project-tag>
+                        <project-tag class="engine-tag">asdasda</project-tag>
+                    </div>
 
-                <!--Link-->
-                <div class="project-desc-box-links">
-                    <!--<a href="https://georgekruger.itch.io/mantari" class="link-button projectpage-button">
-                        <img src="/Base_Icons/Joystick_Icon.png" width="33px">
-                        <div class="projectpage-button-text">Project Page</div>
-                    </a>
+                    <!--Desc Text-->
+                    <div class="project-con-descbox-textbox">
+                        <p>
+                            Project Crawler is a 3rd person rogue-like dungeon crawler game,
+                            where your health is also your currency and ability resource.
+                            creating a risk vs reward gameplay. Equip yourself with new abilities and upgrade them
+                            at the cost of your health. Project Crawler was created for the university
+                            of Portsmouth game jam with a team of 6 members, with
+                            the game’s topic being ‘a dungeon crawler with a single resource’.
+                        </p>
+                    </div>
 
-                    <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button">
-                        <img src="/Base_Icons/Itch_Icon.png" width="30px">
-                        <img src="/Base_Icons/Itch_Text.png" height="28px">
-                    </a>-->
-                    <div style="float: left;font-size: 26px;">Project page unavaliavble</div>
-                </div>
+                    <!--Link-->
+                    <div class="project-desc-descbox-links">
+                        <a href="https://georgekruger.itch.io/mantari" class="link-button projectpage-button">
+                            <img src="/Base_Icons/Joystick_Icon.png" width="33px">
+                            <div class="projectpage-button-text">Project Page</div>
+                        </a>
+                        <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button">
+                            <img src="/Base_Icons/Itch_Icon.png" width="30px">
+                            <img src="/Base_Icons/Itch_Text.png" height="28px">
+                        </a>
+                    </div>
 
-                <!--Features/Contributions-->
-                <div class="project-desc-box-feature">
-                    <div class="project-desc-box-featureheader">Main contributions</div>
-                    <ul class="project-desc-box-feature-list">
-                        <li>Player Charater Controller</li>
-                        <li>Melee & ranged combat systems</li>
-                        <li>Ability System</li>
-                        <li>Skill Tree System</li>
-                        <li>User Interface functionality</li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <!--Mantari-->
-            <div class="project-desc-cell" id="work-mantari-desc">
-
-                <!--Logo and Tags-->
-                <div class="project-desc-box-logotags">
-                    <img src="/Projects/Mantari/Mantari_Logo.png" style="margin-top: 16px">
-                    <div class="project-con-tags">
-                        <project-tag class="engine-tag dividerline-tag">Unity</project-tag>
-                        <div class="extra-tag csharp-tag">C#</div>
-                        <project-tag class="university-tag dividerline-tag">University</project-tag>
-                        <div class="extra-tag year1-tag">1<sup>st</sup> Year</div>
-                        <project-tag class="team-tag">Team Project</project-tag>
+                    <!--Features/Contributions-->
+                    <div class="project-desc-box-feature">
+                        <div class="project-desc-box-featureheader">Main contributions</div>
+                        <ul class="project-desc-box-feature-list">
+                            <li>Player Charater Controller</li>
+                            <li>Melee & ranged combat systems</li>
+                            <li>Ability System</li>
+                            <li>Skill Tree System</li>
+                            <li>UI functionality</li>
+                        </ul>
                     </div>
                 </div>
 
-                <!--Desc Text-->
-                <div class="project-desc-desctext">
-                    <p>
-                        Project Crawler is a 3rd person rogue-like dungeon crawler game,
-                        where your health is also your currency and ability resource.
-                        creating a risk vs reward gameplay. Equip yourself with new abilities and upgrade them
-                        at the cost of your health. Project Crawler was created for the university
-                        of Portsmouth game jam with a team of 6 members, with
-                        the game’s topic being ‘a dungeon crawler with a single resource’.
-                    </p>
-                </div>
-
-                <!--Link-->
-                <div class="project-desc-box-links">
-
-                    <a href="https://georgekruger.itch.io/mantari" class="link-button projectpage-button">
-                        <img src="/Base_Icons/Joystick_Icon.png" width="33px">
-                        <div class="projectpage-button-text">Project Page</div>
-                    </a>
-
-                    <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button">
-                        <img src="/Base_Icons/Itch_Icon.png" width="30px">
-                        <img src="/Base_Icons/Itch_Text.png" height="28px">
-                    </a>
-
-                </div>
-
-                <!--Features/Contributions-->
-                <div class="project-desc-box-feature">
-                    <div class="project-desc-box-featureheader">Main contributions</div>
-                    <ul class="project-desc-box-feature-list">
-                        <li>Player Charater Controller</li>
-                        <li>Melee & ranged combat systems</li>
-                        <li>Ability System</li>
-                        <li>Skill Tree System</li>
-                        <li>UI functionality</li>
-                    </ul>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-
-    <!---------------------------------------Personal Projects--------------------------------------->
-    <div class="Banner" id="PersonalProjects">Personal Projects</div>
-    <div class="panel">
-        <div class="project-con-panel">
-
-            <!--Jett-->
-            <div class="project-con-cell" onclick="OpenProject('https://www.google.com/','personal-jett-video','personal-jett-desc')" onmouseover="PlayVideo(true,'personal-jett-video');ShowDescPersonal('personal-jett-desc')" onmouseleave="PlayVideo(false,'personal-jet-video')">
-                <div class="project-con-box">
-                    <!--Projact BackGround-->
-                    <img class="project-con-box-image" src="/Base_Icons/Placeholder_Icon.png">
-                    <!--Projact Video-->
-                    <video muted loop controls class="project-con-box-video" id="personal-jett-video" style="display: none">
-                        <source src="/Projects/Mantari/Mantari_Video.mp4" type="video/mp4">
-                    </video>
-                    <!--Projact Logo-->
-                    <img class="project-con-box-title" src="/Raw_Content/Jett%20Logo.png">
-                </div>
-            </div>
-
-        </div>
-
-        <div class="project-desc-panel">
-
-            <!--Start-->
-            <div class="project-desc-cell project-desc-cell-start project-desc-active-personal" id="">
-                <img src="Base_Icons/Arrow.png">
-                <h1> Hover over a project for more information!</h1>
-            </div>
-
-            <!--Jett-->
-            <div class="project-desc-cell" id="personal-jett-desc">
-
-                <!--Logo and Tags-->
-                <div class="project-desc-box-logotags">
-                    <img src="/Raw_Content/Jett%20Logo.png" width="100%">
-                    <div class="project-con-tags">
-                        <project-tag class="engine-tag dividerline-tag">Unity</project-tag>
-                        <div class="extra-tag csharp-tag">C#</div>
-                        <project-tag class="team-tag">Team Project</project-tag>
+                <!--Mantari-->
+                <div class="project-con-cell" onclick="ExpandProject(-1,this)" onmouseover="PlayVideo(true,'work-mantari-video')" onmouseleave="PlayVideo(false,'work-mantari-video')">
+                    <div class="project-con-box">
+                        <!--Projact BackGround-->
+                        <img class="project-con-box-image" src="/Projects/Mantari/Mantari_Banner.png">
+                        <!--Projact Video-->
+                        <video muted loop controls class="project-con-box-video" id="work-mantari-video">
+                            <source src="/Projects/Mantari/Mantari_Video.mp4" type="video/mp4">
+                        </video>
+                        <!--Projact Logo-->
+                        <img class="project-con-box-title" src="/Projects/Mantari/Mantari_Logo.png">
                     </div>
                 </div>
 
-                <!--Desc Text-->
-                <div class="project-desc-desctext">
-                    <p>
-                        Project Crawler is a 3rd person rogue-like dungeon crawler game,
-                        where your health is also your currency and ability resource.
-                        creating a risk vs reward gameplay. Equip yourself with new abilities and upgrade them
-                        at the cost of your health. Project Crawler was created for the university
-                        of Portsmouth game jam with a team of 6 members, with
-                        the game’s topic being ‘a dungeon crawler with a single resource’.
-                    </p>
+                <!--InfoPanel-->
+                <div class="project-con-descbox ">
+                    <div class="project-descbox-title"><img class="project-con-descbox-title" src="/Projects/Mantari/Mantari_Logo.png">
+                        <project-tag class="engine-tag">asdasda</project-tag>
+                        <project-tag class="engine-tag">asdasda</project-tag>
+                        <project-tag class="engine-tag">asdasda</project-tag>
+                    </div>
+
+                    <!--Desc Text-->
+                    <div class="project-con-descbox-textbox">
+                        <p>
+                            Project Crawler is a 3rd person rogue-like dungeon crawler game,
+                            where your health is also your currency and ability resource.
+                            creating a risk vs reward gameplay. Equip yourself with new abilities and upgrade them
+                            at the cost of your health. Project Crawler was created for the university
+                            of Portsmouth game jam with a team of 6 members, with
+                            the game’s topic being ‘a dungeon crawler with a single resource’.
+                        </p>
+                    </div>
+
+                    <!--Link-->
+                    <div class="project-desc-descbox-links">
+                        <a href="https://georgekruger.itch.io/mantari" class="link-button projectpage-button">
+                            <img src="/Base_Icons/Joystick_Icon.png" width="33px">
+                            <div class="projectpage-button-text">Project Page</div>
+                        </a>
+                        <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button">
+                            <img src="/Base_Icons/Itch_Icon.png" width="30px">
+                            <img src="/Base_Icons/Itch_Text.png" height="28px">
+                        </a>
+                    </div>
+
+                    <!--Features/Contributions-->
+                    <div class="project-desc-box-feature">
+                        <div class="project-desc-box-featureheader">Main contributions</div>
+                        <ul class="project-desc-box-feature-list">
+                            <li>Player Charater Controller</li>
+                            <li>Melee & ranged combat systems</li>
+                            <li>Ability System</li>
+                            <li>Skill Tree System</li>
+                            <li>UI functionality</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Mantari-->
+                <div class="project-con-cell" onclick="ExpandProject(-3,this)" onmouseover="PlayVideo(true,'work-mantari-video')" onmouseleave="PlayVideo(false,'work-mantari-video')">
+                    <div class="project-con-box">
+                        <!--Projact BackGround-->
+                        <img class="project-con-box-image" src="/Projects/Mantari/Mantari_Banner.png">
+                        <!--Projact Video-->
+                        <video muted loop controls class="project-con-box-video" id="work-mantari-video">
+                            <source src="/Projects/Mantari/Mantari_Video.mp4" type="video/mp4">
+                        </video>
+                        <!--Projact Logo-->
+                        <img class="project-con-box-title" src="/Projects/Mantari/Mantari_Logo.png">
+                    </div>
                 </div>
 
-                <!--Link-->
-                <div class="project-desc-box-links">
-                    <!--<a href="https://georgekruger.itch.io/mantari" class="link-button projectpage-button">
-                        <img src="/Base_Icons/Joystick_Icon.png" width="33px">
-                        <div class="projectpage-button-text">Project Page</div>
-                    </a>
+                <!--InfoPanel-->
+                <div class="project-con-descbox ">
+                    <div class="project-descbox-title"><img class="project-con-descbox-title" src="/Projects/Mantari/Mantari_Logo.png">
+                        <project-tag class="engine-tag">asdasda</project-tag>
+                        <project-tag class="engine-tag">asdasda</project-tag>
+                        <project-tag class="engine-tag">asdasda</project-tag>
+                    </div>
 
-                    <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button">
-                        <img src="/Base_Icons/Itch_Icon.png" width="30px">
-                        <img src="/Base_Icons/Itch_Text.png" height="28px">
-                    </a>-->
-                    <div style="float: left;font-size: 26px;">-- Project page unavaliavble --</div>
+                    <!--Desc Text-->
+                    <div class="project-con-descbox-textbox">
+                        <p>
+                            Project Crawler is a 3rd person rogue-like dungeon crawler game,
+                            where your health is also your currency and ability resource.
+                            creating a risk vs reward gameplay. Equip yourself with new abilities and upgrade them
+                            at the cost of your health. Project Crawler was created for the university
+                            of Portsmouth game jam with a team of 6 members, with
+                            the game’s topic being ‘a dungeon crawler with a single resource’.
+                        </p>
+                    </div>
+
+                    <!--Link-->
+                    <div class="project-desc-descbox-links">
+                        <a href="https://georgekruger.itch.io/mantari" class="link-button projectpage-button">
+                            <img src="/Base_Icons/Joystick_Icon.png" width="33px">
+                            <div class="projectpage-button-text">Project Page</div>
+                        </a>
+                        <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button">
+                            <img src="/Base_Icons/Itch_Icon.png" width="30px">
+                            <img src="/Base_Icons/Itch_Text.png" height="28px">
+                        </a>
+                    </div>
+
+                    <!--Features/Contributions-->
+                    <div class="project-desc-box-feature">
+                        <div class="project-desc-box-featureheader">Main contributions</div>
+                        <ul class="project-desc-box-feature-list">
+                            <li>Player Charater Controller</li>
+                            <li>Melee & ranged combat systems</li>
+                            <li>Ability System</li>
+                            <li>Skill Tree System</li>
+                            <li>UI functionality</li>
+                        </ul>
+                    </div>
                 </div>
-
-                <!--Features/Contributions-->
-                <div class="project-desc-box-feature">
-                    <div class="project-desc-box-featureheader">Main contributions</div>
-                    <ul class="project-desc-box-feature-list">
-                        <li>Player Charater Controller</li>
-                        <li>Melee & ranged combat systems</li>
-                        <li>Ability System</li>
-                        <li>Skill Tree System</li>
-                        <li>User Interface functionality</li>
-                    </ul>
-                </div>
-
             </div>
-
         </div>
+
+
 
     </div>
 
@@ -466,12 +426,12 @@
 
             <div class="cv-bubble-con">
                 <div class="cv-bubble-title"><img src="Base_Icons/Code_Icon.png">Code Languages</div>
-                <div class="cv-bubble">C++<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_1.png">
+                <div class="cv-bubble">C++
                     <div class="cv-bubble-hover">
                         <div><img src="Base_Icons/Clock_Icon.png">1 year of experience</div>
                     </div>
                 </div>
-                <div class="cv-bubble">C#<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_2.png">
+                <div class="cv-bubble">C#
                     <div class="cv-bubble-hover">
                         <div><img src="Base_Icons/Clock_Icon.png">4 years of experience</div>
                     </div>
@@ -480,17 +440,17 @@
 
             <div class="cv-bubble-con cv-bubble-style-web" style="border: 1px solid #8d139d">
                 <div class="cv-bubble-title"><img src="Base_Icons/Web_Icon.png">Web</div>
-                <div class="cv-bubble">HTML<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_3.png">
+                <div class="cv-bubble">HTML
                     <div class="cv-bubble-hover">
                         <div><img src="Base_Icons/Clock_Icon.png">8 years of experience</div>
                     </div>
                 </div>
-                <div class="cv-bubble">CSS<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_2.png">
+                <div class="cv-bubble">CSS
                     <div class="cv-bubble-hover">
                         <div><img src="Base_Icons/Clock_Icon.png">8 years of experience</div>
                     </div>
                 </div>
-                <div class="cv-bubble">Java Script<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_1.png">
+                <div class="cv-bubble">Java Script
                     <div class="cv-bubble-hover">
                         <div><img src="Base_Icons/Clock_Icon.png">2 years of experience</div>
                     </div>
@@ -499,12 +459,12 @@
 
             <div class="cv-bubble-con cv-bubble-style-gameengines" style="border: 1px solid #00887d">
                 <div class="cv-bubble-title"><img src="Base_Icons/Cog_Icon.png">Game Engines</div>
-                <div class="cv-bubble">Unity<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_2.png">
+                <div class="cv-bubble">Unity
                     <div class="cv-bubble-hover">
                         <div><img src="Base_Icons/Clock_Icon.png">4 years of experience</div>
                     </div>
                 </div>
-                <div class="cv-bubble">Unreal 4<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_1.png">
+                <div class="cv-bubble">Unreal 4
                     <div class="cv-bubble-hover">
                         <div><img src="Base_Icons/Clock_Icon.png">2 years of experience</div>
                     </div>
@@ -513,22 +473,22 @@
 
             <div class="cv-bubble-con cv-bubble-style-office" style="border: 1px solid #da3b01">
                 <div class="cv-bubble-title"><img src="Base_Icons/Office_Logo.png">Office</div>
-                <div class="cv-bubble">Word<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_4.png">
+                <div class="cv-bubble">Word
                     <div class="cv-bubble-hover">
                         <div><img src="Base_Icons/Clock_Icon.png">10 year of experience</div>
                     </div>
                 </div>
-                <div class="cv-bubble">PowerPoint<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_4.png">
+                <div class="cv-bubble">PowerPoint
                     <div class="cv-bubble-hover">
                         <div><img src="Base_Icons/Clock_Icon.png">10 years of experience</div>
                     </div>
                 </div>
-                <div class="cv-bubble">Excel<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_2.png">
+                <div class="cv-bubble">Excel
                     <div class="cv-bubble-hover">
                         <div><img src="Base_Icons/Clock_Icon.png">6 years of experience</div>
                     </div>
                 </div>
-                <div class="cv-bubble">Outlook<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_1.png">
+                <div class="cv-bubble">Outlook
                     <div class="cv-bubble-hover">
                         <div><img src="Base_Icons/Clock_Icon.png">6 years of experience</div>
                     </div>
@@ -537,12 +497,12 @@
 
             <div class="cv-bubble-con cv-bubble-style-3d" style="border: 1px solid #007620">
                 <div class="cv-bubble-title"><img src="Base_Icons/Office_Logo.png">3D Models</div>
-                <div class="cv-bubble">Blender<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_2.png">
+                <div class="cv-bubble">Blender
                     <div class="cv-bubble-hover">
                         <div><img src="Base_Icons/Clock_Icon.png">9 years of experience</div>
                     </div>
                 </div>
-                <div class="cv-bubble">Z-Brush<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_1.png">
+                <div class="cv-bubble">Z-Brush
                     <div class="cv-bubble-hover">
                         <div><img src="Base_Icons/Clock_Icon.png">1 year of experience</div>
                     </div>
@@ -551,12 +511,12 @@
 
             <div class="cv-bubble-con cv-bubble-style-3d" style="border: 1px solid #007620">
                 <div class="cv-bubble-title"><img src="Base_Icons/Office_Logo.png">Software</div>
-                <div class="cv-bubble">Photoshop<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_2.png">
+                <div class="cv-bubble">Photoshop
                     <div class="cv-bubble-hover">
                         <div><img src="Base_Icons/Clock_Icon.png">9 years of experience</div>
                     </div>
                 </div>
-                <div class="cv-bubble">Vegas Pro<img class="cv-bubble-pyramid" src="Base_Icons/SkillPyramid_1.png">
+                <div class="cv-bubble">Vegas Pro
                     <div class="cv-bubble-hover">
                         <div><img src="Base_Icons/Clock_Icon.png">7 years of experience</div>
                     </div>
@@ -663,14 +623,17 @@
 
         function ExpandProject(Index, Element2) {
 
+            let ActiveProject = document.getElementsByClassName("project-con-descbox-active");
+            let ActiveProject2 = document.getElementsByClassName("project-con-box-active");
 
-            if (Element2.nextElementSibling.classList == 'project-con-descbox-active') {
-                alert("arr");
-                Element2.nextElementSibling.classList.remove("project-con-descbox-active");
+
+            if (ActiveProject.length > 0 || ActiveProject2.length > 0) {
                 ScrollProjects(0);
-
-
+                CloseActiveProject();
             } else {
+
+
+                Element2.classList.add("project-con-box-active")
                 Element2.nextElementSibling.classList.add("project-con-descbox-active");
 
                 ScrollProjects(Index);
@@ -682,12 +645,26 @@
             function ScrollProjects(Index) {
 
                 var SlideClass = document.getElementById("ProjectSlide");
-                var rrr = Index * 380 + 'px';
-                var asdasd = "calc(-" + rrr + " - 50%)";
+                var rrr = Index * 145 + 'px';
+                var asdasd = "calc(" + rrr + " - 50%)";
                 /*
                             var asdasd = "calc(-" + (index * 280) + " - 50%)";
                 */
                 SlideClass.style.left = asdasd;
+            }
+
+            function CloseActiveProject() {
+                let ActiveProject3 = document.getElementsByClassName("project-con-descbox-active");
+                let ActiveProject4 = document.getElementsByClassName("project-con-box-active");
+
+                if (ActiveProject.length > 0) {
+                    ActiveProject[0].classList.remove("project-con-descbox-active");
+                }
+                if (ActiveProject2.length > 0) {
+                    ActiveProject2[0].classList.remove("project-con-box-active");
+                }
+
+
             }
 
 
