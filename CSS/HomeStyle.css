@@ -190,7 +190,7 @@ body {
 .project-con-panel {
     width: 200%;
     height: 700px;
-    left: calc(290px + -50%);
+    left: calc(-50%);
     margin: auto;
     justify-content: center;
     display: flex;
@@ -219,7 +219,7 @@ float: left;
 
     overflow: visible;
     z-index: 1;
-
+opacity: 1;
     cursor: pointer;
     margin-left: -45px;
     margin-right: -45px;
@@ -236,7 +236,7 @@ float: left;
 
 .project-con-box-image {
     position: absolute;
-    width: 600px;
+    width: 700px;
     height: 700px;
     transition: 0.5s;
     z-index: -10;
@@ -264,7 +264,7 @@ float: left;
     z-index: 100;
     bottom: 40px;
     width: 260px;
-    left: 202px;
+    left: 190px;
     margin: auto;
     position: absolute;
     display: block;
@@ -445,7 +445,7 @@ project-tag {
 }
 
 
-.project-con-cell:hover {
+.project-con-cell-hover {
     width: 600px;
 
 }
@@ -475,7 +475,7 @@ project-tag {
     transform: scale(0.7)
 }
 
-.project-con-cell:hover .project-con-box-video {
+.project-con-cell-open > .project-con-box-video {
     opacity: 1;
 
 }
@@ -748,7 +748,7 @@ qqqqq .project-cell-rot {
     width: auto;
     display: inline-block;
     position: relative;
-    padding: 4px 44px 4px 8px;
+    padding: 4px 12px 4px 12px;
     border-radius: 6px;
     background: #9b2626;
     font-size: 22px;
@@ -1155,7 +1155,7 @@ qqqqq .project-cell-rot {
 }
 
 .project-con-descbox-active {
-    width: 1000px;
+    width: 800px;
     transition: 1s;
 }
 
