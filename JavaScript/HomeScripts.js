@@ -20,10 +20,8 @@
             if (CheckForOpenProject) {}
             if (IfPlay && CheckForOpenProject != false) {
                 VideoElement6.play();
-                ProjectElement.classList.add("project-con-cell-hover")
             } else {
                 VideoElement6.pause();
-                ProjectElement.classList.remove("project-con-cell-hover")
 
             }
 

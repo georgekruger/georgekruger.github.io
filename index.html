@@ -26,9 +26,8 @@
         <navbar-item class="navbar-name">George Kruger</navbar-item>
 
         <a class="navbar-link" href="/index.html#Home"><img src="/Base_Icons/Home_Icon.png" class="navbar-item-icon" />Home</a>
-        <a class="navbar-link" href="/index.html#WorkProjects"><img src="/Base_Icons/WorkProjects_Icon.png" class="navbar-item-icon" />Work Projects</a>
-        <a class="navbar-link" href="/index.html#PersonalProjects"><img src="/Base_Icons/PersonalProjects_Icon.png" class="navbar-item-icon" />Personal Projects</a>
-        <a class="navbar-link" href="/Content/CV.pdf"><img src="/Base_Icons/CV_Icon.png" class="navbar-item-icon" />CV</a>
+        <a class="navbar-link" href="/index.html#Projects"><img src="/Base_Icons/PersonalProjects_Icon.png" class="navbar-item-icon" />Projects</a>
+        <a class="navbar-link" href="/index.html#CV"><img src="/Base_Icons/CV_Icon.png" class="navbar-item-icon" />CV</a>
         <a class="navbar-link" href="/index.html#Contact"><img src="/Base_Icons/Contact_Icon.png" class="navbar-item-icon" height="14px" />Contact</a>
 
         <a class="navbar-sidepanel-shadow" id="Navbar-Panel-Shadow" href="javascript:void(0)" onclick="ClosePanel()"></a>
@@ -53,7 +52,7 @@
         <a href="/index.html#PersonalProjects">
             <div class="Navbar-link-sidepanel"><img src="/Base_Icons/PersonalProjects_Icon.png" class="navbar-item-icon" height="14px" />Personal Projects</div>
         </a>
-        <a href="/Content/CV.pdf">
+        <a href="/index.html#CV">
             <div class="Navbar-link-sidepanel"><img src="/Base_Icons/CV_Icon.png" class="navbar-item-icon" height="14px" />CV</div>
         </a>
         <a href="/index.html#Contact">
@@ -66,7 +65,7 @@
     <!--Video Showcase-->
 
 
-    <div class="video-con">
+    <div class="video-con" id="Home">
         <div class="video-con-object rellax" data-rellax-speed="-6" onended="run()" id="Video_Showcase">
             <video autoplay="" muted="" poster loop width="100%">
 
@@ -146,192 +145,91 @@
     </div>
 
     <!---------------------------------------Work Projects--------------------------------------->
-    <div class="Banner" id="projects">
+    <div class="Banner" id="Projects">
         <div class="Banner-titletext">Projects</div>
-        <div class="Banner-smalltext">Click for more information</div>
     </div>
     <div class="panel">
 
 
-        <div class="asdasdasd">
-            <div class="project-con-panel" id="ProjectSlide" style="">
+        <div class="project-con-panel" id="ProjectSlide" style="">
 
-                <!--Mantari-->
-                <div class="project-con-cell" onclick="ExpandProject(2,this)" onmouseover="PlayVideo(true,this)" onmouseleave="PlayVideo(false,this)">
-                    <div class="project-con-box">
-                        <!--Projact BackGround-->
-                        <img class="project-con-box-image" src="/Projects/Mantari/Mantari_Banner.png">
-                        <!--Projact Video-->
-                        <video muted loop controls class="project-con-box-video">
-                            <source src="/Projects/Mantari/Mantari_Video.mp4" type="video/mp4">
-                        </video>
-                        <!--Projact Logo-->
-                        <img class="project-con-box-title" src="/Projects/Mantari/Mantari_Logo.png">
+            <!--Mantari-->
+            <a class="project-con-cell" onmouseover="PlayVideo(true,this)" onmouseleave="PlayVideo(false,this)">
+                <div class="project-con-box">
+                    <!--Projact BackGround-->
+                    <img class="project-con-box-image" src="/Projects/Mantari/Mantari_Banner.png">
+                    <!--Projact Video-->
+                    <video muted loop controls class="project-con-box-video">
+                        <source src="/Projects/Mantari/Mantari_Video.mp4" type="video/mp4">
+                    </video>
+                    <!--Projact Logo-->
+                    <img class="project-con-box-title" src="/Projects/Mantari/Mantari_Logo.png">
+                    <!--Projact Tags-->
+                    <div class="project-con-tagcon">
+                        <project-tag class="university-tag">University</project-tag>
+                        <div class="extra-tag" style="background: green">1<sup>st</sup> Year</div>
+                        <project-tag class="engine-tag">Unity</project-tag>
+                        <project-tag class="team-tag">Team Project</project-tag>
+                        <project-tag class="unavailablepage-tag">Project page unavailable</project-tag>
+
                     </div>
                 </div>
+            </a>
 
-                <!--InfoPanel-->
-                <div class="project-con-descbox ">
-                    <div class="project-descbox-title"><img class="project-con-descbox-title" src="/Projects/Mantari/Mantari_Logo.png">
-                        <project-tag class="engine-tag">asdasda</project-tag>
-                        <project-tag class="engine-tag">asdasda</project-tag>
-                        <project-tag class="engine-tag">asdasda</project-tag>
-                    </div>
 
-                    <!--Desc Text-->
-                    <div class="project-con-descbox-textbox">
-                        <p>
-                            Project Crawler is a 3rd person rogue-like dungeon crawler game,
-                            where your health is also your currency and ability resource.
-                            creating a risk vs reward gameplay. Equip yourself with new abilities and upgrade them
-                            at the cost of your health. Project Crawler was created for the university
-                            of Portsmouth game jam with a team of 6 members, with
-                            the game’s topic being ‘a dungeon crawler with a single resource’.
-                        </p>
-                    </div>
 
-                    <!--Link-->
-                    <div class="project-desc-descbox-links">
-                        <a href="https://georgekruger.itch.io/mantari" class="link-button projectpage-button">
-                            <img src="/Base_Icons/Joystick_Icon.png" width="33px">
-                            <div class="projectpage-button-text">Project Page</div>
-                        </a>
-                        <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button">
-                            <img src="/Base_Icons/Itch_Icon.png" width="30px">
-                            <img src="/Base_Icons/Itch_Text.png" height="28px">
-                        </a>
-                    </div>
 
-                    <!--Features/Contributions-->
-                    <div class="project-desc-box-feature">
-                        <div class="project-desc-box-featureheader">Main contributions</div>
-                        <ul class="project-desc-box-feature-list">
-                            <li>Player Charater Controller</li>
-                            <li>Melee & ranged combat systems</li>
-                            <li>Ability System</li>
-                            <li>Skill Tree System</li>
-                            <li>UI functionality</li>
-                        </ul>
+            <!--SOTF-->
+            <a class="project-con-cell project-con-cell-hover" onmouseover="PlayVideo(true,this)" onmouseleave="PlayVideo(false,this)">
+                <div class="project-con-box">
+                    <!--Projact BackGround-->
+                    <img class="project-con-box-image" src="/Projects/Spirit_of_the_Florest/Icon.png">
+                    <!--Projact Video-->
+                    <video muted loop controls class="project-con-box-video">
+                        <source src="/Projects/Spirit_of_the_Florest/SotF_IndexVideo.mp4" type="video/webm">
+                    </video>
+                    <!--Projact Logo-->
+                    <img class="project-con-box-title" src="/Projects/Spirit_of_the_Florest/SotF_Logo.png">
+                    <!--Projact Tags-->
+                    <div class="project-con-tagcon">
+                        <project-tag class="university-tag">University</project-tag>
+                        <div class="extra-tag" style="background: green">1<sup>st</sup> Year</div>
+                        <project-tag class="engine-tag">Unity</project-tag>
+                        <project-tag class="team-tag">Team Project</project-tag>
+                        <project-tag class="unavailablepage-tag">Project page unavailable</project-tag>
                     </div>
                 </div>
-                <!--SOTF-->
-                <div class="project-con-cell project-con-cell-hover" onclick="ExpandProject(0,this)" onmouseover="PlayVideo(true,this)" onmouseleave="PlayVideo(false,this)">
-                    <div class="project-con-box">
-                        <!--Projact BackGround-->
-                        <img class="project-con-box-image" src="/Projects/Spirit_of_the_Florest/Icon.png">
-                        <!--Projact Video-->
-                        <video muted loop controls class="project-con-box-video">
-                            <source src="/Projects/Mantari/Mantari_Video.mp4" type="video/mp4">
-                        </video>
-                        <!--Projact Logo-->
-                        <img class="project-con-box-title" src="/Projects/Spirit_of_the_Florest/SotF_Logo.png">
+            </a>
+
+
+
+
+            <!--Jett-->
+            <a class="project-con-cell" onmouseover="PlayVideo(true,this)" onmouseleave="PlayVideo(false,this)">
+                <div class="project-con-box">
+                    <!--Projact BackGround-->
+                    <img class="project-con-box-image" src="/Projects/Jett/Jett_Tile.png">
+                    <!--Projact Video-->
+                    <video muted loop controls class="project-con-box-video">
+                        <source src="/Projects/Mantari/Mantari_Video.mp4" type="video/mp4">
+                    </video>
+                    <!--Projact Logo-->
+                    <img class="project-con-box-title" src="/Raw_Content/Jett%20Logo.png">
+                    <!--Projact Tags-->
+                    <div class="project-con-tagcon">
+                        <project-tag class="university-tag">Personal Project</project-tag>
+                        <project-tag class="engine-tag">Unity</project-tag>
+                        <project-tag class="engine-tag">In Progress</project-tag>
+                        <project-tag class="unavailablepage-tag">Project page unavailable</project-tag>
+
                     </div>
                 </div>
+            </a>
 
-                <!--InfoPanel-->
-                <div class="project-con-descbox ">
-                    <div class="project-descbox-title"><img class="project-con-descbox-title" src="/Projects/Mantari/Mantari_Logo.png">
-                        <project-tag class="engine-tag">asdasda</project-tag>
-                        <project-tag class="engine-tag">asdasda</project-tag>
-                        <project-tag class="engine-tag">asdasda</project-tag>
-                    </div>
 
-                    <!--Desc Text-->
-                    <div class="project-con-descbox-textbox">
-                        <p>
-                            Project Crawler is a 3rd person rogue-like dungeon crawler game,
-                            where your health is also your currency and ability resource.
-                            creating a risk vs reward gameplay. Equip yourself with new abilities and upgrade them
-                            at the cost of your health. Project Crawler was created for the university
-                            of Portsmouth game jam with a team of 6 members, with
-                            the game’s topic being ‘a dungeon crawler with a single resource’.
-                        </p>
-                    </div>
 
-                    <!--Link-->
-                    <div class="project-desc-descbox-links">
-                        <a href="https://georgekruger.itch.io/mantari" class="link-button projectpage-button">
-                            <img src="/Base_Icons/Joystick_Icon.png" width="33px">
-                            <div class="projectpage-button-text">Project Page</div>
-                        </a>
-                        <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button">
-                            <img src="/Base_Icons/Itch_Icon.png" width="30px">
-                            <img src="/Base_Icons/Itch_Text.png" height="28px">
-                        </a>
-                    </div>
 
-                    <!--Features/Contributions-->
-                    <div class="project-desc-box-feature">
-                        <div class="project-desc-box-featureheader">Main contributions</div>
-                        <ul class="project-desc-box-feature-list">
-                            <li>Player Charater Controller</li>
-                            <li>Melee & ranged combat systems</li>
-                            <li>Ability System</li>
-                            <li>Skill Tree System</li>
-                            <li>UI functionality</li>
-                        </ul>
-                    </div>
-                </div>
-                <!--Jett-->
-                <div class="project-con-cell" onclick="ExpandProject(-2,this)" onmouseover="PlayVideo(true,this)" onmouseleave="PlayVideo(false,this)">
-                    <div class="project-con-box">
-                        <!--Projact BackGround-->
-                        <img class="project-con-box-image" src="/Projects/Mantari/Mantari_Banner.png">
-                        <!--Projact Video-->
-                        <video muted loop controls class="project-con-box-video">
-                            <source src="/Projects/Mantari/Mantari_Video.mp4" type="video/mp4">
-                        </video>
-                        <!--Projact Logo-->
-                        <img class="project-con-box-title" src="/Raw_Content/Jett%20Logo.png">
-                    </div>
-                </div>
 
-                <!--InfoPanel-->
-                <div class="project-con-descbox ">
-                    <div class="project-descbox-title"><img class="project-con-descbox-title" src="/Projects/Mantari/Mantari_Logo.png">
-                        <project-tag class="engine-tag">asdasda</project-tag>
-                        <project-tag class="engine-tag">asdasda</project-tag>
-                        <project-tag class="engine-tag">asdasda</project-tag>
-                    </div>
-
-                    <!--Desc Text-->
-                    <div class="project-con-descbox-textbox">
-                        <p>
-                            Project Crawler is a 3rd person rogue-like dungeon crawler game,
-                            where your health is also your currency and ability resource.
-                            creating a risk vs reward gameplay. Equip yourself with new abilities and upgrade them
-                            at the cost of your health. Project Crawler was created for the university
-                            of Portsmouth game jam with a team of 6 members, with
-                            the game’s topic being ‘a dungeon crawler with a single resource’.
-                        </p>
-                    </div>
-
-                    <!--Link-->
-                    <div class="project-desc-descbox-links">
-                        <a href="https://georgekruger.itch.io/mantari" class="link-button projectpage-button">
-                            <img src="/Base_Icons/Joystick_Icon.png" width="33px">
-                            <div class="projectpage-button-text">Project Page</div>
-                        </a>
-                        <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button">
-                            <img src="/Base_Icons/Itch_Icon.png" width="30px">
-                            <img src="/Base_Icons/Itch_Text.png" height="28px">
-                        </a>
-                    </div>
-
-                    <!--Features/Contributions-->
-                    <div class="project-desc-box-feature">
-                        <div class="project-desc-box-featureheader">Main contributions</div>
-                        <ul class="project-desc-box-feature-list">
-                            <li>Player Charater Controller</li>
-                            <li>Melee & ranged combat systems</li>
-                            <li>Ability System</li>
-                            <li>Skill Tree System</li>
-                            <li>UI functionality</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
         </div>
 
 
@@ -341,18 +239,21 @@
 
 
     <!--CV -->
-    <div class="Banner">
+    <div class="Banner" id="CV">
         <div class="Banner-titletext">CV</div>
         <div class="Banner-smalltext">Hover for more information</div>
     </div>
 
     <div class="panel">
 
-
+        <div class="cv-sideline"></div>
 
         <div class="cv-bubble-panel">
-
-
+            <div class="cv-infopanel-title" style="left: 269px;">Skills<div class="cv-linearrow"></div>
+            </div>
+            <a href="/Content/CV.pdf" class="cv-printerver" target="_blank"><img src="Base_Icons/PrintFriendly_Icon.png" height="170px" style="margin: 10px;">
+                <div>Printer-Friendly Version</div>
+            </a>
 
             <div class="cv-bubble-con">
                 <div class="cv-bubble-title"><img src="Base_Icons/Code_Icon.png">Code</div>
@@ -459,21 +360,80 @@
 
 
         <div class="cv-infopanel-base">
+
             <div class="cv-infopanel">
-                <div class="cv-infopanel-title">asdasdasd</div>
+                <div class="cv-infopanel-title">Professional Experience<div class="cv-linearrow"></div>
+                </div>
 
-                asdasdasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasdasdadasd
-                asdasdasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasdasdadasd
-                asdasdasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasda asdas asdasdasdasdasdasdasd asd asd asd asd asd asd asd asd as dasd asdasdasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasdasdadasd
-                dasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasdasdadasd
-                sdadasd
-                asdasdasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasdasdadasd
-                asdasdasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasdasdadasd
-                asdasdasdasdasdasdasdasdasdasdasdasdasdasd<br>adasdasdasdasdadasd
+                <div class="cv-workexp-con" style="margin-top: 10px;">
+                    <div class="cv-workexp-smalltext">Potters Bar, United Kingdom - 2014 July</div>
+                    <div class="cv-workexp-title"> Adam Bourn Creative Services Ltd (Work Experience)</div>
+                    <p>
+                        Duties included producing and installing graphics, assisting in the workshop by using CAD software to create images to print and prepare for installation. I also gained on-site experience assisting and installing graphics and understanding the process to complete the job.
+                    </p>
+                    <ol>
+                        <li>Learnt and assisted through the production and installation pipeline</li>
+                        <li>Processed vinyl </li>
+                        <li>Worked with cad software</li>
+                    </ol>
+                </div>
+                <div class="cv-infopanel-devider"></div>
+                <div class="cv-workexp-con">
+                    <div class="cv-workexp-smalltext">Finsbury Park, United Kingdom - 2018 – 2021</div>
+                    <div class="cv-workexp-title">Rowans Tenpin Bowl</div>
+                    <p>
+                        Duties included handling and processing customer payments and reservations. Thus, being frontline customer service, resulting in having great communication skills with customers and co-workers. This has helped me greatly with working in a team to get tasks done faster and of high standard.
+                    </p>
+                    <ol>
+                        <li>Handled and processing customer payments and reservations</li>
+                        <li>Frontline customer assistance </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="cv-infopanel">
+                <div class="cv-infopanel-title">Achievements<div class="cv-linearrow"></div>
+                </div>
 
+                <div></div>
+                <div class="cv-infopanel-devider"></div>
 
             </div>
 
+            <div class="cv-infopanel">
+                <div class="cv-infopanel-title">Education<div class="cv-linearrow"></div>
+                </div>
+
+                <div class="cv-education-cell">
+                    <div class="cv-education-logo"><img src="/Index_Content/university-of-portsmouth-logo.jpg" height="100%"> </div>
+                    <div class="cv-education-textcon">
+                        <div class="cv-education-title">University of Portsmouth</div>
+                        <div class="cv-education-date">2021 - Present</div>
+                        <div class="cv-education-desc">Computer Games Technology</div>
+                    </div>
+                </div>
+
+                <div class="cv-infopanel-devider"></div>
+
+                <div class="cv-education-cell">
+                    <div class="cv-education-logo" style="background: white"><img src="/Index_Content/CollageLogo1.png" width="100%"> </div>
+                    <div class="cv-education-textcon">
+                        <div class="cv-education-title">The College of Haringey, Enfield and Northeast London</div>
+                        <div class="cv-education-date">2020</div>
+                        <div class="cv-education-desc">Access to Higher Education Computing</div>
+                    </div>
+                </div>
+
+                <div class="cv-infopanel-devider"></div>
+
+                <div class="cv-education-cell">
+                    <div class="cv-education-logo"><img src="/Index_Content/university-of-portsmouth-logo.jpg" height="100%"> </div>
+                    <div class="cv-education-textcon">
+                        <div class="cv-education-title">Barnet Southgate Collage</div>
+                        <div class="cv-education-date">2015 June – 2016 July</div>
+                        <div class="cv-education-desc">Creative Media and Production</div>
+                    </div>
+                </div>
+            </div>
 
 
 
@@ -482,15 +442,17 @@
 
     </div>
     <div class="Banner">Contact Me</div>
-    <div class="Contact-Me" id="Contact">
+    <div class="contact-panel" id="Contact">
 
         <div class="Contact-Me-Con">
             Feel free to get in contract:
 
         </div>
         <div class="Contact-Me-Con">
-            <a class="Contact-Me-link" href="mailto:georgekruger@hotmail.co.uk">georgekruger@hotmail.co.uk<img class="Contact-Me-link-Icon" src="Base_Icons/Contact_Icon.png"></a><br>
-            <a class="Contact-Me-link" href="https://wa.me/123141154">123@123.co.uk<img class="Contact-Me-link-Icon" src="Base_Icons/Cog_Icon.png"></a>
+            <a class="Contact-Me-link" href="mailto:georgekruger@hotmail.co.uk">georgekruger@hotmail.co.uk<img class="Contact-Me-link-Icon" src="Base_Icons/Contact_Icon.png"></a>
+
+            <br>
+            <a class="Contact-Me-link" href="https://wa.me/123141154">Linkedin<img class="Contact-Me-link-Icon" src="Base_Icons/Cog_Icon.png"></a>
         </div>
 
     </div>
