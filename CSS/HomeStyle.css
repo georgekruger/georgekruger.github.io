@@ -188,13 +188,11 @@ body {
 /*Project Showcase*/
 
 .project-con-panel {
-    width: 200%;
+    width: 100%;
     height: 700px;
-    left: calc(-50%);
     margin: auto;
     justify-content: center;
     display: flex;
-    position: absolute;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
@@ -202,7 +200,6 @@ body {
     overflow: hidden;
     white-space: nowrap;
     transition: 1s;
-float: left;
 
     background: rgb(28, 28, 28);
     background: -moz-linear-gradient(0deg, rgba(28, 28, 28, 1) 0%, rgba(33, 33, 33, 1) 40%, rgba(33, 33, 33, 1) 60%, rgba(28, 28, 28, 1) 100%);
@@ -216,6 +213,7 @@ float: left;
     width: 380px;
     height: 100%;
     transition: 0.5s;
+    min-width: inherit;
 
     overflow: visible;
     z-index: 1;
@@ -313,8 +311,11 @@ project-tag {
     font-style: normal;
     overflow: hidden;
     z-index: -2;
+    left: 10px;
+    bottom: 0px;
     box-shadow: 0px 0px 4px -1px #000000;
     line-height: 20px;
+    background: red;
 
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -349,6 +350,7 @@ project-tag {
     color: white;
     margin-left: -18px;
     margin-bottom: 6px;
+    margin-right: 5px;
     font-weight: 100;
     display: inline-block;
     font-style: normal;
@@ -356,7 +358,7 @@ project-tag {
     z-index: -12;
     position: relative;
     box-shadow: 0px 0px 4px -1px #000000;
-    line-height: 20px;
+    line-height: 13px;
 
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -390,6 +392,8 @@ project-tag {
     margin: auto;
     width: 100%;
     overflow: hidden;
+    display: block;
+    position: relative;
 }
 
 .year1-tag {
@@ -414,7 +418,7 @@ project-tag {
     background: #007474;
 }
 
-.Contact-Me {
+.contact-panel {
     max-width: inherit;
     color: white;
     text-align: center;
@@ -445,9 +449,12 @@ project-tag {
 }
 
 
-.project-con-cell-hover {
+.project-con-cell:hover {
     width: 600px;
 
+}
+.project-con-cell:hover > div > .project-con-tagcon {
+    transform: translateY(0px);
 }
 
 .project-con-infobox {
@@ -471,11 +478,7 @@ project-tag {
 
 }
 
-.project-con-cell:hover > .project-con-box > .project-con-infobox {
-    transform: scale(0.7)
-}
-
-.project-con-cell-open > .project-con-box-video {
+.project-con-cell:hover > div > .project-con-box-video {
     opacity: 1;
 
 }
@@ -860,9 +863,10 @@ qqqqq .project-cell-rot {
 
 .cv-bubble-panel {
     width: 1280px;
-    margin: 14px auto 40px auto;
+    margin: 84px auto 40px auto;
     height: auto;
     text-align: center;
+    padding-top: 10px;
 
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -1007,15 +1011,14 @@ qqqqq .project-cell-rot {
 
 .cv-infopanel {
     height: auto;
-    width: 1100px;
+    width: 1000px;
     border: 2px solid white;
     border-radius: 12px;
-
     display: inline-block;
-
+margin: 40px 0px 40px 0px;
     text-align: center;
     padding: 30px;
-
+    position: relative;
 }
 
 .cv-infopanel-base {
@@ -1029,11 +1032,11 @@ qqqqq .project-cell-rot {
     position: absolute;
     background-color: #1f2026;
     z-index: 1;
-    margin-left: -12px;
-    margin-top: -10px;
+    margin-left: -32px;
+    margin-top: -60px;
     padding-right: 10px;
     padding-bottom: 4px;
-    font-size: 20px;
+    font-size: 40px;
     white-space: nowrap;
 }
 
@@ -1056,12 +1059,22 @@ qqqqq .project-cell-rot {
     height: 100px;
 }
 
-.asdasdasd {
-    text-align: center;
-    align-content: center;
-    position: relative;
-    display: flex;
-    height: 700px;
+.project-con-tagcon {
+    z-index: 100;
+    bottom: 0px;
+    width: 260px;
+    left: 185px;
+    margin: auto;
+    position: absolute;
+    display: block;
+    pointer-events: none;
+    transform: translateY(100px);
+    transition: 0.4s;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 .eghrtuhu {
@@ -1199,4 +1212,199 @@ qqqqq .project-cell-rot {
 
 .project-con-box-active {
     width: 600px;
+}
+
+.cv-infopanel-devider {
+    background: white;
+margin: 10px 0px 10px 0px;
+    height: 1px;
+}
+
+.contact-link-copy {
+    position: absolute;
+    display: inline-block;
+    margin: auto;
+
+    width: 40px;
+    height: 40px;
+    background: red;
+
+    top: -44%;
+    bottom: 0px;
+    left: 1250px;
+    right: 0px;
+    
+    border-radius: 100px;
+    border: white solid 1px;
+}
+
+.contact-link-copy-hover {
+    position: absolute;
+    bottom: 0px;
+    background-color: inherit;
+    opacity: 0;
+    transition: 0.4s;
+    padding: 12px;
+    pointer-events: none;
+    border-radius: 10px;
+    display: inline;
+    margin: auto;
+white-space: nowrap;
+    width: auto;
+    font-size: 16px;
+
+    left: 50%;
+    transform: translate(-50%, -70px);
+    box-shadow: 0px 0px 10px #000000;
+    
+}
+
+.contact-link-copy:hover > .contact-link-copy-hover{
+    opacity: 1;
+    transform: translate(-50%, -60px);
+}
+
+.unavailablepage-tag{
+    background: #951b1b;
+    font-size: 10px;
+}
+
+/*Professional Experience*/
+
+.cv-workexp-con{
+    text-align: left;
+        font-family: "Segoe UI Light", sans-serif;
+    margin: 30px 160px 10px 20px;
+
+}
+
+
+.cv-workexp-smalltext{
+           font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #e6e6e6;
+ 
+
+}
+
+.cv-workexp-title{
+ font-size: 30px;
+    text-decoration: underline 1px;
+}
+
+.cv-workexp-con > ol{
+    list-style:disc;
+}
+
+.cv-printerver {
+    display: inline-block;
+    position: relative;
+    background: #2f009a;
+    width: 150px;
+    height: auto;
+margin: auto;
+    margin-right: -10px;
+    margin-top: -110px;
+float: right;
+    right: 120px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 14px;
+    transition: 0.4s;
+text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.cv-printerver:hover {
+        box-shadow:  0px 0px 12px 1px white;
+
+}
+
+.cv-printerver:hover > img {
+
+}
+
+.cv-linearrow {
+    width: 31px;
+    height: 31px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 100%;
+    margin: auto;
+    transform: translateX(-80px) rotateZ(45deg);
+    background: white;
+
+}
+
+.cv-sideline {
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: -1193px;
+    right: 0px;
+    margin: auto;
+    background: white;
+}
+
+.cv-education-cell {
+    height: 100px;
+    display: flex;
+font-size: 20px;
+    width: 100%;
+    margin: 6px 0px 6px 0px;
+    
+}
+
+cv-education-logo > img{
+    float: left;
+    height: 100%;
+    margin: auto;
+}
+
+.cv-education-logo {
+    height: 100%;
+    width: 200px;
+        border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.cv-education-title {
+    float: left;
+    text-align: left;
+            display: inline-block;
+    position: relative;
+border-bottom: 1px solid white;
+    width: 72%;
+    
+}
+
+.cv-education-date {
+    float: right;
+        text-align: right;
+border-bottom: 1px solid white;
+
+        display: inline-block;
+    width: 28%;
+    position: relative;
+
+}
+
+.cv-education-desc {
+        display: inline-block;
+    position: relative;
+    width: 100%;
+    text-align: left;
+}
+
+.cv-education-textcon {
+     width: 760px;
+    float: right;
+    margin-left: auto;
+    margin-right: auto;
 }

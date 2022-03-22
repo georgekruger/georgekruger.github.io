@@ -25,6 +25,7 @@ a {
 .navbar {
     position: fixed;
     width: 100%;
+    min-width: 1400px;
     height: 50px;
     background: rgba(0, 0, 0, 0.5);
     -webkit-touch-callout: none;
@@ -52,15 +53,15 @@ a {
     transition: 0.5s;
     display: inline-block;
     height: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
     vertical-align: top;
     text-align: center;
     line-height: 50px;
     font-size: 16px;
     font-weight: lighter;
     overflow: hidden;
-    margin: 0px -8px 0px -8px;
+    margin: 0px -12px 0px -12px;
 
     clip-path: polygon(20px 0%, 100% 0%, calc(100% - 20px) 100%, 0% 100%);
 
