@@ -5,8 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+
     <link rel="stylesheet" href="/CSS/BaseStyle.css">
     <link rel="stylesheet" href="/CSS/ProjectPageStyle.css">
+
+    <script src="/JavaScript/Common.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -18,82 +22,19 @@
 
 <body>
 
+
     <div class="navbar">
 
-        <navbar-item class="name-start">George Kruger</navbar-item>
+        <navbar-item class="navbar-name">George Kruger</navbar-item>
 
-        <a href="/index.html#Home">
-            <navbar-item class="Navbar-link"><img src="/Base_Icons/Home_Icon.png" class="navbar-item-icon" />Home</navbar-item>
-        </a>
-        <a href="/index.html#WorkProjects">
-            <navbar-item class="Navbar-link"><img src="/Base_Icons/WorkProjects_Icon.png" class="navbar-item-icon" id="NoDrag" />Work Projects</navbar-item>
-        </a>
-        <a href="/index.html#PersonalProjects">
-            <navbar-item class="Navbar-link"><img src="/Base_Icons/PersonalProjects_Icon.png" class="navbar-item-icon" />Personal Projects</navbar-item>
-        </a>
-        <a href="/Content/CV.pdf">
-            <navbar-item class="Navbar-link"><img src="/Base_Icons/CV_Icon.png" class="navbar-item-icon" />CV</navbar-item>
-        </a>
-        <a href="/index.html#Contact">
-            <navbar-item class="Navbar-link"><img src="/Base_Icons/Contact_Icon.png" class="navbar-item-icon" height="14px" />Contact</navbar-item>
-        </a>
-
-        <a class="navbar-sidepanel-shadow" id="Navbar-Panel-Shadow" href="javascript:void(0)" onclick="ClosePanel()"></a>
+        <a class="navbar-link" href="/index.html#Home"><img src="/Base_Icons/Home_Icon.png" class="navbar-item-icon" />Home</a>
+        <a class="navbar-link" href="/index.html#Projects"><img src="/Base_Icons/PersonalProjects_Icon.png" class="navbar-item-icon" />Projects</a>
+        <a class="navbar-link" href="/index.html#CV"><img src="/Base_Icons/CV_Icon.png" class="navbar-item-icon" />CV</a>
+        <a class="navbar-link" href="/index.html#Contact"><img src="/Base_Icons/Contact_Icon.png" class="navbar-item-icon" height="14px" />Contact</a>
 
     </div>
 
-    <!--Side Panel-->
-    <a href="javascript:void(0)" class="navbar-item-menu-icon" onclick="TogglePanel()"><img width="80%" src="/Base_Icons/Menu_Icon.png"></a>
-
-    <div id="SidePanel" class="navbar-sidepanel navbar-sidepanel-closed">
-
-
-        <a style="margin-top: 60px;" href="/index.html#Home">
-            <div class="Navbar-link-sidepanel"><img src="/Base_Icons/Home_Icon.png" class="navbar-item-icon" height="14px" />Home</div>
-        </a>
-        <a href="/index.html#WorkProjects">
-            <div class="Navbar-link-sidepanel"><img src="/Base_Icons/WorkProjects_Icon.png" class="navbar-item-icon" height="14px" />Work Projects</div>
-        </a>
-        <a href="/index.html#PersonalProjects">
-            <div class="Navbar-link-sidepanel"><img src="/Base_Icons/PersonalProjects_Icon.png" class="navbar-item-icon" height="14px" />Personal Projects</div>
-        </a>
-        <a href="/Content/CV.pdf">
-            <div class="Navbar-link-sidepanel"><img src="/Base_Icons/CV_Icon.png" class="navbar-item-icon" height="14px" />CV</div>
-        </a>
-        <a href="/index.html#Contact">
-            <div class="Navbar-link-sidepanel"><img src="/Base_Icons/Contact_Icon.png" class="navbar-item-icon" height="14px" />Contact</div>
-        </a>
-
-
-    </div>
-
-
-    <script>
-        function TogglePanel() {
-            if (document.getElementById("SidePanel").classList.contains("navbar-sidepanel-closed")) {
-                document.getElementById("SidePanel").classList.remove("navbar-sidepanel-closed");
-                document.getElementById("Navbar-Panel-Shadow").style.display = "block";
-                document.getElementById("Navbar-Panel-Shadow").style.background = "hsla(0, 0%, 0%, 0.5)";
-
-                $("body").css("overflow", "hidden");
-            } else {
-                ClosePanel();
-            }
-        }
-
-
-        function ClosePanel() {
-            document.getElementById("SidePanel").classList.add("navbar-sidepanel-closed");
-            document.getElementById("Navbar-Panel-Shadow").style.background = "hsla(0, 0%, 0%, 0)";
-            document.getElementById("Navbar-Panel-Shadow").style.display = "none";
-
-            $("body").css("overflow", "auto");
-
-        }
-
-    </script>
-
-    <!--Video Showcase-->
+    <!--Video/Banner Showcase-->
 
 
     <div class="banner-con">
@@ -106,7 +47,6 @@
     <script src="/Plugins/rellax.min.js"></script>
     <script>
         var rellax = new Rellax();
-
     </script>
 
     <!--Content Page-->
@@ -117,7 +57,6 @@
                 font-family: TitleFont;
                 src: url(/Projects/Template-Page/transamerica.ttf)
             }
-
         </style>
         <div style="font-family: TitleFont" class="project-title">MANTARI</div>
         <div class="project-detail">
@@ -162,44 +101,42 @@
                 <div class="carousel-inner">
 
                     <div class="item active">
-                        <img src="Screenshots/Screenshot0.png" style="height: 100%;width: 100%">
-                    </div>
-
-                    <div class="item">
                         <img src="Screenshots/Screenshot1.png" style="height: 100%;width: 100%">
                     </div>
+
                     <div class="item">
                         <img src="Screenshots/Screenshot2.png" style="height: 100%;width: 100%">
                     </div>
+
                     <div class="item">
                         <img src="Screenshots/Screenshot3.png" style="height: 100%;width: 100%">
                     </div>
+
                     <div class="item">
                         <img src="Screenshots/Screenshot4.png" style="height: 100%;width: 100%">
                     </div>
+
                     <div class="item">
                         <img src="Screenshots/Screenshot5.png" style="height: 100%;width: 100%">
                     </div>
+
                     <div class="item">
                         <img src="Screenshots/Screenshot6.png" style="height: 100%;width: 100%">
                     </div>
-
                 </div>
                 <!-- Small -->
                 <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"> <img src="Screenshots/Screenshot0.png">
+                    <li data-target="#myCarousel" data-slide-to="0" class="carousel-imgdot active"> <img src="Screenshots/Screenshot1.png">
                     </li>
-                    <li data-target="#myCarousel" data-slide-to="1"> <img src="Screenshots/Screenshot1.png">
+                    <li data-target="#myCarousel" data-slide-to="1" class="carousel-imgdot"> <img src="Screenshots/Screenshot2.png">
                     </li>
-                    <li data-target="#myCarousel" data-slide-to="2"> <img src="Screenshots/Screenshot2.png">
+                    <li data-target="#myCarousel" data-slide-to="2" class="carousel-imgdot"><img src="Screenshots/Screenshot3.png">
                     </li>
-                    <li data-target="#myCarousel" data-slide-to="3"> <img src="Screenshots/Screenshot3.png">
+                    <li data-target="#myCarousel" data-slide-to="3" class="carousel-imgdot"><img src="Screenshots/Screenshot4.png">
                     </li>
-                    <li data-target="#myCarousel" data-slide-to="4"> <img src="Screenshots/Screenshot4.png">
+                    <li data-target="#myCarousel" data-slide-to="4" class="carousel-imgdot"><img src="Screenshots/Screenshot5.png">
                     </li>
-                    <li data-target="#myCarousel" data-slide-to="5"> <img src="Screenshots/Screenshot5.png">
-                    </li>
-                    <li data-target="#myCarousel" data-slide-to="6"> <img src="Screenshots/Screenshot6.png">
+                    <li data-target="#myCarousel" data-slide-to="5" class="carousel-imgdot"><img src="Screenshots/Screenshot6.png">
                     </li>
                 </ol>
 
@@ -208,75 +145,49 @@
 
 
 
+
+
         <div class="keyfeature-text">Key Contributions</div>
 
-        <div class="dropdown">
-            <div href="javascript:void(0)" onClick="dropdownmenu('dd-con-1','dd-head-1')" id="dd-head-1" class="dropdown-header">
-                <div class="dropdown-img-con"><img class="dropdown-img" src="/Base_Icons/PersonalProjects_Icon.png"></div>
+
+
+        <div class="dropdown-header" onclick="dropdownmenu(this)">
+            <img class="dropdown-img" src="/Base_Icons/PersonalProjects_Icon.png">
+            <div class="dropdown-header-text">Char Controller</div>
+            <div class="dropdown-arrow"><img src="/Base_Icons/Arrow.png"></div>
+        </div>
+        <div class="dropdown-content" id="demo">
+            <br><br>sdaasdasdsaddsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>
+            <br><br>sdaasdasdsaddsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>
+            <br><br>sdaasdasdsaddsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>
+            <br><br>sdaasdasdsaddsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br><br><br>asd
+
+            <div class="dropdown-header dropdown-header-inner" onclick="dropdownmenu(this)">
+                <img class="dropdown-img" src="/Base_Icons/PersonalProjects_Icon.png">
                 <div class="dropdown-header-text">Char Controller</div>
-                <div class="dropdown-arrow"><img class="dropdown-img" src="/Base_Icons/Arrow.png"></div>
+                <div class="dropdown-arrow"><img src="/Base_Icons/Arrow.png"></div>
             </div>
-            <div class="dropdown-content" style="max-height: 0px;" id="dd-con-1">
-                <br><br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>
+            <div class="dropdown-content">
+                <br><br>sdaasdasdsaddsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>
+                <br><br>sdaasdasdsaddsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>
+                <br><br>sdaasdasdsaddsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>
+                <br><br>sdaasdasdsaddsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br><br><br>
 
 
             </div>
+            <br><br><br><br><br><br>
         </div>
-        
+
+
         <br>
 
-        <div class="dropdown">
-            <div href="javascript:void(0)" onClick="dropdownmenu('dd-con-2','dd-head-2')" id="dd-head-2" class="dropdown-header">
-                <div class="dropdown-img-con"><img class="dropdown-img" src="/Base_Icons/Menu_Icon.png"></div>
-                <div class="dropdown-header-text">eeeeeeeeeeeeeeeeeeee</div>
-                <div class="dropdown-arrow"><img class="dropdown-img" src="/Base_Icons/Arrow.png"></div>
-            </div>
-            <div class="dropdown-content" style="max-height: 0px;" id="dd-con-2">
-                <br><br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>
-
-
-
-            </div>
-        </div>
         <br>
         <br>
         <br>
 
-
-        <script>
-            function dropdownmenu(contentid, headerid) {
-                if (document.getElementById(contentid).classList.contains("dropdown-content-show")) {
-                    document.getElementById(contentid).classList.remove("dropdown-content-show");
-                    document.getElementById(contentid).style.maxHeight = "0";
-                    /*header*/
-                    document.getElementById(headerid).classList.remove("dropdown-header-show");
-
-                } else {
-                    document.getElementById(contentid).classList.add("dropdown-content-show");
-                    let height = document.getElementById(contentid).scrollHeight;
-                    document.getElementById(contentid).style.setProperty('max-height', height + 'px');
-                    /*header*/
-                    document.getElementById(headerid).classList.add("dropdown-header-show");
-
-/*                    switch (contentid) {
-                        case "dd-con-2": {
-
-                            let height = document.getElementById(contentid).scrollHeight;
-                            var jayan = document.getElementById('dd-con-1').scrollHeight;
-
-                            document.getElementById('dd-con-1').style.setProperty('max-height', height + jayan + 'px');
-
-                        }
-                    }*/
-                }
-            }
-
-        </script>
 
 
     </div>
 
 
-</body>
-
-</html>
+</body></html>

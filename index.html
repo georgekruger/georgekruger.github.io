@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/CSS/BaseStyle.css">
+    <link rel="stylesheet" href="/CSS/BaseStyle.css?id=1">
 
-    <link rel="stylesheet" href="/CSS/HomeStyle.css">
+    <link rel="stylesheet" href="/CSS/HomeStyle.css?id=1">
 
     <script src="JavaScript/NavbarScript.js"> </script>
     <script src="JavaScript/HomeScripts.js"> </script>
@@ -30,7 +30,9 @@
         <a class="navbar-link" href="/index.html#CV"><img src="/Base_Icons/CV_Icon.png" class="navbar-item-icon" />CV</a>
         <a class="navbar-link" href="/index.html#Contact"><img src="/Base_Icons/Contact_Icon.png" class="navbar-item-icon" height="14px" />Contact</a>
 
+        <!--
         <a class="navbar-sidepanel-shadow" id="Navbar-Panel-Shadow" href="javascript:void(0)" onclick="ClosePanel()"></a>
+-->
 
     </div>
 
@@ -90,7 +92,6 @@
                         });
                     };
                 });
-
             </script>
 
 
@@ -103,7 +104,6 @@
     <script src="/Plugins/rellax.min.js"></script>
     <script>
         var rellax = new Rellax();
-
     </script>
 
     <!--About Me-->
@@ -121,10 +121,10 @@
                 <span class="about-me-text">
                     <p>
                         Hello, I’m George, an aspiring gameplay programmer and designer from the United Kingdom.
-                        I have been self-teaching coding since the age of 10, as well as software’s such as Blender,
-                        Photoshop, Vegas Pro and website coding, as well as crating this website.
-                        I’m a currently studying at the University of Portsmouth studying computer games technology.
-                        I have completed my first year of university and continuing on my second year
+                        I have been self-teaching coding since the age of 10, as well as software such as Blender,
+                        Photoshop, Vegas Pro and website coding, as well as creating this website.
+                        I am currently attending University of Portsmouth studying BSc (HONS) Computer Games Technology.
+                        I have completed my first year and am continuing on my second year.
                     </p>
                     <p>
                         I am always working on gameplay concepts and projects to help broaden my knowledge and to continue
@@ -133,14 +133,14 @@
                     </p>
                 </span>
             </div>
-            <div style="background: #fad201; color: black; border-radius: 20px;text-align: center;padding-bottom: 2px">
+            <!--            <div style="background: #fad201; color: black; border-radius: 20px;text-align: center;padding-bottom: 2px">
                 <h1 style="margin-bottom: -30px;">Don't mind the dust</h1><br>
                 <img src="Base_Icons/Hammer_Icon.png" style="float: left; width: 90px; margin-left: 20px;margin-top: -16px">
                 <h3>
-                    The site is still a WIP and may contain grammatical errors or miss-placed elements,
+                    This site is still a work in progress and may contain grammatical errors or missplaced elements,
                     the majority of content and information should be available.
                 </h3>
-            </div>
+            </div>-->
         </div>
     </div>
 
@@ -185,9 +185,10 @@
                     <!--Projact BackGround-->
                     <img class="project-con-box-image" src="/Projects/Spirit_of_the_Florest/Icon.png">
                     <!--Projact Video-->
-                    <video muted loop controls class="project-con-box-video">
+                    <!--                    <video muted loop controls class="project-con-box-video">
                         <source src="/Projects/Spirit_of_the_Florest/SotF_IndexVideo.mp4" type="video/webm">
                     </video>
+-->
                     <!--Projact Logo-->
                     <img class="project-con-box-title" src="/Projects/Spirit_of_the_Florest/SotF_Logo.png">
                     <!--Projact Tags-->
@@ -205,22 +206,21 @@
 
 
             <!--Jett-->
-            <a class="project-con-cell" onmouseover="PlayVideo(true,this)" onmouseleave="PlayVideo(false,this)">
+            <a href="/Projects/Jett/Jett.html" class="project-con-cell" onmouseover="PlayVideo(true,this)" onmouseleave="PlayVideo(false,this)">
                 <div class="project-con-box">
                     <!--Projact BackGround-->
                     <img class="project-con-box-image" src="/Projects/Jett/Jett_Tile.png">
                     <!--Projact Video-->
                     <video muted loop controls class="project-con-box-video">
-                        <source src="/Projects/Mantari/Mantari_Video.mp4" type="video/mp4">
+                        <source src="/Projects/Jett/Jet_VideoTile.mp4" type="video/mp4">
                     </video>
                     <!--Projact Logo-->
-                    <img class="project-con-box-title" src="/Raw_Content/Jett%20Logo.png">
+                    <img class="project-con-box-title" src="/Projects/Jett/Jett_Logo.png">
                     <!--Projact Tags-->
                     <div class="project-con-tagcon">
                         <project-tag class="university-tag">Personal Project</project-tag>
                         <project-tag class="engine-tag">Unity</project-tag>
-                        <project-tag class="engine-tag">In Progress</project-tag>
-                        <project-tag class="unavailablepage-tag">Project page unavailable</project-tag>
+                        <project-tag class="wip-tag">Work In Progress</project-tag>
 
                     </div>
                 </div>
@@ -249,17 +249,18 @@
         <div class="cv-sideline"></div>
 
         <div class="cv-bubble-panel">
-            <div class="cv-infopanel-title" style="left: 269px;">Skills<div class="cv-linearrow"></div>
+            <div class="cv-infopanel-title" style="margin-left: 108px;">Skills<div class="cv-linearrow"></div>
             </div>
-            <a href="/Content/CV.pdf" class="cv-printerver" target="_blank"><img src="Base_Icons/PrintFriendly_Icon.png" height="170px" style="margin: 10px;">
-                <div>Printer-Friendly Version</div>
+
+            <a href="/Index_Content/George-Kruger-CV.pdf" class="cv-printerver" target="_blank"><img src="Base_Icons/PrintFriendly_Icon.png" height="170px" style="margin: 10px;">
+                <div>PDF Version<img src="Base_Icons/External_Icon.png" height="10px" style="margin-bottom: 4px"></div>
             </a>
 
             <div class="cv-bubble-con">
                 <div class="cv-bubble-title"><img src="Base_Icons/Code_Icon.png">Code</div>
                 <div class="cv-bubble">C++
                     <div class="cv-bubble-hover">
-                        <div><img src="Base_Icons/Clock_Icon.png">1 year of experience</div>
+                        <div><img src="Base_Icons/Clock_Icon.png">2 years of experience</div>
                     </div>
                 </div>
                 <div class="cv-bubble">C#
@@ -283,7 +284,7 @@
                 </div>
                 <div class="cv-bubble">JavaScript
                     <div class="cv-bubble-hover">
-                        <div><img src="Base_Icons/Clock_Icon.png">2 years of experience</div>
+                        <div><img src="Base_Icons/Clock_Icon.png">4 years of experience</div>
                     </div>
                 </div>
             </div>
@@ -292,12 +293,12 @@
                 <div class="cv-bubble-title"><img src="Base_Icons/Cog_Icon.png">Game Engines</div>
                 <div class="cv-bubble">Unity
                     <div class="cv-bubble-hover">
-                        <div><img src="Base_Icons/Clock_Icon.png">4 years of experience</div>
+                        <div><img src="Base_Icons/Clock_Icon.png">5 years of experience</div>
                     </div>
                 </div>
                 <div class="cv-bubble">Unreal 4
                     <div class="cv-bubble-hover">
-                        <div><img src="Base_Icons/Clock_Icon.png">2 years of experience</div>
+                        <div><img src="Base_Icons/Clock_Icon.png">3 years of experience</div>
                     </div>
                 </div>
             </div>
@@ -327,7 +328,7 @@
             </div>
 
             <div class="cv-bubble-con cv-bubble-style-3d" style="border: 1px solid #007620">
-                <div class="cv-bubble-title"><img src="Base_Icons/Office_Logo.png">3D Models</div>
+                <div class="cv-bubble-title"><img src="Base_Icons/Cube_Icon.png">3D Models</div>
                 <div class="cv-bubble">Blender
                     <div class="cv-bubble-hover">
                         <div><img src="Base_Icons/Clock_Icon.png">9 years of experience</div>
@@ -335,13 +336,13 @@
                 </div>
                 <div class="cv-bubble">Z-Brush
                     <div class="cv-bubble-hover">
-                        <div><img src="Base_Icons/Clock_Icon.png">1 year of experience</div>
+                        <div><img src="Base_Icons/Clock_Icon.png">2 years of experience</div>
                     </div>
                 </div>
             </div>
 
-            <div class="cv-bubble-con cv-bubble-style-3d" style="border: 1px solid #007620">
-                <div class="cv-bubble-title"><img src="Base_Icons/Office_Logo.png">Software</div>
+            <div class="cv-bubble-con cv-bubble-style-software" style="border: 1px solid #6c6400">
+                <div class="cv-bubble-title"><img src="Base_Icons/Box_Icon3.png">Software</div>
                 <div class="cv-bubble">Photoshop
                     <div class="cv-bubble-hover">
                         <div><img src="Base_Icons/Clock_Icon.png">9 years of experience</div>
@@ -350,6 +351,21 @@
                 <div class="cv-bubble">Vegas Pro
                     <div class="cv-bubble-hover">
                         <div><img src="Base_Icons/Clock_Icon.png">7 years of experience</div>
+                    </div>
+                </div>
+                <div class="cv-bubble">Premiere Pro
+                    <div class="cv-bubble-hover">
+                        <div><img src="Base_Icons/Clock_Icon.png">4 years of experience</div>
+                    </div>
+                </div>
+                <div class="cv-bubble">Visual Studio
+                    <div class="cv-bubble-hover">
+                        <div><img src="Base_Icons/Clock_Icon.png">5 years of experience</div>
+                    </div>
+                </div>
+                <div class="cv-bubble">Git Kraken
+                    <div class="cv-bubble-hover">
+                        <div><img src="Base_Icons/Clock_Icon.png">2 years of experience</div>
                     </div>
                 </div>
             </div>
@@ -362,79 +378,143 @@
         <div class="cv-infopanel-base">
 
             <div class="cv-infopanel">
+                <div class="cv-infopanel-title">Education<div class="cv-linearrow"></div>
+                </div>
+
+                <div class="cv-education-cell">
+                    <div class="cv-education-logo"><img src="/Index_Content/university-of-portsmouth-logo.jpg" height="100%;"> </div>
+                    <div class="cv-education-textcon">
+                        <div class="cv-education-title">University of Portsmouth</div>
+                        <div class="cv-education-date">2020 - Present</div>
+                        <div class="cv-education-desc">BSc (HONS) Computer Games Technology</div>
+
+                        <p style="text-align: left; font-size: 14px">Produced 2 game projects as a programmer within a team of varying roles, using the unity engine. Contributions include spline systems, player controllers, third-person combat and ability systems, ability upgrade and management system. Our project “Mentari” ranked 1st out of 13 entries against other student teams. Currently working on console development kits, getting code to run and profiling it.
+                        </p>
+                        <table class="cv-education-gradetable">
+                            <tr>
+                                <td>Year 2</td>
+                            </tr>
+                            <tr>
+                                <td>GAMEPLAY PROGRAMMING</td>
+                                <td>First</td>
+                                <td>STUDENT ENTERPRISE FOR GAMES</td>
+                                <td>Upper-Second</td>
+                            </tr>
+                        </table>
+                        <table class="cv-education-gradetable">
+                            <tr>
+                                <td>Year 1</td>
+                            </tr>
+                            <tr>
+                                <td>FOUNDATION IN 3D MODELLING</td>
+                                <td>First</td>
+                                <td>DEFINE GAMES</td>
+                                <td>First</td>
+                            </tr>
+                            <tr>
+                                <td>INTRODUCTION TO IMAGE CREATION</td>
+                                <td>Lower-Second</td>
+                                <td>TOOLS FOR GAMES AND ANIMATION</td>
+                                <td>Lower-Second</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
+                <div class="cv-infopanel-devider"></div>
+
+                <div class="cv-education-cell">
+                    <div class="cv-education-logo" style="background: white"><img src="/Index_Content/CollegeLogo1.png" width="100%"> </div>
+                    <div class="cv-education-textcon">
+                        <div class="cv-education-title">The College of Haringey, Enfield and Northeast London</div>
+                        <div class="cv-education-date">2020</div>
+                        <div class="cv-education-desc">Access to Higher Education Computing</div>
+
+                        <table class="cv-education-gradetable cv-education-gradetable-invert">
+
+                            <tr>
+                                <td>Visual Programming</td>
+                                <td>Distinction</td>
+
+                                <td>Database Implementation</td>
+                                <td>Distinction</td>
+                            </tr>
+                            <tr>
+                                <td>Further Website Development</td>
+
+                                <td>Distinction</td>
+                                <td>Website Design and Creation</td>
+                                <td>Distinction</td>
+                            </tr>
+                            <tr>
+
+                                <td>Mathematics for Computing</td>
+                                <td>Merit</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="cv-infopanel-devider"></div>
+
+                <div class="cv-education-cell">
+                    <div class="cv-education-logo"><img src="/Index_Content/CollegeLogo2.png" height="100%"> </div>
+                    <div class="cv-education-textcon">
+                        <div class="cv-education-title">Barnet Southgate Collage</div>
+                        <div class="cv-education-date">2015 June – 2016 July</div>
+                        <div class="cv-education-desc">Level 2 Creative Media Production and Technology (BTEC) – Pass</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cv-infopanel">
                 <div class="cv-infopanel-title">Professional Experience<div class="cv-linearrow"></div>
                 </div>
 
                 <div class="cv-workexp-con" style="margin-top: 10px;">
-                    <div class="cv-workexp-smalltext">Potters Bar, United Kingdom - 2014 July</div>
-                    <div class="cv-workexp-title"> Adam Bourn Creative Services Ltd (Work Experience)</div>
-                    <p>
-                        Duties included producing and installing graphics, assisting in the workshop by using CAD software to create images to print and prepare for installation. I also gained on-site experience assisting and installing graphics and understanding the process to complete the job.
-                    </p>
-                    <ol>
-                        <li>Learnt and assisted through the production and installation pipeline</li>
-                        <li>Processed vinyl </li>
-                        <li>Worked with cad software</li>
-                    </ol>
+
+
+                    <div class="cv-workexp-con">
+                        <div class="cv-workexp-smalltext">Finsbury Park, United Kingdom - 2018 – 2021</div>
+                        <div class="cv-workexp-title">Rowans Tenpin Bowl</div>
+                        <p>
+                            Duties included handling and processing customer payments and reservations. Thus, being frontline customer service, resulting in having great communication skills with customers and co-workers. This has helped me greatly with working in a team to get tasks done faster and of high standard.
+                        </p>
+                        <ol>
+                            <li>Handled and processing customer payments and reservations</li>
+                            <li>Frontline customer assistance </li>
+                        </ol>
+
+                        <div class="cv-infopanel-devider"></div>
+
+                        <div class="cv-workexp-smalltext">Potters Bar, United Kingdom - 2014 July</div>
+                        <div class="cv-workexp-title"> Adam Bourn Creative Services Ltd (Work Experience)</div>
+                        <p>
+                            Duties included producing and installing graphics, assisting in the workshop by using CAD software to create images to print and prepare for installation. I also gained on-site experience assisting and installing graphics and understanding the process to complete the job.
+                        </p>
+                        <ol>
+                            <li>Learnt and assisted through the production and installation pipeline</li>
+                            <li>Processed vinyl </li>
+                            <li>Worked with cad software</li>
+                        </ol>
+                    </div>
+
+
                 </div>
-                <div class="cv-infopanel-devider"></div>
-                <div class="cv-workexp-con">
-                    <div class="cv-workexp-smalltext">Finsbury Park, United Kingdom - 2018 – 2021</div>
-                    <div class="cv-workexp-title">Rowans Tenpin Bowl</div>
-                    <p>
-                        Duties included handling and processing customer payments and reservations. Thus, being frontline customer service, resulting in having great communication skills with customers and co-workers. This has helped me greatly with working in a team to get tasks done faster and of high standard.
-                    </p>
-                    <ol>
-                        <li>Handled and processing customer payments and reservations</li>
-                        <li>Frontline customer assistance </li>
-                    </ol>
-                </div>
+
             </div>
             <div class="cv-infopanel">
                 <div class="cv-infopanel-title">Achievements<div class="cv-linearrow"></div>
                 </div>
 
-                <div></div>
-                <div class="cv-infopanel-devider"></div>
+                <div class="cv-education-logo" style="float: left; width: 140px; height: 140px;"><img src="/Index_Content/London_Youth_Games.png" height="100%"> </div>
+                <div style="float: right; width: 80%;vertical-align: middle;margin-top: 0px">Was selected to practice and partisapate in the London Youth Games for indoor rowing competition, Placeing 12th out of the 32 London boroughs.</div>
 
             </div>
-
-            <div class="cv-infopanel">
-                <div class="cv-infopanel-title">Education<div class="cv-linearrow"></div>
-                </div>
-
-                <div class="cv-education-cell">
-                    <div class="cv-education-logo"><img src="/Index_Content/university-of-portsmouth-logo.jpg" height="100%"> </div>
-                    <div class="cv-education-textcon">
-                        <div class="cv-education-title">University of Portsmouth</div>
-                        <div class="cv-education-date">2021 - Present</div>
-                        <div class="cv-education-desc">Computer Games Technology</div>
-                    </div>
-                </div>
-
-                <div class="cv-infopanel-devider"></div>
-
-                <div class="cv-education-cell">
-                    <div class="cv-education-logo" style="background: white"><img src="/Index_Content/CollageLogo1.png" width="100%"> </div>
-                    <div class="cv-education-textcon">
-                        <div class="cv-education-title">The College of Haringey, Enfield and Northeast London</div>
-                        <div class="cv-education-date">2020</div>
-                        <div class="cv-education-desc">Access to Higher Education Computing</div>
-                    </div>
-                </div>
-
-                <div class="cv-infopanel-devider"></div>
-
-                <div class="cv-education-cell">
-                    <div class="cv-education-logo"><img src="/Index_Content/university-of-portsmouth-logo.jpg" height="100%"> </div>
-                    <div class="cv-education-textcon">
-                        <div class="cv-education-title">Barnet Southgate Collage</div>
-                        <div class="cv-education-date">2015 June – 2016 July</div>
-                        <div class="cv-education-desc">Creative Media and Production</div>
-                    </div>
-                </div>
-            </div>
-
 
 
         </div>
@@ -444,21 +524,18 @@
     <div class="Banner">Contact Me</div>
     <div class="contact-panel" id="Contact">
 
-        <div class="Contact-Me-Con">
-            Feel free to get in contract:
+        <div class="Contact-Me-Con" style="font-size: 30px;">
+            Feel free to get in contact:
 
         </div>
         <div class="Contact-Me-Con">
-            <a class="Contact-Me-link" href="mailto:georgekruger@hotmail.co.uk">georgekruger@hotmail.co.uk<img class="Contact-Me-link-Icon" src="Base_Icons/Contact_Icon.png"></a>
+            <a class="Contact-Me-link" href="mailto:georgekruger@hotmail.co.uk" style="font-size: 26px;">georgekruger@hotmail.co.uk<img class="Contact-Me-link-Icon" src="Base_Icons/Contact_Icon.png"></a>
 
-            <br>
-            <a class="Contact-Me-link" href="https://wa.me/123141154">Linkedin<img class="Contact-Me-link-Icon" src="Base_Icons/Cog_Icon.png"></a>
+            <a class="Contact-Me-link" href="https://www.linkedin.com/in/georgekruger/">Linkedin<img class="Contact-Me-link-Icon" src="Base_Icons/linkedin_Icon.png"></a>
         </div>
 
     </div>
 
 
 
-</body>
-
-</html>
+</body></html>

@@ -217,7 +217,7 @@ body {
 
     overflow: visible;
     z-index: 1;
-opacity: 1;
+    opacity: 1;
     cursor: pointer;
     margin-left: -45px;
     margin-right: -45px;
@@ -425,13 +425,12 @@ project-tag {
     background-color: #0a0021;
     position: relative;
     padding-top: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 90px;
 }
 
 .Contact-Me-Con {
-    width: 600px;
-    display: inline-block;
-    top: 0px;
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 .project-con-box {
@@ -453,6 +452,7 @@ project-tag {
     width: 600px;
 
 }
+
 .project-con-cell:hover > div > .project-con-tagcon {
     transform: translateY(0px);
 }
@@ -581,9 +581,7 @@ qqqqq .project-cell-rot {
     border: 10px solid white;
 }
 
-.table-test > tr {
-    border: 10px solid white;
-}
+
 
 .table-test > th {
     border: 10px solid white;
@@ -957,10 +955,14 @@ qqqqq .project-cell-rot {
 
 }
 
+.cv-bubble-style-software > .cv-bubble {
+    background-color: #6c6400;
+}
+
 .Contact-Me-link {
-    width: 560px;
+    width: 500px;
     height: 60px;
-    display: block;
+    display: inline-block;
     border-radius: 200px;
     line-height: 60px;
     padding-left: 20px;
@@ -968,7 +970,7 @@ qqqqq .project-cell-rot {
     text-align: right;
     overflow: hidden;
 
-
+    margin: 0px 30px 0px 30px;
 
     -webkit-transition: background 0.4s ease-in-out;
     -moz-transition: background 0.4s ease-in-out;
@@ -1000,6 +1002,7 @@ qqqqq .project-cell-rot {
     vertical-align: middle;
     margin-right: 20px;
     margin-left: 20px;
+    margin-bottom: 3px;
 }
 
 
@@ -1015,7 +1018,7 @@ qqqqq .project-cell-rot {
     border: 2px solid white;
     border-radius: 12px;
     display: inline-block;
-margin: 40px 0px 40px 0px;
+    margin: 40px 0px 40px 0px;
     text-align: center;
     padding: 30px;
     position: relative;
@@ -1194,7 +1197,7 @@ margin: 40px 0px 40px 0px;
 
 .project-con-descbox-textbox {
     display: inline-block;
-    
+
     padding: 20px 0px 0px 0px;
     height: 130px;
     width: 450px;
@@ -1202,7 +1205,7 @@ margin: 40px 0px 40px 0px;
     height: 450px;
     pointer-events: painted;
     user-select: text;
-    
+
     background: red;
     position: relative;
     left: 100px;
@@ -1216,7 +1219,7 @@ margin: 40px 0px 40px 0px;
 
 .cv-infopanel-devider {
     background: white;
-margin: 10px 0px 10px 0px;
+    margin: 20px 0px 20px 0px;
     height: 1px;
 }
 
@@ -1233,7 +1236,7 @@ margin: 10px 0px 10px 0px;
     bottom: 0px;
     left: 1250px;
     right: 0px;
-    
+
     border-radius: 100px;
     border: white solid 1px;
 }
@@ -1249,52 +1252,52 @@ margin: 10px 0px 10px 0px;
     border-radius: 10px;
     display: inline;
     margin: auto;
-white-space: nowrap;
+    white-space: nowrap;
     width: auto;
     font-size: 16px;
 
     left: 50%;
     transform: translate(-50%, -70px);
     box-shadow: 0px 0px 10px #000000;
-    
+
 }
 
-.contact-link-copy:hover > .contact-link-copy-hover{
+.contact-link-copy:hover > .contact-link-copy-hover {
     opacity: 1;
     transform: translate(-50%, -60px);
 }
 
-.unavailablepage-tag{
+.unavailablepage-tag {
     background: #951b1b;
     font-size: 10px;
 }
 
 /*Professional Experience*/
 
-.cv-workexp-con{
+.cv-workexp-con {
     text-align: left;
-        font-family: "Segoe UI Light", sans-serif;
-    margin: 30px 160px 10px 20px;
+    font-family: "Segoe UI Light", sans-serif;
+    margin: 10px 30px 10px 10px;
 
 }
 
 
-.cv-workexp-smalltext{
-           font-family: "Raleway", sans-serif;
+.cv-workexp-smalltext {
+    font-family: "Raleway", sans-serif;
     font-size: 16px;
     font-weight: normal;
     color: #e6e6e6;
- 
+
 
 }
 
-.cv-workexp-title{
- font-size: 30px;
+.cv-workexp-title {
+    font-size: 30px;
     text-decoration: underline 1px;
 }
 
-.cv-workexp-con > ol{
-    list-style:disc;
+.cv-workexp-con > ol {
+    list-style: disc;
 }
 
 .cv-printerver {
@@ -1303,27 +1306,25 @@ white-space: nowrap;
     background: #2f009a;
     width: 150px;
     height: auto;
-margin: auto;
+    margin: auto;
     margin-right: -10px;
     margin-top: -110px;
-float: right;
+    float: right;
     right: 120px;
     border-radius: 10px;
     text-align: center;
     padding: 14px;
     transition: 0.4s;
-text-decoration: underline;
+    text-decoration: underline;
     text-decoration-style: dotted;
 }
 
 .cv-printerver:hover {
-        box-shadow:  0px 0px 12px 1px white;
+    box-shadow: 0px 0px 12px 1px white;
 
 }
 
-.cv-printerver:hover > img {
-
-}
+.cv-printerver:hover > img {}
 
 .cv-linearrow {
     width: 31px;
@@ -1352,59 +1353,99 @@ text-decoration: underline;
 }
 
 .cv-education-cell {
-    height: 100px;
+    height: auto;
     display: flex;
-font-size: 20px;
+    font-size: 20px;
     width: 100%;
     margin: 6px 0px 6px 0px;
-    
+
 }
 
-cv-education-logo > img{
+cv-education-logo > img {
     float: left;
     height: 100%;
     margin: auto;
 }
 
 .cv-education-logo {
-    height: 100%;
+    height: 90px;
     width: 200px;
-        border-radius: 10px;
+    border-radius: 10px;
     overflow: hidden;
+    background: white;
+    margin: auto;
+    padding: 4px;
 
 }
 
 .cv-education-title {
     float: left;
     text-align: left;
-            display: inline-block;
+    display: inline-block;
     position: relative;
-border-bottom: 1px solid white;
+    border-bottom: 1px solid white;
     width: 72%;
-    
+
 }
 
 .cv-education-date {
     float: right;
-        text-align: right;
-border-bottom: 1px solid white;
+    text-align: right;
+    border-bottom: 1px solid white;
 
-        display: inline-block;
+    display: inline-block;
     width: 28%;
     position: relative;
 
 }
 
 .cv-education-desc {
-        display: inline-block;
+    display: inline-block;
     position: relative;
     width: 100%;
     text-align: left;
 }
 
 .cv-education-textcon {
-     width: 760px;
+    width: 760px;
     float: right;
     margin-left: auto;
     margin-right: auto;
+}
+
+.cv-education-gradetable {
+    font-size: 15px;
+    width: 100%;
+    text-align: left;
+    font-weight: 100;
+    border-collapse: collapse;
+    font-family: "Calibri";
+    margin: 10px 0px 10px 0px;
+}
+
+
+.cv-education-gradetable > tbody > tr:nth-child(even) {
+    background: #2e2e2e;
+}
+
+.cv-education-gradetable > tbody > tr > td:nth-child(even) {
+    width: 90px;
+}
+
+.cv-education-gradetable > tbody > tr > td:nth-child(odd) {
+    width: 220px;
+}
+
+.cv-education-gradetable-invert > tbody > tr:nth-child(odd) {
+    background: #2e2e2e;
+}
+
+.cv-education-gradetable-invert > tbody > tr:nth-child(even) {
+    background: none;
+}
+
+
+.wip-tag {
+    background: hsl(0, 76%, 37%);
+
 }

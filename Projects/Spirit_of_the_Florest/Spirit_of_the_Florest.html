@@ -10,6 +10,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <script src="/JavaScript/Common.js"></script>
 
 
     <title>George Kruger</title>
@@ -213,13 +215,12 @@
 
         <div class="keyfeature-text">Key Contributions</div>
 
-        <div class="dropdown">
-            <div href="javascript:void(0)" onClick="dropdownmenu('DropDown-Character-Con1','DropDown-Character-Head1')" id="DropDown-Character-Head1" class="dropdown-header">
+            <div onClick="dropdownmenu(this)" class="dropdown-header">
                 <div class="dropdown-img-con"><img class="dropdown-img" src="/Base_Icons/PersonalProjects_Icon.png"></div>
                 <div class="dropdown-header-text">Character Controller</div>
                 <div class="dropdown-arrow"><img class="dropdown-img" src="/Base_Icons/Arrow.png"></div>
             </div>
-            <div class="dropdown-content" style="max-height: 0px;" id="DropDown-Character-Con1">
+            <div class="dropdown-content"id="DropDown-Character-Con1">
                 <br><br>
                 <p class="dropdown-text">I developed the character controller system to allow for freedom of movement and give as much control to the player allowing for quick and precise movement to avoid incoming attacks</p>
                 <div class="dropdown">
@@ -237,7 +238,6 @@
 
 
             </div>
-        </div>
         <div class="dropdown">
             <div href="javascript:void(0)" onClick="dropdownmenu('DropDown-Ability-Con1','DropDown-Ability-Head1')" id="DropDown-Ability-Head1" class="dropdown-header">
                 <div class="dropdown-img-con"><img class="dropdown-img" src="/Base_Icons/AbilitySystem_Icon.png"></div>
@@ -585,53 +585,7 @@ I wanted to make the number appear from an NPC when attacked, displaying the amo
 
         <br>
 
-        <script>
-            function dropdownmenu(contentid, headerid) {
-                if (document.getElementById(contentid).classList.contains("dropdown-content-show")) {
-                    document.getElementById(contentid).classList.remove("dropdown-content-show");
-                    document.getElementById(contentid).style.maxHeight = "0";
-                    /*header*/
-                    document.getElementById(headerid).classList.remove("dropdown-header-show");
 
-                } else {
-                    document.getElementById(contentid).classList.add("dropdown-content-show");
-                    let height = document.getElementById(contentid).scrollHeight;
-                    document.getElementById(contentid).style.setProperty('max-height', height + 'px');
-                    /*header*/
-                    document.getElementById(headerid).classList.add("dropdown-header-show");
-
-                    switch (contentid) {
-                        case "DropDown-Character-Con2": {
-
-                            let HeadHeight = document.getElementById(contentid).scrollHeight;
-                            var ConHeight = document.getElementById('DropDown-Character-Con1').scrollHeight;
-
-                            document.getElementById('DropDown-Character-Con1').style.setProperty('max-height', HeadHeight + ConHeight + 'px');
-                            break;
-                        }
-                        case "DropDown-Ability-Con2": {
-
-                            let HeadHeight = document.getElementById(contentid).scrollHeight;
-                            var ConHeight = document.getElementById('DropDown-Ability-Con1').scrollHeight;
-
-                            document.getElementById('DropDown-Ability-Con1').style.setProperty('max-height', HeadHeight + ConHeight + 'px');
-                            break;
-
-                        }
-                        case "DropDown-UI-Con2": {
-
-                            let HeadHeight = document.getElementById(contentid).scrollHeight;
-                            var ConHeight = document.getElementById('DropDown-UI-Con1').scrollHeight;
-
-                            document.getElementById('DropDown-UI-Con1').style.setProperty('max-height', HeadHeight + ConHeight + 'px');
-                            break;
-
-                        }
-                    }
-                }
-            }
-
-        </script>
 
 
     </div>
