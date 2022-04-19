@@ -22,6 +22,18 @@
 
 <body>
 
+    <style>
+        body {
+            background: rgb(48, 0, 3);
+            background: -moz-linear-gradient(160deg, rgba(48, 0, 3, 1) 0%, rgba(60, 11, 58, 1) 30%, rgba(9, 0, 29, 1) 70%, rgba(2, 13, 95, 1) 100%);
+            background: -webkit-linear-gradient(160deg, rgba(48, 0, 3, 1) 0%, rgba(60, 11, 58, 1) 30%, rgba(9, 0, 29, 1) 70%, rgba(2, 13, 95, 1) 100%);
+            background: linear-gradient(160deg, rgba(48, 0, 3, 1) 0%, rgba(60, 11, 58, 1) 30%, rgba(9, 0, 29, 1) 70%, rgba(2, 13, 95, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#300003", endColorstr="#020d5f", GradientType=1);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+        }
+    </style>
 
     <div class="navbar">
 
@@ -38,7 +50,7 @@
 
 
     <div class="banner-con">
-        <img class="banner-con-object rellax" data-rellax-speed="-6" src="/Raw_Content/Mantari_Banner.png">
+        <img class="banner-con-object rellax" data-rellax-speed="-6" src="Banner.png">
         <div class="banner-con-object-fade"></div>
     </div>
 
@@ -52,6 +64,7 @@
     <!--Content Page-->
 
     <div class="panel-project">
+
         <style>
             @font-face {
                 font-family: TitleFont;
@@ -76,30 +89,33 @@
                     <td class="data-right">2 Weeks</td>
                 </tr>
                 <tr>
-                    <td class="data-left">Software used</td>
+                    <td class="data-left">Software(s)</td>
                     <td class="data-right">Unity | C#</td>
                 </tr>
             </table>
-
             <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button"><img src="/Base_Icons/Itch_Icon.png">
                 <div><img src="/Base_Icons/Itch_Text.png" /></div>
             </a>
-            <a href="Projects/Template-Page/Devlog.pdf" class="link-button devlog-button"><img src="/Base_Icons/Page_Icon.png">
-                <div>Project Devlog</div>
-            </a>
+
         </div>
 
 
-        <p class="project-desc-text">Dive deep and explore the neon reef with the latest Mantari underwater ship model. Mantari is a rail shooter game as a part of the universtiy starfox inspired gamejam that lasted 2 weeks. Mantari was Produced in a<b> team of 6 </b></p>
+        <div class="project-desc-text">
+            <p>Dive deep and explore the neon reef with the latest Mantari underwater ship model. Mantari is an on-rail shooter game as a part of the university's starfox inspired gamejam module that lasted 2 weeks. Mantari was Produced in a<b> team of 6.</b></p>
+
+            <p>
+                Mantari ranked <b>1<sup>st</sup></b> in best gameplay, most innovative and overall out of <b>13</b> entries within the university's module gamejam with team sizes varying for 5 to 10 members.</p>
+        </div>
+        <div class="yt-videowrapper">
 
 
+        </div>
         <div class="carousel-container">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
 
                 <!-- Big -->
                 <div class="carousel-inner">
-
                     <div class="item active">
                         <img src="Screenshots/Screenshot1.png" style="height: 100%;width: 100%">
                     </div>
@@ -138,6 +154,7 @@
                     </li>
                     <li data-target="#myCarousel" data-slide-to="5" class="carousel-imgdot"><img src="Screenshots/Screenshot6.png">
                     </li>
+
                 </ol>
 
             </div>
@@ -147,36 +164,42 @@
 
 
 
-        <div class="keyfeature-text">Key Contributions</div>
 
-
+        <div class="keyfeature-text">Main Contributions</div>
 
         <div class="dropdown-header" onclick="dropdownmenu(this)">
-            <img class="dropdown-img" src="/Base_Icons/PersonalProjects_Icon.png">
-            <div class="dropdown-header-text">Char Controller</div>
+            <img class="dropdown-img" src="/Base_Icons/Cube_Icon.png">
+            <div class="dropdown-header-text">Player Controller</div>
             <div class="dropdown-arrow"><img src="/Base_Icons/Arrow.png"></div>
         </div>
-        <div class="dropdown-content" id="demo">
+        <div class="dropdown-content">
             <br><br>sdaasdasdsaddsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>
-            <br><br>sdaasdasdsaddsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>
-            <br><br>sdaasdasdsaddsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>
-            <br><br>sdaasdasdsaddsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br><br><br>asd
-
-            <div class="dropdown-header dropdown-header-inner" onclick="dropdownmenu(this)">
-                <img class="dropdown-img" src="/Base_Icons/PersonalProjects_Icon.png">
-                <div class="dropdown-header-text">Char Controller</div>
-                <div class="dropdown-arrow"><img src="/Base_Icons/Arrow.png"></div>
-            </div>
-            <div class="dropdown-content">
-                <br><br>sdaasdasdsaddsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>
-                <br><br>sdaasdasdsaddsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>
-                <br><br>sdaasdasdsaddsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>
-                <br><br>sdaasdasdsaddsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br><br><br>
 
 
-            </div>
-            <br><br><br><br><br><br>
+
+
         </div>
+
+        <br>
+
+        <div class="dropdown-header" onclick="dropdownmenu(this)">
+            <img class="dropdown-img" src="/Base_Icons/GenericIcon_1.png">
+            <div class="dropdown-header-text">Player Rail System</div>
+            <div class="dropdown-arrow"><img src="/Base_Icons/Arrow.png"></div>
+        </div>
+        <div class="dropdown-content">
+            <br>The rail system is a spline that moves the player forward througeout the level,
+
+
+
+            The game featured braching paths that allowed players to chouse what section they travel through, this was done by using trigger boxes for each path and once cloided would trasfure the player to a diffrent spline.
+            <br>
+            <br>
+
+        </div>
+
+        <br>
+
 
 
         <br>

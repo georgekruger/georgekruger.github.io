@@ -81,7 +81,8 @@
 
         <div class="project-desc-text">
             <p>Jett is a high-octain, anti-gravity racer inspired by games such as Wipeout, F-Zero, Pacer and BallisticNG.
-            Jett is a personal project that is still a work in progress, missing many assests or placeholders with programmer art. </p>
+                Jett is a personal project that is still a work in progress, missing many assests or placeholders with programmer art. </p>
+            <p>Jett is intended </p>
         </div>
 
 
@@ -128,55 +129,51 @@
             <div class="dropdown-arrow"><img src="/Base_Icons/Arrow.png"></div>
         </div>
         <div class="dropdown-content">
-            <br><br>sdaasdasdsaddsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>
-            <br><br>sdaasdasdsaddsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>
-            <br><br>sdaasdasdsaddsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>
-            <br><br>sdaasdasdsaddsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br><br><br>asd
-
+            <br>
+            <p>For Jett I created a spline system that finds the closest position a racer is along the spline. This system is currently used in a few implemented features; racer rankings in real time, checkpoints/track lap splits and racer respawn positions.</p><br>
+            <img src="Dev_Screenshots/2.gif"><br><br>
             <div class="dropdown-header dropdown-header-inner" onclick="dropdownmenu(this)">
                 <img class="dropdown-img" src="/Base_Icons/Code_Icon.png">
                 <div class="dropdown-header-text">Code Snippet</div>
                 <div class="dropdown-arrow"><img src="/Base_Icons/Arrow.png"></div>
             </div>
             <div class="dropdown-content">
-                <p>
-                    This code is to find the asdasd </p>
 
 
                 <ol class="codesnippet-con">
-                    <li><span><span class="struct">public </span><span class="class">Vector3</span>[] Spline_Points;</span></li>
+                    <li><span><span class="keyword">public </span><span class="class">Vector3</span>[] Spline_Points;</span></li>
                 </ol>
                 <ol class="codesnippet-con">
-                    <li><span><span class="struct"> public</span><span class="class"> Vector3</span> <span class="function"> PositionOnSpline</span>(<span class="class">Vector3</span><span class="local-value"> pos</span>)</span></li>
+                    <li><span><span class="keyword"> public</span><span class="class"> Vector3</span> <span class="function"> PositionOnSpline</span>(<span class="class">Vector3</span><span class="local-value"> pos</span>)</span></li>
                     <li><span> {</span></li>
-                    <li><span class="L1"> <span class="struct">int</span> <span class="local-value">ClosestSplinePoint</span> = <span class="function">GetClosestSplinePoint</span>(<span class="local-value">pos</span>);</span></li>
+                    <li><span class="L1"> <span class="keyword">int</span> <span class="local-value">ClosestSplinePoint</span> = <span class="function">GetClosestSplinePoint</span>(<span class="local-value">pos</span>);</span></li>
                     <li><span></span> </li>
                     <li><span class="L1"> <span class="ifstate"> if </span>(<span class="local-value">ClosestSplinePoint</span> == <span class="data-type"> 0</span>) <span class="comment"> //Start of spline loop - Prevent out of bounds</span></span></li>
                     <li><span class="L1"> {</span></li>
-                    <li><span class="L2"><span class="class"> Vector3</span> <span class="local-value">FrontSegment</span> = <span class="function"> SplineSegment</span>(Spline_Points[Spline_PointsCount - <span class="data-type"> 1</span>], Spline_Points[<span class="data-type">0</span>], <span><span class="local-value"> pos</span></span>);</span></li>
+                    <li><span class="L2"><span class="class"> Vector3</span> <span class="local-value">FrontSegment</span> = <span class="function"> SplineSegment</span>(Spline_Points[Spline_Points.Length - <span class="data-type"> 1</span>], Spline_Points[<span class="data-type">0</span>], <span><span class="local-value"> pos</span></span>);</span></li>
                     <li><span class="L2"><span class="class"> Vector3</span> <span class="local-value">BackSegment</span> =<span class="function"> SplineSegment</span>(Spline_Points[<span class="data-type">1</span>], Spline_Points[<span class="data-type">0</span>],<span class="local-value"> pos</span>);</span></li>
                     <li><span class="L2"></span></li>
                     <li><span class="L2"> <span class="ifstate">if </span>((<span class="local-value">pos</span> - <span class="local-value">FrontSegment</span>).sqrMagnitude &lt= (<span class="local-value">pos</span> - <span class="local-value">BackSegment</span>).sqrMagnitude)</span></li>
                     <li><span class="L2"> {</span></li>
-                    <li><span class="L3"> <span class="ifstate">return</span><span class="function"> SplineSegment</span>(Spline_Points[Spline_PointsCount - <span class="data-type">1</span>], Spline_Points[<span class="data-type">0</span>], <span class="local-value">pos</span>);</span></li>
+                    <li><span class="L3"> <span class="ifstate">return</span><span class="function"> SplineSegment</span>(Spline_Points[Spline_Points.Length - <span class="data-type">1</span>], Spline_Points[<span class="data-type">0</span>], <span class="local-value">pos</span>);</span></li>
                     <li><span class="L2"> }</span></li>
                     <li><span class="L2"> <span class="ifstate">else</span> </span></li>
                     <li><span class="L2"> {</span></li>
                     <li><span class="L3"> <span class="ifstate">return</span><span class="function"> SplineSegment</span>(Spline_Points[<span class="data-type">0</span>], Spline_Points[<span class="data-type">1</span>], <span class="local-value">pos</span>);</span></li>
                     <li><span class="L2"> }</span></li>
                     <li><span class="L1"> }</span></li>
-                    <li><span class="L1"> <span class="ifstate">else if </span>(<span class="function">ClosestSplinePoint</span> == Spline_PointsCount -<span class="data-type"> 1</span>) <span class="comment">//End of spline loop - Prevent out of bounds</span></span></li>
+                    <li><span class="L1"> <span class="ifstate">else if </span>(<span class="function">ClosestSplinePoint</span> == Spline_Points.Length -<span class="data-type"> 1</span>) <span class="comment">//End of spline loop - Prevent out of bounds</span></span></li>
                     <li><span class="L1"> {</span></li>
-                    <li><span class="L2"> <span class="class">Vector3</span><span class="local-value"> FrontSegment</span> = <span class="function">SplineSegment</span>(Spline_Points[Spline_PointsCount - <span class="data-type">2</span>], Spline_Points[Spline_PointsCount - <span class="data-type">1</span>],<span class="local-value"> pos</span>);</span></li>
-                    <li><span class="L2"><span class="class"> Vector3</span><span class="local-value"> BackSegment</span> = <span class="function">SplineSegment</span>(Spline_Points[Spline_PointsCount - <span class="data-type">1</span>], Spline_Points[<span class="data-type">0</span>],<span class="local-value"> pos</span>);</span></li>
+                    <li><span class="L2"> <span class="class">Vector3</span><span class="local-value"> FrontSegment</span> = <span class="function">SplineSegment</span>(Spline_Points[Spline_Points.Length - <span class="data-type">2</span>], Spline_Points[Spline_Points.Length - <span class="data-type">1</span>],<span class="local-value"> pos</span>);</span></li>
+                    <li><span class="L2"><span class="class"> Vector3</span><span class="local-value"> BackSegment</span> = <span class="function">SplineSegment</span>(Spline_Points[Spline_Points.Length - <span class="data-type">1</span>], Spline_Points[<span class="data-type">0</span>],<span class="local-value"> pos</span>);</span></li>
                     <li><span class="L1"> </span></li>
                     <li><span class="L2"> <span class="ifstate">if</span> ((<span class="local-value">pos </span>- <span class="local-value">FrontSegment</span>).sqrMagnitude &lt= (<span class="local-value">pos </span>-<span class="local-value"> BackSegment</span>).sqrMagnitude)</span></li>
                     <li><span class="L2"> {</span></li>
-                    <li><span class="L3"> <span class="ifstate">return</span> <span class="function">SplineSegment</span>(Spline_Points[Spline_PointsCount - <span class="data-type">1</span>], Spline_Points[Spline_PointsCount - <span class="data-type">2</span>],<span class="local-value"> pos</span>);</span></li>
+                    <li><span class="L3"> <span class="ifstate">return</span> <span class="function">SplineSegment</span>(Spline_Points[Spline_Points.Length - <span class="data-type">1</span>], Spline_Points[Spline_Points.Length - <span class="data-type">2</span>],<span class="local-value"> pos</span>);</span></li>
                     <li><span class="L2"> }</span></li>
                     <li><span class="L2"><span class="ifstate"> else</span></span></li>
                     <li><span class="L2">{</span></li>
-                    <li><span class="L3"> <span class="ifstate">return</span><span class="function"> SplineSegment</span>(Spline_Points[Spline_PointsCount - <span class="data-type">1</span>], Spline_Points[<span class="data-type">0</span>], <span class="local-value">pos</span>);</span></li>
+                    <li><span class="L3"> <span class="ifstate">return</span><span class="function"> SplineSegment</span>(Spline_Points[Spline_Points.Length - <span class="data-type">1</span>], Spline_Points[<span class="data-type">0</span>], <span class="local-value">pos</span>);</span></li>
                     <li><span class="L2"> }</span></li>
                     <li><span class="L1">}</span></li>
                     <li><span class="L1"><span class="ifstate">else</span><span class="comment"> //Rest of the spline</span></span></li>
@@ -196,14 +193,14 @@
                     <li><span> }</span></li>
                 </ol>
                 <ol class="codesnippet-con">
-                    <li><span><span class="struct">private </span><span class="struct">int</span><span class="function"> GetClosestSplinePoint</span>(<span class="class">Vector3 </span><span class="local-value">pos</span>)</span></li>
+                    <li><span><span class="keyword">private </span><span class="keyword">int</span><span class="function"> GetClosestSplinePoint</span>(<span class="class">Vector3 </span><span class="local-value">pos</span>)</span></li>
                     <li><span>{</span></li>
-                    <li><span class="L1"> <span class="struct">int </span><span class="local-value">ClosestSplinePoint</span> =<span class="data-type"> 0</span>;</span></li>
-                    <li><span class="L1"><span class="struct"> float </span><span class="local-value">ShortestDistance</span> =<span class="data-type"> 0.0f</span>;</span></li>
+                    <li><span class="L1"> <span class="keyword">int </span><span class="local-value">ClosestSplinePoint</span> =<span class="data-type"> 0</span>;</span></li>
+                    <li><span class="L1"><span class="keyword"> float </span><span class="local-value">ShortestDistance</span> =<span class="data-type"> 0.0f</span>;</span></li>
                     <li><span class="L1"></span></li>
-                    <li><span class="L1"> <span class="ifstate">for</span> (<span class="struct">int </span><span class="local-value">i</span> =<span> 0</span>; <span class="local-value">i</span> &lt; Spline_Points.Length;<span class="local-value"> i</span>++)</span></li>
+                    <li><span class="L1"> <span class="ifstate">for</span> (<span class="keyword">int </span><span class="local-value">i</span> =<span> 0</span>; <span class="local-value">i</span> &lt; Spline_Points.Length;<span class="local-value"> i</span>++)</span></li>
                     <li><span class="L1"> {</span></li>
-                    <li><span class="L2"> <span class="struct">float</span> <span class="local-value">SplinePointToPositionDistance </span>= (Spline_Points[<span class="local-value">i</span>] -<span class="local-value"> pos</span>).sqrMagnitude;</span></li>
+                    <li><span class="L2"> <span class="keyword">float</span> <span class="local-value">SplinePointToPositionDistance </span>= (Spline_Points[<span class="local-value">i</span>] -<span class="local-value"> pos</span>).sqrMagnitude;</span></li>
                     <li><span class="L2"><span class="ifstate"> if</span> (<span class="local-value">ShortestDistance </span>==<span class="data-type"> 0.0f </span>||<span class="local-value"> SplinePointToPositionDistance </span>&lt; <span class="local-value">ShortestDistance</span>)</span></li>
                     <li><span class="L2"> {</span></li>
                     <li><span class="L3"><span class="local-value"> ShortestDistance</span> = <span class="local-value">SplinePointToPositionDistance</span>;</span></li>
@@ -214,44 +211,48 @@
                     <li><span>}</span></li>
                 </ol>
                 <ol class="codesnippet-con">
-                    <li>private Vector3 SplineSegment(Vector3 PointA, Vector3 PointB, Vector3 pos)</li>
-                    <li> {</li>
-                    <li class="L1"> Vector3 posMinusA = pos - PointA;</li>
-                    <li class="L1"> Vector3 SeqDirection = (PointB - PointA).normalized;</li>
+                    <li><span><span class="keyword">private</span><span class="class"> Vector3</span><span class="function"> SplineSegment</span>(<span class="class">Vector3</span><span class="local-value"> PointA</span>, <span class="class">Vector3</span> <span class="local-value">PointB</span>,<span class="class"> Vector3</span> <span class="local-value">pos</span>)</span></li>
+                    <li><span> {</span></li>
+                    <li><span class="L1"> <span class="class">Vector3 </span><span class="local-value">posMinusA </span>= <span class="local-value">pos</span> -<span class="local-value"> PointA</span>;</span></li>
+                    <li><span class="L1"> <span class="class">Vector3</span> <span class="local-value">SeqDirection</span> = (<span class="local-value">PointB</span> - <span class="local-value">PointA</span>).normalized;</span></li>
                     <li></li>
-                    <li class="L1"> float DistanceFromA = Vector3.Dot(SeqDirection, posMinusA);</li>
+                    <li><span class="L1"> <span class="keyword">float</span><span class="local-value"> DistanceFromA</span> = <span class="class">Vector3</span>.<span class="function">Dot</span>(<span class="local-value">SeqDirection</span>, <span class="local-value">posMinusA</span>);</span></li>
                     <li></li>
-                    <li class="L1"> if (DistanceFromA &lt; 0.0f)</li>
-                    <li class="L1"> {</li>
-                    <li class="L2"> return PointA;</li>
-                    <li class="L1"> }</li>
-                    <li class="L1"> else if (DistanceFromA * DistanceFromA &gt; (PointB - PointA).sqrMagnitude)</li>
-                    <li class="L1"> {</li>
-                    <li class="L2"> return PointB;</li>
-                    <li class="L1"> }</li>
-                    <li class="L1"> else</li>
-                    <li class="L1"> {</li>
-                    <li class="L2"> Vector3 FromA = SeqDirection * DistanceFromA;</li>
-                    <li class="L2"> return PointA + FromA;</li>
-                    <li class="L1"> }</li>
-                    <li> }</li>
+                    <li> <span class="L1"><span class="ifstate">if</span> (<span class="local-value">DistanceFromA </span>&lt;<span class="data-type"> 0.0f</span>)</span></li>
+                    <li><span class="L1"> {</span></li>
+                    <li><span class="L2"> <span class="ifstate">return</span><span class="local-value"> PointA</span>;</span></li>
+                    <li> <span class="L1">}</span></li>
+                    <li> <span class="L1"><span class="ifstate">else if</span> (<span class="local-value">DistanceFromA</span> * <span class="local-value">DistanceFromA</span> &gt; (<span class="local-value">PointB</span> -<span class="local-value"> PointA</span>).sqrMagnitude)</span></li>
+                    <li><span class="L1"> {</span></li>
+                    <li><span class="L2"><span class="ifstate"> return </span><span class="local-value">PointB</span>;</span></li>
+                    <li><span class="L1"> }</span></li>
+                    <li><span class="L1"> <span class="ifstate">else</span></span></li>
+                    <li> <span class="L1">{</span></li>
+                    <li><span class="L2"> <span class="class">Vector3</span><span class="local-value"> FromA</span> = <span class="local-value">SeqDirection</span> * <span class="local-value">DistanceFromA</span>;</span></li>
+                    <li><span class="L2"> <span class="ifstate">return</span> <span class="local-value">PointA</span> + <span class="local-value">FromA</span>;</span></li>
+                    <li><span class="L1"> }</span></li>
+                    <li><span> }</span></li>
 
                 </ol>
 
             </div>
-
+            <br>
         </div> <br>
 
         <div class="dropdown-header" onclick="dropdownmenu(this)">
-            <img class="dropdown-img" src="/Base_Icons/GenericIcon_1.png">
+            <img class="dropdown-img" src="/Base_Icons/Cube_Icon.png">
             <div class="dropdown-header-text">Ship Leveler System</div>
             <div class="dropdown-arrow"><img src="/Base_Icons/Arrow.png"></div>
         </div>
         <div class="dropdown-content">
-            <br><br>sdaasdasdsaddsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>
-            <br><br>sdaasdasdsaddsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>
-            <br><br>sdaasdasdsaddsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br>
-            <br><br>sdaasdasdsaddsasdas<br>sdadsasdas<br>sdadsasdas<br>sdadsasdas<br><br><br>asd
+            <br>
+            <p>The ship leveller system rotates a racer to match the surface angle of the track with smooth transitioning between different surface rotations.
+                This is done by creating an array of raycasts that returns the 'hits' rotational value, and creating and average of all the values and setting the ship's rotation.</p><br>
+            <img src="Dev_Screenshots/4.gif"><br><br>
+            <p>The density of the array, it's size and offset can be ajusted to fit the</p> <br> <img src="Dev_Screenshots/4.gif"><br>
+
+            <p></p>
+            <br>
 
             <div class="dropdown-header dropdown-header-inner" onclick="dropdownmenu(this)">
                 <img class="dropdown-img" src="/Base_Icons/Code_Icon.png">
@@ -259,67 +260,129 @@
                 <div class="dropdown-arrow"><img src="/Base_Icons/Arrow.png"></div>
             </div>
             <div class="dropdown-content">
+
                 <ol class="codesnippet-con">
-                    <li><span><span class="struct">private </span><span class="struct">int</span><span class="function"> GetClosestSplinePoint</span>(<span class="class">Vector3 </span><span class="local-value">pos</span>)</span></li>
-                    <li><span>{</span></li>
-                    <li><span class="L1"> <span class="struct">int </span><span class="local-value">ClosestSplinePoint</span> =<span class="data-type"> 0</span>;</span></li>
-                    <li><span class="L1"><span class="struct"> float </span><span class="local-value">ShortestDistance</span> =<span class="data-type"> 0.0f</span>;</span></li>
-                    <li><span class="L1"></span></li>
-                    <li><span class="L1"> <span class="ifstate">for</span> (<span class="struct">int </span><span class="local-value">i</span> =<span> 0</span>; <span class="local-value">i</span> &lt; Spline_Points.Length;<span class="local-value"> i</span>++)</span></li>
+                    <li><span><span class="keyword">public float</span> Width;</span></li>
+                    <li><span><span class="keyword"> public float</span> Length;</span></li>
+                    <li></li>
+                    <li><span><span class="keyword"> public int</span> WidthAmount;</span></li>
+                    <li><span><span class="keyword"> public int</span> LengthAmount;</span></li>
+                    <li><span><span class="keyword"> public float </span>LengthOffset;</span></li>
+                </ol>
+                <ol class="codesnippet-con">
+                    <li><span><span class="keyword">private</span><span class="keyword"> void</span><span class="function"> PlayerLeveler</span>()</span></li>
+                    <li><span> {</span></li>
+                    <li><span class="L1"><span class="class"> Vector3 </span><span class="local-value">Medium </span>= <span class="function">RaycastCalc</span>();</span></li>
+                    <li><span class="L1"> <span class="keyword">float</span><span class="local-value"> RotateRate</span>;</span></li>
+                    <li></li>
+                    <li><span class="L1"><span class="ifstate"> if</span> (<span class="local-value">Medium</span> == <span class="keyword">new </span><span class="class">Vector3</span>(<span class="data-type">0</span>,<span class="data-type"> 0</span>, <span class="data-type">0</span>)) <span class="comment">//Non-Grounded</span></span></li>
                     <li><span class="L1"> {</span></li>
-                    <li><span class="L2"> <span class="struct">float</span> <span class="local-value">SplinePointToPositionDistance </span>= (Spline_Points[<span class="local-value">i</span>] -<span class="local-value"> pos</span>).sqrMagnitude;</span></li>
-                    <li><span class="L2"><span class="ifstate"> if</span> (<span class="local-value">ShortestDistance </span>==<span class="data-type"> 0.0f </span>||<span class="local-value"> SplinePointToPositionDistance </span>&lt; <span class="local-value">ShortestDistance</span>)</span></li>
-                    <li><span class="L2"> {</span></li>
-                    <li><span class="L3"><span class="local-value"> ShortestDistance</span> = <span class="local-value">SplinePointToPositionDistance</span>;</span></li>
-                    <li><span class="L3"> <span class="local-value">ClosestSplinePoint</span> =<span class="local-value"> i</span>;</span></li>
-                    <li><span class="L2"> }</span></li>
+                    <li><span class="L2"><span class="local-value"> Medium</span> = <span class="keyword">new</span><span class="class"> Vector3</span>(<span class="data-type">0</span>,<span class="data-type"> 1</span>, <span class="data-type">0</span>);</span></li>
+                    <li><span class="L2"> <span class="local-value">RotateRate </span>=<span> 2f</span>;</span></li>
                     <li><span class="L1"> }</span></li>
-                    <li><span class="L1"> <span class="ifstate">return</span><span class="local-value"> ClosestSplinePoint</span>;</span></li>
+                    <li><span class="L1"> <span class="ifstate">else</span><span class="comment"> //Grounded</span></span></li>
+                    <li><span class="L1"> {</span></li>
+                    <li><span class="L2"> <span class="local-value">RotateRate</span> = <span>7f</span>;</span></li>
+                    <li><span class="L1"> }</span></li>
+                    <li></li>
+                    <li><span class="L1"><span class="comment">//Rot Setter</span></span></li>
+                    <li><span class="L1"> <span class="class">Quaternion </span><span class="local-value">SetRotation</span> = <span class="class">Quaternion</span>.<span class="function">FromToRotation</span>(transform.up, <span class="local-value">Medium</span>) * transform.rotation;</span></li>
+                    <li><span class="L1"> transform.rotation =<span class="class"> Quaternion</span>.<span class="function">Lerp</span>(transform.rotation, <span class="local-value">SetRotation</span>, <span class="local-value">RotateRate</span> * <span class="class">Time</span>.deltaTime);</span></li>
                     <li><span>}</span></li>
                 </ol>
                 <ol class="codesnippet-con">
-                    <li><span><span class="struct">private </span><span class="struct">int</span><span class="function"> GetClosestSplinePoint</span>(<span class="class">Vector3 </span><span class="local-value">pos</span>)</span></li>
-                    <li><span>{</span></li>
-                    <li><span class="L1"> <span class="struct">int </span><span class="local-value">ClosestSplinePoint</span> =<span class="data-type"> 0</span>;</span></li>
-                    <li><span class="L1"><span class="struct"> float </span><span class="local-value">ShortestDistance</span> =<span class="data-type"> 0.0f</span>;</span></li>
-                    <li><span class="L1"></span></li>
-                    <li><span class="L1"> <span class="ifstate">for</span> (<span class="struct">int </span><span class="local-value">i</span> =<span> 0</span>; <span class="local-value">i</span> &lt; Spline_Points.Length;<span class="local-value"> i</span>++)</span></li>
+                    <li><span><span>private</span><span> Vector3</span> RaycastCalc<span>()</span></span></li>
+                    <li> <span>{</span></li>
+                    <li><span class="L1"> <span>float</span><span> WidthGap</span> = (Width *<span> 2 </span>/ WidthAmount);</span></li>
+                    <li> <span class="L1"><span>float </span><span>LengthGap</span> = (Length * <span>2</span> / LengthAmount);</span></li>
+                    <li></li>
+                    <li> <span class="L1"><span>float </span>Xpos = Width;</span></li>
+                    <li> <span class="L1"><span>float </span>Ypos = Length + LengthOffset;</span></li>
+                    <li><span class="L1"> <span>int </span><span>XposReset </span>= <span>0</span>;</span></li>
+                    <li></li>
+                    <li> <span class="L1"><span>Vector3</span><span> MedRotation </span>= new<span> Vector3</span>(<span>0</span>,<span> 0</span>, <span>0</span>);</span></li>
+                    <li></li>
+                    <li> <span class="L1"><span>for</span> (<span>int </span><span>i</span> = <span>0</span>; <span>i</span> &lt; (WidthAmount * LengthAmount) + LengthAmount + WidthAmount + <span>1</span>;)</span></li>
                     <li><span class="L1"> {</span></li>
-                    <li><span class="L2"> <span class="struct">float</span> <span class="local-value">SplinePointToPositionDistance </span>= (Spline_Points[<span class="local-value">i</span>] -<span class="local-value"> pos</span>).sqrMagnitude;</span></li>
-                    <li><span class="L2"><span class="ifstate"> if</span> (<span class="local-value">ShortestDistance </span>==<span class="data-type"> 0.0f </span>||<span class="local-value"> SplinePointToPositionDistance </span>&lt; <span class="local-value">ShortestDistance</span>)</span></li>
-                    <li><span class="L2"> {</span></li>
-                    <li><span class="L3"><span class="local-value"> ShortestDistance</span> = <span class="local-value">SplinePointToPositionDistance</span>;</span></li>
-                    <li><span class="L3"> <span class="local-value">ClosestSplinePoint</span> =<span class="local-value"> i</span>;</span></li>
+                    <li><span class="L2"> <span>if </span>(<span>XposReset</span> &gt; WidthAmount)</span></li>
+                    <li> <span class="L2">{</span></li>
+                    <li> <span class="L3"><span>Xpos</span> = Width;</span></li>
+                    <li></li>
+                    <li><span class="L3"> <span>XposReset</span> =<span> 0</span>;</span></li>
+                    <li> <span class="L3"><span>Ypos</span> -= <span>LengthGap</span>;</span></li>
+                    <li> <span class="L2">}</span></li>
+                    <li><span class="L2"> else</span></li>
+                    <li> <span class="L2">{</span></li>
+                    <li> <span class="L3"><span>MedRotation</span> += <span>LevelerRaycast</span>(<span>Xpos</span>, <span>Ypos</span>);</span></li>
+                    <li></li>
+                    <li><span class="L3"><span> Xpos</span> -= <span>WidthGap</span>;</span></li>
+                    <li><span class="L3"> <span>XposReset</span>++;</span></li>
+                    <li> <span class="L3"><span>i</span>++;</span></li>
                     <li><span class="L2"> }</span></li>
-                    <li><span class="L1"> }</span></li>
-                    <li><span class="L1"> <span class="ifstate">return</span><span class="local-value"> ClosestSplinePoint</span>;</span></li>
-                    <li><span>}</span></li>
+                    <li> <span class="L1">}</span></li>
+                    <li></li>
+                    <li><span class="L1"> <span>int </span><span>devide </span>= (WidthAmount * LengthAmount) + (LengthAmount + WidthAmount) + <span>1</span>;</span></li>
+                    <li><span class="L1"> <span>Vector3 </span><span>Final </span>= <span>new </span><span>Vector3</span>(<span>MedRotation</span>.x / <span>devide</span>, <span>MedRotation</span>.y / <span>devide</span>,<span> MedRotation</span>.z / <span>devide</span>);</span></li>
+                    <li><span class="L1"> <span>return</span><span> Final</span>;</span></li>
+                    <li><span> }</span></li>
+
                 </ol>
                 <ol class="codesnippet-con">
-                    <li><span><span class="struct">private </span><span class="struct">int</span><span class="function"> GetClosestSplinePoint</span>(<span class="class">Vector3 </span><span class="local-value">pos</span>)</span></li>
-                    <li><span>{</span></li>
-                    <li><span class="L1"> <span class="struct">int </span><span class="local-value">ClosestSplinePoint</span> =<span class="data-type"> 0</span>;</span></li>
-                    <li><span class="L1"><span class="struct"> float </span><span class="local-value">ShortestDistance</span> =<span class="data-type"> 0.0f</span>;</span></li>
-                    <li><span class="L1"></span></li>
-                    <li><span class="L1"> <span class="ifstate">for</span> (<span class="struct">int </span><span class="local-value">i</span> =<span> 0</span>; <span class="local-value">i</span> &lt; Spline_Points.Length;<span class="local-value"> i</span>++)</span></li>
+                    <li><span><span class="keyword">private</span><span class="class"> Vector3</span><span class="function"> LevelerRaycast</span>(<span class="keyword">float </span><span class="local-value">Xpos</span>,<span class="keyword"> float</span><span class="local-value"> Ypos</span>)</span></li>
+                    <li> <span>{</span></li>
+                    <li> <span class="L1"><span class="class">Vector3</span> <span class="local-value">RayOrigin</span> = transform.position + (transform.forward * <span class="local-value">Ypos</span>) + (transform.right * <span class="local-value">Xpos</span>);</span></li>
+                    <li></li>
+                    <li><span class="L1"><span class="class">Color </span><span class="local-value">RaycastColor</span>;</span></li>
+                    <li> <span class="L1"><span class="class">Vector3</span><span class="local-value"> HitNormal</span>;</span></li>
+                    <li> <span class="L1"><span class="keyword">int</span><span class="local-value"> MaxDistance</span> =<span> 12</span>;</span></li>
+                    <li> <span class="L1"><span class="keyword">float</span><span class="local-value"> DebugDrawDistance</span>;</span></li>
+                    <li></li>
+                    <li> <span class="L1"><span class="class">RaycastHit</span><span class="local-value"> hit</span>;</span></li>
+                    <li> <span class="L1"><span class="ifstate">if </span>(<span class="unity-class">Physics</span>.<span class="function">Raycast</span>(<span class="local-value">RayOrigin</span>, transform.<span class="function">TransformVector</span>(<span class="class">Vector3</span>.down),<span class="keyword"> out</span><span class="local-value"> hit</span>,<span class="local-value"> MaxDistance</span>, ~IgnoreRaycastLayer))<span class="comment"> //Ray hits a surface</span></span></li>
+                    <li> <span class="L1">{</span></li>
+                    <li> <span class="L2"><span class="local-value">DebugDrawDistance</span> = <span class="local-value">hit</span>.distance;</span></li>
+                    <li> <span class="L2"><span class="local-value">RaycastColor</span> = <span class="class">Color</span>.green;</span></li>
+                    <li> <span class="L2"><span class="local-value">HitNormal</span> = <span class="local-value">hit</span>.normal;</span></li>
+                    <li> <span class="L1">}</span></li>
+                    <li> <span class="L1"><span class="ifstate">else</span><span class="comment"> //Ray out of range</span></span></li>
                     <li><span class="L1"> {</span></li>
-                    <li><span class="L2"> <span class="struct">float</span> <span class="local-value">SplinePointToPositionDistance </span>= (Spline_Points[<span class="local-value">i</span>] -<span class="local-value"> pos</span>).sqrMagnitude;</span></li>
-                    <li><span class="L2"><span class="ifstate"> if</span> (<span class="local-value">ShortestDistance </span>==<span class="data-type"> 0.0f </span>||<span class="local-value"> SplinePointToPositionDistance </span>&lt; <span class="local-value">ShortestDistance</span>)</span></li>
-                    <li><span class="L2"> {</span></li>
-                    <li><span class="L3"><span class="local-value"> ShortestDistance</span> = <span class="local-value">SplinePointToPositionDistance</span>;</span></li>
-                    <li><span class="L3"> <span class="local-value">ClosestSplinePoint</span> =<span class="local-value"> i</span>;</span></li>
-                    <li><span class="L2"> }</span></li>
+                    <li><span class="L2"><span class="local-value"> DebugDrawDistance <span>= </span>MaxDistance</span>;</span></li>
+                    <li><span class="L2"><span class="local-value"> RaycastColor</span> =<span class="class"> Color</span>.red;</span></li>
+                    <li><span class="L2"> <span class="local-value">HitNormal </span>= <span class="keyword">new </span><span class="class">Vector3</span>(<span class="data-type">0</span>,<span class="data-type"> 0</span>, <span class="data-type">0</span>);</span></li>
+                    <li> <span class="L1">}</span></li>
+                    <li></li>
+                    <li><span class="L1"><span class="ifstate"> if</span> (DrawDebugRays)</span></li>
+                    <li><span class="L1"> {</span></li>
+                    <li><span class="L2"><span class="unity-class">Debug</span>.<span class="function">DrawRay</span>(<span class="local-value">RayOrigin</span>, transform.<span class="function">TransformVector</span>(<span class="class">Vector3</span>.down) * <span class="local-value">DebugDrawDistance</span>, <span class="local-value">RaycastColor</span>);</span></li>
                     <li><span class="L1"> }</span></li>
-                    <li><span class="L1"> <span class="ifstate">return</span><span class="local-value"> ClosestSplinePoint</span>;</span></li>
-                    <li><span>}</span></li>
+                    <li></li>
+                    <li> <span class="L1"><span class="ifstate">return</span><span class="local-value"> HitNormal</span>;</span></li>
+                    <li> <span>}</span></li>
+
                 </ol>
 
-            </div>
-
+            </div><br>
         </div>
 
 
         <br>
+        <div class="dropdown-header" onclick="dropdownmenu(this)">
+            <img class="dropdown-img" src="/Base_Icons/Cube_Icon.png">
+            <div class="dropdown-header-text">Track Intro</div>
+            <div class="dropdown-arrow"><img src="/Base_Icons/Arrow.png"></div>
+        </div>
+        <div class="dropdown-content">
+            <br>
+            <p>After a sceene has finished loading, a camera cimnamaic will play on loop intill the player procredses.
+                This is done by using unitys keyframe animation and animation tree systems, allowing for easyer and efficent consttion and modification of each animaiton,
+                adding functions in the animation and the animaitons order.</p>
+            <br> <img src="Dev_Screenshots/5.gif" width="90%"><br>
+
+            <br>
+
+        </div>
+
+
 
         <br>
         <br>
