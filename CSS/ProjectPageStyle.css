@@ -39,10 +39,10 @@ body {
     left: 0px;
     height: 10px;
     top: 590px;
-background: -moz-linear-gradient(0deg, rgba(0,0,0,0.4990371148459384) 0%, rgba(0,0,0,0) 100%);
-background: -webkit-linear-gradient(0deg, rgba(0,0,0,0.4990371148459384) 0%, rgba(0,0,0,0) 100%);
-background: linear-gradient(0deg, rgba(0,0,0,0.4990371148459384) 0%, rgba(0,0,0,0) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+    background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.4990371148459384) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.4990371148459384) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4990371148459384) 0%, rgba(0, 0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
 }
 
 
@@ -578,8 +578,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
     margin-bottom: 40px;
 }
 
-.devlog-page > video {
-}
+.devlog-page > video {}
 
 .dropdown-text {
     font-size: 18px;
@@ -640,11 +639,18 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 
 /*Code Snippits*/
 
+
+
+@font-face {
+    font-family: CodeFont;
+    src: url(/Fonts/CascadiaMono.ttf)
+}
+
 .codesnippet-con {
     font-size: 0.7em;
     text-align: left;
     height: auto;
-    font-family: Cascadia Mono;
+    font-family: CodeFont;
     border-radius: 12px;
     overflow-x: auto;
     white-space: nowrap;
@@ -689,6 +695,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 .keyword {
     color: #569CD6;
 }
+
 .unity-class {
     color: #4EC9B0;
 }
@@ -722,6 +729,53 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
     padding-left: 2em;
 }
 
-.dropdown-content > p{
+.dropdown-content > p {
     margin: 0px 20px 0px 20px;
+    font-size: 14px;
 }
+
+.project-background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.fadein {
+    
+}
+.fadein img {
+    position:absolute;
+    left:-65px;
+    top:0;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 60s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 60s;
+}
+
+@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+#f1 {
+}
+#f2 {
+    -webkit-animation-delay: -40s;
+}
+#f3 {
+    -webkit-animation-delay: -20s;
+}
+
