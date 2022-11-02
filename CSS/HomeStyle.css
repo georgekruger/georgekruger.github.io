@@ -157,7 +157,7 @@ body {
     vertical-align: central;
     align-self: center;
     line-height: 100px;
-    background-color: #2f009a;
+    background-color: #22007c;
     position: relative;
     display: block;
     padding-top: 12px;
@@ -201,11 +201,6 @@ body {
     white-space: nowrap;
     transition: 1s;
 
-    background: rgb(28, 28, 28);
-    background: -moz-linear-gradient(0deg, rgba(28, 28, 28, 1) 0%, rgba(33, 33, 33, 1) 40%, rgba(33, 33, 33, 1) 60%, rgba(28, 28, 28, 1) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(28, 28, 28, 1) 0%, rgba(33, 33, 33, 1) 40%, rgba(33, 33, 33, 1) 60%, rgba(28, 28, 28, 1) 100%);
-    background: linear-gradient(0deg, rgba(28, 28, 28, 1) 0%, rgba(33, 33, 33, 1) 40%, rgba(33, 33, 33, 1) 60%, rgba(28, 28, 28, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1c1c1c", endColorstr="#1c1c1c", GradientType=1);
 }
 
 .project-con-cell {
@@ -422,7 +417,7 @@ project-tag {
     max-width: inherit;
     color: white;
     text-align: center;
-    background-color: #0a0021;
+    background-color: #04052e;
     position: relative;
     padding-top: 40px;
     padding-bottom: 90px;
@@ -926,7 +921,7 @@ qqqqq .project-cell-rot {
 
 }
 
-.Banner-titletext {}
+
 
 .project-desc-box-feature-list {
     text-align: left;
@@ -1305,7 +1300,7 @@ qqqqq .project-cell-rot {
 
 .cv-printerver {
     top: -1920px;
-    bottom: 0px;
+    bottom: 80px;
     left: 660px;
     right: 0px;
     margin: auto;
@@ -1457,4 +1452,8 @@ cv-education-logo > img {
 @font-face {
     font-family: GradeTableFont;
     src: url(/Fonts/calibril.ttf)
+}
+
+.prototype-tag {
+    background: hsl(224, 20%, 29%);
 }
