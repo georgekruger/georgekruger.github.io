@@ -773,6 +773,8 @@ qqqqq .project-cell-rot {
     display: inline-block;
 
     margin: 12px;
+    margin-bottom: 16px;
+    margin-top: 16px;
     text-align: center;
 
 }
@@ -1456,4 +1458,11 @@ cv-education-logo > img {
 
 .prototype-tag {
     background: hsl(224, 20%, 29%);
+}
+
+.other-project-con {
+    height: 100px;
+    width: 200px;
+    background: red;
+    ali
 }
