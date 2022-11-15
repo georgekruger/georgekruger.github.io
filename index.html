@@ -71,30 +71,53 @@
 
 
     <div class="video-con" id="Home">
-        <div class="video-con-object rellax" data-rellax-speed="-6" onended="run()" id="Video_Showcase">
-            <video autoplay="" muted="" poster loop width="100%">
+        <div class="video-con-object rellax" data-rellax-speed="-6">
+            <video muted="" id="BotVid"></video>
+            <video autoplay="" muted="" id="TopVid"></video>
 
-                <source src="/Index_Content/Video1.webm" type="video/webm">
+            <script type="text/javascript">
+                var BotVidPlayer = document.getElementById("BotVid");
+                var TopVidPlayer = document.getElementById("TopVid");
 
-            </video>
+                const Videos = ["/Showcase_Videos/Mantair.webm", "/Index_Content/Video1.webm",  "/Showcase_Videos/SoTF_Video.webm"]
 
-            <script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
-            <script>
-                $(document).ready(function() {
-                    var vid = document.getElementById("Video_Showcase");
-                    vid.onplay = function() {
-                        var source = vid.currentSrc;
-                        folder = source.match(/(.+)(\/)/);
-                        ext = source.match(/(\.\w+)$/);
-                    };
+                var CurrentVid = 1;
+                var bool = false;
 
-                    vid.onended = function() {
-                        $("#Video_Showcase").attr({
-                            "src": folder[0] + "video2" + ext[0],
-                            "loop": ""
-                        });
-                    };
-                });
+                TopVidPlayer.src = Videos[0]
+                TopVidPlayer.addEventListener('ended', VideoEnd, false);
+                BotVidPlayer.addEventListener('ended', VideoEnd, false);
+
+                function VideoEnd(e) {
+                    bool = false;
+                }
+
+                TopVidPlayer.ontimeupdate = (event) => {
+                    if (TopVidPlayer.currentTime > TopVidPlayer.duration - 1 && bool == false) {
+                        TopVidPlayer.style.opacity = "0";
+                        BotVidPlayer.src = Videos[CurrentVid];
+                        BotVidPlayer.play();
+                        CurrentVid++;
+                        bool = true;
+                        if (CurrentVid >= Videos.length) {
+                            CurrentVid = 0;
+                        }
+                    }
+
+                    BotVidPlayer.ontimeupdate = (event) => {
+                        if (BotVidPlayer.currentTime > BotVidPlayer.duration - 1 && bool == false) {
+                            TopVidPlayer.style.opacity = "1";
+                            TopVidPlayer.src = Videos[CurrentVid];
+                            TopVidPlayer.play();
+                            CurrentVid++;
+                            bool = true;
+                            if (CurrentVid >= Videos.length) {
+                                CurrentVid = 0;
+                            }
+                        }
+                    }
+
+                };
             </script>
 
 
@@ -203,7 +226,7 @@
             <a href="/Projects/Jett/Jett.html" class="project-con-cell" onmouseover="PlayVideo(true,this)" onmouseleave="PlayVideo(false,this)">
                 <div class="project-con-box">
                     <!--Projact BackGround-->
-                    <img class="project-con-box-image" src="/Projects/Jett/Jett_Tile.png">
+                    <img class="project-con-box-image" src="/Projects/Jett/Jett_Tile2.png">
                     <!--Projact Video-->
                     <video muted loop controls class="project-con-box-video">
                         <source src="/Projects/Jett/Jet_VideoTile.mp4" type="video/mp4">
@@ -224,17 +247,20 @@
         </div>
     </div>
 
-    <!--Other Projects -->
+    <!--
     <div class="Banner" id="Other-Projects">
         <div class="Banner-titletext">Other Projects</div>
     </div>
+<div class="otherproject-con-panel">   
+    
+    <div class="otherproject-con">asdasdahisdas</div>
+    <div class="otherproject-con">asdasdahisdas</div>
+</div>
+    
+    
+    -->
 
-    <div class="other-project-con">asdasdahisdas</div>
-    
-    
-    
-    
-    
+
     <!--CV -->
     <div class="Banner" id="CV">
         <div class="Banner-titletext">CV</div>

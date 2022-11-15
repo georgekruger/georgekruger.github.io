@@ -19,6 +19,20 @@ body {
     z-index: -1;
     width: 100%;
     height: 100%;
+    
+}
+.video-con-object > video {
+
+    transition: 1s;
+    position: absolute;
+    height: auto;
+margin: auto;
+    width: 100%;
+    opacity: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 
 .video-con-object-fade {
@@ -1460,9 +1474,20 @@ cv-education-logo > img {
     background: hsl(224, 20%, 29%);
 }
 
-.other-project-con {
+.otherproject-con {
     height: 100px;
     width: 200px;
     background: red;
-    ali
+    display: inline-block;
+    margin: auto;
+    position: relative;
+    
+}
+
+.otherproject-con-panel {
+    justify-content: center;
+    flex: auto;
+    margin: auto;
+    align-items: center;
+    width: 1020px;
 }
