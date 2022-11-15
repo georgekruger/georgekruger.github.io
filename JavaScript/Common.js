@@ -1,5 +1,4 @@
 
-var Version = 2;
 /*This is horrific and needs a rework*/
 
 function dropdownmenu(ContentElem) {
