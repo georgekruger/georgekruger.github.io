@@ -13,7 +13,7 @@ body {
     z-index: -1;
     perspective: 1px;
     min-width: 1000px;
-
+    margin-bottom: -130px
 }
 
 .banner-con-object {
@@ -47,20 +47,21 @@ body {
 
 
 .panel-project {
-    background-color: rgba(40, 40, 40, 0.9);
+    background-color: rgb(60, 60, 60);
     position: relative;
     display: block;
     width: 1220px;
     margin: auto;
     height: auto;
     border-radius: 20px;
-    top: -130px;
     align-content: center;
     align-items: center;
     text-align: center;
     box-shadow: 0 0px 20px 2px #000000;
-    min-width: 1000px;
     overflow: hidden;
+    z-index: 1;
+    margin-bottom: 80px;
+
 }
 
 
@@ -74,17 +75,7 @@ body {
     margin-right: 10px;
 }
 
-.project-detail {
-    font-size: 20px;
-    color: #ffffff;
-    width: 100%;
-    text-align: center;
-    table-layout: auto;
-    height: auto;
-    align-content: center;
-    align-items: center;
-    float: left;
-}
+
 
 .project-detail-title {
     font-size: 30px;
@@ -97,19 +88,9 @@ body {
     width: 420px;
 }
 
-.data-left {
-    text-align: right;
-    padding-right: 10px;
-    padding-top: 0px;
-    font-weight: bold;
-    width: 400px;
-}
 
-.data-right {
-    text-align: left;
-    padding-left: 10px;
-    width: 400px;
-}
+
+
 
 .link-button {
     height: 50px;
@@ -216,11 +197,18 @@ body {
     padding-right: 10px;
     font-size: 40px;
     border-bottom: 2px solid #ffffff;
-    margin: auto;
-    width: 700px;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    width: 500px;
+    margin-top: 80px;
+    margin-left: 50px;
+    text-align: end;
+    border-top-left-radius: 30px;
+    border-style: solid;
+    border-width: 2px 0px 0px 2px;
+    line-height: 40px;
+    height: 40px;
 }
+
+
 
 .dropdown {
     max-width: 90%;
@@ -231,18 +219,19 @@ body {
 }
 
 .dropdown-header {
-    background-color: #4b075c;
-    border: solid #bababa 2px;
-    width: 80%;
-    height: 40px;
+    background-color: rgb(80, 80, 80);
+    border: solid #ffffff 1px;
+    width: 320px;
+    height: 34px;
     z-index: 1;
+    margin-left: 72px;
+    float: left;
     position: relative;
 
     color: white;
-    font-size: 28px;
+    font-size: 20px;
     text-align: left;
-    margin: auto;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
 
     transition: 0.3s;
@@ -273,7 +262,7 @@ body {
 }
 
 .dropdown-header:hover {
-    background-color: #68147c;
+    background-color: rgba(151, 151, 151, 0.76);
 
 }
 
@@ -299,7 +288,7 @@ body {
 .dropdown-header-text {
     height: 100%;
     display: inline-block;
-    font-size: 20px;
+    font-size: 18px;
 
     vertical-align: top;
     line-height: 40px;
@@ -321,9 +310,9 @@ body {
     position: absolute;
     top: 0px;
     right: 0px;
-    height: 32px;
-    width: 32px;
-    margin-top: 4px;
+    height: 22px;
+    width: 22px;
+    margin-top: 14px;
     margin-right: 12px;
     transition: 0.4s;
 
@@ -346,18 +335,17 @@ body {
 
 
 .dropdown-content {
-    width: calc(80% + 4px);
-    margin: auto;
+    width: calc(91% + 8px);
     position: relative;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+
     overflow: hidden;
-    background-color: hsla(0, 0%, 5%, 0.40);
+    background-color: rgba(13, 13, 13, 0.4);
     color: #ffffff;
-    margin-top: -4px;
     transition-duration: 0.6s;
     height: 0px;
-    padding-bottom: 0px;
+    top: -20px;
+    margin: auto auto auto 80px;
+    border-radius: 0px 10px 10px 10px;
 }
 
 .dropdown-content-show + div {
@@ -378,6 +366,7 @@ body {
     width: 100%;
     margin-top: 22px;
     margin: auto;
+    padding-top: 30px;
 }
 
 .carousel-inner {
@@ -389,6 +378,7 @@ body {
     box-sizing: border-box;
     height: auto;
     box-shadow: 0 0px 6px 0px #000000;
+    z-index: 2;
 }
 
 .carousel-inner > .item {
@@ -462,15 +452,17 @@ body {
 
 .carousel-indicators {
     position: relative;
-    left: 50%;
     z-index: 1;
-    width: 90%;
+    width: 100%;
     left: 0px;
-    padding-top: 10px;
     margin: auto;
     text-align: center;
     list-style: none;
-
+    background: #282828;
+    border-radius: 0px 0px 40px 40px;
+    display: flex;
+    justify-content: center;
+padding: 20px 0px 10px 0px;
 }
 
 
@@ -480,7 +472,6 @@ body {
     display: inline-block;
     width: 160px;
     height: 90px;
-    margin: 1px;
     text-indent: -999px;
     cursor: pointer;
     background-color: #0009;
@@ -488,7 +479,8 @@ body {
     border: 1px solid #fff;
     background: #ffffff;
     transition: 0.1s;
-    margin-top: 8px;
+    margin: 0px 10px 0px 10px;
+    padding: 0px;
 
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -740,13 +732,12 @@ body {
     height: 110%;
 }
 
-.fadein {
-    
-}
+.fadein {}
+
 .fadein img {
-    position:absolute;
-    left:-65px;
-    top:0;
+    position: absolute;
+    left: -65px;
+    top: 0;
     -webkit-animation-name: fade;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-duration: 60s;
@@ -756,26 +747,437 @@ body {
 }
 
 @-webkit-keyframes fade {
-    0% {opacity: 0;}
-    20% {opacity: 1;}
-    33% {opacity: 1;}
-    53% {opacity: 0;}
-    100% {opacity: 0;}
-}
-@keyframes fade {
-    0% {opacity: 0;}
-    20% {opacity: 1;}
-    33% {opacity: 1;}
-    53% {opacity: 0;}
-    100% {opacity: 0;}
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 1;
+    }
+
+    53% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
-#f1 {
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 1;
+    }
+
+    53% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
+
+#f1 {}
+
 #f2 {
     -webkit-animation-delay: -40s;
 }
+
 #f3 {
     -webkit-animation-delay: -20s;
 }
+
+
+.infobar__title {
+    font-size: 30px;
+    text-align: left;
+    margin-left: 10px;
+    text-decoration: underline;
+
+    display: block;
+    background: rgb(13, 13, 13);
+    background: linear-gradient(90deg, rgba(13, 13, 13, 1) 0%, rgba(13, 13, 13, 0) 50%);
+    position: relative;
+    width: 80%;
+    margin: 10px auto 20px auto;
+    border-left: 8px solid rgb(168, 54, 54);
+    border-radius: 10px
+}
+
+.Content {
+
+    position: relative;
+    height: 500px;
+    padding-bottom: 100px;
+    background-color: rgba(40, 40, 40, 1);
+    margin: 60px 100px 0px 100px;
+    height: -1000px;
+    ;
+    text-align: left;
+    color: #FFF;
+    border: solid $border transparent;
+    /* !importanté */
+    border-radius: 0px 0px 0px 40px;
+
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        margin: inherit;
+        border-radius: inherit;
+        /* !importanté */
+        background: linear-gradient(160deg, #ffffff, rgba(255, 255, 255, 0));
+
+        margin: 0px 0px -2px -2px;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -25px;
+
+        height: 50px;
+        width: 50px;
+
+
+        z-index: 1;
+        border-radius: inherit;
+        /* !importanté */
+        background: white;
+        border-radius: 1220px;
+        margin: 0px 0px -3px -3px;
+    }
+
+
+}
+
+.Content > p {
+    background: red;
+}
+
+.content-title {
+    height: 50px;
+    font-size: 40px;
+    line-height: 48px;
+    padding-left: 30px;
+
+    background: rgb(204, 204, 204);
+    background: linear-gradient(90deg, rgba(204, 204, 204, 1) 0%, rgba(204, 204, 204, 0) 50%);
+}
+
+.feature-con {
+    min-height: 400px;
+    background-color: #282828;
+    margin-bottom: -40px;
+    border-radius: 40px 40px 0px 0px;
+    padding-bottom: 100px;
+    overflow: hidden;
+    text-align: justify;
+
+}
+
+.feature-con:nth-child(odd) {
+    background: #222222;
+}
+
+.feature-con:nth-child(odd) > p {
+    text-align: right;
+    text-align: justify;
+
+}
+
+.feature-con:nth-child(odd) > p > img , .feature-con:nth-child(odd) > p > video  {
+float: left;
+    
+    border-radius: 0px 40px 0px 40px;
+
+}
+
+
+.feature-con__title {
+    height: 46px;
+    display: block;
+    text-align: left;
+    padding-left: 10px;
+
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 24px;
+    margin-left: 100px;
+    border-radius: 100px;
+    width: fit-content;
+    padding-right: 20px;
+    transform-style: preserve-3d;
+
+}
+
+.feature-con__title::before {
+    height: 10px;
+    width: 10px;
+    top: 43.5%;
+    background: white;
+    position: relative;
+    left: -39px;
+    margin-left: 10px;
+    display: block;
+    content: '';
+    border-radius: 20px;
+
+}
+
+.feature-line {
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 100%;
+    left: 50px;
+
+    background: white;
+}
+
+
+
+
+.feature-con__title > img {
+    vertical-align: middle;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.feature-con__line {
+
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: inherit;
+    left: -50px;
+    border-bottom-left-radius: 40px;
+    border-width: 0px 0px 2px 2px;
+    border-color: white;
+    border-style: solid;
+    margin-top: -32px;
+    transform: translateZ(-1px);
+}
+
+/*.feature-con__line::before {
+    
+    position: absolute;
+    display: block;
+    width: 620px;
+    height: 600px;
+    left: 40px;
+    border-bottom-left-radius: 40px;
+    border-width: 0px 0px 4px 4px;
+    border-color: white;
+    border-style: solid;
+    margin-top: -800px;
+}*/
+
+
+.feature-panel {
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.feature-con > p {
+    display: inline-flex;
+    height: auto;
+    margin: 20px 100px 20px 100px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    text-overflow: inherit;
+    text-align: start;
+}
+
+.feature-con > p > img,
+.feature-con > p > video {
+    display: block;
+    border-radius: 40px 0px 40px 0px;
+    margin: 0px 20px 0px 20px;
+}
+
+.projectflex {
+    display: flex;
+    padding: 16px 16px 16px 16px;
+    margin: 10px 40px 10px 40px;
+    text-align: left;
+}
+
+.projectflex > div {
+    width: 1200px;
+    margin: auto;
+}
+
+
+.project-details-item {
+    padding: 10px;
+    margin: 10px;
+    overflow: hidden;
+
+}
+
+.shadowbackdrop {
+    background: rgba(0, 0, 0, 0.44);
+    border-radius: 20px;
+    height: fit-content;
+}
+
+.project-details {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.project-tools {
+    margin: 0px 8px 8px 8px;
+    display: inline-block;
+}
+
+.project-tools > p {
+    margin: auto;
+    padding: 4px 8px 4px 8px;
+    background: rgb(24, 24, 24);
+    border-radius: 999px;
+}
+
+.project-details-item__title {
+    font-size: 22px;
+    margin-bottom: 4px;
+    margin-top: 6px;
+}
+
+.project-tools > img {
+    height: 64px;
+    margin-bottom: 4px;
+}
+
+
+
+.project-details-table {
+    font-size: 18px;
+    margin: 1px -2px -2px -2px;
+    border-spacing: 0px;
+}
+
+.project-details-table > tbody > tr {
+    padding: 1230px;
+    background: red;
+    height: 40px;
+}
+
+.project-details-table > tbody > tr:nth-child(odd) {
+    background: #2f2f2f;
+
+}
+
+.project-details-table > tbody > tr:nth-child(even) {
+    background: #555555;
+
+}
+
+.project-details-table > tbody > tr > td:nth-child(odd) {
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+    width: auto;
+    padding-left: 30px;
+    /*left*/
+
+}
+
+.project-details-table > tbody > tr > td:nth-child(even) {
+    text-align: left;
+    padding-left: 10px;
+    width: auto;
+    padding-right: 30px;
+
+    /*right*/
+}
+
+.project-textbox {
+    display: flex;
+    margin: 10px 40px 10px 40px;
+    padding: 12px;
+}
+
+.project-textbox__bulletimg {
+    float: left;
+    height: 160px;
+    border-radius: 10px;
+    margin-right: 12px;
+}
+
+
+
+
+.keyfeature-text > div {
+    position: absolute;
+    display: block;
+    left: 112px;
+    margin-top: -48px;
+}
+
+.projectflex-item {
+    display: flex;
+    padding: 18px;
+}
+
+.dropdown__plus {
+
+    
+        display: block;
+    content: '';
+    width: 2px;
+    height: 18px;
+    background: white;
+    position: absolute;
+    right: 16px;
+    top: 8px;
+    border-radius: 20px;
+        transition: 0.3s;
+}
+
+
+.dropdown__plus::before {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    right: -8px;
+    top: 8px;
+    border-radius: 20px;
+    content: '';
+
+    
+
+}
+
+
+.dropdown-content-show > .dropdown__plus {
+  transform: rotate(45deg);
+
+}
+
 

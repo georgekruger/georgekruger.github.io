@@ -36,7 +36,8 @@ a {
     user-select: none;
     z-index: 10;
     left: auto;
-
+    top: 0px;
+    backdrop-filter: blur(10px);
 }
 
 .navbar-name {
@@ -52,17 +53,17 @@ a {
     transition: 0.5s;
     display: inline-block;
     height: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
     vertical-align: top;
     text-align: center;
     line-height: 50px;
     font-size: 16px;
     font-weight: lighter;
     overflow: hidden;
-    margin: 0px -12px 0px -12px;
+    margin: 0px -8px 0px -8px;
 
-    clip-path: polygon(20px 0%, 100% 0%, calc(100% - 20px) 100%, 0% 100%);
+    clip-path: polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
 
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -205,3 +206,79 @@ navbar-item-sidepanel {
 }
 
 
+
+.hover-animatedoutline::before  {
+    background: rgb(0, 195, 15);
+    display:block;
+height: 123px;
+    position:absolute;
+
+        height: 100px;
+        top: 0px;
+        left: 50%;
+right: 0px;    
+  width: 100px; /* Need a specific value to work */
+
+}
+
+
+.hover-animatedoutline:hover:before  {
+content: '';
+    background: green;
+width: inherit;
+    height: 100px;
+    position: absolute;
+
+    
+    
+    
+}
+
+
+.ball:hover.ball:before {
+content: '';
+
+    position: absolute;
+    
+        padding: 0px;
+left: -8px;
+border: 8px solid white;
+
+}
+.ball:before {
+    
+content: '';
+width: inherit;
+    height: inherit;
+  position: absolute;
+transition: 0.3s;
+    border: 0px solid rgba(255, 255, 255, 0);
+        padding: 20px;
+    
+    border-radius: 590px;
+
+    left: -16px;
+        top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.ball2 {
+    width: 480px;
+    height: 60px;
+    background: #630eb9;
+    margin: auto;
+    border-radius: 50px;
+    font-size: 24px;
+    line-height: 60px;
+    text-align: right;
+    position: relative;
+    transition: 0.3s;
+margin: 20px 0px 20px 0px;
+
+}
+
+.ball2:hover {
+        background: #7b19de;
+
+}

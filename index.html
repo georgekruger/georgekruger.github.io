@@ -33,39 +33,9 @@
         <a class="navbar-link" href="/index.html#CV"><img src="/Base_Icons/CV_Icon.png" class="navbar-item-icon" />CV</a>
         <a class="navbar-link" href="/index.html#Contact"><img src="/Base_Icons/Contact_Icon.png" class="navbar-item-icon" height="14px" />Contact</a>
 
-        <!--
-        <a class="navbar-sidepanel-shadow" id="Navbar-Panel-Shadow" href="javascript:void(0)" onclick="ClosePanel()"></a>
--->
-
     </div>
 
-    <!--Side Panel-->
 
-    <!--
-    <a href="javascript:void(0)" class="navbar-item-menu-icon" onclick="TogglePanel()"><img width="80%" src="/Base_Icons/Menu_Icon.png"></a>
--->
-
-    <div id="SidePanel" class="navbar-sidepanel navbar-sidepanel-closed">
-
-
-        <a style="margin-top: 60px;" href="/index.html#Home">
-            <div class="Navbar-link-sidepanel"><img src="/Base_Icons/Home_Icon.png" class="navbar-item-icon" height="14px" />Home</div>
-        </a>
-        <a href="/index.html#WorkProjects">
-            <div class="Navbar-link-sidepanel"><img src="/Base_Icons/WorkProjects_Icon.png" class="navbar-item-icon" height="14px" />Work Projects</div>
-        </a>
-        <a href="/index.html#PersonalProjects">
-            <div class="Navbar-link-sidepanel"><img src="/Base_Icons/PersonalProjects_Icon.png" class="navbar-item-icon" height="14px" />Personal Projects</div>
-        </a>
-        <a href="/index.html#CV">
-            <div class="Navbar-link-sidepanel"><img src="/Base_Icons/CV_Icon.png" class="navbar-item-icon" height="14px" />CV</div>
-        </a>
-        <a href="/index.html#Contact">
-            <div class="Navbar-link-sidepanel"><img src="/Base_Icons/Contact_Icon.png" class="navbar-item-icon" height="14px" />Contact</div>
-        </a>
-
-
-    </div>
 
     <!--Video Showcase-->
 
@@ -75,50 +45,6 @@
             <video muted="" id="BotVid"></video>
             <video autoplay="" muted="" id="TopVid"></video>
 
-            <script type="text/javascript">
-                var BotVidPlayer = document.getElementById("BotVid");
-                var TopVidPlayer = document.getElementById("TopVid");
-
-                const Videos = ["/Showcase_Videos/Mantair.webm", "/Index_Content/Video1.webm",  "/Showcase_Videos/SoTF_Video.webm"]
-
-                var CurrentVid = 1;
-                var bool = false;
-
-                TopVidPlayer.src = Videos[0]
-                TopVidPlayer.addEventListener('ended', VideoEnd, false);
-                BotVidPlayer.addEventListener('ended', VideoEnd, false);
-
-                function VideoEnd(e) {
-                    bool = false;
-                }
-
-                TopVidPlayer.ontimeupdate = (event) => {
-                    if (TopVidPlayer.currentTime > TopVidPlayer.duration - 1 && bool == false) {
-                        TopVidPlayer.style.opacity = "0";
-                        BotVidPlayer.src = Videos[CurrentVid];
-                        BotVidPlayer.play();
-                        CurrentVid++;
-                        bool = true;
-                        if (CurrentVid >= Videos.length) {
-                            CurrentVid = 0;
-                        }
-                    }
-
-                    BotVidPlayer.ontimeupdate = (event) => {
-                        if (BotVidPlayer.currentTime > BotVidPlayer.duration - 1 && bool == false) {
-                            TopVidPlayer.style.opacity = "1";
-                            TopVidPlayer.src = Videos[CurrentVid];
-                            TopVidPlayer.play();
-                            CurrentVid++;
-                            bool = true;
-                            if (CurrentVid >= Videos.length) {
-                                CurrentVid = 0;
-                            }
-                        }
-                    }
-
-                };
-            </script>
 
 
         </div>
@@ -126,7 +52,50 @@
         <div class="video-con-object-fade"></div>
 -->
     </div>
+    <script type="text/javascript">
+        var BotVidPlayer = document.getElementById("BotVid");
+        var TopVidPlayer = document.getElementById("TopVid");
 
+        const Videos = ["/Showcase_Videos/Mantair.webm", "/Index_Content/Video1.webm", "/Showcase_Videos/SoTF_Video.webm"]
+
+        var CurrentVid = 1;
+        var bool = false;
+
+        TopVidPlayer.src = Videos[0]
+        TopVidPlayer.addEventListener('ended', VideoEnd, false);
+        BotVidPlayer.addEventListener('ended', VideoEnd, false);
+
+        function VideoEnd(e) {
+            bool = false;
+        }
+
+        TopVidPlayer.ontimeupdate = (event) => {
+            if (TopVidPlayer.currentTime > TopVidPlayer.duration - 1 && bool == false) {
+                TopVidPlayer.style.opacity = "0";
+                BotVidPlayer.src = Videos[CurrentVid];
+                BotVidPlayer.play();
+                CurrentVid++;
+                bool = true;
+                if (CurrentVid >= Videos.length) {
+                    CurrentVid = 0;
+                }
+            }
+
+            BotVidPlayer.ontimeupdate = (event) => {
+                if (BotVidPlayer.currentTime > BotVidPlayer.duration - 1 && bool == false) {
+                    TopVidPlayer.style.opacity = "1";
+                    TopVidPlayer.src = Videos[CurrentVid];
+                    TopVidPlayer.play();
+                    CurrentVid++;
+                    bool = true;
+                    if (CurrentVid >= Videos.length) {
+                        CurrentVid = 0;
+                    }
+                }
+            }
+
+        };
+    </script>
     <script src="/Plugins/rellax.min.js"></script>
     <script>
         var rellax = new Rellax();
@@ -138,45 +107,63 @@
     <div class="about-me">
         <div class="about-me-con">
 
-            <!--
-            <img class="about-me-picture" width="300px" src="Base_Icons/Placeholder_Icon.png">
--->
 
 
-            <div class="about-me-con-text"><span class="about-me-title">About Me</span>
-                <span class="about-me-text">
-                    <p>
-                        Hello, I’m George, an aspiring gameplay programmer and designer from the United Kingdom.
-                        I have been self-teaching coding since the age of 10, as well as software such as Blender,
-                        Photoshop, Vegas Pro and website coding, as well as creating this website.
-                        I am currently attending University of Portsmouth studying BSc (HONS) Computer Games Technology.
-                        I am currently on my third and final year.
-                    </p>
-                    <p>
-                        I am always working on gameplay concepts and projects to help broaden my knowledge and to continue
-                        to learn new things and overcoming any challenges, as I am fascinated in creating new and interesting
-                        gameplay concepts and mechanics. Any of my professional and personal projects can be viewed below.
-                    </p>
+            <img class="about-me-picture" src="Base_Icons/Placeholder_Icon.png">
+
+
+
+
+            <div class="about-me-con-text">
+                <span class="about-me-title">George Kruger<br>
+                    <div style="font-size: 20px;">Game Programmer</div>
                 </span>
+                <div class="about-me-text">
+                    <p>
+                        I'm George, a recent graduate from the University of Portsmouth, where I earned a degree in Computer Games Technology. I'm currently residing in London.
+                        I've been self-teaching coding and various software’s since the age of 10 and have honed my skills in various software applications such as Blender, Photoshop, Vegas Pro, and front-end website development.
+                    </p>
+                    <p>
+                        I've always been deeply passionate about the gaming industry and fascinated by every aspect of the game development process, with a strong desire to be actively involved in this dynamic field. Initially seeking a career in 3D modelling for games, before rediscovering my passion for coding.
+                    </p>
+                    <p>
+                        I am enthusiastic about constantly explore new gameplay designs, innovations, and implementations, with a strong passion for experimenting with gameplay concepts and mechanics. I'm constantly working to expand my knowledge and acquire new skills to enhance the quality and efficiency of my craft.
+                    </p>
+                </div>
             </div>
-            <!--            <div style="background: #fad201; color: black; border-radius: 20px;text-align: center;padding-bottom: 2px">
-                <h1 style="margin-bottom: -30px;">Don't mind the dust</h1><br>
-                <img src="Base_Icons/Hammer_Icon.png" style="float: left; width: 90px; margin-left: 20px;margin-top: -16px">
-                <h3>
-                    This site is still a work in progress and may contain grammatical errors or missplaced elements,
-                    the majority of content and information should be available.
-                </h3>
-            </div>-->
+
+
         </div>
     </div>
 
-    <!---------------------------------------Work Projects--------------------------------------->
+    <!--Work Projects-->
     <div class="Banner" id="Projects">
         <div class="Banner-titletext">Featured Projects</div>
     </div>
     <div class="panel">
 
         <div class="project-con-panel" id="ProjectSlide" style="">
+            <!--Malltopia-->
+            <a href="/Projects/Malltopia/Malltopia.html" class="project-con-cell" onmouseover="PlayVideo(true,this)" onmouseleave="PlayVideo(false,this)">
+                <div class="project-con-box">
+                    <!--Projact BackGround-->
+                    <img class="project-con-box-image" src="/Projects/Malltopia/Malltopia_Tile.png">
+                    <!--Projact Video-->
+                    <video muted loop controls class="project-con-box-video">
+                        <source src="/Projects/Malltopia/Malltopia_TileVideo.mp4" type="video/mp4">
+                    </video>
+                    <!--Projact Logo-->
+                    <img class="project-con-box-title" src="/Projects/Malltopia/Malltopia_Logo.png">
+                    <!--Projact Tags-->
+                    <div class="project-con-tagcon">
+                        <project-tag class="university-tag">University</project-tag>
+                        <div class="extra-tag" style="background: green">3<sup>rd</sup> Year</div>
+                        <project-tag class="engine-tag">Unity</project-tag>
+                        <project-tag class="team-tag">Team Project</project-tag>
+                    </div>
+                </div>
+            </a>
+
 
             <!--Mantari-->
             <a href="/Projects/Mantari/Mantari.html" class="project-con-cell" onmouseover="PlayVideo(true,this)" onmouseleave="PlayVideo(false,this)">
@@ -247,163 +234,92 @@
         </div>
     </div>
 
-    <!--
-    <div class="Banner" id="Other-Projects">
-        <div class="Banner-titletext">Other Projects</div>
-    </div>
-<div class="otherproject-con-panel">   
-    
-    <div class="otherproject-con">asdasdahisdas</div>
-    <div class="otherproject-con">asdasdahisdas</div>
-</div>
-    
-    
-    -->
 
 
     <!--CV -->
     <div class="Banner" id="CV">
         <div class="Banner-titletext">CV</div>
-        <div class="Banner-smalltext">Hover for more information</div>
     </div>
 
     <div class="panel">
 
-        <a href="/Index_Content/George-Kruger-CV.pdf" class="cv-printerver" target="_blank">
-            <div style="float: left;margin-top: 10px;margin-left: 16px;"><img src="Base_Icons/CV_Icon.png" height="30px"></div>
-            <div style="position: absolute;top: 12px;left: 60px">PDF Version</div>
-        </a>
 
         <div class="cv-sideline"></div>
+
+        <!--Skills-->
         <div class="cv-bubble-panel">
 
-            <div class="cv-infopanel-title" style="margin-left: 8px;">Skills<div class="cv-linearrow"></div>
+            <div class="cv-infopanel-title" style="margin-left: -957.5px;">Skills<div class="cv-linearrow"></div>
             </div>
 
-            <!--Update in 2023-->
+            <a href="/Index_Content/George-Kruger-CV.pdf" class="cv-printerver ball" target="_blank">
+                <div style="background: #7846ff;height: 56px; width: 56px;border-radius: 999px;line-height: 3.7;margin-top: -3px;margin-left: -3px;"><img src="Base_Icons/CV_Icon.png" height="30px"></div>
+                <div style="position: absolute;top: 12px;left: 60px; border-bottom: 2px dotted white">Printer Version</div>
+            </a>
+
+
             <div class="cv-bubble-con">
 
                 <div class="cv-bubble-title"><img src="Base_Icons/Code_Icon.png">Code</div>
-                <div class="cv-bubble">C++
-                    <div class="cv-bubble-hover">
-                        <div><img src="Base_Icons/Clock_Icon.png">3 years of experience</div>
-                    </div>
-                </div>
-                <div class="cv-bubble">C#
-                    <div class="cv-bubble-hover">
-                        <div><img src="Base_Icons/Clock_Icon.png">6 years of experience</div>
-                    </div>
-                </div>
-                <div class="cv-bubble">UE4 Blueprints
-                    <div class="cv-bubble-hover">
-                        <div><img src="Base_Icons/Clock_Icon.png">3 years of experience</div>
-                    </div>
-                </div>
+                <div class="cv-bubble">C# </div>
+                <div class="cv-bubble">C++ </div>
+                <div class="cv-bubble">UE4 Blueprints </div>
             </div>
 
             <div class="cv-bubble-con cv-bubble-style-gameengines" style="border: 1px solid #00887d">
-                <div class="cv-bubble-title"><img src="Base_Icons/Cog_Icon.png">Game Engines/APIs</div>
-                <div class="cv-bubble">Unity
-                    <div class="cv-bubble-hover">
-                        <div><img src="Base_Icons/Clock_Icon.png">6 years of experience</div>
-                    </div>
-                </div>
-                <div class="cv-bubble">Unreal 4
-                    <div class="cv-bubble-hover">
-                        <div><img src="Base_Icons/Clock_Icon.png">3 years of experience</div>
-                    </div>
-                </div>
-                <div class="cv-bubble">GameMono
-                    <div class="cv-bubble-hover">
-                        <div><img src="Base_Icons/Clock_Icon.png"> &lt;1 year of experience</div>
-                    </div>
-                </div>
+                <div class="cv-bubble-title"><img src="Base_Icons/Cog_Icon.png">Game Engines / Framework</div>
+                <div class="cv-bubble">Unity </div>
+                <div class="cv-bubble">Unreal Engine 4</div>
+                <div class="cv-bubble">XNA</div>
             </div>
-            <div class="cv-bubble-con cv-bubble-style-web" style="border: 1px solid #8d139d">
-                <div class="cv-bubble-title"><img src="Base_Icons/Web_Icon.png">Web</div>
-                <div class="cv-bubble">HTML
-                    <div class="cv-bubble-hover">
-                        <div><img src="Base_Icons/Clock_Icon.png">9 years of experience</div>
-                    </div>
-                </div>
-                <div class="cv-bubble">CSS
-                    <div class="cv-bubble-hover">
-                        <div><img src="Base_Icons/Clock_Icon.png">9 years of experience</div>
-                    </div>
-                </div>
-                <div class="cv-bubble">JavaScript
-                    <div class="cv-bubble-hover">
-                        <div><img src="Base_Icons/Clock_Icon.png">5 years of experience</div>
-                    </div>
-                </div>
+
+            <div class="cv-bubble-con cv-bubble-style__productivity" style="border: 1px solid #0e4304; float:left">
+                <div class="cv-bubble-title"><img src="Base_Icons/Office_Logo.png">Productivity</div>
+                <div class="cv-bubble">Trello</div>
+                <div class="cv-bubble">Jira</div>
+                <div class="cv-bubble">Confluence</div>
+                <div class="cv-bubble">Mrio</div>
+                <div class="cv-bubble">Teams</div>
             </div>
+
             <div class="cv-bubble-con cv-bubble-style-3d" style="border: 1px solid #007620">
                 <div class="cv-bubble-title"><img src="Base_Icons/Cube_Icon.png">3D Modelling</div>
-                <div class="cv-bubble">Blender
-                    <div class="cv-bubble-hover">
-                        <div><img src="Base_Icons/Clock_Icon.png">10 years of experience</div>
-                    </div>
-                </div>
-                <div class="cv-bubble">Z-Brush
-                    <div class="cv-bubble-hover">
-                        <div><img src="Base_Icons/Clock_Icon.png">3 years of experience</div>
-                    </div>
-                </div>
+                <div class="cv-bubble">Blender </div>
+                <div class="cv-bubble">Z-Brush </div>
             </div>
+
+
+            <div class="cv-bubble-con cv-bubble-style__source" style="border: 1px solid #680fe2; float:left">
+                <div class="cv-bubble-title"><img src="Base_Icons/git_icon.png">Source Control</div>
+                <div class="cv-bubble">Git</div>
+                <div class="cv-bubble">GitHub </div>
+                <div class="cv-bubble">Perforce</div>
+                <div class="cv-bubble">Git Kraken </div>
+            </div>
+
+            <div class="cv-bubble-con cv-bubble-style-web" style="border: 1px solid #8d139d">
+                <div class="cv-bubble-title"><img src="Base_Icons/Web_Icon.png">Web</div>
+                <div class="cv-bubble">HTML </div>
+                <div class="cv-bubble">CSS </div>
+                <div class="cv-bubble">JavaScript </div>
+            </div>
+
             <div class="cv-bubble-con cv-bubble-style-office" style="border: 1px solid #da3b01; float:left">
                 <div class="cv-bubble-title"><img src="Base_Icons/Office_Logo.png">Office</div>
-                <div class="cv-bubble">Word
-                    <div class="cv-bubble-hover">
-                        <div><img src="Base_Icons/Clock_Icon.png">11 year of experience</div>
-                    </div>
-                </div>
-                <div class="cv-bubble">PowerPoint
-                    <div class="cv-bubble-hover">
-                        <div><img src="Base_Icons/Clock_Icon.png">11 years of experience</div>
-                    </div>
-                </div>
-                <div class="cv-bubble">Excel
-                    <div class="cv-bubble-hover">
-                        <div><img src="Base_Icons/Clock_Icon.png">7 years of experience</div>
-                    </div>
-                </div>
-                <div class="cv-bubble">Outlook
-                    <div class="cv-bubble-hover">
-                        <div><img src="Base_Icons/Clock_Icon.png">7 years of experience</div>
-                    </div>
-                </div>
+                <div class="cv-bubble">Word </div>
+                <div class="cv-bubble">PowerPoint </div>
+                <div class="cv-bubble">Excel </div>
+                <div class="cv-bubble">Outlook </div>
             </div>
 
-
-
-            <div class="cv-bubble-con cv-bubble-style-software" style="border: 1px solid #6c6400">
-                <div class="cv-bubble-title"><img src="Base_Icons/Box_Icon3.png">Software</div>
-                <div class="cv-bubble">Photoshop
-                    <div class="cv-bubble-hover">
-                        <div><img src="Base_Icons/Clock_Icon.png">10 years of experience</div>
-                    </div>
-                </div>
-                <div class="cv-bubble">Vegas Pro
-                    <div class="cv-bubble-hover">
-                        <div><img src="Base_Icons/Clock_Icon.png">8 years of experience</div>
-                    </div>
-                </div>
-                <div class="cv-bubble">Premiere Pro
-                    <div class="cv-bubble-hover">
-                        <div><img src="Base_Icons/Clock_Icon.png">5 years of experience</div>
-                    </div>
-                </div>
+            <div class="cv-bubble-con cv-bubble-style-software" style="border: 1px solid #936110">
+                <div class="cv-bubble-title"><img src="Base_Icons/other_icon.png">Other</div>
+                <div class="cv-bubble">Photoshop </div>
+                <div class="cv-bubble">Vegas Pro </div>
                 <br>
-                <div class="cv-bubble">Visual Studio
-                    <div class="cv-bubble-hover">
-                        <div><img src="Base_Icons/Clock_Icon.png">6 years of experience</div>
-                    </div>
-                </div>
-                <div class="cv-bubble">Git / Git Kraken
-                    <div class="cv-bubble-hover">
-                        <div><img src="Base_Icons/Clock_Icon.png">2 years of experience</div>
-                    </div>
-                </div>
+                <div class="cv-bubble">Premiere Pro </div>
+                <div class="cv-bubble">Visual Studio </div>
+
             </div>
 
         </div>
@@ -411,6 +327,40 @@
 
         <div class="cv-infopanel-base">
 
+            <!--Achievements-->
+            <div class="cv-infopanel">
+                <div class="cv-infopanel-title">Achievements<div class="cv-linearrow"></div>
+                </div>
+                <div>
+
+                    <div class="cv-achievements-cell">
+                        <div class="cv-education-logo" style="float: left; width: 144px; height: 144px"><img src="/Index_Content/TIGA_EductaionAwards_logos2023_dark.png" height="100%"> </div>
+
+                        <div style="float: right; width: 80%; font-size: 18px">
+                            <h2 style="font-size: 20px;"> Creative Assembly Best Student Game 2023 Winner</h2>
+                            <p>
+                                Malltopia won the Creative Assembly Best Student Game for the TIGA UK games education awards 2023, with a short list totaling 13 nominations</p>
+                        </div>
+
+                    </div>
+
+                    <div class="cv-achievements__devider"></div>
+
+                    <div class="cv-achievements-cell " style="margin-bottom: 0px">
+                        <div class="cv-education-logo" style="float: left; width: 144px; height: 144px"><img src="/Index_Content/London_Youth_Games.png" height="100%"> </div>
+
+                        <div style="float: right; width: 80%; font-size: 18px">
+                            <h2 style="font-size: 20px;">London Youth Games 12th out 32 boroughs 2011</h2>
+                            <p>
+                                I was selected and competed for the London borough of Barnet in the London Youth Games at the Crystal Palace National Sports Centre for the indoor rowing competition, placeing 12th out of the 32 London boroughs.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Education-->
             <div class="cv-infopanel">
                 <div class="cv-infopanel-title">Education<div class="cv-linearrow"></div>
                 </div>
@@ -419,26 +369,49 @@
                     <div class="cv-education-logo"><img src="/Index_Content/university-of-portsmouth-logo.jpg" height="100%;"> </div>
                     <div class="cv-education-textcon">
                         <div class="cv-education-title">University of Portsmouth</div>
-                        <div class="cv-education-date">2020 - Present</div>
+                        <div class="cv-education-date">2020 - 2023</div>
                         <div class="cv-education-desc">BSc (HONS) Computer Games Technology</div>
 
                         <p style="text-align: left; font-size: 14px">Produced 2 game projects as a programmer within a team of varying roles, using the unity engine. Contributions include spline systems, player controllers, third-person combat and ability systems, ability upgrade and management system. Our project “Mentari” ranked 1st out of 13 entries against other student teams. Currently working on console development kits, getting code to run and profiling it.
                         </p>
                         <table class="cv-education-gradetable">
                             <tr>
+                                <td>Year 3</td>
+                            </tr>
+                            <tr>
+                                <td>REAL-TIME INTERACTIVE GROUP PROJECT: STAGE ONE</td>
+                                <td>First-Class</td>
+                                <td>REAL-TIME INTERACTIVE GROUP PROJECT: STAGE TWO</td>
+                                <td>First-Class</td>
+                            </tr>
+                            <tr>
+                                <td>PROGRAMMING AI FOR GAMES </td>
+                                <td>Third-Class</td>
+                                <td>PSYCHOLOGICAL THEORY FOR GAME DESIGNERS</td>
+                                <td>Third-Class</td>
+                            </tr>
+                            <tr>
+                                <td> FINAL YEAR PROJECT</td>
+                                <td>Third-Class</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <table class="cv-education-gradetable">
+                            <tr>
                                 <td>Year 2</td>
                             </tr>
                             <tr>
                                 <td>GAMEPLAY PROGRAMMING</td>
-                                <td>First</td>
+                                <td>First-Class</td>
                                 <td>STUDENT ENTERPRISE FOR GAMES</td>
-                                <td>Upper-Second</td>
+                                <td>Upper Second-Class</td>
                             </tr>
                             <tr>
                                 <td>PROGRAM CONSOLES</td>
-                                <td>Lower-Second</td>
+                                <td>Lower Second-Class</td>
                                 <td>PROJECT INITIATION AND CAREER MANAGEMENT</td>
-                                <td>Lower-Second</td>
+                                <td>Lower Second-Class</td>
                             </tr>
                         </table>
                         <table class="cv-education-gradetable">
@@ -447,15 +420,15 @@
                             </tr>
                             <tr>
                                 <td>FOUNDATION IN 3D MODELLING</td>
-                                <td>First</td>
+                                <td>First-Class</td>
                                 <td>DEFINE GAMES</td>
-                                <td>First</td>
+                                <td>First-Class</td>
                             </tr>
                             <tr>
                                 <td>INTRODUCTION TO IMAGE CREATION</td>
-                                <td>Lower-Second</td>
+                                <td>Lower Second-Class</td>
                                 <td>TOOLS FOR GAMES AND ANIMATION</td>
-                                <td>Lower-Second</td>
+                                <td>Lower-Second-Class</td>
                             </tr>
 
                         </table>
@@ -510,7 +483,7 @@
                 </div>
             </div>
 
-
+            <!--Professional Experience-->
             <div class="cv-infopanel">
                 <div class="cv-infopanel-title">Professional Experience<div class="cv-linearrow"></div>
                 </div>
@@ -547,32 +520,50 @@
                 </div>
 
             </div>
-            <div class="cv-infopanel">
-                <div class="cv-infopanel-title">Achievements<div class="cv-linearrow"></div>
-                </div>
 
-                <div class="cv-education-logo" style="float: left; width: 140px; height: 140px;"><img src="/Index_Content/London_Youth_Games.png" height="100%"> </div>
-                <div style="float: right; width: 80%; font-size: 22px">I was selected and competed for the London borough of Barnet in the London Youth Games at the Crystal Palace National Sports Centre for the indoor rowing competition, placeing 12th out of the 32 London boroughs.</div>
-
-            </div>
 
 
         </div>
 
 
     </div>
-    <div class="Banner">Contact Me</div>
+    <!--    <div class="Banner">Contact Me</div>-->
     <div class="contact-panel" id="Contact">
 
+
+        <div class="contact-flex" style="display: flex;">
+            <div style="font-size: 30px; margin-right: 80px;">Get in touch:</div>
+
+
+
+
+
+            <div style="display: flex;     flex-direction: column;padding: 20px 30px 20px 30px;    background: #222222;
+    border-radius: 20px;">
+
+                <a class="ball2 ball" href="mailto:georgekruger@hotmail.co.uk">georgekruger@hotmail.co.uk<img class="Contact-Me-link-Icon" src="Base_Icons/Contact_Icon.png"></a>
+                <a class="ball2 ball" href="https://www.linkedin.com/in/georgekruger/">Linkedin<img src="Base_Icons/External_Icon.png" height="14px" style="position: absolute;top: 5px;"><img class="Contact-Me-link-Icon" src="Base_Icons/linkedin_Icon.png"></a>
+
+            </div>
+        </div>
+
+
+        <!--
         <div class="Contact-Me-Con" style="font-size: 30px;">
             Feel free to get in contact:
 
         </div>
         <div class="Contact-Me-Con">
+
             <a class="Contact-Me-link" href="mailto:georgekruger@hotmail.co.uk" style="font-size: 26px;">georgekruger@hotmail.co.uk<img class="Contact-Me-link-Icon" src="Base_Icons/Contact_Icon.png"></a>
 
-            <a class="Contact-Me-link" href="https://www.linkedin.com/in/georgekruger/">Linkedin<img class="Contact-Me-link-Icon" src="Base_Icons/linkedin_Icon.png"></a>
+
+
+            <a class="Contact-Me-link hover-animatedoutline" href="https://www.linkedin.com/in/georgekruger/">Linkedin<img class="Contact-Me-link-Icon" src="Base_Icons/linkedin_Icon.png">
+            </a>
         </div>
+-->
+
 
     </div>
 
