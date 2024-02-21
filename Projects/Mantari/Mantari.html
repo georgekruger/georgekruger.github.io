@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="/CSS/BaseStyle.css?Version=1">
     <link rel="stylesheet" href="/CSS/ProjectPageStyle.css?Version=1">
+    
+
 
     <script src="/JavaScript/Common.js"></script>
 
@@ -24,14 +26,11 @@
 
     <style>
         body {
-            background: rgb(48, 0, 3);
-            background: -moz-linear-gradient(160deg, rgba(48, 0, 3, 1) 0%, rgba(60, 11, 58, 1) 30%, rgba(9, 0, 29, 1) 70%, rgba(2, 13, 95, 1) 100%);
-            background: -webkit-linear-gradient(160deg, rgba(48, 0, 3, 1) 0%, rgba(60, 11, 58, 1) 30%, rgba(9, 0, 29, 1) 70%, rgba(2, 13, 95, 1) 100%);
-            background: linear-gradient(160deg, rgba(48, 0, 3, 1) 0%, rgba(60, 11, 58, 1) 30%, rgba(9, 0, 29, 1) 70%, rgba(2, 13, 95, 1) 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#300003", endColorstr="#020d5f", GradientType=1);
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-
+background: rgb(39,9,71);
+background: -moz-linear-gradient(170deg, rgba(39,9,71,1) 0%, rgba(31,10,75,1) 50%, rgba(12,6,56,1) 78%, rgba(2,5,19,1) 100%);
+background: -webkit-linear-gradient(170deg, rgba(39,9,71,1) 0%, rgba(31,10,75,1) 50%, rgba(12,6,56,1) 78%, rgba(2,5,19,1) 100%);
+background: linear-gradient(170deg, rgba(39,9,71,1) 0%, rgba(31,10,75,1) 50%, rgba(12,6,56,1) 78%, rgba(2,5,19,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#270947",endColorstr="#020513",GradientType=1);
         }
     </style>
 
@@ -50,11 +49,14 @@
 
 
     <div class="banner-con">
-        <img class="banner-con-object rellax" data-rellax-speed="-6" src="Banner.png">
-        <div class="banner-con-object-fade"></div>
+        <div style="width: 100%; height: 100%;">
+            <img class="rellax" data-rellax-speed="-2"  src="Banner.png" style="object-fit: cover; width: 100%;height: 100%;">
+        </div>
+        <div style="font-family: TitleFont" class="bodyheader__title">MallTopia</div>
+
+
+
     </div>
-
-
 
     <script src="/Plugins/rellax.min.js"></script>
     <script>
@@ -72,44 +74,85 @@
             }
         </style>
         <div style="font-family: TitleFont" class="project-title">MANTARI</div>
-        <div class="project-detail">
-            <div class="project-detail-title">Project Details</div>
+        <div class="project-details">
 
-            <table style="margin: auto">
-                <tr>
-                    <td class="data-left">Project Type</td>
-                    <td class="data-right">University/Team Project</td>
-                </tr>
-                <tr>
-                    <td class="data-left">Project Role(s)</td>
-                    <td class="data-right">Lead Programmer</td>
-                </tr>
-                <tr>
-                    <td class="data-left">Duriation</td>
-                    <td class="data-right">2 Weeks</td>
-                </tr>
-                <tr>
-                    <td class="data-left">Software(s)</td>
-                    <td class="data-right">Unity | C#</td>
-                </tr>
-            </table>
-            <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button"><img src="/Base_Icons/Itch_Icon.png">
-                <div><img src="/Base_Icons/Itch_Text.png" /></div>
-            </a>
+            <div class="project-details-item shadowbackdrop" style="padding: -0px;">
+                <div class="project-details-item__title">Project Details</div>
+                <table class="project-details-table">
+                    <tr>
+                        <td>Project Type</td>
+                        <td>University Team Project</td>
+                    </tr>
+                    <tr>
+                        <td>Project Role</td>
+                        <td>Lead Programmer</td>
+                    </tr>
+                    <tr>
+                        <td>Duriation</td>
+                        <td>2 Weeks</td>
+                    </tr>
 
+                </table>
+            </div>
+
+            <div class="project-details-item shadowbackdrop">
+                <div class="project-details-item__title">Available at</div>
+                <div>
+                    <a href="https://georgekruger.itch.io/mantari" class="link-button itch-button"><img src="/Base_Icons/Itch_Icon.png">
+                        <div><img src="/Base_Icons/Itch_Text.png" /></div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-details-item shadowbackdrop">
+                <div class="project-details-item__title">Tools Used</div>
+                <div>
+                    <div class="project-tools"><img src="/Base_Icons/unity_icon.png">
+                        <p>Unity</p>
+                    </div>
+                    <div class="project-tools"><img src="/Base_Icons/trello_icon.png">
+                        <p>Trello</p>
+                    </div>
+                    <div class="project-tools"><img src="/Base_Icons/github_icon.png">
+                        <p>GitHub</p>
+                    </div>
+                    <div class="project-tools"><img src="/Base_Icons/visualstudio_icon.png">
+                        <p>Visual Studio</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="projectflex shadowbackdrop" style="margin-bottom: 36px;text-overflow: clip;padding: 14px 16px 14px 16px;">
+            <div style="margin: auto">
+                <iframe style="border-radius: 20px;margin-bottom: -4px " width="854" height="480" src="https://www.youtube.com/embed/wdECIxZsLgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div style="padding-left: 16px;height: 484px;">
+                <p>Dive deep and explore the neon reef with the latest Mantari underwater ship model. Collect sea urchins and watch out for local hostiles. </p>
+
+                <p>Mantari is an on-rail shooter game developed as a part of the university's gamejam module, with a Star Fox inspired theme with a development duration of two weeks. Mantari was produced with a <b>team of seven</b>, with me taking the role as the lead programmer along with two other programmers.</p>
+
+                <p>Mantari ranked <b>1<sup>st</sup></b> for; gameplay, innovation, and overall, out of 13 entries as a part of the university's module gamejam.</p>
+            </div>
         </div>
 
 
-        <div class="project-desc-text">
-            <p>Dive deep and explore the neon reef with the latest Mantari underwater ship model. Mantari is an on-rail shooter game as a part of the university's starfox inspired gamejam module that lasted 2 weeks. Mantari was Produced in a<b> team of 6,</b> with me taking the role as the lead programmer along with 2 other programmers.</p>
 
-            <p>
-                Mantari ranked <b>#1</b> in best gameplay, most innovative and overall out of <b>13</b> entries within the university's module gamejam with team sizes varying from 5 to 10 members.</p>
+        <div class="project-textbox shadowbackdrop" style="height: 120px">
+
+            <img src="/Base_Icons/uop_showcase2023.webp" class="project-textbox__bulletimg" style="height: 120px;margin-left: -30px">
+            <div style="display: flex; flex-direction: column;border-left: 2px solid white;;text-align: center;margin: auto;flex-grow: 1">
+                <h2> Creative Assembly Best Student Game 2023 Winner
+                </h2>
+                <p>
+                    asdasdasdasdddddd ddddddddddasdasdasdddddd</p>
+            </div>
         </div>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/wdECIxZsLgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <br>
-        <br>
+
+
 
         <div class="carousel-container">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -153,7 +196,6 @@
                     </li>
                     <li data-target="#myCarousel" data-slide-to="4" class="carousel-imgdot"><img src="Screenshots/Screenshot4.png">
                     </li>
-
                     <li data-target="#myCarousel" data-slide-to="5" class="carousel-imgdot"><img src="Screenshots/Screenshot6.png">
                     </li>
 
@@ -167,59 +209,56 @@
 
 
 
-        <div class="keyfeature-text">Main Contributions</div>
-
-        <div class="dropdown-header" onclick="dropdownmenu(this)">
-            <img class="dropdown-img" src="/Base_Icons/Cube_Icon.png">
-            <div class="dropdown-header-text">Player Controller</div>
-            <div class="dropdown-arrow"><img src="/Base_Icons/Arrow.png"></div>
-        </div>
-        <div class="dropdown-content">
-            <br>
-            <p>I developed the player controller for this project, creating a simple system that allows the player to move around the play-area that automatically travels along the rail.</p><br>
-            <p> This is my first project in creating a player controller system in the style of a 3D rail shooter, though this system is crude I have researched and learning of better methods, becoming more educated on these styles of controller and splines in general for the future.</p>
-            <br>
-            <video muted loop autoplay height="500">
-                <source src="Dev_Screenshots/MovementDemo.mp4" type="video/mp4">
-            </video>
-            <br>
-            <br>
-
+        <div class="keyfeature-text" style="z-index: 10">
+            <div>Project Contributions</div>
         </div>
 
-        <br>
+        <div class="feature-panel">
 
-        <div class="dropdown-header" onclick="dropdownmenu(this)">
-            <img class="dropdown-img" src="/Base_Icons/GenericIcon_1.png">
-            <div class="dropdown-header-text">Player Rail System</div>
-            <div class="dropdown-arrow"><img src="/Base_Icons/Arrow.png"></div>
+            <div class="feature-line"></div>
+
+            <div class="feature-con">
+                <div class="feature-con__title">
+                    <div class="feature-con__line"></div>
+                    <img src="/Base_Icons/Joystick_Icon.png">
+                    <span>Player Controller</span>
+                </div>
+
+                <div class="feature-con__felx">
+                    <video muted loop autoplay height="400">
+                        <source src="Dev_Screenshots/MovementDemo.mp4" type="video/mp4">
+                    </video>
+                    <p>
+                        I developed the player controller for this project, creating a simple system that allows the player to move around the play-area that automatically travels along the rail.
+                        <br> <br>
+                        This is my first project in creating a player controller system in the style of a 3D rail shooter, though this system is crude I have researched and learning of better methods, becoming more educated on these styles of controller and splines in general for the future.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="feature-con">
+                <div class="feature-con__title">
+                    <div class="feature-con__line"></div>
+                    <img src="/Base_Icons/Spline_Icon.png">
+                    <span>Player Rail System</span>
+                </div>
+
+                <div class="feature-con__felx">
+
+                    <img src="Dev_Screenshots/1.png" height="400px;">
+
+                    <p>
+                        The rail system for this project is a spline that moves the player forward throughout the level. The game features branching paths that allow the player to choose which path they travel through. This was done by using trigger boxes for each entrance of the path and would transfer the player to the different spline.
+                        <br> <br>
+                        The speed that an object that travels on the spline can be adjusted and is used to increase difficulty as they progress.
+                    </p>
+
+                </div>
+
+            </div>
         </div>
-        <div class="dropdown-content">
-            <br>
-
-            <p>The rail system for this project is a spline that moves the player forward throughout the level. The game features branching paths that allow the player to choose which path they travel through. This was done by using trigger boxes for each entrance of the path and would transfer the player to the different spline.
-
-            </p>
-            <br>
-            <p>The speed that an object that travels on the spline can be adjusted and is used to increase difficulty as they progress.
-            </p>
-            <br><img src="Dev_Screenshots/1.png" height="500px;">
-            <br>
-            <br>
-
-        </div>
-
-        <br>
-
-
-
-        <br>
-
-        <br>
-        <br>
-        <br>
-
-
 
     </div>
 

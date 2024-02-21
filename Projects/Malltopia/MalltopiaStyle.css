@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+
+.infobar {
+    display: block;
+    height: auto;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    border-left: 10px solid rgb(168, 54, 54);
+    border-radius: 10px;
+background: rgb(108,108,108);
+background: linear-gradient(90deg, rgba(108,108,108,1) 0%, rgba(108,108,108,0) 70%);
+}
+
+.bodyheader {
+    margin: 0px auto 0px auto;
+    position: relative;
+    text-align: center;
+    clip-path: circle(3576px at 50% calc(-100% - 2000px));
+height: 860px;
+        min-width: 1000px;
+    z-index: 2;
+    pointer-events: none;
+    user-select: none;
+    margin-bottom: -248px;
+    width: 100%;
+
+}
+
+
+.bodyheader__title {
+    font-size: 120px;
+    color: #FFFFFF;
+    cursor: default;
+text-shadow: 10px 10px rgba(39, 39, 39, 0.4);
+    margin: auto;
+    top: 120px;
+    position: absolute;
+    z-index: 1;
+    padding: 100px;
+    text-align: center;
+    left: 0px;
+    right: 0px;
+}
+
+.bodyheader__title:before {
+background: red;
+    content: '';
+    position: absolute;
+    display: block;
+height: 150px;
+    width: 1200px;
+    margin: auto;
+    z-index: -1;
+    left: calc(50% - 600px ) ;
+background: rgb(52,52,52);
+background: linear-gradient(90deg, rgba(52,52,52,0) 0%, rgba(52,52,52,0.4974619289340102) 20%, rgba(52,52,52,0.5025380710659899) 80%, rgba(52,52,52,0) 100%);
+}
+
+.panel-project__malltopia{
+    
+    background-color: rgba(40, 40, 40, 0.9);
+    position: relative;
+    display: block;
+    width: 1220px;
+    margin: auto;
+    height: auto;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 1000px;
+    overflow: hidden;
+    margin-top: -500px;
+    padding-top: 100px;
+    z-index: 1;
+}
+

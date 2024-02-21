@@ -83,4 +83,28 @@
             var asdasd = "calc(" + rrr + " - 50%)";
 
             SlideClass.style.left = asdasd;
-        }
+}
+
+/*
+var Videocon = document.getElementsByClassName("video-con-object");
+
+const interval = setInterval(function () {
+    
+    
+const ee = getComputedStyle(Videocon[0],null);
+   var oo = ee.getPropertyValue("margin-left");
+    var ff = parseFloat(oo);
+    var hh = ff - 200;
+    var pp = hh + 'px';
+    console.log(pp);
+
+    
+    Videocon[0].style.setProperty("margin-left", pp);
+    
+//let allcons    Videocon.childNodes
+    
+    
+}, 100);
+*/
+
+
