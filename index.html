@@ -28,10 +28,10 @@
 
         <navbar-item class="navbar-name">George Kruger</navbar-item>
 
-        <a class="navbar-link" href="/index.html#Home"><img src="/Base_Icons/Home_Icon.png" class="navbar-item-icon" />Home</a>
-        <a class="navbar-link" href="/index.html#Projects"><img src="/Base_Icons/PersonalProjects_Icon.png" class="navbar-item-icon" />Projects</a>
-        <a class="navbar-link" href="/index.html#CV"><img src="/Base_Icons/CV_Icon.png" class="navbar-item-icon" />CV</a>
-        <a class="navbar-link" href="/index.html#Contact"><img src="/Base_Icons/Contact_Icon.png" class="navbar-item-icon" height="14px" />Contact</a>
+        <a class="navbar-link" href="#Home"><img src="/Base_Icons/Home_Icon.png" class="navbar-item-icon" />Home</a>
+        <a class="navbar-link" href="#Projects"><img src="/Base_Icons/PersonalProjects_Icon.png" class="navbar-item-icon" />Projects</a>
+        <a class="navbar-link" href="#CV"><img src="/Base_Icons/CV_Icon.png" class="navbar-item-icon" />CV</a>
+        <a class="navbar-link" href="#Contact"><img src="/Base_Icons/Contact_Icon.png" class="navbar-item-icon" height="14px" />Contact</a>
 
     </div>
 
@@ -56,7 +56,7 @@
         var BotVidPlayer = document.getElementById("BotVid");
         var TopVidPlayer = document.getElementById("TopVid");
 
-        const Videos = ["/Showcase_Videos/Mantair.webm", "/Index_Content/Video1.webm", "/Showcase_Videos/SoTF_Video.webm"]
+        const Videos = ["/Showcase_Videos/Mantair.webm", "/Index_Content/Video1.webm", "/Showcase_Videos/SoTF_Video.webm", "/Showcase_Videos/wave_demo.webm"]
 
         var CurrentVid = 1;
         var bool = false;
@@ -70,7 +70,7 @@
         }
 
         TopVidPlayer.ontimeupdate = (event) => {
-            if (TopVidPlayer.currentTime > TopVidPlayer.duration - 1 && bool == false) {
+            if (TopVidPlayer.currentTime > TopVidPlayer.duration - 2 && bool == false) {
                 TopVidPlayer.style.opacity = "0";
                 BotVidPlayer.src = Videos[CurrentVid];
                 BotVidPlayer.play();
@@ -82,7 +82,7 @@
             }
 
             BotVidPlayer.ontimeupdate = (event) => {
-                if (BotVidPlayer.currentTime > BotVidPlayer.duration - 1 && bool == false) {
+                if (BotVidPlayer.currentTime > BotVidPlayer.duration - 2 && bool == false) {
                     TopVidPlayer.style.opacity = "1";
                     TopVidPlayer.src = Videos[CurrentVid];
                     TopVidPlayer.play();
@@ -116,18 +116,17 @@
 
             <div class="about-me-con-text">
                 <span class="about-me-title">George Kruger<br>
-                    <div style="font-size: 20px;">Game Programmer</div>
+                    <div style="font-size: 20px;text-align: left">Game Programmer</div>
                 </span>
                 <div class="about-me-text">
                     <p>
-                        I'm George, a recent graduate from the University of Portsmouth, where I earned a degree in Computer Games Technology. I'm currently residing in London.
-                        I've been self-teaching coding and various software’s since the age of 10 and have honed my skills in various software applications such as Blender, Photoshop, Vegas Pro, and front-end website development.
+                        I'm George, a recent graduate from the University of Portsmouth, where I earned a degree in Computer Games Technology. I am currently residing in London. I've been self-teaching coding and various software since the age of 10 and have honed my skills in various software applications such as Blender, Photoshop, Vegas Pro, and front-end website development.
                     </p>
                     <p>
-                        I've always been deeply passionate about the gaming industry and fascinated by every aspect of the game development process, with a strong desire to be actively involved in this dynamic field. Initially seeking a career in 3D modelling for games, before rediscovering my passion for coding.
+                        I have always been deeply passionate about the gaming industry and fascinated by every aspect of the game development process, with a strong desire to be actively involved in this dynamic field. Initially seeking a career in 3D modelling for games, before rediscovering my passion for coding.
                     </p>
                     <p>
-                        I am enthusiastic about constantly explore new gameplay designs, innovations, and implementations, with a strong passion for experimenting with gameplay concepts and mechanics. I'm constantly working to expand my knowledge and acquire new skills to enhance the quality and efficiency of my craft.
+                        I am enthusiastic about constantly exploring new gameplay designs, innovations and implementations, with a strong passion for experimenting with gameplay concepts and mechanics. I am constantly working to expand my knowledge and acquire new skills to enhance the quality and efficiency of my craft.
                     </p>
                 </div>
             </div>
@@ -274,11 +273,11 @@
             </div>
 
             <div class="cv-bubble-con cv-bubble-style__productivity" style="border: 1px solid #0e4304; float:left">
-                <div class="cv-bubble-title"><img src="Base_Icons/Office_Logo.png">Productivity</div>
+                <div class="cv-bubble-title"><img src="Base_Icons/Productivity_Icon.png">Productivity</div>
                 <div class="cv-bubble">Trello</div>
                 <div class="cv-bubble">Jira</div>
                 <div class="cv-bubble">Confluence</div>
-                <div class="cv-bubble">Mrio</div>
+                <div class="cv-bubble">Miro</div>
                 <div class="cv-bubble">Teams</div>
             </div>
 
@@ -370,9 +369,10 @@
                     <div class="cv-education-textcon">
                         <div class="cv-education-title">University of Portsmouth</div>
                         <div class="cv-education-date">2020 - 2023</div>
-                        <div class="cv-education-desc">BSc (HONS) Computer Games Technology</div>
+                        <div class="cv-education-desc">BSc (HONS) Computer Games Technology - Lower Second-Class</div>
 
-                        <p style="text-align: left; font-size: 14px">Produced 2 game projects as a programmer within a team of varying roles, using the unity engine. Contributions include spline systems, player controllers, third-person combat and ability systems, ability upgrade and management system. Our project “Mentari” ranked 1st out of 13 entries against other student teams. Currently working on console development kits, getting code to run and profiling it.
+                        <p style="text-align: left; font-size: 14px">
+                            Successfully developed three team-oriented projects, with our final year development project achieving First-Class and winning ‘Creative Assembly Best Student Game 2023’ award, lead programmer for both first year projects, with ‘Mantari’ placing 1st out of 13 entries. Experienced working with latest console development kits, getting code to run; profiling and optimizing its performance.
                         </p>
                         <table class="cv-education-gradetable">
                             <tr>
@@ -387,11 +387,11 @@
                             <tr>
                                 <td>PROGRAMMING AI FOR GAMES </td>
                                 <td>Third-Class</td>
-                                <td>PSYCHOLOGICAL THEORY FOR GAME DESIGNERS</td>
+                                <td>FINAL YEAR PROJECT</td>
                                 <td>Third-Class</td>
                             </tr>
                             <tr>
-                                <td> FINAL YEAR PROJECT</td>
+                                <td>PSYCHOLOGICAL THEORY FOR GAME DESIGNERS</td>
                                 <td>Third-Class</td>
                                 <td></td>
                                 <td></td>
@@ -421,12 +421,12 @@
                             <tr>
                                 <td>FOUNDATION IN 3D MODELLING</td>
                                 <td>First-Class</td>
-                                <td>DEFINE GAMES</td>
-                                <td>First-Class</td>
-                            </tr>
-                            <tr>
                                 <td>INTRODUCTION TO IMAGE CREATION</td>
                                 <td>Lower Second-Class</td>
+                            </tr>
+                            <tr>
+                                <td>DEFINE GAMES</td>
+                                <td>First-Class</td>
                                 <td>TOOLS FOR GAMES AND ANIMATION</td>
                                 <td>Lower-Second-Class</td>
                             </tr>
@@ -454,10 +454,9 @@
                                 <td>Distinction</td>
                             </tr>
                             <tr>
-                                <td>Further Website Development</td>
-
-                                <td>Distinction</td>
                                 <td>Website Design and Creation</td>
+                                <td>Distinction</td>
+                                <td>Further Website Development</td>
                                 <td>Distinction</td>
                             </tr>
                             <tr>
@@ -527,42 +526,21 @@
 
 
     </div>
-    <!--    <div class="Banner">Contact Me</div>-->
+
     <div class="contact-panel" id="Contact">
 
 
         <div class="contact-flex" style="display: flex;">
-            <div style="font-size: 30px; margin-right: 80px;">Get in touch:</div>
+            <div style="font-size: 48px; text-align: center;">Get in contact</div>
 
-
-
-
-
-            <div style="display: flex;     flex-direction: column;padding: 20px 30px 20px 30px;    background: #222222;
-    border-radius: 20px;">
+            <div style="display: flex; flex-direction: column;padding: 20px 30px 20px 30px; border-radius: 20px;">
 
                 <a class="ball2 ball" href="mailto:georgekruger@hotmail.co.uk">georgekruger@hotmail.co.uk<img class="Contact-Me-link-Icon" src="Base_Icons/Contact_Icon.png"></a>
-                <a class="ball2 ball" href="https://www.linkedin.com/in/georgekruger/">Linkedin<img src="Base_Icons/External_Icon.png" height="14px" style="position: absolute;top: 5px;"><img class="Contact-Me-link-Icon" src="Base_Icons/linkedin_Icon.png"></a>
+                <a class="ball2 ball" href="https://www.linkedin.com/in/georgekruger/" style="width: 260px"><span style="padding-right: 10px ">Linkedin<img src="Base_Icons/External_Icon.png" height="14px" style="position: absolute;top: 10px"></span><img class="Contact-Me-link-Icon" src="Base_Icons/linkedin_Icon.png"></a>
 
             </div>
         </div>
 
-
-        <!--
-        <div class="Contact-Me-Con" style="font-size: 30px;">
-            Feel free to get in contact:
-
-        </div>
-        <div class="Contact-Me-Con">
-
-            <a class="Contact-Me-link" href="mailto:georgekruger@hotmail.co.uk" style="font-size: 26px;">georgekruger@hotmail.co.uk<img class="Contact-Me-link-Icon" src="Base_Icons/Contact_Icon.png"></a>
-
-
-
-            <a class="Contact-Me-link hover-animatedoutline" href="https://www.linkedin.com/in/georgekruger/">Linkedin<img class="Contact-Me-link-Icon" src="Base_Icons/linkedin_Icon.png">
-            </a>
-        </div>
--->
 
 
     </div>

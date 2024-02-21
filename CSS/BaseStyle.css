@@ -267,14 +267,13 @@ transition: 0.3s;
     width: 480px;
     height: 60px;
     background: #630eb9;
-    margin: auto;
     border-radius: 50px;
     font-size: 24px;
     line-height: 60px;
     text-align: right;
     position: relative;
     transition: 0.3s;
-margin: 20px 0px 20px 0px;
+margin: 20px auto 20px auto;
 
 }
 

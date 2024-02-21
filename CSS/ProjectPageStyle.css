@@ -6,14 +6,20 @@ body {
 }
 
 .banner-con {
-    height: 600px;
-    overflow: hidden;
+    margin: 0px auto 0px auto;
     position: relative;
-    display: block;
-    z-index: -1;
-    perspective: 1px;
-    min-width: 1000px;
-    margin-bottom: -130px
+    text-align: center;
+height: 860px;
+        min-width: 1000px;
+    z-index: 2;
+    pointer-events: none;
+    user-select: none;
+    margin-bottom: -48px;
+    width: 100%;
+    z-index: 0;
+    margin-top: -180px;
+    overflow: hidden;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 94%, rgba(0,0,0,0));
 }
 
 .banner-con-object {
@@ -219,19 +225,18 @@ body {
 }
 
 .dropdown-header {
-    background-color: rgb(80, 80, 80);
+    background-color: rgb(80, 32, 105);
     border: solid #ffffff 1px;
     width: 320px;
     height: 34px;
     z-index: 1;
-    margin-left: 72px;
+    margin-left: 80px;
     float: left;
     position: relative;
-
     color: white;
     font-size: 20px;
     text-align: left;
-    border-radius: 10px;
+    border-radius: 1000px;
     cursor: pointer;
 
     transition: 0.3s;
@@ -262,7 +267,7 @@ body {
 }
 
 .dropdown-header:hover {
-    background-color: rgba(151, 151, 151, 0.76);
+    background-color: rgb(142, 26, 203);
 
 }
 
@@ -280,7 +285,7 @@ body {
     display: inline-block;
 
 
-    padding: 5px 5px 5px 15px;
+    padding: 3px 5px 5px 15px;
 
     margin: auto;
 }
@@ -291,7 +296,7 @@ body {
     font-size: 18px;
 
     vertical-align: top;
-    line-height: 40px;
+    line-height: 37px;
 }
 
 .dropdown-header-text > div {
@@ -312,7 +317,7 @@ body {
     right: 0px;
     height: 22px;
     width: 22px;
-    margin-top: 14px;
+    margin-top: 7px;
     margin-right: 12px;
     transition: 0.4s;
 
@@ -379,6 +384,8 @@ body {
     height: auto;
     box-shadow: 0 0px 6px 0px #000000;
     z-index: 2;
+    object-fit:fill
+    
 }
 
 .carousel-inner > .item {
@@ -899,15 +906,19 @@ padding: 20px 0px 10px 0px;
     background: #222222;
 }
 
-.feature-con:nth-child(odd) > p {
-    text-align: right;
-    text-align: justify;
+.feature-con:nth-child(odd) > .feature-con__felx > p {
+    text-align: left;
 
 }
 
-.feature-con:nth-child(odd) > p > img , .feature-con:nth-child(odd) > p > video  {
-float: left;
-    
+.feature-con:nth-child(even) > .feature-con__felx > p {
+    text-align: right;
+
+}
+
+.feature-con:nth-child(even)>.feature-con__felx > img , .feature-con:nth-child(even) >.feature-con__felx> video  {
+float: right;
+    order: 1;
     border-radius: 0px 40px 0px 40px;
 
 }
@@ -999,33 +1010,32 @@ float: left;
 
 }
 
-.feature-con > p {
-    display: inline-flex;
+.feature-con__felx > p {
+    display: flex;
     height: auto;
-    margin: 20px 100px 20px 100px;
+    margin: 10px 20px 20px 20px;
     padding-bottom: 20px;
     font-size: 16px;
     text-overflow: inherit;
     text-align: start;
 }
 
-.feature-con > p > img,
-.feature-con > p > video {
-    display: block;
+.feature-con__felx > img,
+.feature-con__felx > video {
+    display: flex;
     border-radius: 40px 0px 40px 0px;
-    margin: 0px 20px 0px 20px;
 }
 
 .projectflex {
     display: flex;
-    padding: 16px 16px 16px 16px;
-    margin: 10px 40px 10px 40px;
+padding: 16px;
+    margin: 20px 40px 20px 40px;
     text-align: left;
 }
 
 .projectflex > div {
-    width: 1200px;
     margin: auto;
+    flex: 1;
 }
 
 
@@ -1117,13 +1127,12 @@ float: left;
 
 .project-textbox {
     display: flex;
-    margin: 10px 40px 10px 40px;
-    padding: 12px;
+    margin: 20px 40px 20px 40px;
+    padding: 8px 40px 8px 40px;
 }
 
 .project-textbox__bulletimg {
     float: left;
-    height: 160px;
     border-radius: 10px;
     margin-right: 12px;
 }
@@ -1181,3 +1190,21 @@ float: left;
 }
 
 
+
+.project-textbox__longtext {
+        display: flex;
+    margin: 10px 40px 10px 40px;
+    padding: 12px 40px 12px 40px;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.feature-con__felx {
+        display: inline-flex;
+    height: auto;
+    margin: 20px 0px 30px 100px;
+    font-size: 16px;
+    text-overflow: inherit;
+    text-align: start;
+    width: 88%;
+}
