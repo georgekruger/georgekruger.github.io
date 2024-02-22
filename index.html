@@ -1,12 +1,12 @@
-<!doctype html>
+html b<!doctype html>
 <html>
 
 <head>
     <meta charset="utf-8">
 
     <!--Css-->
-    <link rel="stylesheet" href="/CSS/BaseStyle.css?Version=2">
-    <link rel="stylesheet" href="/CSS/HomeStyle.css?Version=2">
+    <link rel="stylesheet" href="CSS/BaseStyle.css?Version=2">
+    <link rel="stylesheet" href="CSS/HomeStyle.css?Version=2">
 
     <!--JavaScript-->
     <script src="JavaScript/NavbarScript.js?Version=2"> </script>
@@ -42,8 +42,8 @@
 
     <div class="video-con" id="Home">
         <div class="video-con-object rellax" data-rellax-speed="-6">
-            <video muted="" id="BotVid"></video>
-            <video autoplay="" muted="" id="TopVid"></video>
+            <video controlsList="nodownload" disablePictureInPicture muted="" id="BotVid"></video>
+            <video controlsList="nodownload" disablePictureInPicture autoplay="" muted="" id="TopVid"></video>
 
 
 
@@ -107,15 +107,10 @@
     <div class="about-me">
         <div class="about-me-con">
 
-
-
             <img class="about-me-picture" src="Base_Icons/Placeholder_Icon.png">
 
-
-
-
             <div class="about-me-con-text">
-                <span class="about-me-title">George Kruger<br>
+                <span class="about-me-title">George Kruger
                     <div style="font-size: 20px;text-align: left">Game Programmer</div>
                 </span>
                 <div class="about-me-text">
@@ -146,10 +141,11 @@
             <a href="/Projects/Malltopia/Malltopia.html" class="project-con-cell" onmouseover="PlayVideo(true,this)" onmouseleave="PlayVideo(false,this)">
                 <div class="project-con-box">
                     <!--Projact BackGround-->
-                    <img class="project-con-box-image" src="/Projects/Malltopia/Malltopia_Tile.png">
+                    <img class="project-con-box-image" src="/Projects/Malltopia/Index_Content/Malltopia_Tile.png">
                     <!--Projact Video-->
                     <video muted loop controls class="project-con-box-video">
-                        <source src="/Projects/Malltopia/Malltopia_TileVideo.mp4" type="video/mp4">
+                        <source src="/Projects/Malltopia/Index_Content/Malltopia_TileVideo.mp4" type="video/mp4">
+                        <source src="/Projects/Malltopia/Index_Content/Malltopia_TileVideo.webm" type="video/webm">
                     </video>
                     <!--Projact Logo-->
                     <img class="project-con-box-title" src="/Projects/Malltopia/Malltopia_Logo.png">
@@ -252,7 +248,7 @@
             </div>
 
             <a href="/Index_Content/George-Kruger-CV.pdf" class="cv-printerver ball" target="_blank">
-                <div style="background: #7846ff;height: 56px; width: 56px;border-radius: 999px;line-height: 3.7;margin-top: -3px;margin-left: -3px;"><img src="Base_Icons/CV_Icon.png" height="30px"></div>
+                <div style="background: #7846ff;height: 56px; width: 56px;border-radius: 999px;line-height: 3.7;margin-top: -3px;margin-left: -3px;"><img src="Base_Icons/CV_Icon.png" height="30px" style="margin-top: 13px"></div>
                 <div style="position: absolute;top: 12px;left: 60px; border-bottom: 2px dotted white">Printer Version</div>
             </a>
 

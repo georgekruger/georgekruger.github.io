@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+
+
     <link rel="stylesheet" href="/CSS/BaseStyle.css?Version=1">
     <link rel="stylesheet" href="/CSS/ProjectPageStyle.css?Version=1">
 
@@ -40,7 +43,7 @@
     <style>
         body {
 
-            background-image: url(rep.png);
+            background-image: url(Malltopia_Background.png);
             background-repeat: repeat;
             background-size: 512px;
         }
@@ -48,6 +51,7 @@
         body {
             background-color: #4a8dd9;
         }
+
     </style>
 
 
@@ -66,12 +70,17 @@
                 font-family: TitleFont;
                 src: url(Rubik-SemiBold.ttf)
             }
+
         </style>
         <div style="width: 100%; height: 100%;">
-            <video class="rellax" data-rellax-speed="-6" muted loop controls autoplay style="object-fit: cover; width: 100%;height: 100%;">
-                <source src="/Projects/Malltopia/Malltopia_bannervideo.mp4" type="video/mp4">
-                <source src="/Projects/Malltopia/Malltopia_bannervideo.webm" type="video/webm">
+
+            <video controlsList="nodownload" disablePictureInPicture class="rellax" data-rellax-speed="-6" muted loop controls autoplay style="object-fit: cover; width: 100%;height: 100%; z-index: 12" poster="<your image poster if applicable>">
+
+                <source src="Content/Malltopia_Bannervideo.webm" type="video/webm">
+                <source src="Content/Malltopia_Bannervideo.mp4" type="video/mp4">
+
             </video>
+
         </div>
         <div style="font-family: TitleFont" class="bodyheader__title">MallTopia</div>
 
@@ -82,6 +91,7 @@
     <script src="/Plugins/rellax.min.js"></script>
     <script>
         var rellax = new Rellax();
+
     </script>
 
 
@@ -132,7 +142,6 @@
                     <div class="project-tools"><img src="/Base_Icons/Photoshop_Icon.png">
                         <p>Photoshop</p>
                     </div>
-
                     <br>
                     <div class="project-tools"><img src="/Base_Icons/helixcore_icon.png">
                         <p>Perforce Helix Core</p>
@@ -155,8 +164,8 @@
                                                      ">
             <div style="">
                 <video controls height="618px" style="border-radius: 20px;margin: auto;display: block">
-                    <source src="Mailtopia_Trailer.mp4" type="video/mp4">
-
+                    <source src="Content/Mailtopia_Trailer.mp4" type="video/mp4">
+                    <source src="Content/Mailtopia_Trailer.webm" type="video/webm">
                 </video>
             </div>
 
@@ -164,7 +173,7 @@
                 <p>Welcome to Malltopia, build and manage your very own mall, complete with a wide variety of shops and an assortment of decorations to choose from, to make your mall your very own. Design, manage and watch your mall flourish in Malltopia.</p>
 
                 <p>Malltopia was developed as part of a year-long game development module during our final year at the University of Portsmouth.<br> Our team of <b>11</b> members consisting of programmers, artists, designers, producers and sound engineers, were tasked by a real client at Frontier Developments, to create a sandbox-style game similar to their 'Planet' franchise of games.</p>
-                
+
                 <p>Malltopia was featured at the <a style="color: #6de3ff;text-decoration: underline" target="_blank" href="https://www.facebook.com/reel/313420654723637">University of Portsmouth’s booth at EGX 2023</a>, featuring a playable demo for attendees to experience.</p>
             </div>
         </div>
@@ -178,13 +187,13 @@
         </div>
 
         <div class="project-textbox__longtext shadowbackdrop">
-            <div style="font-size: 32px;border-bottom: 1px solid white;width: 256px;font-weight: bold;margin: auto">Project Timeline</div>
+            <div style="font-size: 32px;border-bottom: 1px solid white;width: 326px;font-weight: bold;margin: auto">Project Timeline</div>
             <p>During the start of the development of this project, the team was divided between two ideas, a mall tycoon building and management game or a pirate-themed island city-builder. This resulted in the development of two teams to produce a vertical slice prototype, with team members allocated to projects not of their initial preference. This landed me on the pirate team to develop the core systems required to produce a vertical slice for the client.</p>
-            
+
             <p>After 3 months of development, both prototypes were shown to the client, with both garnering largely positive feedback but was ultimately deemed that the mall tycoon game would be a better choice due to its more manageable scope in producing a finished and polished game within the 4 months of remaining development time.</p>
-            
+
             <p>Transitioning to the development of Malltopia, the goal shifted primarily to horizontal development — polishing and adding additional content to produce a playable demo. I was primary responsible with developing and refining UI features, before the final stretch of polishing before the end of development.</p>
-            
+
 
         </div>
 
@@ -260,16 +269,16 @@
                     <span>Context Menu UI</span>
                 </div>
 
-                <div class="feature-con__felx">
+                <div class="feature-con__felx" style="text-align: justify">
                     <video muted loop autoplay height="420">
-                        <source src="Content/contextmenu_demo.webm" type="video/webm">
+                        <source src="Content/Malltopia_ContextMenuDemo.webm" type="video/webm">
                     </video>
                     <p>
-                        The tooltip system was designed to be a quick and easy of straightforward method of integrating UI tooltips, allowing designers and other developers to easily add to elements they are reworking on, all while maintaining the project's simple workflow.
+                        The game required a system for viewing information and manipulating objects in the world, with the goal to develop a clean and intuitive user-interfacing system, as well as to allow for easy implementation for any object for any future needs. Three menus exist: Customer, Rooms and Furniture menus. Through collaborating with designers, we opted for a design style influenced by the Planet franchise of games.
                     </p>
                 </div>
 
-            </div>    
+            </div>
             <div class="feature-con">
                 <div class="feature-con__title">
                     <div class="feature-con__line"></div>
@@ -279,7 +288,7 @@
 
                 <div class="feature-con__felx">
                     <video muted loop autoplay height="380">
-                        <source src="Content/contextmenu_demo.webm" type="video/webm">
+                        <source src="Content/Malltopia_ContextMenuDemo.webm" type="video/webm">
                     </video>
                     <p>
                         The tooltip system was designed to be a quick and easy of straightforward method of integrating UI tooltips, allowing designers and other developers to easily add to elements they are reworking on, all while maintaining the project's simple workflow.
@@ -296,36 +305,26 @@
 
                 <div class="feature-con__felx">
                     <video muted loop autoplay height="460">
-                        <source src="Content/tooltip_demo.webm" type="video/webm">
+                        <source src="Content/Malltopia_TooltipDemo.webm" type="video/webm">
                     </video>
                     <p>
                         The tooltip system was designed to be a quick and straightforward method of integrating UI tooltips, allowing designers and other developers to easily add to elements they're reworking on, all while maintaining the project's quick and simple workflow.
                     </p>
                 </div>
-
             </div>
-
-
-        </div>
-        <div>
+            
         </div>
 
-
-        <div style="background: rgb(60, 60, 60); margin-top: -40px;
-;height: 40px;    border-radius: 40px 40px 0px 0px; z-index: -2">
+        
+        <div style="background: rgb(60, 60, 60); margin-top: -40px;height: 40px;    border-radius: 40px 40px 0px 0px; z-index: -2">
         </div>
-
-
-
+        
         <div style="margin-top: 60px" class="keyfeature-text">
             <div>Pirate Project</div>
         </div>
 
-
-
         <div class="feature-panel">
-
-                    <div class="feature-con">
+            <div class="feature-con">
                 <div class="feature-con__title">
                     <div class="feature-con__line"></div>
                     <img src="/Base_Icons/UI_Icon.png">
@@ -334,16 +333,16 @@
 
                 <div class="feature-con__felx">
                     <video muted loop autoplay height="350">
-                        <source src="Content/piratecamure_demo.webm" type="video/webm">
+                        <source src="Content/Pirate_CameraDemo.webm" type="video/webm">
                     </video>
 
                 </div>
                 <div class="feature-con__felx">
                     <p style="text-align: justify;padding-right: 12px;margin-bottom: -30px;">
-The camera controller has been designed with accommodating different control methods other than just mouse and keyboard, such as controller and touch interfaces, as we were considering the potential of targeting other platforms at this point in development. This prompted me to design this system with anticipation of different control methods, taking inspiration from similar pre-existing games from different platforms and creating a world-point orbiting controller. Along with inclusion of customizable variables allows for flexibility as well as simplifying integration of additional control methods.
+                        The camera controller has been designed with accommodating different control methods other than just mouse and keyboard, such as controller and touch interfaces, as we were considering the potential of targeting other platforms at this point in development. This prompted me to design this system with anticipation of different control methods, taking inspiration from similar pre-existing games from different platforms and creating a world-point orbiting controller. Along with inclusion of customizable variables allows for flexibility as well as simplifying integration of additional control methods.
                     </p>
                 </div>
-            </div>       
+            </div>
             <div class="feature-con">
                 <div class="feature-con__title">
                     <div class="feature-con__line"></div>
@@ -353,26 +352,16 @@ The camera controller has been designed with accommodating different control met
 
                 <div class="feature-con__felx">
                     <video muted loop autoplay height="420">
-                        <source src="Content/contextmenu_demo.webm" type="video/webm">
+                        <source src="Content/Malltopia_TooltipDemo.webm" type="video/webm">
                     </video>
                     <p>
                         The tooltip system was designed to be a quick and easy of straightforward method of integrating UI tooltips, allowing designers and other developers to easily add to elements they are reworking on, all while maintaining the project's simple workflow.
                     </p>
                 </div>
-
             </div>
-
-
-
-
         </div>
-
-
-
-
-
+        
     </div>
+</body>
 
-
-
-</body></html>
+</html>
