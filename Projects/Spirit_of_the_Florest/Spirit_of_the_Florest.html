@@ -53,6 +53,7 @@
     <script src="/Plugins/rellax.min.js"></script>
     <script>
         var rellax = new Rellax();
+
     </script>
 
     <!--Content Page-->
@@ -64,6 +65,7 @@
                 font-family: TitleFont;
                 src: url(/Projects/Spirit_of_the_Florest/OptimusPrinceps.ttf)
             }
+
         </style>
         <div style="font-family: TitleFont;font-size: 100px;" class="project-title">Spirit of the Florest</div>
         <div class="project-details">
@@ -111,8 +113,17 @@
 
 
 
-        <div class="project-textbox shadowbackdrop">
-            <p>Project Crawler is a 3rd person rogue-like dungeon crawler game, where your health is also your currency and ability resource, allowing for risk-vs-reward gameplay. Equip yourself with new abilities and upgrade them at the cost of your health. Spirit of the Florest was created for the university of Portsmouth gamejam with a team of 6 members, with the gamejam’s theme being ‘a dungeon crawler with a single resource’.</p>
+        <div class="projectflex shadowbackdrop" style="text-overflow: clip;flex-direction: column;">
+            <div style="width: 618px; margin: 5px">
+                <video autoplay muted loop controls height="618px" style="border-radius: 20px;margin: auto;display: block">
+                    <source src="Content/sotf_Trailer.mp4" type="video/mp4">
+                    <source src="Content/sotf_Trailer.webm" type="video/webm">
+                </video>
+            </div>
+            <div style="margin: 0px 20px 0px 20px;text-align: center;">
+
+                <p>Project Crawler is a 3rd person rogue-like dungeon crawler game, where your health is also your currency and ability resource, allowing for risk-vs-reward gameplay. Equip yourself with new abilities and upgrade them at the cost of your health. Spirit of the Florest was created for the university of Portsmouth gamejam with a team of 6 members, with the gamejam’s theme being ‘a dungeon crawler with a single resource’.</p>
+            </div>
 
         </div>
 
@@ -195,12 +206,10 @@
                 <div class="feature-con__felx">
                     <p>I developed the character controller system to allow for freedom of movement and give as much control to the player allowing for quick and precise movement to avoid incoming attacks.</p>
                     <video muted loop autoplay height="360">
-                        <source src="Dev_Screenshots/CombatDemo.mp4" type="video/mp4" />
+                        <source src="Content/CombatDemo.mp4" type="video/mp4" />
                     </video>
                 </div>
                 <div class="feature-con__felx">
-
-
                     <video muted loop autoplay height="300">
                         <source src="Content/MovementDemo.mp4" type="video/mp4" />
                     </video>
@@ -237,21 +246,21 @@
 -->
 
                     <video muted loop autoplay height="380">
-                        <source src="Dev_Screenshots/AbilityUpgradeDemo.mp4" type="video/mp4" />
+                        <source src="Content/AbilityUpgradeDemo.mp4" type="video/mp4" />
                     </video>
                 </div>
-                
-                
+
+
                 <div class="feature-con__felx">
-                    
+
                     <video muted loop autoplay height="280" style="margin-left: 10px; border-radius: 0px 40px 0px 40px">
                         <source src="Content/DoubleJump.webm" type="video/webm" />
-                    </video> 
-                    
+                    </video>
+
                     <video muted loop autoplay height="280" style="margin-left: 30px;">
                         <source src="Content/DashAbility.webm" type="video/webm" />
                     </video>
-                    
+
                 </div>
             </div>
 
@@ -266,12 +275,12 @@
                     <p>Developing the ability system was the largest part of developement for me in this project, conprising of many systems that are required to interact with eachother.</p>
 
                     <video autoplay autoplay muted loop width="500px">
-                        <source src="Devlog_Content/Videos/RangedAnimation.webm" type="video/webm">
+                        <source src="Content/RangedAnimation.webm" type="video/webm">
                     </video>
 
                 </div>
                 <div class="feature-con__felx" style="margin-top: -220px"> <video autoplay autoplay muted loop width="540px">
-                        <source src="Devlog_Content/Videos/RangedAnimation2.webm" type="video/webm">
+                        <source src="Content/RangedAnimation2.webm" type="video/webm">
                     </video></div>
             </div>
 
@@ -280,4 +289,6 @@
     </div>
 
 
-</body></html>
+</body>
+
+</html>

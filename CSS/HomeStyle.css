@@ -8,6 +8,7 @@ body {
 
 .video-con {
     height: 100vh;
+    min-height: 820px;
     width: 100%;
     overflow:hidden;
     position: relative;
@@ -1579,3 +1580,4 @@ font-sfont-size: 10px;22223422;    display: inline-block;
     position: relative;
     width: 100%;
     text-align: left;
+

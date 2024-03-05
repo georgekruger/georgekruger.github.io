@@ -16,7 +16,6 @@
     <meta name="theme-color" content="#26112c">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
     <title>George Kruger</title>
 
 
@@ -56,7 +55,11 @@
         var BotVidPlayer = document.getElementById("BotVid");
         var TopVidPlayer = document.getElementById("TopVid");
 
-        const Videos = ["/Showcase_Videos/Mantair.webm", "/Index_Content/Video1.webm", "/Showcase_Videos/SoTF_Video.webm", "/Showcase_Videos/wave_demo.webm"]
+        const Videos = ["/Showcase_Videos/Mailtopia_Showcase.webm",
+                        "/Showcase_Videos/Mantari_Showcase.webm",
+                        "/Showcase_Videos/SotF_Showcase.webm",
+                        "/Showcase_Videos/wave_demo.webm"
+        ]
 
         var CurrentVid = 1;
         var bool = false;
@@ -95,10 +98,12 @@
             }
 
         };
+
     </script>
     <script src="/Plugins/rellax.min.js"></script>
     <script>
         var rellax = new Rellax();
+
     </script>
 
     <!--About Me-->
@@ -106,8 +111,9 @@
 
     <div class="about-me">
         <div class="about-me-con">
-
-            <img class="about-me-picture" src="Base_Icons/Placeholder_Icon.png">
+            <div style="width: 300px">
+                <img class="about-me-picture" src="Index_Content/GraduateProfile.png" width="300px">
+            </div>
 
             <div class="about-me-con-text">
                 <span class="about-me-title">George Kruger
@@ -148,7 +154,7 @@
                         <source src="/Projects/Malltopia/Index_Content/Malltopia_TileVideo.webm" type="video/webm">
                     </video>
                     <!--Projact Logo-->
-                    <img class="project-con-box-title" src="/Projects/Malltopia/Malltopia_Logo.png">
+                    <img class="project-con-box-title" src="/Projects/Malltopia/Malltopia_Logo.png" style="bottom: 34px">
                     <!--Projact Tags-->
                     <div class="project-con-tagcon">
                         <project-tag class="university-tag">University</project-tag>
@@ -164,10 +170,10 @@
             <a href="/Projects/Mantari/Mantari.html" class="project-con-cell" onmouseover="PlayVideo(true,this)" onmouseleave="PlayVideo(false,this)">
                 <div class="project-con-box">
                     <!--Projact BackGround-->
-                    <img class="project-con-box-image" src="/Projects/Mantari/Mantari_Banner.png">
+                    <img class="project-con-box-image" src="/Projects/Mantari/Index_Content/Mantari_Banner.png">
                     <!--Projact Video-->
                     <video controlsList="nodownload" webkit-playsinline playsinline disablePictureInPicture muted loop controls class="project-con-box-video">
-                        <source src="/Projects/Mantari/Mantari_Video.mp4" type="video/mp4">
+                        <source src="/Projects/Mantari/Index_Content/Mantari_Video.mp4" type="video/mp4">
                     </video>
                     <!--Projact Logo-->
                     <img class="project-con-box-title" src="/Projects/Mantari/Mantari_Logo.png">
@@ -186,10 +192,11 @@
             <a href="/Projects/Spirit_of_the_Florest/Spirit_of_the_Florest.html" class="project-con-cell project-con-cell-hover" onmouseover="PlayVideo(true,this)" onmouseleave="PlayVideo(false,this)">
                 <div class="project-con-box">
                     <!--Projact BackGround-->
-                    <img class="project-con-box-image" src="/Projects/Spirit_of_the_Florest/Icon.png">
+                    <img class="project-con-box-image" src="/Projects/Spirit_of_the_Florest/Index_Content/SotF_Tile.png">
                     <!--Projact Video-->
                     <video controlsList="nodownload" webkit-playsinline playsinline disablePictureInPicture muted loop controls class="project-con-box-video">
-                        <source src="/Projects/Spirit_of_the_Florest/SotF_IndexVideo3.mp4" type="video/mp4">
+                        <source src="/Projects/Spirit_of_the_Florest/Index_Content/SotF_TileVideo.mp4" type="video/mp4">
+                        <source src="/Projects/Spirit_of_the_Florest/Index_Content/SotF_TileVideo.webm" type="video/webm">
                     </video>
                     <!--Projact Logo-->
                     <img class="project-con-box-title" src="/Projects/Spirit_of_the_Florest/SotF_Logo.png">
@@ -220,7 +227,6 @@
                         <project-tag class="university-tag">Personal Project</project-tag>
                         <project-tag class="engine-tag">Unity</project-tag>
                         <project-tag class="prototype-tag">Prototype</project-tag>
-
                     </div>
                 </div>
             </a>
@@ -345,9 +351,9 @@
                         <div class="cv-education-logo" style="float: left; width: 144px; height: 144px"><img src="/Index_Content/London_Youth_Games.png" height="100%"> </div>
 
                         <div style="float: right; width: 80%; font-size: 18px">
-                            <h2 style="font-size: 20px;">London Youth Games 12th out 32 boroughs 2011</h2>
+                            <h2 style="font-size: 20px;">London Youth Games - Indoor Rowing Competition</h2>
                             <p>
-                                I was selected and competed for the London borough of Barnet in the London Youth Games at the Crystal Palace National Sports Centre for the indoor rowing competition, placeing 12th out of the 32 London boroughs.</p>
+                                I was selected and competed for the London borough of Barnet in the London Youth Games at the Crystal Palace National Sports Centre for the indoor rowing competition, placing 12th out of the 32 London boroughs.</p>
                         </div>
 
                     </div>
@@ -543,4 +549,6 @@
 
 
 
-</body></html>
+</body>
+
+</html>
