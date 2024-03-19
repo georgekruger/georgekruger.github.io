@@ -27,6 +27,7 @@
             background-image: url(Background_Repeat.png);
             background-repeat: repeat;
         }
+
     </style>
 
     <div class="navbar">
@@ -53,11 +54,12 @@
     <script src="/Plugins/rellax.min.js"></script>
     <script>
         var rellax = new Rellax();
+
     </script>
 
     <!--Content Page-->
 
-    <div class="panel-project" style="margin-top: -300px;">
+    <div class="panel-project" style="margin-top: -520px;">
 
         <div class="project-title"><img src="Jett_Logo.png" height="180px"></div>
         <div class="project-details">
@@ -67,17 +69,17 @@
                 <table class="project-details-table">
                     <tr>
                         <td>Project Type</td>
-                        <td>University Team Project</td>
+                        <td>Personal Project</td>
                     </tr>
                     <tr>
                         <td>Duriation</td>
-                        <td>2 Weeks</td>
+                        <td>1 Month</td>
                     </tr>
 
                 </table>
             </div>
 
-            
+
 
             <div class="project-details-item shadowbackdrop">
                 <div class="project-details-item__title">Tools Used</div>
@@ -97,13 +99,11 @@
                 </div>
             </div>
         </div>
-        <div class="projectflex">
-
-
-        </div>
 
         <div class="project-textbox shadowbackdrop">
-            <p>Jett is a high-octane, anti-gravity racer inspired by games such as Wipeout, F-Zero, Pacer and BallisticNG. Jett is a personal project developed during the summer break whilst attending university, with the goal to learn and experiment with systems and features normally found within racing games, with a potential to restart the project again from scratch in the future equipped with a better understanding of developing a project like this. </p>
+            <p>
+                Jett is a high-octane, anti-gravity racer inspired by games reminiscent of Wipeout, F-Zero, Pacer and BallisticNG. Jett is a personal project developed during the summer break whilst attending university, used as a platform to learn and experiment with systems and features normally found within racing games. The project concluded in a playable graybox prototype that included an array of core features. With a potential to restart the project again from scratch in the future, equipped with a better understanding of developing a project like this would allow for higher quality and efficient implementations.
+            </p>
         </div>
 
 
@@ -117,7 +117,7 @@
 
 
                 <!-- Big -->
-                <div class="carousel-inner">
+                <div class="carousel-inner" style="height: 682px">
 
                     <div class="item active">
                         <img src="Screenshots/Screenshot1.png" style="height: 100%;width: 100%">
@@ -125,6 +125,10 @@
 
                     <div class="item">
                         <img src="Screenshots/Screenshot2.png" style="height: 100%;width: 100%">
+                    </div>
+
+                    <div class="item">
+                        <img src="Screenshots/Screenshot0.png" style="height: 100%;width: 100%">
                     </div>
 
                     <div class="item">
@@ -138,7 +142,9 @@
                     </li>
                     <li data-target="#myCarousel" data-slide-to="1" class="carousel-imgdot"> <img src="Screenshots/Screenshot2.png">
                     </li>
-                    <li data-target="#myCarousel" data-slide-to="2" class="carousel-imgdot"> <img src="Screenshots/Screenshot3.png">
+                    <li data-target="#myCarousel" data-slide-to="2" class="carousel-imgdot"> <img src="Screenshots/Screenshot0.png">
+                    </li>
+                    <li data-target="#myCarousel" data-slide-to="3" class="carousel-imgdot"> <img src="Screenshots/Screenshot3.png">
                     </li>
 
                 </ol>
@@ -164,15 +170,33 @@
                 </div>
 
                 <div class="feature-con__felx">
-                <img src="Dev_Screenshots/2.gif">
+                    <img src="Dev_Screenshots/2.gif" style="order: 0;object-fit: cover; border-radius: 40px 0px 40px 0px;">
+                    <div style="margin: 0px 20px 0px 20px">
 
-                    <p>
-aaaaaaaaaaaaaaaaaaaaaaaaa aaaaasd fadasdassssss sssssssssssssssssssssssd asd                 </p>
+                        <p>
+                            The tracking system utilizes a spline following along the course of a track, enabling positional tracking of racers along the track – an essential component for many other features needed in this project. These features include: </p>
+
+                        <ul>
+                            <li> Accurately ranking racers allowing for players to see where they position in real-time. </li>
+                            <li> A checkpoint system defined during development, serving multiple purposes:</li>
+                        <ul>
+                            <li>Tracking time splits between racers or from a player’s personal best record.</li>
+                            <li>Preventing players from exploiting unintentionally skipping parts of the track by ensuring that they pass each checkpoint in succession.</li>  
+                            <li> Return players back on the track should they fall out of bounds, storing a position on the spline should they become ungrounded.</li>
+
+                        </ul>
+                        </ul>
+<p>
+
+    This would only require mapping a spline along a track and defining checkpoints along it, ensuring straightforward implementation will allow for efficient horizontal development.</p>
+
+                    </div>
+
                 </div>
 
-            </div> 
-            
-                        <div class="feature-con">
+            </div>
+
+            <div class="feature-con">
                 <div class="feature-con__title">
                     <div class="feature-con__line"></div>
                     <img src="/Base_Icons/Joystick_Icon.png">
@@ -181,15 +205,16 @@ aaaaaaaaaaaaaaaaaaaaaaaaa aaaaasd fadasdassssss sssssssssssssssssssssssd asd    
 
                 <div class="feature-con__felx" style="margin-bottom: -20px">
                     <p>
-The ship leveller system rotates a racer to match the surface angle of the track with smooth transitioning between different surface rotations. This is done by creating an array of raycasts that returns the 'hits' rotational value, and creating an average of all the values and setting the ship's rotation. The density of the array, it's size and offset can be easily ajusted to fit the footprint of a ship                    </p>
-                    
+                        The ship leveller is responsible for smoothly aligning the racer with the surface angle of the track, ensuring seamless transitions between different surface rotations. This is achieved by utilizing an array of raycasts that returns the surface rotation value and create an average value used for setting the ship's rotation. The density of the array, it's size and offset can be easily adjusted to fit the footprint of a ship.
+                    </p>
+
                 </div>
                 <div class="feature-con__felx" style="flex-direction: ">
-                              <img src="Dev_Screenshots/4.gif" height="270px" style="margin-right: 40px;">
-   <img src="Dev_Screenshots/6.gif" height="270px"> 
-                    
-                            </div>
-                                            <div class="dropdown-header dropdown-header-inner ball" onclick="dropdownmenu(this)">
+                    <img src="Dev_Screenshots/4.gif" height="270px" style="margin-right: 40px;">
+                    <img src="Dev_Screenshots/6.gif" height="270px">
+
+                </div>
+                <div class="dropdown-header dropdown-header-inner ball" onclick="dropdownmenu(this)">
                     <img class="dropdown-img" src="/Base_Icons/Code_Icon.png">
                     <div class="dropdown-header-text">Code Snippet</div>
                     <div class="dropdown-arrow"><img src="/Base_Icons/Arrow.png"></div>
@@ -297,9 +322,9 @@ The ship leveller system rotates a racer to match the surface angle of the track
                     </ol>
 
                 </div>
-            </div> 
-            
-                        <div class="feature-con">
+            </div>
+
+            <div class="feature-con">
                 <div class="feature-con__title">
                     <div class="feature-con__line"></div>
                     <img src="/Base_Icons/Animation_Icon.png">
@@ -307,15 +332,16 @@ The ship leveller system rotates a racer to match the surface angle of the track
                 </div>
 
                 <div class="feature-con__felx">
-<img src="Dev_Screenshots/5.gif">
+                    <img src="Dev_Screenshots/5.gif">
 
                     <p>
-After a scene has finished loading, a camera cinematic will play on loop until the player proceeds. This is done by using unity's keyframe animation and animation tree systems, allowing for easy and efficient modification of each animation, adding functions in the animation and the animation's order.                    </p>
+                        After a scene has finished loading, a camera cinematic will play on loop until the player proceeds. This is achieved by utilizing Unity's keyframe animation and animation tree systems. Taking advantage of these built-in systems allow for simple implementation and flexible revision of each animation, as well as being able to attach functions in the animation timeline for effects and flexibility of each animation's order.
+                    </p>
                 </div>
 
-            </div> 
-            
-                        <div class="feature-con">
+            </div>
+
+            <div class="feature-con">
                 <div class="feature-con__title">
                     <div class="feature-con__line"></div>
                     <img src="/Base_Icons/Menu_Icon.png">
@@ -327,13 +353,13 @@ After a scene has finished loading, a camera cinematic will play on loop until t
                         <source src="Content/mainmenu_demo.webm" type="video/webm">
                     </video>
                     <p>
-                        The tooltip system was designed to be a quick and easy of straightforward method of integrating UI tooltips, allowing designers and other developers to easily add to elements they are reworking on, all while maintaining the project's simple workflow.
+                        A main menu wasn't essential for the playable prototype, but it was an element I wanted to include to experiment and learn from, with the goal to create a simple menu system and design that accommodates with both controller and mouse/keyboard inputs.
                     </p>
                 </div>
 
-            </div> 
-            
-                        <div class="feature-con">
+            </div>
+
+            <div class="feature-con">
                 <div class="feature-con__title">
                     <div class="feature-con__line"></div>
                     <img src="/Base_Icons/Cube_Icon.png">
@@ -341,25 +367,27 @@ After a scene has finished loading, a camera cinematic will play on loop until t
                 </div>
 
                 <div class="feature-con__felx">
-<img src="Content/shipmodel_1.png" height="310px">
+                    <img src="Content/shipmodel_1.png" height="310px" style="float: right">
 
                     <p>
-                        The tooltip system was designed to be a quick and easy of straightforward method of integrating UI tooltips, allowing designers and other developers to easily add to elements they are reworking on, all while maintaining the project's simple workflow.
+                        i wanted to include som d
                     </p>
                 </div>
                 <div class="feature-con__felx" style="margin-top: -100px">
-<img src="Content/shipmodel_2.png" height="280px">
+                    <img src="Content/shipmodel_2.png" height="280px">
 
 
                 </div>
 
 
 
-            </div> 
+            </div>
 
         </div>
 
     </div>
 
 
-</body></html>
+</body>
+
+</html>

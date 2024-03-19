@@ -734,8 +734,23 @@ padding: 20px 0px 10px 0px;
 }
 
 .project-background {
+    position: fixed;
     width: 100%;
     height: 100%;
+    overflow: hidden;
+    display: flex;
+    margin: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+
+.project-background > img {
+object-fit: cover; 
+    width: 100%;
+    height: 100%; 
+margin: auto;
+    left: 0px;
+    right: 0px;
 }
 
 .fadein {}
@@ -1206,4 +1221,5 @@ padding: 16px;
     text-overflow: inherit;
     text-align: start;
     width: 88%;
+    flex-grow: 1;
 }
